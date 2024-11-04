@@ -1,3 +1,5 @@
+# Imageomics Glossary
+
 This glossary is designed as a resource for members of the Imageomics Institute from various backgrounds to familiarize themselves with key terms and concepts encountered in our work. 
 
 It includes concepts in biology, ecology, genetics, machine learning and artificial intelligence, computer science, and software engineering. 

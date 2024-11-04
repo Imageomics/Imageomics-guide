@@ -1,4 +1,4 @@
-## Collaboration (Code, Data, Models, and Documents)
+## Collaboration Infrastructure (Code, Data, Models, and Documents)
 
 * GitHub
     * [Institute Code Repositories](https://github.com/Imageomics)

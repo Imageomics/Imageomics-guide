@@ -1,4 +1,6 @@
-When collecting or compiling new data, there are generally questions one is _trying_ to answer. There are also often questions that will come up later--whether for yourself or others interested in using your data. To improve both the _**Findability**_ and _**Reusability**_ of your data (ensuring [FAIR principles](https://github.com/Imageomics/internal-guidelines/wiki/Glossary-for-Imageomics#fair-data-principles)) for yourself and others, be sure to note down the following information.
+# Metadata Guide
+
+When collecting or compiling new data, there are generally questions one is _trying_ to answer. There are also often questions that will come up later--whether for yourself or others interested in using your data. To improve both the _**Findability**_ and _**Reusability**_ of your data (ensuring [FAIR principles](Glossary-for-Imageomics.md#fair-data-principles)) for yourself and others, be sure to note down the following information.
 
 **Note:** This is _**NOT**_ an exhaustive list. Be sure to include any other information that may be important to your particular project or field.
 
@@ -30,6 +32,6 @@ When collecting or compiling new data, there are generally questions one is _try
 
 *Datasets **_cannot_** be redistributed without this information. 
 
->**Pro-tip:** Copy this markdown into an issue on your GitHub [Repo](https://github.com/Imageomics/internal-guidelines/wiki/3.1.-GitHub-Repo-Guide) or [Project](https://github.com/Imageomics/internal-guidelines/wiki/4.1.-Guide-to-GitHub-Projects) so you can check the boxes as you add each.
+>**Pro-tip:** Copy this markdown into an issue on your GitHub [Repo](3.1.-GitHub-Repo-Guide.md) or [Project](4.1.-Guide-to-GitHub-Projects.md) so you can check the boxes as you add each.
 
-[Questions, Comments, Concerns?](https://github.com/Imageomics/internal-guidelines/wiki/Questions,-Comments,-Concerns%3F)
+[Questions, Comments, Concerns?](https://github.com/Imageomics/Imageomics-guide/issues)
