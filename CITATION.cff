@@ -1,0 +1,42 @@
+abstract: "Imageomics-focused guide to collaborative work, including GitHub and Hugging Face workflows."
+authors:
+- family-names:
+  given-names: "Campolongo"
+  given-names: "Elizabeth G."
+  orcid: "https://orcid.org/0000-0003-0846-2413"
+- family-names: "Thompson"
+  given-names: "Matthew J."
+  orcid: "https://orcid.org/0000-0003-0583-8585"
+- family-names: "Zoe"
+  given-names: "Duan"
+  orcid: "https://orcid.org/0000-0002-8547-5907"
+- family-names: "Bradley"
+  given-names: "John"
+  orcid: "https://orcid.org/0000-0003-3858-848X"
+- family-names: "Lapp"
+  given-names: "Hilmar"
+  orcid: "https://orcid.org/0000-0001-9107-0714"
+cff-version: 1.2.0
+date-released: "2024-11-DD"
+identifiers:
+  - description: "The GitHub release URL of tag v1.0.0."
+    type: url
+    value: "https://github.com/Imageomics/Imageomics-guide/releases/tag/v1.0.0"
+  - description: "The GitHub URL of the commit tagged with <tag-name>." # update post release
+    type: url
+    value: "https://github.com/Imageomics/Imageomics-guide/tree/<commit-hash>" # update post release
+keywords:
+  - imageomics
+  - metadata
+  - guide
+  - "best practices"
+  - "cheat-sheet"
+  - "command line cheat-sheet"
+  - projects
+  - "collaborative workflows"
+  - standards
+license: CC0-1.0
+message: "If you find these docs helpful in your research, please cite them as below."
+repository-code: "https://github.com/Imageomics/Imageomics-guide"
+title: "Imageomics Guide"
+version: "1.0.0"
