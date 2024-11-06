@@ -12,7 +12,7 @@ By following these steps, you will contribute to a smooth and efficient workflow
 
 
 # **1. Creating a Pull Request**
-> Before creating a pull request, first, please follow [2.1. The GitHub Workflow](2.1.-The-GitHub-Workflow.md) to create and push your Branch. 
+> Before creating a pull request, first, please follow [2.1. The GitHub Workflow](The-GitHub-Workflow.md) to create and push your Branch. 
 
 ## 1.1 Navigate to the Repository's Main Page
 > On GitHub, go to the main page of the repository where you’ve pushed your branch.

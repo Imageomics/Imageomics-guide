@@ -25,7 +25,7 @@ For more information on Hugging Face Pull Requests and Discussions, see their [d
 
 ## To contribute as an Imageomics member with write access:
 
-The workflow on Hugging Face repositories should closely mirror that of GitHub repos (described in detail in the [Github Workflow](2.1.-The-GitHub-Workflow.md)). However, Hugging Face repos function a little differently from GitHub’s, so we will review the details relevant to those differences and refer back to the [GitHub directions](2.1.-The-GitHub-Workflow.md) where necessary.
+The workflow on Hugging Face repositories should closely mirror that of GitHub repos (described in detail in the [Github Workflow](The-GitHub-Workflow.md)). However, Hugging Face repos function a little differently from GitHub’s, so we will review the details relevant to those differences and refer back to the [GitHub directions](The-GitHub-Workflow.md) where necessary.
 
 Firstly, when making changes it is still best not to work on the main branch, but instead go through the pull request (PR) process. This process is a bit different on Hugging Face, as this is not their focus. Instead of initializing a new branch, we initialize a new PR. There are two ways of doing this, but both rely on the UI (web interface). 
 1. Make your change directly on the UI (upload a file, edit the dataset/model card, etc), BUT select “Open as a pull request to the `main` branch” and write a descriptive commit message of your changes before pressing `commit`.

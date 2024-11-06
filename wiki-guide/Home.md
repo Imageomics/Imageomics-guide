@@ -7,18 +7,18 @@ There are many pages of useful information contained in this wiki covering a ran
 
 ### Just starting a project?
 Check out our guides to get your project off on the right foot!
-- [The GitHub Repo Guide](3.1.-GitHub-Repo-Guide.md): This page reviews expected and suggested GitHub repository contents, as well as structural considerations. 
-- [The Hugging Face Repo Guide](3.2.-Hugging-Face-Repo-Guide.md): Analogous expected and suggested repository contents for Hugging Face repositories; there are notable differences from GitHub in both content and structure.
+- [The GitHub Repo Guide](GitHub-Repo-Guide.md): This page reviews expected and suggested GitHub repository contents, as well as structural considerations. 
+- [The Hugging Face Repo Guide](Hugging-Face-Repo-Guide.md): Analogous expected and suggested repository contents for Hugging Face repositories; there are notable differences from GitHub in both content and structure.
 - [Metadata Guide](Metadata-Guide.md): Guide to metadata collection and documentation. Follows closely the [HF Dataset Card Template](../templates/HF_DatasetCard_Template_Imageomics.md?plain=1) sections.
 
 ### Project repo up, what's next?
 Check out our workflow guides for how to interact with your new repo:
-- [The GitHub Workflow](2.1.-The-GitHub-Workflow.md): This page mainly focuses on branching and the PR process.
-- [The Hugging Face Workflow](2.2.-The-Hugging-Face-Workflow.md): Analogous workflow directions for Hugging Face; there are notable differences from GitHub in how this process works practically, though the concept is the same.
+- [The GitHub Workflow](The-GitHub-Workflow.md): This page mainly focuses on branching and the PR process.
+- [The Hugging Face Workflow](The-Hugging-Face-Workflow.md): Analogous workflow directions for Hugging Face; there are notable differences from GitHub in how this process works practically, though the concept is the same.
 
 ### Project management or organization got you down?
 Discover new tools to help:
-- [Guide to GitHub Projects](4.1.-Guide-to-GitHub-Projects.md): This page focuses on GitHub's project management tool, Projects, which integrates issues and pull requests into a unified task board to keep tabs on how your project is progressing. Labels, milestones, and assignee tags provide improved organization, and allow for more focused views.
+- [Guide to GitHub Projects](Guide-to-GitHub-Projects.md): This page focuses on GitHub's project management tool, Projects, which integrates issues and pull requests into a unified task board to keep tabs on how your project is progressing. Labels, milestones, and assignee tags provide improved organization, and allow for more focused views.
 - [Helpful Tools for your Workflow](Helpful-Tools-for-your-Workflow.md): Collection of useful tools to facilitate and improve workflows. Comments and recommendations encouraged!
 - [Virtual Environments](Virtual-Environments.md): Summary of `conda` and `pip` environments: how to make, use, and share them.
 

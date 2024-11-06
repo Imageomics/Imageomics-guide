@@ -41,7 +41,7 @@ After this step you should see a repo with commits similar to the following:
 
 
 ### 2. Update Main Branch of Public Repo
-Make changes to the [README](3.1.-GitHub-Repo-Guide.md#readme) and [`.gitignore`](3.1.-GitHub-Repo-Guide.md#gitignore) in the public repo such that no further changes will be needed until the private repo is merged.
+Make changes to the [README](GitHub-Repo-Guide.md#readme) and [`.gitignore`](GitHub-Repo-Guide.md#gitignore) in the public repo such that no further changes will be needed until the private repo is merged.
 
 After this step you should see a repo with at least 2 commits similar to the following:
 
@@ -112,7 +112,7 @@ After the above command you should be able to see commits in the private repo si
 <img width="600" alt="PrivateAfterMerge" src="https://github.com/Imageomics/internal-guidelines/assets/1024463/069c445a-487d-432c-8b82-c3867be863ae">
 
 
-Now you're ready to work on development in the private repo following the standard [GitHub Workflow](2.1.-The-GitHub-Workflow.md) with the private repo as your remote.
+Now you're ready to work on development in the private repo following the standard [GitHub Workflow](The-GitHub-Workflow.md) with the private repo as your remote.
 
 ## Merge Private to Public
 Once your changes are done on the private repo (i.e., when you're ready to make your project public) you can push the changes to the public repo.
@@ -150,7 +150,7 @@ git remote add upstream git@github.com:johnbradley/research-project-x-private.gi
 git pull upstream main
 ```
 
-At this point you could rebase the commits to reduce them to meaningful commits. However, keep in mind that this would result in different commit histories on the public and private repos after pushing `v1`, which may impact the ability to use this strategy for a `v2`. It would be preferable to use this strategy in [pull requests (PRs)](2.1.-The-GitHub-Workflow.md#9-open-a-pull-request) during development.
+At this point you could rebase the commits to reduce them to meaningful commits. However, keep in mind that this would result in different commit histories on the public and private repos after pushing `v1`, which may impact the ability to use this strategy for a `v2`. It would be preferable to use this strategy in [pull requests (PRs)](The-GitHub-Workflow.md#9-open-a-pull-request) during development.
 
 
 Push `v1` branch to the public repo.
@@ -161,7 +161,7 @@ git push --set-upstream origin v1
 ### Next Steps
 At this point the main branch of the public repo should match the main branch of the private repo.
 Additional changes should be made only to the private repo, preferably using a branch.
-See [Github-Workflow](2.1.-The-GitHub-Workflow.md) for more details.
+See [Github-Workflow](The-GitHub-Workflow.md) for more details.
 When you are ready to release a new version of the code in the private repo follow the [Merge Private to Public instructions](#merge-private-to-public) again using a new version branch name (eg. `v2`).
 
 <Hr>
