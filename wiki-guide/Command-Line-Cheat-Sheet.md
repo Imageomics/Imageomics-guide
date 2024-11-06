@@ -9,7 +9,7 @@ See also [GitHub's Markdown Guide](https://docs.github.com/en/get-started/writin
 | `cd`	|		change directory |
 |`cd ..` |		up one directory |
 | `pwd` | 		current working directory |
-| `ls` | 		list everything in current directory (use `-a` to also show **a**ll files including hidden, `-l` for a **l**ong list including permissions and ownership info, `-1` ("dash one") to display the output with **1** item on each line |
+| `ls` | 		list everything in current directory (use `-a` to also show **a**ll files including hidden, `-l` for a **l**ong list including permissions and ownership info, `-1` ("dash one") to display the output with **1** item on each line) |
 | `wc -l <file>` |      use the **w**ord **c**ount command with the `-l` **l**ines option to list the number of lines in a file |
 | `du <dirname>/`|      calculate and show how much **d**isk **u**sage is consumed by a directory (use `-h` to make it **h**uman-readable, i.e. report in MB, GB or whatever units are most appropriate, and `-s` for **s**ummary of all the contents together rather than each item individually) |        
 | `ctrl r` |		search for command (will pop up `bck-i-search:`) |
