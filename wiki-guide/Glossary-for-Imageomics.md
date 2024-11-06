@@ -6,7 +6,7 @@ It includes concepts in biology, ecology, genetics, machine learning and artific
 
 Definitions are not meant to be comprehensive. Ideally, they will be tailored to our institute's context.
 
-It is meant to be a collaborative effort, so please contribute terms you would like defined, definitions you know, or corrections for errors you notice!
+It is meant to be a collaborative effort, so please [contribute](https://github.com/Imageomics/Imageomics-guide/issues) terms you would like defined, definitions you know, or corrections for errors you notice!
 
 # A
 ### Application Programming Interface (API)
