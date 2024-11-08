@@ -36,6 +36,8 @@ plugins:
   - glightbox
 
 markdown_extensions:
+  - admonition
+  - pymdownx.details
   - pymdownx.tasklist
   - attr_list
   - md_in_html
@@ -66,26 +68,15 @@ nav:
       - "Repo Guide": wiki-guide/Hugging-Face-Repo-Guide.md
       - "Workflow": wiki-guide/The-Hugging-Face-Workflow.md
       - "Dataset Upload Guide": wiki-guide/The-Hugging-Face-Dataset-Upload-Guide.md
+  - Metadata Guide: wiki-guide/Metadata-Guide.md
   - Templates:
       - "Dataset Card Template": wiki-guide/HF_DatasetCard_Template_mkdocs.md
       - "Model Card Template": wiki-guide/HF_ModelCard_Template_mkdocs.md
-  - Metadata Guide: wiki-guide/Metadata-Guide.md
   - Command Line Cheat Sheet: wiki-guide/Command-Line-Cheat-Sheet.md
   - Code of Conduct: CODE_OF_CONDUCT.md
   - Other Resources:
       - "Glossary for Imageomics": wiki-guide/Glossary-for-Imageomics.md
-      - "Virtual Environments": wiki-guide/Virtual-Environments.md
-      - "Helpful Tools": wiki-guide/Helpful-Tools-for-your-Workflow.md
       - "Handling API Keys": wiki-guide/Handling-API-Keys.md
+      - "Helpful Tools": wiki-guide/Helpful-Tools-for-your-Workflow.md
       - "Technical Infrastructure": wiki-guide/Technical-Infrastructure.md
-
-# markdown_extensions:
-
-#   - admonition
-#   - toc:
-#       permalink: true
-#   - footnotes
-
-# For extra custom styling
-# extra_css:
-#   - css/custom.css
+      - "Virtual Environments": wiki-guide/Virtual-Environments.md

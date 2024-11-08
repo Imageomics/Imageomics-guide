@@ -30,7 +30,9 @@ When collecting or compiling new data, there are generally questions one is _try
     - It helps to keep a running list.
 - [ ] **Notes:** Any other image/data information.
 
-*Datasets **_cannot_** be redistributed without this information. 
+!!! warning "Remember" 
+
+    Datasets **_cannot_** be redistributed without this information. 
 
 >**Pro-tip:** Copy this markdown into an issue on your GitHub [Repo](GitHub-Repo-Guide.md) or [Project](Guide-to-GitHub-Projects.md) so you can check the boxes as you add each.
 
