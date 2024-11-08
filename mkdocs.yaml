@@ -23,7 +23,7 @@ markdown_extensions:
 
 
 nav:
-  - Home: Home.md
+  - Home: index.md
   - GitHub Guide:
       - "Repo Guide": wiki-guide/GitHub-Repo-Guide.md
       - "Workflow": wiki-guide/The-GitHub-Workflow.md
