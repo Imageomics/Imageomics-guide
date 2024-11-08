@@ -5,6 +5,8 @@ site_url: "https://thompsonmj.github.io/Imageomics-guide/"
 
 theme:
   name: material
+  logo: logos/Imageomics_logo_butterfly.png
+  favicon: logos/Imageomics_logo_butterfly.png
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -25,6 +27,8 @@ theme:
         name: Switch to system preference
   features:
     - content.code.copy
+    - navigation.footer
+    - navigation.tabs
 
 plugins:
   - macros
