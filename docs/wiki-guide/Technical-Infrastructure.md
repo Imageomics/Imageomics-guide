@@ -11,5 +11,7 @@
         * [Datasets](https://huggingface.co/docs/hub/datasets-overview)
 
 ## Collaborative Infrastructure Diagram
-![tech_infrastructure_diagram](https://github.com/user-attachments/assets/1173cd79-db94-4326-8b6e-dcbdeb8939cd)
 
+![Technical infrastructure diagram](images/technical-infrastructure/382108831-1173cd79-db94-4326-8b6e-dcbdeb8939cd.png){ loading=lazy }
+/// caption
+///
