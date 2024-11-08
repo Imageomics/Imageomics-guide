@@ -1,8 +1,11 @@
 # Metadata Guide
 
-When collecting or compiling new data, there are generally questions one is _trying_ to answer. There are also often questions that will come up later--whether for yourself or others interested in using your data. To improve both the _**Findability**_ and _**Reusability**_ of your data (ensuring [FAIR principles](Glossary-for-Imageomics.md#fair-data-principles)) for yourself and others, be sure to note down the following information.
+When collecting or compiling new data, there are generally questions one is _trying_ to answer. There are also often questions that will come up later--whether for yourself or others interested in using your data. 
 
-**Note:** This is _**NOT**_ an exhaustive list. Be sure to include any other information that may be important to your particular project or field.
+To improve both the _**Findability**_ and _**Reusability**_ of your data (ensuring [FAIR principles](Glossary-for-Imageomics.md#fair-data-principles)) for yourself and others, be sure to note down the following information.
+
+!!! note "This is not an exhaustive list."
+    Be sure to include any other information that may be important to your particular project or field.
 
 ## Checklist for Metadata to Record
 - [ ] **Description:** Summary of your data, for instance:
