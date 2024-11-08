@@ -25,7 +25,8 @@ OPENAI_API_KEY=sk-AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
 * Backup the `.env` or key in a secure location. A free personal account with [Bitwarden](https://bitwarden.com/) is an excellent option for this.
 * If you notice the key or the `.env` file has been published somewhere public for any length of time, it must be changed immediately.
 
-> Note: the `.env` file can be used for setting arbitrary environment variables used by your code besides API keys.
+!!! note "Note"
+    The `.env` file is a simple text file, so you can use any text editor to create and edit it.
 
 ## Key Usage
 If you are using Python, the `dotenv` package will enable to use this approach. First, install with [pip](https://pypi.org/project/python-dotenv/) or [conda](https://anaconda.org/conda-forge/python-dotenv). In your work, the following will get you access to your API key as a Python variable `RESOURCE_API_KEY` (you may name it whatever you like; the Python variable may be different from the environment variable):

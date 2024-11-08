@@ -44,7 +44,8 @@ For more inspiration on making an awesome README, check out [this list](https://
 #### 1. Select a license.
 Alongside the appropriate stakeholders, select a license that is [Open Source Initiative](https://opensource.org/licenses) (OSI) compliant.
 
-*Remember, a public repository on GitHub with no license can be viewed and forked by others under GitHub's ToS, but unless the author associates a license, it is unclear what others are allowed to do with it legally. Adding an OSI license can help others feel comfortable contributing!*
+!!! note "Remember"
+    A public repository on GitHub with no license can be viewed and forked by others under GitHub's ToS, but unless the author associates a license, it is unclear what others are allowed to do with it legally. Adding an OSI license can help others feel comfortable contributing!
 
 For more information on how to choose a license and why it matters, see [Choose A License](https://choosealicense.com) and [A Quick Guide to Software Licensing for the Scientist-Programmer](https://doi.org/10.1371/journal.pcbi.1002598) by A. Morin, et al.
 

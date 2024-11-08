@@ -31,26 +31,26 @@ theme:
     - navigation.tabs
 
 plugins:
+  - glightbox
   - macros
   - search
-  - glightbox
 
 markdown_extensions:
   - admonition
-  - pymdownx.details
-  - pymdownx.tasklist
   - attr_list
   - md_in_html
+  - pymdownx.betterem
   - pymdownx.blocks.caption
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.betterem
-  - pymdownx.tilde
   - toc:
       permalink: true
       title: 📖 On This Page
