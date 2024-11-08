@@ -43,8 +43,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  - pymdownx.betterem  # Improves handling of emphasis and underscores
-  - pymdownx.tilde     # Supports tilde-based strikethrough
+  - pymdownx.betterem
+  - pymdownx.tilde
   - toc:
       permalink: true
       title: 📖 On This Page
