@@ -84,7 +84,7 @@ You can check your CITATION.cff file prior to upload using this [validator tool]
 **Note:** 
 - Subcategories of `preferred-citation` do not get bullet points, but the first subcategory of `references` must be bulleted (as below).
 - This is generally intended as a reference for your code. Preferred citation can be used for the paper, though it is better to ask in the `README` that someone cites _both_ and provide the paper reference there (only the `preferred-citation` will show up to be copied from the citation box if it is included).
-```yaml
+```yaml 
 abstract: "<describe your code/package>"
 authors:
 - family-names:
@@ -135,21 +135,30 @@ references:
 ## Additional Considerations
 
 ### Formatting and Naming Conventions
-* Dates and Times: For interoperability and avoiding ambiguity, [dates and times should be reported](https://dataoneorg.github.io/Education/bestpractices/describe-formats-for) in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601).
+
+**Dates and Times**
+
+For interoperability and avoiding ambiguity, [dates and times should be reported](https://dataoneorg.github.io/Education/bestpractices/describe-formats-for) in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601).
+
   - For dates, this means `YYYY-MM-DD` (for ISO 8601 compliance, the dashes are required).
   - For times, use `THHMMSS` in 24-hour format. 
-  - For example, the moment when there were 60 seconds left before New Year 2000 would be 1999-12-31T235900.
-* Branches 
-  * Primary branch: `main`
-  * Other branches: follow the pattern `category/reference/description`
-    * category: `feature`, `bugfix`, `experiment`
-      * `feature` is for new functionality
-      * `bugfix` is for fixing errors
-      * `experiment` is for more open-ended
-    * the associated issue (if no issue, put no-ref), formatted as `issue-NN`
-    * description: brief description, e.g. `solve-world-hunger`
-  * e.g. `git branch feature/issue-1/general-ai`
-* Commits: to combine human- and computer-readability into commit messages, follow the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/#summary).
+  - For example, the moment when there were 60 seconds left before New Year 2000 would be `1999-12-31T235900`.
+
+**Branches**
+
+ - Primary branch: `main`
+  - Other branches follow the pattern `category/reference/description`:
+    - **category**: `feature`, `bugfix`, `experiment`
+      - `feature` is for new functionality
+      - `bugfix` is for fixing errors
+      - `experiment` is for more open-ended work
+    - the associated issue (if no issue, put `no-ref`), formatted as `issue-NN`
+    - description: brief description, e.g., `solve-world-hunger`
+  - Example: `git branch feature/issue-1/general-ai`
+  
+**Commits**
+
+To combine human- and computer-readability into commit messages, follow the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/#summary).
 
 ### Workflow
 Do not conduct routine work in the `main` branch. Only do one thing on a branch at a time. Prune a branch once its purpose is fulfilled and it is merged (i.e., delete it). 

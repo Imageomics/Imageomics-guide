@@ -10,7 +10,7 @@ In the Files and versions tab of the Dataset card, you can choose to add file in
 ![image](https://github.com/ABC-climate/internal-guidelines/assets/30881036/9e6cef9b-18ef-4d4a-84c5-1a3f75ac9336)
 
 ## Uploading a Dataset with HfApi
-```
+``` py linenums="1"
 from huggingface_hub import login
 
 # Login with your personal token (find your tokens at: Settings/Access Tokens)
