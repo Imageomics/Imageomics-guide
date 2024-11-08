@@ -33,14 +33,11 @@ Firstly, when making changes it is still best not to work on the main branch, bu
 
 2. Navigate to the “Community” tab, and click “New pull request”
 
-<!-- would like to set these side-by-side in a table to take up less vertical space -->
-![New pull request button under Community tab](images/HF-workflow/290567257-c3493cff-7dbc-4158-802b-d3054ba1bfbe.png){ loading=lazy }
-/// caption
-///
 
-![New Pull Request interface](images/HF-workflow/290565108-f7cde0bf-2559-4b81-af58-f8d175cf25c5.png){ loading=lazy }
-/// caption
-///
+![New pull request button under Community tab](images/HF-workflow/290567257-c3493cff-7dbc-4158-802b-d3054ba1bfbe.png){ loading=lazy, width="48%", align=left }
+![New Pull Request interface](images/HF-workflow/290565108-f7cde0bf-2559-4b81-af58-f8d175cf25c5.png){ loading=lazy, width="47%", align=right }
+
+<div style="clear: both;"></div> <!-- Clears the floating alignment, pushing the text below the images -->
 
 Note that their instructions for “from the website” are out of date. You actually select “Add file”, choose upload or create file, and you can upload any number of files (that are reasonable to include in a single commit) in a single commit, just select “Open as a pull request to the `main` branch”, as described in #1.
 Now, to continue with the local branch method (if you intend to make multiple commits), give your PR an informative title and select “Create PR branch”. This will take you to a new page with instructions on how to connect locally to the PR and send your updates back to the repo. If the repo is private, you will need to ensure your credentials are set before cloning/fetching.

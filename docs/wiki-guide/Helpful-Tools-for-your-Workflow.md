@@ -36,4 +36,3 @@ ruff check <path/to/file>
 ```
 
 Ruff can also be set up as part of a pre-commit hook or GitHub Workflow. See their [Usage section](https://github.com/astral-sh/ruff?tab=readme-ov-file#usage) for more information.
-

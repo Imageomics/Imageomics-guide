@@ -37,4 +37,4 @@ Discover new tools to help:
 <br>
 <br>
 
-[Questions, Comments, or Concerns](https://github.com/Imageomics/Imageomics-guide/issues)
+!!! question "[Questions, Comments, or Concerns?](https://github.com/Imageomics/Imageomics-guide/issues)"

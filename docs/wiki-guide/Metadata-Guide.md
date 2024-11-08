@@ -36,4 +36,4 @@ When collecting or compiling new data, there are generally questions one is _try
 
 >**Pro-tip:** Copy this markdown into an issue on your GitHub [Repo](GitHub-Repo-Guide.md) or [Project](Guide-to-GitHub-Projects.md) so you can check the boxes as you add each.
 
-[Questions, Comments, Concerns?](https://github.com/Imageomics/Imageomics-guide/issues)
+!!! question "[Questions, Comments, or Concerns?](https://github.com/Imageomics/Imageomics-guide/issues)"

@@ -164,4 +164,3 @@ If you’ve addressed all the requested changes and your pull request requires f
 
 ### 3.6 Out-of-scope Suggestion
 If the suggested change falls outside the scope of your pull request, create a new issue to address the feedback separately. Issues can be created directly from a PR comment.
-
