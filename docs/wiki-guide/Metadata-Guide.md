@@ -10,7 +10,7 @@ When collecting or compiling new data, there are generally questions one is _try
     - Is it machine-ready? 
     - Where did it come from (Source)? 
 - [ ] **Data Sources:** Machine-readable sources of the data (links or other files).
-- [ ] **License Information:*** This is part of retaining records of a data source (eg., museum images, previous dataset). A record of licenses on the images must be retained to ensure they are respected. If dealing with CC licenses, please see this [OSU Library CC best practices guide](https://library.osu.edu/sites/default/files/2022-10/attributing_cc_license_flyer_2022_ac.pdf).
+- [ ] **License Information:** This is part of retaining records of a data source (eg., museum images, previous dataset). A record of licenses on the images must be retained to ensure they are respected. If dealing with CC licenses, please see this [OSU Library CC best practices guide](https://library.osu.edu/sites/default/files/2022-10/attributing_cc_license_flyer_2022_ac.pdf).
 - [ ] **Dataset Structure:**
     - Organization of the full dataset (eg., file structure).
     - Feature information: Information available for each image, such as species and subspecies designations, location information, etc.
@@ -36,8 +36,6 @@ When collecting or compiling new data, there are generally questions one is _try
 
 !!! tip "Pro-tip" 
 
-    Copy this markdown into an issue on your GitHub [Repo](GitHub-Repo-Guide.md) or [Project](Guide-to-GitHub-Projects.md) so you can check the boxes as you add each.
-
-<!-- >**Pro-tip:** Copy this markdown into an issue on your GitHub [Repo](GitHub-Repo-Guide.md) or [Project](Guide-to-GitHub-Projects.md) so you can check the boxes as you add each. -->
+    Use the eye icon at the top of this page to access the source and copy the markdown for the checklist above into an issue on your GitHub [Repo](GitHub-Repo-Guide.md) or [Project](Guide-to-GitHub-Projects.md) so you can check the boxes as you add each.
 
 !!! question "[Questions, Comments, or Concerns?](https://github.com/Imageomics/Imageomics-guide/issues)"
