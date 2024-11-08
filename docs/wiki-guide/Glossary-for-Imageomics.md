@@ -96,7 +96,7 @@ The key difference from feature extraction is that feature selection does not ge
 
 # H
 ### Hyperparameter Tuning
-The process of selecting the best hyperparameters for a machine learning model by minimizing the [loss function](#loss-function). This can be done through [experiments](#experiments-in-ml) or in some cases, using optimization techniques. Hyperparameters are parameters that are set by the researcher before training and are not learned during the training process. Some examples of common hyperparameters are [learning rate](#learning-rate), number of [epochs](#epoch-in-machine-learning), number of clusters (k) in [k-means clustering](#k-means-clustering), and many others.  
+The process of selecting the best hyperparameters for a machine learning model by minimizing the [loss function](#loss-function). This can be done through [experiments](#experiment-in-machine-learning) or in some cases, using optimization techniques. Hyperparameters are parameters that are set by the researcher before training and are not learned during the training process. Some examples of common hyperparameters are [learning rate](#learning-rate), number of [epochs](#epoch-in-machine-learning), number of clusters (k) in [k-means clustering](#k-means-clustering), and many others.  
 
 # I
 ### Imageomics

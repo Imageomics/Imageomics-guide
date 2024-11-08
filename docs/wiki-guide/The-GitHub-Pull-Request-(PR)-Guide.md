@@ -23,8 +23,10 @@ By following these steps, you will contribute to a smooth and efficient workflow
 
 ## 1.3 Click 'Compare & pull request':
 > You’ll see a button labeled Compare & pull request. Click this to begin the process of creating a pull request for your changes.
-
-> <img src="https://github.com/user-attachments/assets/659b312e-d95d-4bee-a958-4ce23fc4255d" width="800">
+> ![Image title](images/GH-PR-guide/365234701-72dd00f2-936e-44df-af79-ab7522a51def.png){ loading=lazy, width="300" }
+/// caption
+Image caption
+///
 
 
 ## 1.4 Add Title and Description:

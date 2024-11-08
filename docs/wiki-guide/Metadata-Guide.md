@@ -4,7 +4,7 @@ When collecting or compiling new data, there are generally questions one is _try
 
 **Note:** This is _**NOT**_ an exhaustive list. Be sure to include any other information that may be important to your particular project or field.
 
-## Metadata to record:
+## Checklist for Metadata to Record
 - [ ] **Description:** Summary of your data, for instance:
     - What are the contents of the data (images, text, type of animal)? 
     - Is it machine-ready? 

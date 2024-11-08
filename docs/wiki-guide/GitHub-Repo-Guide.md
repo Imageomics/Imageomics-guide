@@ -9,9 +9,13 @@ Just joining or starting a new project and need a repository to store your work?
 
 ## Standard Files
 For each repository, include the following files in the root directory as soon as possible; they can (and should) be instantiated when you create a new repository. 
+
 * [README.md](#readme)
+
 * [LICENSE.md](#license)
+
 * [.gitignore](#gitignore)
+
 * [software requirements](#software-requirements-file)
 
 More [recommendations](#recommended-files) are discussed below.
@@ -25,7 +29,7 @@ Once you've created your repo, populate your README (you can do this by clicking
     * This could be a simple explanation of what the package or tool developed in your repo is intended to do,
     * Or an abstract describing your research.
 * Detailed documentation on how to access and use the project software (User Guide).  
-    * Including installation of [dependencies](#dependencies-and-environments).
+    * Including installation of [dependencies](Virtual-Environments.md).
     * If your tool requires input be in a particular format, this would be included in the README. It would also help to include an example file demonstrating the format. 
 * Information about the sources you've used (links and what they were used for), such as:
     * Tools from other repos
@@ -150,7 +154,7 @@ references:
 ### Workflow
 Do not conduct routine work in the `main` branch. Only do one thing on a branch at a time. Prune a branch once its purpose is fulfilled and it is merged (i.e., delete it). 
 
-For more information on creating, merging, and deleting branches, see the [GitHub Workflow Guide](2.1.-The-GitHub-Workflow.md).
+For more information on creating, merging, and deleting branches, see the [GitHub Workflow Guide](The-GitHub-Workflow.md).
   
 ## General Repository Structure
 In addition to the [standard files](#standard-files) recommended for every repo, you will likely have some code, notebooks, and data. For an easily accessible and readable repo, it is good to organize these files within a clear directory (folder) structure, such as

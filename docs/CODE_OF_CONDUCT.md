@@ -3,12 +3,19 @@
 As members of the Imageomics community, we agree to maintain an environment where every participant feels welcome to be their true self and speak from the heart.
 
 To this end, we agree as individuals and as a group to:
+
 - **Listen to understand.** When one person talks, others listen.
+
 - **Speak to be understood.** We use lay terms and are patient with people who are not experts in our specific field. We are all learning, no matter who we are.
+
 - Embrace **“Yes and…”** Focus on possibilities instead of obstacles. Be inclusive of other people’s ideas. Honor divergence. 
+
 - **Take space / make space.** Those who tend to talk a lot are intentional about letting others talk first, while those who tend to hold back are intentional about contributing.
+
 - **Beware of blind spots.** We do not know what we do not know. We are vigilant for differences among our experiences and positions. 
+
 - **Respect time.** When a session is over, we need to move on. There is designated time for in-depth follow up and continuing conversations. 
+
 - **Care** for each other. We bring our full selves to the community, and we look out for each other wholeheartedly. 
 
 We abide by these principles in all Imageomics spaces, including but not limited to digital and in-person meetings, formal and informal gatherings, online discussion forums and chat spaces, and field and lab work. 
@@ -16,15 +23,18 @@ We abide by these principles in all Imageomics spaces, including but not limited
 Discrimination, bullying or harassment–sexual or otherwise–is misconduct. Those found to engage in misconduct will be subject to dismissal from the project and further actions as directed by the guidelines of the employers and the place of incidence.
 
 If you believe you have experienced or witnessed misconduct in an Imageomics setting, please take these steps:
+
 1. Document the incident;
+
 2. Tell someone you trust;
-3. Report the incident to Sam Stevens, Diane, or Tanya.
+
+3. Report the incident to Diane Boghrat or Tanya Berger-Wolf.
 
 Privacy will be protected to the greatest extent possible.
 
 # JEDI Framework
 
-[Full text](https://docs.google.com/document/d/1zHghf5bCsDsw1n0s_Nxt5wu_GYIbj9to/edit?usp=sharing&ouid=114612552367385014086&rtpof=true&sd=true)
+[Full text](pdfs/Imageomics_Equity_Tool.pdf)
 
 ## VALUES
 ### TRANSPARENCY
