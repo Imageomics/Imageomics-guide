@@ -8,18 +8,18 @@ Definitions are not meant to be comprehensive. Ideally, they will be tailored to
 
 It is meant to be a collaborative effort, so please [contribute](https://github.com/Imageomics/Imageomics-guide/issues) terms you would like defined, definitions you know, or corrections for errors you notice!
 
-# A
-### Application Programming Interface (API)
+## A
+#### Application Programming Interface (API)
 
 
-### Autoencoder
+#### Autoencoder
 
 
-# B
+## B
 
-# C
+## C
 
-### CARE Principles for Indigenous Data Governance
+#### CARE Principles for Indigenous Data Governance
 "People and purpose-oriented" to complement [FAIR Principles](#fair-data-principles).
 
 **C**ollective Benefit
@@ -32,13 +32,13 @@ It is meant to be a collaborative effort, so please [contribute](https://github.
 
 For more information, see [CARE Principles for Indigenous Data Governance](https://www.gida-global.org/care).
 
-### Contrastive Language-Image Pre-training (CLIP)
+#### Contrastive Language-Image Pre-training (CLIP)
 
-# D
-### Decoder
+## D
+#### Decoder
 
 
-### Dimensionality Reduction
+#### Dimensionality Reduction
 Used in machine learning and data analysis to refer to a set of methods used to reduce the number of variables or features under consideration to a smaller subset with the greatest explanatory power without drastically reducing the accuracy of the model or analysis. The purpose is to exclude irrelevant, redundant, and noisy information, thereby improving computational complexity and model interpretability. 
 
 That is, it seeks to preserve the "most important" variables or features of the data based on some quantitative metric, such as variance, while removing "less important" variables or features. This is especially helpful when using high-dimensional data such as images or genomes.
@@ -48,23 +48,23 @@ Dimensionality reduction techniques can be subdivided into two main categories:
 * [Feature Extraction](#feature-extraction)
 * [Feature Selection](#feature-selection)
 
-### Docker
+#### Docker
 
 
-# E
-### Ecology
+## E
+#### Ecology
 
 
-### Epoch (in machine learning)
+#### Epoch (in machine learning)
 
 
-### Encoder
+#### Encoder
 
 
-### Experiment (in machine learning)
+#### Experiment (in machine learning)
 
-# F
-### FAIR Data Principles
+## F
+#### FAIR Data Principles
 **F**indable -- metadata and data easily found by both humans and machines
 
 **A**ccessible -- clear indication of how to access data once it is found.
@@ -75,58 +75,58 @@ Dimensionality reduction techniques can be subdivided into two main categories:
 
 For more information, see [FAIR principles](https://www.go-fair.org/fair-principles/).
 
-### Feature
+#### Feature
 In machine learning and data science, a feature is a single measurable property or characteristic of the phenomenon under observation. With tabular data, a feature is a column in the dataset used by a model to make predictions. In genomics, a feature could be, for example, gene expression levels, the presence (or absence) of certain genetic variants (such as [SNPs](#single-nucleotide-polymorphism-snp), insertions and deletions (indels), and others), or epigenetic markers.
 
-### Feature Extraction
+#### Feature Extraction
 A set of [dimensionality reduction](#dimensionality-reduction) techniques used to map raw data to a smaller set of features. Example techniques include [PCA](#principal-component-analysis-pca), [MDS](#multidimensional-scaling-mds), [t-SNE](#t-distributed-stochastic-neighbor-embedding-t-sne), [autoencoders](#autoencoder), and Fourier or wavelet transforms.
 
 The key difference from feature selection is that feature extraction generates a new set of features from the original dataset by projecting or mapping the data into a new feature space rather than selecting from existing features.
 
-### Feature Selection
+#### Feature Selection
 A method to select a subset of relevant features for use in model construction.
 
 The key difference from feature extraction is that feature selection does not generate new features but rather identifies the most meaningful existing features in a dataset by excluding redundant or irrelevant features. For example, in genomics, feature selection would involve selecting the most important gene(s) relevant to a certain phenotype among thousands of genes. 
 
-### Feature Space
+#### Feature Space
 
 
-# G
-### Genome-Wide Association Study (GWAS)
+## G
+#### Genome-Wide Association Study (GWAS)
 
 
-# H
-### Hyperparameter Tuning
+## H
+#### Hyperparameter Tuning
 The process of selecting the best hyperparameters for a machine learning model by minimizing the [loss function](#loss-function). This can be done through [experiments](#experiment-in-machine-learning) or in some cases, using optimization techniques. Hyperparameters are parameters that are set by the researcher before training and are not learned during the training process. Some examples of common hyperparameters are [learning rate](#learning-rate), number of [epochs](#epoch-in-machine-learning), number of clusters (k) in [k-means clustering](#k-means-clustering), and many others.  
 
-# I
-### Imageomics
+## I
+#### Imageomics
 
 i-'mi-j**ə**-'**ō**-miks
 
 A new scientific field in which computational (machine learning) tools built around biological knowledge bases are used by biologists to analyze image data in order to characterize patterns and gain insights into traits and relationships at individual, population and species scales—insights that then get incorporated into the algorithms that run the tools.
 
-# J
+## J
 
-# K
-### K-Means Clustering
-
-
-# L
-### Latent Space
+## K
+#### K-Means Clustering
 
 
-### Learning Rate
+## L
+#### Latent Space
 
 
-### Loss Function
+#### Learning Rate
 
 
-# M
-### Multidimensional Scaling (MDS)
+#### Loss Function
 
-# N
-### Nucleotide
+
+## M
+#### Multidimensional Scaling (MDS)
+
+## N
+#### Nucleotide
 The fundamental building blocks of DNA and RNA. A nucleotide is composed of a base and a sugar-phosphate backbone. 
 
 Bases for DNA: adenine (A), guanine (G), cytosine (C), and thymine (T). 
@@ -141,64 +141,64 @@ The bases A, G, and C are the same molecule for DNA and RNA. T and U are incorpo
 
 A DNA or RNA molecule consists of a chain of the four relevant nucleotides in a sequence, where the order of A, G, C, and T in the DNA sequence determines the "blueprint" for the organism, and the order and length of A, G, C, and U in an RNA sequence determines the purpose and function of the RNA molecule, which can be a messenger RNA (mRNA) that encodes a protein, a microRNA (miRNA) which are short RNAs that help regulate gene expression by binding to other mRNAs, and many others.
 
-# O
-### Ontology
+## O
+#### Ontology
 
 
-# P
-### Phenotype
+## P
+#### Phenotype
 
 
-### Phylogeny
+#### Phylogeny
 
 
-### Pre-training
+#### Pre-training
 
 
-### Principal Component Analysis (PCA)
+#### Principal Component Analysis (PCA)
 
 
-# Q
+## Q
 
-# R
+## R
 
-# S
-### Single Nucleotide Polymorphism (SNP)
+## S
+#### Single Nucleotide Polymorphism (SNP)
 A SNP (pronounced "snip") is a variation in the [nucleotide](#nucleotide) present at a single position in a DNA sequence among individuals in a species. For example, a SNP may be the replacement of a cytosine (C) by a thymine (T) at the same location in a stretch of DNA, where C is observed in a subset of individuals and T is observed in the others.
 
-### Snakemake
+#### Snakemake
 
 
-### Subspecies
+#### Subspecies
 
 
-### Supervised Learning
+#### Supervised Learning
 As opposed to [unsupervised learning](#unsupervised-learning), supervised learning methods learn from labeled data. That is, it is trained using input data that is labeled with corresponding outputs, such as the input of an image and the output of a classification.
 
-# T
-### Taxonomy
+## T
+#### Taxonomy
 
 
-### t-Distributed Stochastic Neighbor Embedding (t-SNE)
+#### t-Distributed Stochastic Neighbor Embedding (t-SNE)
 
 
-### Trait
+#### Trait
 
-### Transfer Learning
+#### Transfer Learning
 
-# U
-### Unsupervised Learning
+## U
+#### Unsupervised Learning
 As opposed to [supervised learning](#supervised-learning), unsupervised learning detects patterns or structures within the input data without any labels. Clustering and dimensionality reduction techniques are some examples.
 
-# V
+## V
 VLMs (Vision-Language Models)
 
-# W
+## W
 
-# X
+## X
 
-# Y
+## Y
 
-# Z
-### Zero-Shot Prediction
+## Z
+#### Zero-Shot Prediction
 

@@ -18,14 +18,14 @@ For instance, if the __public git repo__ and the __private git repo__ were creat
 - Merge conflicts - Files such as the README that may have diverged and result in merge conflicts
 - Accidentally losing changes or duplicating changes
 
-# Solutions
+## Solutions
 
-## Create private from public repo
+### Create private from public repo
 To ensure related histories, create the public repo and then create a private repo from it.
 The public repo will be created with a README file ensuring it has a commit.
 The private repo will be created without any extra files so it will have no commits.
 
-### 1. Create Public Repo
+#### 1. Create Public Repo
 First create a public repo with commits.
 
 Visit https://github.com/organizations/Imageomics/repositories/new
@@ -41,7 +41,7 @@ After this step you should see a repo with commits similar to the following:
 /// caption
 ///
 
-### 2. Update Main Branch of Public Repo
+#### 2. Update Main Branch of Public Repo
 Make changes to the [README](GitHub-Repo-Guide.md#readme) and [`.gitignore`](GitHub-Repo-Guide.md#gitignore) in the public repo such that no further changes will be needed until the private repo is merged.
 
 After this step you should see a repo with at least 2 commits similar to the following:
@@ -50,7 +50,7 @@ After this step you should see a repo with at least 2 commits similar to the fol
 /// caption
 ///
 
-### 3. Add Branch Protections to Public Repo
+#### 3. Add Branch Protections to Public Repo
 Once your repository is set up, only changes to the `ghpages` branch are recommended; establish branch protections on both `main` and `ghpages` that require review and approval (see [When to think about branch protections](When-to-think-about-branch-protections.md) for more information). 
 
 There are two issues at play here:
@@ -58,7 +58,7 @@ There are two issues at play here:
 2. The `ghpages` branch will generate the website for the publication. Hence, it is a "published" branch, requiring regular checks with protections like the `main` branch.
 
 
-### 4. Create Private Repo
+#### 4. Create Private Repo
 First create a private repo __without__ commits.
 
 Visit https://github.com/organizations/Imageomics/repositories/new 
@@ -74,11 +74,11 @@ After this step you should see a repo without any commits with a box similar to 
 /// caption
 ///
 
-### 5. Push initial changes from public to private
+#### 5. Push initial changes from public to private
 In the following example we will clone the private repo: `johnbradley/research-project-x-private`.
 And pull commits from the public repo: `johnbradley/research-project-x`.
 
-#### 5a. Clone Private Repo
+##### 5a. Clone Private Repo
 ```console
 git clone git@github.com:johnbradley/research-project-x-private.git
 ```
@@ -89,7 +89,7 @@ Cloning into 'research-project-x-private'...
 warning: You appear to have cloned an empty repository.
 ```
 
-#### 5b. Pull Commits to Private Repo
+##### 5b. Pull Commits to Private Repo
 Switch to the private repo directory.
 ```console
 cd research-project-x-private
@@ -108,7 +108,7 @@ git pull upstream main
 NOTE: Running git remote -v will confirm where a standard git push (or git pull) will send (or receive) commits from.
 
 
-#### 5c. Push Commits to Private Repo on GitHub
+##### 5c. Push Commits to Private Repo on GitHub
 ```
 git push
 ```
@@ -120,13 +120,13 @@ After the above command you should be able to see commits in the private repo si
 
 Now you're ready to work on development in the private repo following the standard [GitHub Workflow](The-GitHub-Workflow.md) with the private repo as your remote.
 
-## Merge Private to Public
+### Merge Private to Public
 Once your changes are done on the private repo (i.e., when you're ready to make your project public) you can push the changes to the public repo.
 
 For this example the public repo will be at `johnbradley/research-project-x` and the private will be at `johnbradley/research-project-x-private`.
 A branch named `v1` will be created on the public repo with changes from the private repo.
 
-### Create a branch on Public with Private commits
+#### Create a branch on Public with Private commits
 Clone the public repo, cd into the directory.
 ```console
 git clone git@github.com:johnbradley/research-project-x.git
@@ -164,7 +164,7 @@ Push `v1` branch to the public repo.
 git push --set-upstream origin v1
 ```
 
-### Next Steps
+#### Next Steps
 At this point the main branch of the public repo should match the main branch of the private repo.
 Additional changes should be made only to the private repo, preferably using a branch.
 See [Github-Workflow](The-GitHub-Workflow.md) for more details.
@@ -172,10 +172,10 @@ When you are ready to release a new version of the code in the private repo foll
 
 <Hr>
 
-# _What if I already have mismatched repos?_
+## _What if I already have mismatched repos?_
 If you find yourself with two repositories that have misaligned histories, please read the following and reach out to the Imageomics Informatics Team so we can help.
 
-## Resolving Mismatched Public/Private Repos
+### Resolving Mismatched Public/Private Repos
 If you already have a public and private repo with unrelated histories resolving this can be challenging.
 
 Three approaches to resolve merging disparate public/private repos are documented here.
@@ -183,7 +183,7 @@ Three approaches to resolve merging disparate public/private repos are documente
 - Reset - use when all public repo commits can be deleted and replaced with private repo commits.
 - Cherry Pick - use when the same commits exist in both repos with different hashes.
 
-## Merge
+### Merge
 Merge commits from the `main` branch of the private repo into the `main` branch of the public repo.
 
 __NOTE: If the repos have commits in common with different hashes this will result in merge conflicts and duplicated commits.__
@@ -196,7 +196,7 @@ The allow unrelated histories flag is necessary for this approach:
 git merge --allow-unrelated-histories ...
 ```
 
-## Reset
+### Reset
 Replace all commits on the `main` branch of the public rep with commits from the `main` branch of the private repo.
 
 __NOTE: This will destroy all history in the public repo main branch!__
@@ -207,7 +207,7 @@ After setting up the remote for upstream run a command similar to the following:
 git reset --hard upstream/main
 ```
 
-## Cherry Pick
+### Cherry Pick
 This method is used when the same commits exist in both repos with different hashes.
 This requires finding which commits are in the private repo but not in the public repo.
 __NOTE: If the commits you cherry-pick have commits in common with different hashes this will result in merge conflicts and duplicated commits.__

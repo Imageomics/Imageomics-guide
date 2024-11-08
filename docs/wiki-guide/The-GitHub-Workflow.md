@@ -13,7 +13,7 @@ It follows a branch and pull request (PR) based workflow, which provides a contr
 
 Importantly, this workflow suggests that **_contributions are created through PRs_** rather than directly committing to or merging into the `main` branch.
 
-## To contribute as an Imageomics member with write access:
+## Contribute as an Imageomics member with write access
 ### 1. Clone the repo to your machine.
 ```sh
 git clone https://github.com/Imageomics/<repo-name>.git

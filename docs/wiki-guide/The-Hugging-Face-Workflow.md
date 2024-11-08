@@ -23,7 +23,7 @@ git push origin pr/<PR#>:refs/pr/<PR#>
 
 For more information on Hugging Face Pull Requests and Discussions, see their [documentation](https://huggingface.co/docs/hub/repositories-pull-requests-discussions).
 
-## To contribute as an Imageomics member with write access:
+## Contribute as an Imageomics member with write access
 
 The workflow on Hugging Face repositories should closely mirror that of GitHub repos (described in detail in the [Github Workflow](The-GitHub-Workflow.md)). However, Hugging Face repos function a little differently from GitHub’s, so we will review the details relevant to those differences and refer back to the [GitHub directions](The-GitHub-Workflow.md) where necessary.
 

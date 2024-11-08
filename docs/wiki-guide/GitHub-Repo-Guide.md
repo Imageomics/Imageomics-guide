@@ -3,7 +3,7 @@
 Just joining or starting a new project and need a repository to store your work? You've come to the right place! Below we have compiled guidance on conventions and best practices for maintaining a shared (or shareable) repository of your work.
 
 
-# Setting up a New Organization Repository
+## Setting up a New Organization Repository
 
 **Note:** We recommend doing development in a public repo, or at least publishing the repo in which development was done at the time of publication/release. However, if you're looking to have a public-facing repo _and_ a private repo for development, please be sure to read our guidance on the [Two Repo Problem](Two-Repo-Problem.md) before proceeding.
 
