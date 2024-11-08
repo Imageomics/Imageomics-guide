@@ -34,11 +34,11 @@ Firstly, when making changes it is still best not to work on the main branch, bu
 2. Navigate to the “Community” tab, and click “New pull request”
 
 <!-- would like to set these side-by-side in a table to take up less vertical space -->
-![New pull request button under Community tab](images/HF-workflow/290567257-c3493cff-7dbc-4158-802b-d3054ba1bfbe.png){ loading=lazy, align=left }
+![New pull request button under Community tab](images/HF-workflow/290567257-c3493cff-7dbc-4158-802b-d3054ba1bfbe.png){ loading=lazy }
 /// caption
 ///
 
-![New Pull Request interface](images/HF-workflow/290565108-f7cde0bf-2559-4b81-af58-f8d175cf25c5.png){ loading=lazy, align=right }
+![New Pull Request interface](images/HF-workflow/290565108-f7cde0bf-2559-4b81-af58-f8d175cf25c5.png){ loading=lazy }
 /// caption
 ///
 

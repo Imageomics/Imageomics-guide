@@ -5,12 +5,13 @@ The goal is to make it as easy as possible for others (including your future sel
 
 ## Conda Environments
 The following example commands will get you set up with a Conda environment that can be tracked and shared.
+
 * Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
 * Create an environment: `conda create --name <env-name>`
 * Activate the environment: `conda activate <env-name>`
 * Install packages you need: `conda install -c conda-forge python=3.9 pandas matplotlib`
-  * `-c conda-forge` specifies the channel to install from. ([more information](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html))
-  * You can specify the version of a package or omit this to get the latest available. ([more information](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-pkgs.html#id2))
+    * `-c conda-forge` specifies the channel to install from. ([more information](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html))
+    * You can specify the version of a package or omit this to get the latest available. ([more information](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-pkgs.html#id2))
 * Once the needed packages are installed, export the environment to a file: 
 ```bash
 conda env export --no-builds --from-history | grep -v "prefix" > environment.yml

@@ -44,6 +44,7 @@ Used in machine learning and data analysis to refer to a set of methods used to 
 That is, it seeks to preserve the "most important" variables or features of the data based on some quantitative metric, such as variance, while removing "less important" variables or features. This is especially helpful when using high-dimensional data such as images or genomes.
 
 Dimensionality reduction techniques can be subdivided into two main categories:
+
 * [Feature Extraction](#feature-extraction)
 * [Feature Selection](#feature-selection)
 
@@ -72,7 +73,7 @@ Dimensionality reduction techniques can be subdivided into two main categories:
 
 **R**eusable -- clearly described so it is easily used by others.
 
-For more information, see [fair principles](https://www.go-fair.org/fair-principles/).
+For more information, see [FAIR principles](https://www.go-fair.org/fair-principles/).
 
 ### Feature
 In machine learning and data science, a feature is a single measurable property or characteristic of the phenomenon under observation. With tabular data, a feature is a column in the dataset used by a model to make predictions. In genomics, a feature could be, for example, gene expression levels, the presence (or absence) of certain genetic variants (such as [SNPs](#single-nucleotide-polymorphism-snp), insertions and deletions (indels), and others), or epigenetic markers.

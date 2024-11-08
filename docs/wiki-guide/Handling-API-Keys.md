@@ -1,6 +1,7 @@
 # Handling API Keys
 
 If you are using a web service with API keys, there are a few things to keep in mind. The key to key storage is that the process must meet the following requirements:
+
 * Not hard-coded into your code
 * Not visible in version-control
 * Convenient to use
@@ -18,6 +19,7 @@ For instance, if your API key for OpenAI is `sk-AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPp
 ```
 OPENAI_API_KEY=sk-AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
 ```
+
 * Ensure `.env` is added to your `.gitignore` file. The `.env` should not be published in a remote repository; it should be for your eyes only.
 * Store the `.env` file in the root directory for your project.
 * Backup the `.env` or key in a secure location. A free personal account with [Bitwarden](https://bitwarden.com/) is an excellent option for this.
@@ -27,7 +29,7 @@ OPENAI_API_KEY=sk-AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
 
 ## Key Usage
 If you are using Python, the `dotenv` package will enable to use this approach. First, install with [pip](https://pypi.org/project/python-dotenv/) or [conda](https://anaconda.org/conda-forge/python-dotenv). In your work, the following will get you access to your API key as a Python variable `RESOURCE_API_KEY` (you may name it whatever you like; the Python variable may be different from the environment variable):
-```python
+```python { py linenums="1" }
 import os
 from dotenv import load_dotenv
 
@@ -38,5 +40,6 @@ RESOURCE_API_KEY = os.getenv("RESOURCE_API_KEY")
 
 ## Keys for a Shared Resource
 If you are part of a group with access to the same API:
+
 * Create a unique API key for each application you use and for each environment you work in. 
 * Avoid sharing API keys with other users or between different applications/scripts.

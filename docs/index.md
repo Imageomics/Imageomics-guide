@@ -12,7 +12,7 @@ Check out our guides to get your project off on the right foot!
 
 - [The Hugging Face Repo Guide](wiki-guide/Hugging-Face-Repo-Guide.md): Analogous expected and suggested repository contents for Hugging Face repositories; there are notable differences from GitHub in both content and structure.
 
-- [Metadata Guide](wiki-guide/Metadata-Guide.md): Guide to metadata collection and documentation. This closely follows the [HF Dataset Card Template](wiki-guide\HF_DatasetCard_Template_mkdocs.md) sections.
+- [Metadata Guide](wiki-guide/Metadata-Guide.md): Guide to metadata collection and documentation. This closely follows the [HF Dataset Card Template](wiki-guide/HF_DatasetCard_Template_mkdocs.md) sections.
 
 ### Project repo up, what's next?
 Check out our workflow guides for how to interact with your new repo:
@@ -30,11 +30,9 @@ Discover new tools to help:
 
 - [Virtual Environments](wiki-guide/Virtual-Environments.md): Summary of `conda` and `pip` environments: how to make, use, and share them.
 
-### Other pages of note:
+### Other pages of note
 - [Glossary for Imageomics](wiki-guide/Glossary-for-Imageomics.md): Collection of terms used in imageomics. The goal is to ensure all participating domains are represented, thus facilitating interdisciplinary communication. This is a group effort, please check it out and add terms you think should be there!
 - [Command Line Cheat Sheet](wiki-guide/Command-Line-Cheat-Sheet.md): Collection of useful bash, emacs, and git commands.
-
-
 
 <br>
 <br>

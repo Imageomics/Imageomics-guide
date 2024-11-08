@@ -37,16 +37,18 @@ Visit https://github.com/organizations/Imageomics/repositories/new
 
 After this step you should see a repo with commits similar to the following:
 
-<img width="600" alt="PublicRepoAfterCreate" src="https://github.com/Imageomics/internal-guidelines/assets/1024463/d174b21a-0d2d-480d-a7b5-77c7cacf16af">
-
+![New public repository Initial commit indicator](images/two-repo-problem/340342731-d174b21a-0d2d-480d-a7b5-77c7cacf16af.png){ loading=lazy, width=600 }
+/// caption
+///
 
 ### 2. Update Main Branch of Public Repo
 Make changes to the [README](GitHub-Repo-Guide.md#readme) and [`.gitignore`](GitHub-Repo-Guide.md#gitignore) in the public repo such that no further changes will be needed until the private repo is merged.
 
 After this step you should see a repo with at least 2 commits similar to the following:
 
-<img width="600" alt="PublicAfterREADMEChange" src="https://github.com/Imageomics/internal-guidelines/assets/1024463/84608140-6d1a-4708-8659-bd03e715afb2">
-
+![New commits indicator](images/two-repo-problem/340343092-84608140-6d1a-4708-8659-bd03e715afb2.png){ loading=lazy, width=600 }
+/// caption
+///
 
 ### 3. Add Branch Protections to Public Repo
 Once your repository is set up, only changes to the `ghpages` branch are recommended; establish branch protections on both `main` and `ghpages` that require review and approval (see [When to think about branch protections](When-to-think-about-branch-protections.md) for more information). 
@@ -67,8 +69,10 @@ Visit https://github.com/organizations/Imageomics/repositories/new
 - Click `Create repository`
 
 After this step you should see a repo without any commits with a box similar to the following:
-<img width="600" alt="PrivateRepoAfterCreate" src="https://github.com/Imageomics/internal-guidelines/assets/1024463/7f0f79f9-956b-4a46-b110-235e2ed4295a">
 
+![New private repo after creation](images/two-repo-problem/340343305-7f0f79f9-956b-4a46-b110-235e2ed4295a.png){ loading=lazy, width=600 }
+/// caption
+///
 
 ### 5. Push initial changes from public to private
 In the following example we will clone the private repo: `johnbradley/research-project-x-private`.
@@ -109,8 +113,10 @@ NOTE: Running git remote -v will confirm where a standard git push (or git pull)
 git push
 ```
 After the above command you should be able to see commits in the private repo similar to the following:
-<img width="600" alt="PrivateAfterMerge" src="https://github.com/Imageomics/internal-guidelines/assets/1024463/069c445a-487d-432c-8b82-c3867be863ae">
 
+![Private repo status after merge](images/two-repo-problem/340343584-069c445a-487d-432c-8b82-c3867be863ae.png){ loading=lazy, width=600 }
+/// caption
+///
 
 Now you're ready to work on development in the private repo following the standard [GitHub Workflow](The-GitHub-Workflow.md) with the private repo as your remote.
 

@@ -196,7 +196,7 @@ After the initial creation of a repo on the GitHub website, there are two primar
     
 2. Through the GitHub Desktop App, [GitHub Desktop](https://desktop.github.com/)
 
-    GitHub provides documentation to get started on [Mac](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/getting-started-with-github-desktop?platform=mac) or [Windows](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/getting-started-with-github-desktop?platform=windows), as well as extensive documentation on use cases we discuss throughout the wiki [here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop).
+    GitHub provides documentation to get started on [Mac](https://docs.github.com/en/desktop/overview/getting-started-with-github-desktop?platform=mac) or [Windows](https://docs.github.com/en/desktop/overview/getting-started-with-github-desktop?platform=windows), as well as extensive documentation on use cases we discuss throughout the wiki [here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop).
     
     **Note:** The bulk of our step-by-step guides will outline interaction through the command line, but the same principles apply to using GitHub Desktop. 
     

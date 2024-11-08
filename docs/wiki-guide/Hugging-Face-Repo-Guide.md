@@ -6,7 +6,7 @@ Need a repository to store your data or model? You've come to the right place! B
 # Setting up a New Organization Repository
 
 ## Standard Files
-For each repository, include the following files in the root directory as soon as possible; a license can (and should) be instantiated when you create a new repository, and the standard `.gitattributes` will be generated for you. On the [Imageomics HF](https://github.com/organizations/Imageomics) select `New` and pick which type of repository you need. 
+For each repository, include the following files in the root directory as soon as possible; a license can (and should) be instantiated when you create a new repository, and the standard `.gitattributes` will be generated for you. On the [Imageomics HF](https://huggingface.co/imageomics) select `New` and pick which type of repository you need. 
 
 * [README.md](#readme)
 
