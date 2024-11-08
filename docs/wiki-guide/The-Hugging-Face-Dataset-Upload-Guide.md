@@ -3,11 +3,14 @@
 ## Creating a New Dataset Repository
 When creating a new dataset repository, you can make the dataset **Public** (accessible to anyone on the internet) or **Private** (accessible only to members of the organization).
 
-<img src="https://github.com/Imageomics/internal-guidelines/assets/30881036/ed0feb0e-529b-4021-b44f-41ac96680bc3" width="800">
+![New dataset repository interface](images/HF-dataset-upload/346972860-ed0feb0e-529b-4021-b44f-41ac96680bc3.png){ loading=lazy, width=800 }
+/// caption
+///
 
 ## Uploading a Dataset with the Web Interface.
 In the Files and versions tab of the Dataset card, you can choose to add file in the hugging web interface.
-![image](https://github.com/ABC-climate/internal-guidelines/assets/30881036/9e6cef9b-18ef-4d4a-84c5-1a3f75ac9336)
+
+![Dataset repository Add file button](images/HF-dataset-upload/346190430-9e6cef9b-18ef-4d4a-84c5-1a3f75ac9336.png){ loading=lazy }
 
 ## Uploading a Dataset with HfApi
 ``` py linenums="1"
