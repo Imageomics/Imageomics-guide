@@ -82,9 +82,12 @@ As with journal publications, we expect to be cited when someone uses our code. 
 You can check your CITATION.cff file prior to upload using this [validator tool](https://www.yamllint.com/).
 
 **Note:** 
+
 - Subcategories of `preferred-citation` do not get bullet points, but the first subcategory of `references` must be bulleted (as below).
+
 - This is generally intended as a reference for your code. Preferred citation can be used for the paper, though it is better to ask in the `README` that someone cites _both_ and provide the paper reference there (only the `preferred-citation` will show up to be copied from the citation box if it is included).
-```yaml 
+
+```yaml { py linenums="1" }
 abstract: "<describe your code/package>"
 authors:
 - family-names:
@@ -201,7 +204,9 @@ After the initial creation of a repo on the GitHub website, there are two primar
 
 Navigate to the main ("<> Code") page of your repository and click the green button at the top right corner (as shown below) and copy the link (for command line) or select "Open with GitHub Desktop". For command line interaction, navigate within the `bash` shell to the directory where you would like to place your local copy of the repo (`cd <folder_name>`), then clone the repo into that folder (`git clone <repo_url>`), this will generate a local copy of the repo on your computer.
 
-![Screenshot 2023-05-16 at 5 22 25 PM](https://github.com/Imageomics/internal-guidelines/assets/38985481/43857a4d-789b-4073-b872-da29c4474916)
+![Clone repository interface](images/GH-repo-guide/238778583-43857a4d-789b-4073-b872-da29c4474916.png){ loading=lazy }
+/// caption
+///
 
 If you would like a specific branch, use `git clone -b <branch_name> <repo_url>`.
 
