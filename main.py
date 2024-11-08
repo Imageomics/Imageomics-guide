@@ -25,4 +25,6 @@ def define_env(env):
         # Escape triple backticks in content to prevent breaking the code block
         content = content.replace("```", "```\u200b")
 
-        return f"```{language}\n{content}\n```"
+        line_nums_string = "{ py linenums='1' }"
+
+        return f"```{language} {line_nums_string}\n{content}\n```"
