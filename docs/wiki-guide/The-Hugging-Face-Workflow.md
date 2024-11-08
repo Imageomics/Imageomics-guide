@@ -33,15 +33,21 @@ Firstly, when making changes it is still best not to work on the main branch, bu
 
 2. Navigate to the “Community” tab, and click “New pull request”
 
-| Community Tab | New PR Pop-up |
-:---:|:---:
-![Screenshot Community Tab](https://github.com/Imageomics/internal-guidelines/assets/38985481/c3493cff-7dbc-4158-802b-d3054ba1bfbe)|![New Pull Request](https://github.com/Imageomics/internal-guidelines/assets/38985481/f7cde0bf-2559-4b81-af58-f8d175cf25c5) |
+<!-- would like to set these side-by-side in a table to take up less vertical space -->
+![New pull request button under Community tab](images/HF-workflow/290567257-c3493cff-7dbc-4158-802b-d3054ba1bfbe.png){ loading=lazy, align=left }
+/// caption
+///
 
+![New Pull Request interface](images/HF-workflow/290565108-f7cde0bf-2559-4b81-af58-f8d175cf25c5.png){ loading=lazy, align=right }
+/// caption
+///
 
 Note that their instructions for “from the website” are out of date. You actually select “Add file”, choose upload or create file, and you can upload any number of files (that are reasonable to include in a single commit) in a single commit, just select “Open as a pull request to the `main` branch”, as described in #1.
 Now, to continue with the local branch method (if you intend to make multiple commits), give your PR an informative title and select “Create PR branch”. This will take you to a new page with instructions on how to connect locally to the PR and send your updates back to the repo. If the repo is private, you will need to ensure your credentials are set before cloning/fetching.
 
-![Screenshot-Get Started with your PR page](https://github.com/Imageomics/internal-guidelines/assets/38985481/2f2adf5c-0654-410a-8d93-d1172066ad8e)
+![Interface for Get started with your pull request](images/HF-workflow/290563763-2f2adf5c-0654-410a-8d93-d1172066ad8e.png){ loading=lazy }
+/// caption
+///
 
 Once you have made all of your changes, it is time to publish your branch. This is similar to initializing the PR on GitHub, in that you should:
 
@@ -51,5 +57,5 @@ Once you have made all of your changes, it is time to publish your branch. This 
 From here, reviewers can add their comments and suggestions on your PR (Note: to see the files in the PR, click on the last commit, then select “Browse files”)
 
 Now, if there are changes to be made based on reviewer suggestions, files can be edited as usual (pushing to the PR branch). Alternatively, if you are working from the web interface and need to add files (or edit files of a supported type), then click on “from: refs/pr/#” just below the title of your PR to view the copy of the repo on the PR branch (like looking at a different branch on GitHub). Files can be added or edited here too.
-￼
-![PR Header](https://github.com/Imageomics/internal-guidelines/assets/38985481/ceccdbea-cccf-482a-ab79-cfb04c5c42e8)
+
+![Pull Request header](images/HF-workflow/290563994-ceccdbea-cccf-482a-ab79-cfb04c5c42e8.png){ loading=lazy }
