@@ -5,7 +5,10 @@ Just joining or starting a new project and need a repository to store your work?
 
 ## Setting up a New Organization Repository
 
-**Note:** We recommend doing development in a public repo, or at least publishing the repo in which development was done at the time of publication/release. However, if you're looking to have a public-facing repo _and_ a private repo for development, please be sure to read our guidance on the [Two Repo Problem](Two-Repo-Problem.md) before proceeding.
+!!! note "Note"
+    We recommend doing development in a public repo, or at least publishing the repo in which development was done at the time of publication/release. However, if you're looking to have a public-facing repo _and_ a private repo for development, please be sure to read our guidance on the [Two Repo Problem](Two-Repo-Problem.md) before proceeding.
+
+<!-- **Note:** We recommend doing development in a public repo, or at least publishing the repo in which development was done at the time of publication/release. However, if you're looking to have a public-facing repo _and_ a private repo for development, please be sure to read our guidance on the [Two Repo Problem](Two-Repo-Problem.md) before proceeding. -->
 
 ## Standard Files
 For each repository, include the following files in the root directory as soon as possible; they can (and should) be instantiated when you create a new repository. 
