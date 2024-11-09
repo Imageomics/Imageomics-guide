@@ -5,9 +5,9 @@ Thank you for contributing!
 This document outlines guidelines for collaboratively contributing to a repository (repo). 
 This workflow is ideal for when:
 
-* You are a member of the Imageomics Institute and have write access to the repository you're contributing to.
-* You have (or expect to have) multiple people contributing to the repository and want to keep contributions organized and all team members up-to-date on progress.
-* You are working on a repository individually and want to keep contributions organized and log progress for your future self or others interested in seeing it.
+- You are a member of the Imageomics Institute and have write access to the repository you're contributing to.
+- You have (or expect to have) multiple people contributing to the repository and want to keep contributions organized and all team members up-to-date on progress.
+- You are working on a repository individually and want to keep contributions organized and log progress for your future self or others interested in seeing it.
 
 It follows a branch and pull request (PR) based workflow, which provides a controlled way to bring internal contributions together for those with write access to the repository (those without write access will need to fork the repository first before making contributions).
 

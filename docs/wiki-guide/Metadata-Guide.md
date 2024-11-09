@@ -28,7 +28,6 @@ To improve both the _**Findability**_ and _**Reusability**_ of your data (ensuri
 - [ ] **Related Publication:** Any papers that are based on this dataset. 
 - [ ] **Related Datasets:** Provide links to any related datasets (may include previous/background research).
 - [ ] **Other References:** Links to any related/background articles.
-
 - [ ] **Keywords/Tags:** Terms one might search to find this dataset, eg., type(s) of animals, type(s) of images, imbalanced (if not even distribution of species/subspecies/etc).
     - It helps to keep a running list.
 - [ ] **Notes:** Any other image/data information.
@@ -37,7 +36,7 @@ To improve both the _**Findability**_ and _**Reusability**_ of your data (ensuri
 
     Datasets **_cannot_** be redistributed without this information. 
 
-!!! tip "Pro-tip" 
+!!! tip "Pro tip" 
 
     Use the eye icon at the top of this page to access the source and copy the markdown for the checklist above into an issue on your GitHub [Repo](GitHub-Repo-Guide.md) or [Project](Guide-to-GitHub-Projects.md) so you can check the boxes as you add each.
 

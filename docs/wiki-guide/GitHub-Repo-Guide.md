@@ -14,11 +14,8 @@ Just joining or starting a new project and need a repository to store your work?
 For each repository, include the following files in the root directory as soon as possible; they can (and should) be instantiated when you create a new repository. 
 
 * [README.md](#readme)
-
 * [LICENSE.md](#license)
-
 * [.gitignore](#gitignore)
-
 * [software requirements](#software-requirements-file)
 
 More [recommendations](#recommended-files) are discussed below.
@@ -28,15 +25,15 @@ The README.md file is what everyone will notice first when they open your reposi
 
 Once you've created your repo, populate your README (you can do this by clicking on the file "README.md", then clicking the pencil at the top left to edit). Editing your README in the browser allows you to preview the formatting of the file before committing changes. The content of your README may vary based on the purpose or goal of your repo, but there are key elements that should always be included.
 
-* Summary of the repo:
-    * This could be a simple explanation of what the package or tool developed in your repo is intended to do,
-    * Or an abstract describing your research.
-* Detailed documentation on how to access and use the project software (User Guide).  
-    * Including installation of [dependencies](Virtual-Environments.md).
-    * If your tool requires input be in a particular format, this would be included in the README. It would also help to include an example file demonstrating the format. 
-* Information about the sources you've used (links and what they were used for), such as:
-    * Tools from other repos
-    * Data for analysis
+- Summary of the repo:
+    - This could be a simple explanation of what the package or tool developed in your repo is intended to do,
+    - Or an abstract describing your research.
+- Detailed documentation on how to access and use the project software (User Guide).  
+    - Including installation of [dependencies](Virtual-Environments.md).
+    - If your tool requires input be in a particular format, this would be included in the README. It would also help to include an example file demonstrating the format. 
+- Information about the sources you've used (links and what they were used for), such as:
+    - Tools from other repos
+    - Data for analysis
 
 For more inspiration on making an awesome README, check out [this list](https://github.com/matiassingers/awesome-readme).
 
@@ -85,11 +82,9 @@ As with journal publications, we expect to be cited when someone uses our code. 
 
 You can check your CITATION.cff file prior to upload using this [validator tool](https://www.yamllint.com/).
 
-**Note:** 
-
-- Subcategories of `preferred-citation` do not get bullet points, but the first subcategory of `references` must be bulleted (as below).
-
-- This is generally intended as a reference for your code. Preferred citation can be used for the paper, though it is better to ask in the `README` that someone cites _both_ and provide the paper reference there (only the `preferred-citation` will show up to be copied from the citation box if it is included).
+!!! note "Note"
+    - Subcategories of `preferred-citation` do not get bullet points, but the first subcategory of `references` must be bulleted (as below).
+    - This is generally intended as a reference for your code. Preferred citation can be used for the paper, though it is better to ask in the `README` that someone cites _both_ and provide the paper reference there (only the `preferred-citation` will show up to be copied from the citation box if it is included).
 
 ```yaml { py linenums="1" }
 abstract: "<describe your code/package>"
@@ -183,14 +178,10 @@ Project_Directory
     - data
 ```
     
-**Note:** Depending on the size of your data, `data` may only be local on your machine in which case it is good to include instructions to access the data where appropriate.
-
-
+!!! note "Note"
+    Depending on the size of your data, `data` may only be local on your machine in which case it is good to include instructions to access the data where appropriate.
 
 ***
-
-
-
 # Working on GitHub
 After the initial creation of a repo on the GitHub website, there are two primary modes of interacting with it. 
 

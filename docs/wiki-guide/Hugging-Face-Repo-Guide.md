@@ -8,13 +8,10 @@ Need a repository to store your data or model? You've come to the right place! B
 ### Standard Files
 For each repository, include the following files in the root directory as soon as possible; a license can (and should) be instantiated when you create a new repository, and the standard `.gitattributes` will be generated for you. On the [Imageomics HF](https://huggingface.co/imageomics) select `New` and pick which type of repository you need. 
 
-* [README.md](#readme)
-
-* [LICENSE.md](#license)
-
-* [.gitignore](#gitignore)
-
-* [.gitattributes](#gitattributes)
+- [README.md](#readme)
+- [LICENSE.md](#license)
+- [.gitignore](#gitignore)
+- [.gitattributes](#gitattributes)
 
 #### README
 The README.md file is generally referred to as either a Dataset or Model Card and is what everyone will notice first when they open your repository on Hugging Face. Choose the appropriate Imageomics-specific HF template ([model](HF_ModelCard_Template_mkdocs.md) or [dataset](HF_DatasetCard_Template_mkdocs.md)) to get started. Be sure to include a brief description and as much information as possible at the beginning. You can update this file as you go, so don't remove the recommended sections prior to completion. The templates include descriptions of many fields, Imageomics grant information, citation formatting, and some notes on HF-flavored markdown to get you started. 
@@ -25,7 +22,8 @@ Once you've created your repo, populate your README (you can do this online by s
 ##### 1. Select a license.
 Alongside the appropriate stakeholders, select a license that is [Open Source Initiative](https://opensource.org/licenses) (OSI) compliant.
 
-*Remember, a public repository on Hugging Face with no license can be viewed and accessed by others, but unless the author associates a license, it is unclear what others are allowed to do with it legally. Adding an OSI license can help others feel comfortable building off your work!*
+!!! note "Remember"
+    A public repository on Hugging Face with no license can be viewed and accessed by others, but unless the author associates a license, it is unclear what others are allowed to do with it legally. Adding an OSI license can help others feel comfortable building off your work!
 
 For more information on how to choose a license and why it matters, see [Choose A License](https://choosealicense.com) and [A Quick Guide to Software Licensing for the Scientist-Programmer](https://doi.org/10.1371/journal.pcbi.1002598) by A. Morin, et al.
 
@@ -48,7 +46,6 @@ The `.gitattributes` file determines file patterns to be tracked by [`git LFS`](
 git lfs track "my-big-list.csv"
 ```
 Then add and commit the `.gitattributes` file as described below.
-
 
 ## Hugging Face Pull Requests With Local Edits
 Hugging Face also has a pull request (PR) feature, though the process is a bit different from GitHub. 

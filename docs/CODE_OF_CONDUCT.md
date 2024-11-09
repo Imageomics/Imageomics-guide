@@ -5,17 +5,11 @@ As members of the Imageomics community, we agree to maintain an environment wher
 To this end, we agree as individuals and as a group to:
 
 - **Listen to understand.** When one person talks, others listen.
-
 - **Speak to be understood.** We use lay terms and are patient with people who are not experts in our specific field. We are all learning, no matter who we are.
-
 - Embrace **“Yes and…”** Focus on possibilities instead of obstacles. Be inclusive of other people’s ideas. Honor divergence. 
-
 - **Take space / make space.** Those who tend to talk a lot are intentional about letting others talk first, while those who tend to hold back are intentional about contributing.
-
 - **Beware of blind spots.** We do not know what we do not know. We are vigilant for differences among our experiences and positions. 
-
 - **Respect time.** When a session is over, we need to move on. There is designated time for in-depth follow up and continuing conversations. 
-
 - **Care** for each other. We bring our full selves to the community, and we look out for each other wholeheartedly. 
 
 We abide by these principles in all Imageomics spaces, including but not limited to digital and in-person meetings, formal and informal gatherings, online discussion forums and chat spaces, and field and lab work. 
@@ -25,9 +19,7 @@ Discrimination, bullying or harassment–sexual or otherwise–is misconduct. Th
 If you believe you have experienced or witnessed misconduct in an Imageomics setting, please take these steps:
 
 1. Document the incident;
-
 2. Tell someone you trust;
-
 3. Report the incident to Diane Boghrat.
 
 Privacy will be protected to the greatest extent possible.

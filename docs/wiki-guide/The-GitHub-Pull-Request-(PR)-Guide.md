@@ -2,16 +2,14 @@
 
 This guide is divided into three essential sections to help you effectively manage pull requests in a collaborative project:
 
-[Creating a Pull Request](#1-creating-a-pull-request): This section explains how to properly prepare and submit a pull request (PR) to ensure that your changes are well-documented, easy to review, and aligned with project goals.
-
-[Reviewing a Pull Request](#2-reviewing-a-pull-request): Learn the best practices for providing constructive feedback, identifying potential issues, and ensuring code quality during the review process.
-
-[Responding to a Pull Request Review](#3-responding-to-a-pull-request-review): Understand how to address reviewer feedback, make necessary changes, and ensure your pull request meets the required standards for approval.
+- [Creating a Pull Request](#1-creating-a-pull-request): This section explains how to properly prepare and submit a pull request (PR) to ensure that your changes are well-documented, easy to review, and aligned with project goals.
+- [Reviewing a Pull Request](#2-reviewing-a-pull-request): Learn the best practices for providing constructive feedback, identifying potential issues, and ensuring code quality during the review process.
+- [Responding to a Pull Request Review](#3-responding-to-a-pull-request-review): Understand how to address reviewer feedback, make necessary changes, and ensure your pull request meets the required standards for approval.
 
 By following these steps, you will contribute to a smooth and efficient workflow, ensuring collaboration and quality in your project. 
 
 
-## **1. Creating a Pull Request**
+## **1. Create a Pull Request**
 Before creating a pull request, first, please follow [2.1. The GitHub Workflow](The-GitHub-Workflow.md) to create and push your Branch. 
 
 ### 1.1 Navigate to the Repository's Main Page
@@ -20,23 +18,22 @@ On GitHub, go to the main page of the repository where you’ve pushed your bran
 ### 1.2 Select Your Branch
 From the "Branch" menu, choose the branch that contains your changes (the one you just pushed).
 
-### 1.3 Click 'Compare & pull request':
+### 1.3 Click 'Compare & pull request'
 You’ll see a button labeled Compare & pull request. Click this to begin the process of creating a pull request for your changes.
 
 ![GitHub's Compare & pull request button](images/GH-PR-guide/365234535-659b312e-d95d-4bee-a958-4ce23fc4255d.png){ loading=lazy, width="800" }
 /// caption
 ///
 
-### 1.4 Add Title and Description:
+### 1.4 Add Title and Description
 In the pull request form, type a descriptive title for your PR. Provide a detailed description of the changes you've made, why they are important, and any other relevant information.
 
 ![GitHub's pull request title and description interface](images/GH-PR-guide/365234601-90a0bfcf-807d-4983-a643-0678ace542d2.png){ loading=lazy, width="800" }
 
+### 1.5 Choose Review Type
 
-### 1.5 Choose Review Type:
-
-* If your pull request is ready for review, click Create Pull Request.
-* If you want to create a draft version of the pull request for further work before it's ready for others to review, click the drop-down and select Create Draft Pull Request, then click Draft Pull Request.
+- If your pull request is ready for review, click Create Pull Request.
+- If you want to create a draft version of the pull request for further work before it's ready for others to review, click the drop-down and select Create Draft Pull Request, then click Draft Pull Request.
 
 ![GitHub's Create pull request button dropdown options](images/GH-PR-guide/365234701-72dd00f2-936e-44df-af79-ab7522a51def.png){ loading=lazy, width="350" }
 /// caption
@@ -44,7 +41,7 @@ In the pull request form, type a descriptive title for your PR. Provide a detail
 
 ## **2. Reviewing a Pull Request**
 
-### 2.1 Navigate to the **Pull requests** tab:
+### 2.1 Navigate to the **Pull requests** tab
 
 ![GitHub's Pull Requests tab](images/GH-PR-guide/369927182-fe1bc8e0-6a9a-48cf-a3b3-e9dc11f9fe13.png){ loading=lazy, width="800" }
 /// caption
@@ -103,7 +100,8 @@ After you finished reviewing a file, you can mark it as viewed.
 
 ### 2.8 Start or Add to a Review
 When you're done, click Start a review. If you have already started a review, please click Add review comment.
-> Notice that all line comments are pending and only visible to you. You can edit the comments when needed. If you'd like to abandon your review, please go to in **Review changes** and click **Abandon review**
+!!! note "Notice"
+    All line comments are pending and only visible to you. You can edit the comments when needed. If you'd like to abandon your review, please go to in **Review changes** and click **Abandon review**
 
 ### 2.9 Review and Summarize Proposed Changes
 
@@ -119,11 +117,11 @@ Click Review changes, and then type comments to summarize your proposed changes.
 /// caption
 ///
 
-> * Select Comment: Provide general feedback on the changes without explicitly approving or rejecting them.
-> * Select Approve: Indicate that you’ve reviewed the changes and approve them for merging. A common comment for simple approvals is "LGTM" (Looks Good to Me).
-> * Select Request changes: Provide feedback indicating that revisions are needed before the changes can be approved.
+- Select Comment: Provide general feedback on the changes without explicitly approving or rejecting them.
+- Select Approve: Indicate that you’ve reviewed the changes and approve them for merging. A common comment for simple approvals is "LGTM" (Looks Good to Me).
+- Select Request changes: Provide feedback indicating that revisions are needed before the changes can be approved.
 
-### 2.11 Click Submit review.
+### 2.11 Click Submit review
 Current review round is done; this publishes your comments and suggestions. Then the PR can either be merged or updated (depending on approval or comments). We generally expect that whoever submits the PR will merge once all feedback has been incorporated or otherwise addressed.
 
 ## **3. Responding to a Pull Request Review**

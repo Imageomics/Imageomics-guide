@@ -45,8 +45,8 @@ That is, it seeks to preserve the "most important" variables or features of the 
 
 Dimensionality reduction techniques can be subdivided into two main categories:
 
-* [Feature Extraction](#feature-extraction)
-* [Feature Selection](#feature-selection)
+- [Feature Extraction](#feature-extraction)
+- [Feature Selection](#feature-selection)
 
 #### Docker
 
