@@ -1,0 +1,1859 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A guide to collaborative work for Imageomics, including GitHub and Hugging Face workflows.">
+      
+      
+        <meta name="author" content="Imageomics Institute">
+      
+      
+        <link rel="canonical" href="https://Imageomics.github.io/Imageomics-guide/wiki-guide/The-GitHub-Pull-Request-%28PR%29-Guide/">
+      
+      
+        <link rel="prev" href="../The-GitHub-Workflow/">
+      
+      
+        <link rel="next" href="../Guide-to-GitHub-Projects/">
+      
+      
+      <link rel="icon" href="../../logos/Imageomics_logo_butterfly.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
+    
+    
+      
+        <title>Pull Request Guide - Imageomics Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#github-pull-request-pr-guide-overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Imageomics Guide" class="md-header__button md-logo" aria-label="Imageomics Guide" data-md-component="logo">
+      
+  <img src="../../logos/Imageomics_logo_butterfly.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Imageomics Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Pull Request Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Imageomics/Imageomics-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../GitHub-Repo-Guide/" class="md-tabs__link">
+          
+  
+  GitHub Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Hugging-Face-Repo-Guide/" class="md-tabs__link">
+          
+  
+  Hugging Face Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Metadata-Guide/" class="md-tabs__link">
+        
+  
+    
+  
+  Metadata Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../HF_DatasetCard_Template_mkdocs/" class="md-tabs__link">
+          
+  
+  Templates
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Command-Line-Cheat-Sheet/" class="md-tabs__link">
+        
+  
+    
+  
+  Command Line Cheat Sheet
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../CODE_OF_CONDUCT/" class="md-tabs__link">
+        
+  
+    
+  
+  Code of Conduct
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Glossary-for-Imageomics/" class="md-tabs__link">
+          
+  
+  Other Resources
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Imageomics Guide" class="md-nav__button md-logo" aria-label="Imageomics Guide" data-md-component="logo">
+      
+  <img src="../../logos/Imageomics_logo_butterfly.png" alt="logo">
+
+    </a>
+    Imageomics Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Imageomics/Imageomics-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    GitHub Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            GitHub Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GitHub-Repo-Guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Repo Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The-GitHub-Workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Pull Request Guide
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Pull Request Guide
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="📖 On This Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      📖 On This Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-create-a-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create a Pull Request
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Create a Pull Request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-navigate-to-the-repositorys-main-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Navigate to the Repository's Main Page
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-select-your-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Select Your Branch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-click-compare-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Click 'Compare &amp; pull request'
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-add-title-and-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 Add Title and Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-choose-review-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 Choose Review Type
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-review-a-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Review a Pull Request
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Review a Pull Request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-navigate-to-the-pull-requests-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Navigate to the Pull requests tab
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-select-a-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Select a Pull Request
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-review-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Review Changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-add-comments-or-suggestions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 Add Comments or Suggestions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-suggest-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 Suggest Changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-comment-on-a-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 Comment on a File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-mark-files-as-viewed" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7 Mark Files as Viewed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-start-or-add-to-a-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8 Start or Add to a Review
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-review-and-summarize-proposed-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.9 Review and Summarize Proposed Changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#210-select-review-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.10 Select Review Type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#211-click-submit-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.11 Click Submit review
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-respond-to-a-pull-request-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Respond to a Pull Request Review
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Respond to a Pull Request Review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-navigate-to-the-repositorys-main-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Navigate to the Repository's Main Page
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-incorporate-feedback-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Incorporate Feedback Changes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Incorporate Feedback Changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321-apply-a-change-in-its-own-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.1 Apply a change in its own commit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322-add-multiple-suggestions-to-a-batch-of-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.2 Add multiple suggestions to a batch of changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-add-commit-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Add Commit Message
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-click-commit-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Click Commit changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-re-requesting-a-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Re-requesting a Review
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-out-of-scope-suggestion" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 Out-of-scope Suggestion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Guide-to-GitHub-Projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projects Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../When-to-think-about-branch-protections/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Branch Protections
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Two-Repo-Problem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Two Repo Problem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hugging Face Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Hugging Face Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hugging-Face-Repo-Guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Repo Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The-Hugging-Face-Workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The-Hugging-Face-Dataset-Upload-Guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dataset Upload Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Metadata-Guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metadata Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Templates
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Templates
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HF_DatasetCard_Template_mkdocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dataset Card Template
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HF_ModelCard_Template_mkdocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Model Card Template
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Command-Line-Cheat-Sheet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Command Line Cheat Sheet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CODE_OF_CONDUCT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code of Conduct
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Other Resources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Other Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Glossary-for-Imageomics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary for Imageomics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Handling-API-Keys/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Handling API Keys
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Helpful-Tools-for-your-Workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Helpful Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Virtual-Environments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Virtual Environments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="📖 On This Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      📖 On This Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-create-a-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create a Pull Request
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Create a Pull Request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-navigate-to-the-repositorys-main-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Navigate to the Repository's Main Page
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-select-your-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Select Your Branch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-click-compare-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Click 'Compare &amp; pull request'
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-add-title-and-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 Add Title and Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-choose-review-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 Choose Review Type
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-review-a-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Review a Pull Request
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Review a Pull Request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-navigate-to-the-pull-requests-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Navigate to the Pull requests tab
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-select-a-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Select a Pull Request
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-review-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Review Changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-add-comments-or-suggestions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 Add Comments or Suggestions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-suggest-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 Suggest Changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-comment-on-a-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 Comment on a File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-mark-files-as-viewed" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7 Mark Files as Viewed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-start-or-add-to-a-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8 Start or Add to a Review
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-review-and-summarize-proposed-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.9 Review and Summarize Proposed Changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#210-select-review-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.10 Select Review Type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#211-click-submit-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.11 Click Submit review
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-respond-to-a-pull-request-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Respond to a Pull Request Review
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Respond to a Pull Request Review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-navigate-to-the-repositorys-main-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Navigate to the Repository's Main Page
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-incorporate-feedback-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Incorporate Feedback Changes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Incorporate Feedback Changes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321-apply-a-change-in-its-own-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.1 Apply a change in its own commit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322-add-multiple-suggestions-to-a-batch-of-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.2 Add multiple suggestions to a batch of changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-add-commit-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Add Commit Message
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-click-commit-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Click Commit changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-re-requesting-a-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Re-requesting a Review
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-out-of-scope-suggestion" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 Out-of-scope Suggestion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+    
+      
+    
+    <a href="https://github.com/Imageomics/Imageomics-guide/raw/main/docs/wiki-guide/The-GitHub-Pull-Request-(PR)-Guide.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
+    </a>
+  
+
+
+<h1 id="github-pull-request-pr-guide-overview"><strong>GitHub Pull Request (PR) Guide Overview</strong><a class="headerlink" href="#github-pull-request-pr-guide-overview" title="Permanent link">&para;</a></h1>
+<p>This guide is divided into three essential sections to help you effectively manage pull requests in a collaborative project:</p>
+<ul>
+<li><a href="#1-create-a-pull-request">Create a Pull Request</a>: This section explains how to properly prepare and submit a pull request (PR) to ensure that your changes are well-documented, easy to review, and aligned with project goals.</li>
+<li><a href="#2-review-a-pull-request">Review a Pull Request</a>: Learn the best practices for providing constructive feedback, identifying potential issues, and ensuring code quality during the review process.</li>
+<li><a href="#3-respond-to-a-pull-request-review">Respond to a Pull Request Review</a>: Understand how to address reviewer feedback, make necessary changes, and ensure your pull request meets the required standards for approval.</li>
+</ul>
+<p>By following these steps, you will contribute to a smooth and efficient workflow, ensuring collaboration and quality in your project. </p>
+<h2 id="1-create-a-pull-request"><strong>1. Create a Pull Request</strong><a class="headerlink" href="#1-create-a-pull-request" title="Permanent link">&para;</a></h2>
+<p>Before creating a pull request, first, please follow <a href="../The-GitHub-Workflow/">2.1. The GitHub Workflow</a> to create and push your Branch. </p>
+<h3 id="11-navigate-to-the-repositorys-main-page">1.1 Navigate to the Repository's Main Page<a class="headerlink" href="#11-navigate-to-the-repositorys-main-page" title="Permanent link">&para;</a></h3>
+<p>On GitHub, go to the main page of the repository where you’ve pushed your branch.</p>
+<h3 id="12-select-your-branch">1.2 Select Your Branch<a class="headerlink" href="#12-select-your-branch" title="Permanent link">&para;</a></h3>
+<p>From the "Branch" menu, choose the branch that contains your changes (the one you just pushed).</p>
+<h3 id="13-click-compare-pull-request">1.3 Click 'Compare &amp; pull request'<a class="headerlink" href="#13-click-compare-pull-request" title="Permanent link">&para;</a></h3>
+<p>You’ll see a button labeled Compare &amp; pull request. Click this to begin the process of creating a pull request for your changes.</p>
+<figure>
+<p><a class="glightbox" href="../images/GH-PR-guide/365234535-659b312e-d95d-4bee-a958-4ce23fc4255d.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="GitHub's Compare &amp; pull request button" loading="lazy," src="../images/GH-PR-guide/365234535-659b312e-d95d-4bee-a958-4ce23fc4255d.png" width="800" /></a></p>
+<figcaption></figcaption>
+</figure>
+<h3 id="14-add-title-and-description">1.4 Add Title and Description<a class="headerlink" href="#14-add-title-and-description" title="Permanent link">&para;</a></h3>
+<p>In the pull request form, type a descriptive title for your PR. Provide a detailed description of the changes you've made, why they are important, and any other relevant information.</p>
+<p><a class="glightbox" href="../images/GH-PR-guide/365234601-90a0bfcf-807d-4983-a643-0678ace542d2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="GitHub's pull request title and description interface" loading="lazy," src="../images/GH-PR-guide/365234601-90a0bfcf-807d-4983-a643-0678ace542d2.png" width="800" /></a></p>
+<h3 id="15-choose-review-type">1.5 Choose Review Type<a class="headerlink" href="#15-choose-review-type" title="Permanent link">&para;</a></h3>
+<ul>
+<li>If your pull request is ready for review, click Create Pull Request.</li>
+<li>If you want to create a draft version of the pull request for further work before it's ready for others to review, click the drop-down and select Create Draft Pull Request, then click Draft Pull Request.</li>
+</ul>
+<figure>
+<p><a class="glightbox" href="../images/GH-PR-guide/365234701-72dd00f2-936e-44df-af79-ab7522a51def.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="GitHub's Create pull request button dropdown options" loading="lazy," src="../images/GH-PR-guide/365234701-72dd00f2-936e-44df-af79-ab7522a51def.png" width="350" /></a></p>
+<figcaption></figcaption>
+</figure>
+<h2 id="2-review-a-pull-request"><strong>2. Review a Pull Request</strong><a class="headerlink" href="#2-review-a-pull-request" title="Permanent link">&para;</a></h2>
+<h3 id="21-navigate-to-the-pull-requests-tab">2.1 Navigate to the <strong>Pull requests</strong> tab<a class="headerlink" href="#21-navigate-to-the-pull-requests-tab" title="Permanent link">&para;</a></h3>
+<figure>
+<p><a class="glightbox" href="../images/GH-PR-guide/369927182-fe1bc8e0-6a9a-48cf-a3b3-e9dc11f9fe13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="GitHub's Pull Requests tab" loading="lazy," src="../images/GH-PR-guide/369927182-fe1bc8e0-6a9a-48cf-a3b3-e9dc11f9fe13.png" width="800" /></a></p>
+<figcaption></figcaption>
+</figure>
+<h3 id="22-select-a-pull-request">2.2 Select a Pull Request<a class="headerlink" href="#22-select-a-pull-request" title="Permanent link">&para;</a></h3>
+<p>In the list of pull requests, click the pull request that you'd like to review. </p>
+<figure>
+<p><a class="glightbox" href="../images/GH-PR-guide/362360024-c03d12bf-78ce-4311-8a5e-badc9ca1ebef.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Example pull request selection list" loading="lazy," src="../images/GH-PR-guide/362360024-c03d12bf-78ce-4311-8a5e-badc9ca1ebef.png" width="800" /></a></p>
+<figcaption></figcaption>
+</figure>
+<h3 id="23-review-changes">2.3 Review Changes<a class="headerlink" href="#23-review-changes" title="Permanent link">&para;</a></h3>
+<p>In the pull request page, click <strong>Files changed</strong> so as to see the changes.</p>
+<figure>
+<p><a class="glightbox" href="../images/GH-PR-guide/362372502-0380ad63-3e22-473f-9eeb-336e43edb81f.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="The Files Changed buttin inside the pull request interface" loading="lazy," src="../images/GH-PR-guide/362372502-0380ad63-3e22-473f-9eeb-336e43edb81f.png" width="600" /></a></p>
+<figcaption></figcaption>
+</figure>
+<p>2.3.1 by clicking <a class="glightbox" href="../images/GH-PR-guide/362361806-198206f8-6d94-452f-b136-cebec0472e10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Gear icon" loading="lazy," src="../images/GH-PR-guide/362361806-198206f8-6d94-452f-b136-cebec0472e10.png" width="20" /></a>, you can choose the unified or split view. </p>
+<figure>
+<p><a class="glightbox" href="../images/GH-PR-guide/362373284-ba099090-8f60-444f-8ae6-c7ab13b7d78f.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Unified vs. split view for file diffs in a pull request" loading="lazy," src="../images/GH-PR-guide/362373284-ba099090-8f60-444f-8ae6-c7ab13b7d78f.png" width="600" /></a></p>
+<figcaption></figcaption>
+</figure>
+<h3 id="24-add-comments-or-suggestions">2.4 Add Comments or Suggestions<a class="headerlink" href="#24-add-comments-or-suggestions" title="Permanent link">&para;</a></h3>
+<p>When hovering over the lines of code, you can click the blue comment icon to add your review comments.</p>
+<figure>
+<p><a class="glightbox" href="../images/GH-PR-guide/362373606-77b1e2ea-08ab-4fdc-8ef3-22ba678da422.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="In-line comments button" loading="lazy," src="../images/GH-PR-guide/362373606-77b1e2ea-08ab-4fdc-8ef3-22ba678da422.png" width="800" /></a></p>
+<figcaption></figcaption>
+</figure>
+<p>2.4.1 If you'd like to add a comment on multiple lines, please click the line number of the first line you want to add comments and drag down to select a range of lines. </p>
+<h3 id="25-suggest-changes">2.5 Suggest Changes<a class="headerlink" href="#25-suggest-changes" title="Permanent link">&para;</a></h3>
+<p>If you'd like to suggest a specific change to the lines, click <a class="glightbox" href="../images/GH-PR-guide/362393831-18d9f1f8-9c93-430a-9667-2dbe01248ff0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Suggest changes button" loading="lazy," src="../images/GH-PR-guide/362393831-18d9f1f8-9c93-430a-9667-2dbe01248ff0.png" width="20" /></a>, and then edit the text within the suggestion block. </p>
+<figure>
+<p><a class="glightbox" href="../images/GH-PR-guide/362394354-7bce4591-4ff7-44c7-8377-d250eabd3c2c.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Suggested changes interface" loading="lazy," src="../images/GH-PR-guide/362394354-7bce4591-4ff7-44c7-8377-d250eabd3c2c.png" width="600" /></a></p>
+<figcaption></figcaption>
+</figure>
+<h3 id="26-comment-on-a-file">2.6 Comment on a File<a class="headerlink" href="#26-comment-on-a-file" title="Permanent link">&para;</a></h3>
+<p>If you'd like to comment on a file, click <a class="glightbox" href="../images/GH-PR-guide/362398001-12afff80-ceb8-4c5c-bff0-d95b9c78216a.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Comment button" loading="lazy," src="../images/GH-PR-guide/362398001-12afff80-ceb8-4c5c-bff0-d95b9c78216a.png" width="20" /></a> at the right top of the file, then add your comments.</p>
+<figure>
+<p><a class="glightbox" href="../images/GH-PR-guide/362398683-c497797a-da7c-48be-8db9-dcff89ce0fcf.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Comment button in context" loading="lazy," src="../images/GH-PR-guide/362398683-c497797a-da7c-48be-8db9-dcff89ce0fcf.png" width="500" /></a></p>
+<figcaption></figcaption>
+</figure>
+<h3 id="27-mark-files-as-viewed">2.7 Mark Files as Viewed<a class="headerlink" href="#27-mark-files-as-viewed" title="Permanent link">&para;</a></h3>
+<p>After you finished reviewing a file, you can mark it as viewed. </p>
+<figure>
+<p><a class="glightbox" href="../images/GH-PR-guide/362409533-b4297e2f-f74d-4945-a6ab-81da6726e985.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Viewed button" loading="lazy," src="../images/GH-PR-guide/362409533-b4297e2f-f74d-4945-a6ab-81da6726e985.png" width="600" /></a></p>
+<figcaption></figcaption>
+</figure>
+<h3 id="28-start-or-add-to-a-review">2.8 Start or Add to a Review<a class="headerlink" href="#28-start-or-add-to-a-review" title="Permanent link">&para;</a></h3>
+<p>When you're done, click Start a review. If you have already started a review, please click Add review comment.</p>
+<div class="admonition note">
+<p class="admonition-title">Notice</p>
+<p>All line comments are pending and only visible to you. You can edit the comments when needed. If you'd like to abandon your review, please go to in <strong>Review changes</strong> and click <strong>Abandon review</strong></p>
+</div>
+<h3 id="29-review-and-summarize-proposed-changes">2.9 Review and Summarize Proposed Changes<a class="headerlink" href="#29-review-and-summarize-proposed-changes" title="Permanent link">&para;</a></h3>
+<p>Click Review changes, and then type comments to summarize your proposed changes.</p>
+<figure>
+<p><a class="glightbox" href="../images/GH-PR-guide/364920995-8ce17b45-8a2a-428e-a254-eab0abebb318.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Review changes button" loading="lazy," src="../images/GH-PR-guide/364920995-8ce17b45-8a2a-428e-a254-eab0abebb318.png" width="500" /></a></p>
+<figcaption></figcaption>
+</figure>
+<h3 id="210-select-review-type">2.10 Select Review Type<a class="headerlink" href="#210-select-review-type" title="Permanent link">&para;</a></h3>
+<figure>
+<p><a class="glightbox" href="../images/GH-PR-guide/362403686-2afb0ae6-6cdc-45c6-b91e-b7b9cfc30189.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="{Review summary interface}" loading="lazy," src="../images/GH-PR-guide/362403686-2afb0ae6-6cdc-45c6-b91e-b7b9cfc30189.png" width="600" /></a></p>
+<figcaption></figcaption>
+</figure>
+<ul>
+<li>Select Comment: Provide general feedback on the changes without explicitly approving or rejecting them.</li>
+<li>Select Approve: Indicate that you’ve reviewed the changes and approve them for merging. A common comment for simple approvals is "LGTM" (Looks Good to Me).</li>
+<li>Select Request changes: Provide feedback indicating that revisions are needed before the changes can be approved.</li>
+</ul>
+<h3 id="211-click-submit-review">2.11 Click Submit review<a class="headerlink" href="#211-click-submit-review" title="Permanent link">&para;</a></h3>
+<p>Current review round is done; this publishes your comments and suggestions. Then the PR can either be merged or updated (depending on approval or comments). We generally expect that whoever submits the PR will merge once all feedback has been incorporated or otherwise addressed.</p>
+<h2 id="3-respond-to-a-pull-request-review"><strong>3. Respond to a Pull Request Review</strong><a class="headerlink" href="#3-respond-to-a-pull-request-review" title="Permanent link">&para;</a></h2>
+<h3 id="31-navigate-to-the-repositorys-main-page">3.1 Navigate to the Repository's Main Page<a class="headerlink" href="#31-navigate-to-the-repositorys-main-page" title="Permanent link">&para;</a></h3>
+<p>Navigate to your repository name, click <strong>Pull requests</strong></p>
+<figure>
+<p><a class="glightbox" href="../images/GH-PR-guide/369927182-fe1bc8e0-6a9a-48cf-a3b3-e9dc11f9fe13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Pull requests tab" loading="lazy," src="../images/GH-PR-guide/369927182-fe1bc8e0-6a9a-48cf-a3b3-e9dc11f9fe13.png" width="600" /></a></p>
+<figcaption></figcaption>
+</figure>
+<h3 id="32-incorporate-feedback-changes">3.2 Incorporate Feedback Changes<a class="headerlink" href="#32-incorporate-feedback-changes" title="Permanent link">&para;</a></h3>
+<p>After receiving feedback on your pull request, you can apply the changes in one of two ways: either by committing each change individually or by grouping several changes into a single commit. The method you choose depends on whether you prefer fine-grained control over the commit history or a more streamlined approach.</p>
+<h4 id="321-apply-a-change-in-its-own-commit">3.2.1 Apply a change in its own commit<a class="headerlink" href="#321-apply-a-change-in-its-own-commit" title="Permanent link">&para;</a></h4>
+<p>If you agree with at suggested change, qpply it by creating a separate commit for it. This approach helps keep your commit history clear and each change traceable.</p>
+<figure>
+<p><a class="glightbox" href="../images/GH-PR-guide/369920474-be5503d3-6cc2-4313-b49d-069a5a806ac4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Commit suggestions button" loading="lazy," src="../images/GH-PR-guide/369920474-be5503d3-6cc2-4313-b49d-069a5a806ac4.png" width="600" /></a></p>
+<figcaption></figcaption>
+</figure>
+<h4 id="322-add-multiple-suggestions-to-a-batch-of-changes">3.2.2 Add multiple suggestions to a batch of changes<a class="headerlink" href="#322-add-multiple-suggestions-to-a-batch-of-changes" title="Permanent link">&para;</a></h4>
+<p>If you plan to include multiple changes in one commit, you can add suggestions to a batch. Once you've collected all the desired suggestions, click "Commit suggestions" to apply them in one go.</p>
+<figure>
+<p><a class="glightbox" href="../images/GH-PR-guide/369920952-1b4e0db0-3451-448b-822f-dd1b14679ec6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Add suggested change to batch button" loading="lazy," src="../images/GH-PR-guide/369920952-1b4e0db0-3451-448b-822f-dd1b14679ec6.png" width="600" /></a></p>
+<figcaption></figcaption>
+</figure>
+<h3 id="33-add-commit-message">3.3 Add Commit Message<a class="headerlink" href="#33-add-commit-message" title="Permanent link">&para;</a></h3>
+<p>In the commit message field, enter a brief, descriptive message that clearly explains the changes made to the file(s).</p>
+<h3 id="34-click-commit-changes">3.4 Click Commit changes<a class="headerlink" href="#34-click-commit-changes" title="Permanent link">&para;</a></h3>
+<p>After entering your commit message, click the "Commit changes" button to finalize and save your modifications to the repository. This step ensures that your changes are recorded and can be reviewed or merged into the main codebase.</p>
+<h3 id="35-re-requesting-a-review">3.5 Re-requesting a Review<a class="headerlink" href="#35-re-requesting-a-review" title="Permanent link">&para;</a></h3>
+<p>If you’ve addressed all the requested changes and your pull request requires further review, re-request a review by notifying the reviewers. This action prompts them to evaluate your updated code and provide feedback or approval.</p>
+<h3 id="36-out-of-scope-suggestion">3.6 Out-of-scope Suggestion<a class="headerlink" href="#36-out-of-scope-suggestion" title="Permanent link">&para;</a></h3>
+<p>If the suggested change falls outside the scope of your pull request, create a new issue to address the feedback separately. Issues can be created directly from a PR comment.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../The-GitHub-Workflow/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Workflow">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Workflow
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Guide-to-GitHub-Projects/" class="md-footer__link md-footer__link--next" aria-label="Next: Projects Guide">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Projects Guide
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.copy", "navigation.footer", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
