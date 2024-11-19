@@ -12,9 +12,13 @@
         <meta name="author" content="Imageomics Institute">
       
       
-        <link rel="canonical" href="https://Imageomics.github.io/Imageomics-guide/wiki-guide/HF_ModelCard_Template_Imageomics/">
+        <link rel="canonical" href="https://Imageomics.github.io/Imageomics-guide/wiki-guide/Technical-Infrastructure/">
       
       
+        <link rel="prev" href="../Helpful-Tools-for-your-Workflow/">
+      
+      
+        <link rel="next" href="../Virtual-Environments/">
       
       
       <link rel="icon" href="../../logos/Imageomics_logo_butterfly.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>HF ModelCard Template Imageomics - Imageomics Guide</title>
+        <title>Technical Infrastructure - Imageomics Guide</title>
       
     
     
@@ -83,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#model-card-for-model-name" class="md-skip">
+        <a href="#compute-infrastructure-we-use" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              HF ModelCard Template Imageomics
+              Technical Infrastructure
             
           </span>
         </div>
@@ -353,10 +357,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../Glossary-for-Imageomics/" class="md-tabs__link">
           
   
@@ -862,23 +868,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -889,7 +900,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Other Resources
@@ -963,10 +974,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Technical-Infrastructure/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Technical Infrastructure
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -975,6 +1006,37 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="📖 On This Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      📖 On This Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1037,384 +1099,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#model-details" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Model Details
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Model Details">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#model-description" class="md-nav__link">
-    <span class="md-ellipsis">
-      Model Description
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#model-sources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Model Sources
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#uses" class="md-nav__link">
-    <span class="md-ellipsis">
-      Uses
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Uses">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#direct-use" class="md-nav__link">
-    <span class="md-ellipsis">
-      Direct Use
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#downstream-use" class="md-nav__link">
-    <span class="md-ellipsis">
-      Downstream Use
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#out-of-scope-use" class="md-nav__link">
-    <span class="md-ellipsis">
-      Out-of-Scope Use
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bias-risks-and-limitations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Bias, Risks, and Limitations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Bias, Risks, and Limitations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#recommendations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Recommendations
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-get-started-with-the-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      How to Get Started with the Model
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#training-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Training Details
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Training Details">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#training-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      Training Data
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#training-procedure" class="md-nav__link">
-    <span class="md-ellipsis">
-      Training Procedure
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Training Procedure">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#preprocessing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Preprocessing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#training-hyperparameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Training Hyperparameters
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#speeds-sizes-times" class="md-nav__link">
-    <span class="md-ellipsis">
-      Speeds, Sizes, Times
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#evaluation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Evaluation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Evaluation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#testing-data-factors-metrics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Testing Data, Factors &amp; Metrics
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Testing Data, Factors & Metrics">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#testing-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      Testing Data
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#factors" class="md-nav__link">
-    <span class="md-ellipsis">
-      Factors
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#metrics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Metrics
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Results
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Results">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#model-examination" class="md-nav__link">
-    <span class="md-ellipsis">
-      Model Examination
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#environmental-impact" class="md-nav__link">
-    <span class="md-ellipsis">
-      Environmental Impact
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#technical-specifications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Technical Specifications
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Technical Specifications">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#model-architecture-and-objective" class="md-nav__link">
-    <span class="md-ellipsis">
-      Model Architecture and Objective
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#compute-infrastructure" class="md-nav__link">
-    <span class="md-ellipsis">
-      Compute Infrastructure
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Compute Infrastructure">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#hardware" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hardware
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#software" class="md-nav__link">
-    <span class="md-ellipsis">
-      Software
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#citation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Citation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#acknowledgements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Acknowledgements
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#glossary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Glossary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#more-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      More Information
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#model-card-authors" class="md-nav__link">
-    <span class="md-ellipsis">
-      Model Card Authors
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#model-card-contact" class="md-nav__link">
-    <span class="md-ellipsis">
-      Model Card Contact
+      Overview
     </span>
   </a>
   
@@ -1439,228 +1126,46 @@
     
       
     
-    <a href="https://github.com/Imageomics/Imageomics-guide/raw/main/docs/wiki-guide/HF_ModelCard_Template_Imageomics.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/Imageomics/Imageomics-guide/raw/main/docs/wiki-guide/Technical-Infrastructure.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
     </a>
   
 
 
-<!--
-
-NOTE: Add more tags (your particular animal, type of model and use-case, etc.).
-
-As with your GitHub Project repo, it is important to choose an appropriate license for your model. Alongside the appropriate stakeholders (eg., your PI, co-authors), select a license that is [Open Source Initiative](https://opensource.org/licenses) (OSI) compliant. You may also wish to consider adding a [RAIL license](https://www.licenses.ai/ai-licenses), which addresses responsible use.
-For more information on how to choose a license and why it matters, see [Choose A License](https://choosealicense.com) and [A Quick Guide to Software Licensing for the Scientist-Programmer](https://doi.org/10.1371/journal.pcbi.1002598) by A. Morin, et al.
-See the [Imageomics policy for licensing](https://docs.google.com/document/d/1SlITG-r7kdJB6C8f4FCJ9Z7o7ccwldZoSRJKjhRAWVA/edit#heading=h.c1sxg0wsiqru) for more information.
-
-License tags (for the `yaml` above) can be found [here](https://hf.co/docs/hub/repositories-licenses).
-
-See more options for the above information by clicking "edit model card" on your repo.
-
-Fill in as much information as you can at each location that says "More information needed".
--->
-
-<!--
-Image with caption (jpg or png):
-|![Figure #](https://huggingface.co/imageomics/<model-repo>/resolve/main/<filepath>)|
-|:--|
-|**Figure #.** [Image of <>](https://huggingface.co/imageomics/<model-repo>/raw/main/<filepath>) <caption description>.|
--->
-
-<!--
-Notes on styling:
-
-To render LaTex in your README, wrap the code in `\\(` and `\\)`. Example: \\(\frac{1}{2}\\)
-
-Escape underscores ("_") with a "\". Example: image\_RGB
--->
-
-<h1 id="model-card-for-model-name">Model Card for [Model Name]<a class="headerlink" href="#model-card-for-model-name" title="Permanent link">&para;</a></h1>
-<!-- Provide a quick summary of what the model is/does. 
-
-This model card aims to be a base template for new models. It has been generated using [this raw template](https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/modelcard_template.md?plain=1), and further altered to suit Imageomics Institute needs. -->
-
-<h2 id="model-details">Model Details<a class="headerlink" href="#model-details" title="Permanent link">&para;</a></h2>
-<h3 id="model-description">Model Description<a class="headerlink" href="#model-description" title="Permanent link">&para;</a></h3>
-<!-- Provide a longer summary of what this model is. -->
-
+<h1 id="compute-infrastructure-we-use">Compute Infrastructure We Use<a class="headerlink" href="#compute-infrastructure-we-use" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>Overall <a href="https://docs.google.com/spreadsheets/d/1JSOi5pp2Y8Utj_npzKcYmvAxGncgmvP2gait5H0oYKk/edit?usp=sharing">Infrastructure Chart</a> with system specifications and notes.</p>
 <ul>
-<li><strong>Developed by:</strong> [More Information Needed]</li>
-<li><strong>Model type:</strong> [More Information Needed]</li>
-<li><strong>Language(s) (NLP):</strong> [More Information Needed]</li>
-<li><strong>License:</strong> [More Information Needed -- choose a license (see above notes)]</li>
-<li><strong>Fine-tuned from model:</strong> [More Information Needed]</li>
+<li><a href="https://www.osc.edu/">The Ohio Supercomputing Center (OSC)</a>: Large compute resource accessible through <code>ssh</code> or OnDemand (web) platform.<ul>
+<li><a href="https://www.globus.org/">Globus Endpoint</a> — this is the preferred transfer method for collaborations, especially for large data.</li>
+<li>OnDemand page: <a href="https://www.osc.edu/resources/online_portals/ondemand">info</a>, <a href="https://ondemand.osc.edu">login</a></li>
+<li>myOSC client portal: <a href="https://www.osc.edu/supercomputing/portals/client_portal">info</a>, <a href="https://my.osc.edu/acprod/odb_osc/r/osc/portal/login_desktop?clear=101">login</a></li>
 </ul>
-<h3 id="model-sources">Model Sources<a class="headerlink" href="#model-sources" title="Permanent link">&para;</a></h3>
-<!-- Provide the basic links for the model. -->
-
+</li>
+<li>Imageomics dedicated GPU server: <em>Internal</em> server, hosts our CVAT instance.<ul>
+<li><a href="https://github.com/Imageomics/internal-guidelines/wiki/Imageomics-GPU-Server">Usage and access guide (<em>internal</em> )</a></li>
+<li><a href="https://github.com/Imageomics/kabr-tools/wiki/CVAT-User-Guide">CVAT user guide</a></li>
+</ul>
+</li>
+<li>NSF ACCESS Accelerate Allocation: NCSA Delta GPU credits</li>
+<li><a href="https://aws.amazon.com/?nc2=h_lg">Amazon Web Services (AWS)</a>: Basic to extremely powerful, abundant (though finite) resources, high cost.<ul>
+<li>Used sparingly for urgent deadlines when other compute is not available (generally hasn't been available at those times either, though) or to host projects that cannot be hosted effectively through a Hugging Face Space.</li>
+<li><a href="https://github.com/Imageomics/internal-guidelines/wiki/AWS-@-Imagomics">AWS usage guidelines (<em>internal</em> )</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="other-compute-resources-weve-used-or-considered">Other Compute Resources We've Used or Considered<a class="headerlink" href="#other-compute-resources-weve-used-or-considered" title="Permanent link">&para;</a></h1>
 <ul>
-<li><strong>Repository:</strong> [Project Repo]</li>
-<li><strong>Paper:</strong> [More Information Needed--optional]</li>
-<li><strong>Demo:</strong> [More Information Needed--encouraged]</li>
+<li>OpenAI Researcher Access Program</li>
+<li>NAIRR Pilot Program</li>
 </ul>
-<h2 id="uses">Uses<a class="headerlink" href="#uses" title="Permanent link">&para;</a></h2>
-<!-- Address questions around how the model is intended to be used, including the foreseeable users of the model and those affected by the model. -->
-
-<h3 id="direct-use">Direct Use<a class="headerlink" href="#direct-use" title="Permanent link">&para;</a></h3>
-<!-- This section is for the model use without fine-tuning or plugging into a larger ecosystem/app. -->
-
-<p>[More Information Needed]</p>
-<h3 id="downstream-use">Downstream Use<a class="headerlink" href="#downstream-use" title="Permanent link">&para;</a></h3>
-<!-- [optional] This section is for the model use when fine-tuned for a task, or when plugged into a larger ecosystem/app -->
-
-<p>[More Information Needed]</p>
-<h3 id="out-of-scope-use">Out-of-Scope Use<a class="headerlink" href="#out-of-scope-use" title="Permanent link">&para;</a></h3>
-<!-- This section addresses misuse, malicious use, and uses that the model will not work well for. -->
-
-<p>[More Information Needed]</p>
-<h2 id="bias-risks-and-limitations">Bias, Risks, and Limitations<a class="headerlink" href="#bias-risks-and-limitations" title="Permanent link">&para;</a></h2>
-<!-- This section is meant to convey both technical and sociotechnical limitations. -->
-
-<p>[More Information Needed]</p>
-<h3 id="recommendations">Recommendations<a class="headerlink" href="#recommendations" title="Permanent link">&para;</a></h3>
-<!-- This section is meant to convey recommendations with respect to the bias, risk, and technical limitations. -->
-
-<p>Users (both direct and downstream) should be made aware of the risks, biases and limitations of the model. More information needed for further recommendations.</p>
-<h2 id="how-to-get-started-with-the-model">How to Get Started with the Model<a class="headerlink" href="#how-to-get-started-with-the-model" title="Permanent link">&para;</a></h2>
-<p>Use the code below to get started with the model.</p>
-<!-- Put code here or links to files to run. Set up code blocks like this:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&lt;code here&gt;
-</span></code></pre></div>
--->
-
-<p>[More Information Needed]</p>
-<h2 id="training-details">Training Details<a class="headerlink" href="#training-details" title="Permanent link">&para;</a></h2>
-<h3 id="training-data">Training Data<a class="headerlink" href="#training-data" title="Permanent link">&para;</a></h3>
-<!-- This should link to a Dataset Card where possible, otherwise link to the original source with more info. 
-Provide a basic overview of the training data and documentation related to data pre-processing or additional filtering. -->
-
-<p>[More Information Needed]</p>
-<h3 id="training-procedure">Training Procedure<a class="headerlink" href="#training-procedure" title="Permanent link">&para;</a></h3>
-<!-- This relates heavily to the Technical Specifications. Content here should link to that section when it is relevant to the training procedure. -->
-
-<h4 id="preprocessing">Preprocessing<a class="headerlink" href="#preprocessing" title="Permanent link">&para;</a></h4>
-<p>[More Information Needed--encouraged]</p>
-<h4 id="training-hyperparameters">Training Hyperparameters<a class="headerlink" href="#training-hyperparameters" title="Permanent link">&para;</a></h4>
-<ul>
-<li><strong>Training regime:</strong> [More Information Needed] <!--fp32, fp16 mixed precision, bf16 mixed precision, bf16 non-mixed precision, fp16 non-mixed precision, fp8 mixed precision --></li>
-</ul>
-<h4 id="speeds-sizes-times">Speeds, Sizes, Times<a class="headerlink" href="#speeds-sizes-times" title="Permanent link">&para;</a></h4>
-<!-- [optional] This section provides information about throughput, start/end time, checkpoint size if relevant, etc. -->
-
-<p>[More Information Needed]</p>
-<h2 id="evaluation">Evaluation<a class="headerlink" href="#evaluation" title="Permanent link">&para;</a></h2>
-<!-- This section describes the evaluation protocols and provides the results. -->
-
-<p>[More Information Needed]</p>
-<h3 id="testing-data-factors-metrics">Testing Data, Factors &amp; Metrics<a class="headerlink" href="#testing-data-factors-metrics" title="Permanent link">&para;</a></h3>
-<h4 id="testing-data">Testing Data<a class="headerlink" href="#testing-data" title="Permanent link">&para;</a></h4>
-<!-- This should link to a Dataset Card if possible, otherwise link to the original source with more info.
-Provide a basic overview of the test data and documentation related to any data pre-processing or additional filtering. -->
-
-<p>[More Information Needed]</p>
-<h4 id="factors">Factors<a class="headerlink" href="#factors" title="Permanent link">&para;</a></h4>
-<!-- These are the things the evaluation is disaggregating by, e.g., subpopulations or domains. -->
-
-<p>[More Information Needed]</p>
-<h4 id="metrics">Metrics<a class="headerlink" href="#metrics" title="Permanent link">&para;</a></h4>
-<!-- These are the evaluation metrics being used, ideally with a description of why. -->
-
-<p>[More Information Needed]</p>
-<h3 id="results">Results<a class="headerlink" href="#results" title="Permanent link">&para;</a></h3>
-<p>[More Information Needed]</p>
-<h4 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h4>
-<p>[More Information Needed]</p>
-<h2 id="model-examination">Model Examination<a class="headerlink" href="#model-examination" title="Permanent link">&para;</a></h2>
-<!-- [optional] Relevant interpretability work for the model goes here -->
-
-<p>[More Information Needed]</p>
-<h2 id="environmental-impact">Environmental Impact<a class="headerlink" href="#environmental-impact" title="Permanent link">&para;</a></h2>
-<!-- 
-It would be great to try to include this.
-
-Total emissions (in grams of CO2eq) and additional considerations, such as electricity usage, go here. Edit the suggested text below accordingly -->
-
-<p>Carbon emissions can be estimated using the <a href="https://mlco2.github.io/impact#compute">Machine Learning Impact calculator</a> presented in <a href="https://doi.org/10.48550/arXiv.1910.09700">Lacoste et al. (2019)</a>.</p>
-<ul>
-<li><strong>Hardware Type:</strong> [More Information Needed]</li>
-<li><strong>Hours used:</strong> [More Information Needed]</li>
-<li><strong>Cloud Provider:</strong> [More Information Needed]</li>
-<li><strong>Compute Region:</strong> [More Information Needed]</li>
-<li><strong>Carbon Emitted:</strong> [More Information Needed]</li>
-</ul>
-<h2 id="technical-specifications">Technical Specifications<a class="headerlink" href="#technical-specifications" title="Permanent link">&para;</a></h2>
-<p>[More Information Needed--optional]</p>
-<h3 id="model-architecture-and-objective">Model Architecture and Objective<a class="headerlink" href="#model-architecture-and-objective" title="Permanent link">&para;</a></h3>
-<p>[More Information Needed]</p>
-<h3 id="compute-infrastructure">Compute Infrastructure<a class="headerlink" href="#compute-infrastructure" title="Permanent link">&para;</a></h3>
-<p>[More Information Needed]</p>
-<h4 id="hardware">Hardware<a class="headerlink" href="#hardware" title="Permanent link">&para;</a></h4>
-<p>[More Information Needed: hardware requirements]</p>
-<h4 id="software">Software<a class="headerlink" href="#software" title="Permanent link">&para;</a></h4>
-<p>[More Information Needed]</p>
-<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
-<!-- If there is a paper introducing the model, the Bibtex information for that should go in this section. 
-
-See notes at top of file about selecting a license. 
-If you choose CC0: This model is dedicated to the public domain for the benefit of scientific pursuits. We ask that you cite the model and journal paper using the below citations if you make use of it in your research.
-
--->
-
-<p><strong>BibTeX:</strong></p>
-<p>[More Information Needed]</p>
-<!--
-Replace "<>"s with your info:
-
-If you use our model in your work, please cite the model and associated paper.
-
-**Model**
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>@software{&lt;ref_code&gt;,
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  author = {&lt;author1 and author2&gt;},
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  doi = {&lt;doi once generated&gt;},
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  title = {&lt;title&gt;},
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  version = {&lt;version#&gt;},
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  year = {&lt;year&gt;},
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  url = {https://huggingface.co/imageomics/&lt;model_name&gt;}
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>}
-</span></code></pre></div>
-
--for an associated paper:
-**Paper**
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>@article{&lt;ref_code&gt;,
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  title    = {&lt;title&gt;},
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  author   = {&lt;author1 and author2&gt;},
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  journal  = {&lt;journal_name&gt;},
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>  year     =  &lt;year&gt;,
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>  url      = {&lt;DOI_URL&gt;},
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>  doi      = {&lt;DOI&gt;}
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>}
-</span></code></pre></div>
--->
-
-<h2 id="acknowledgements">Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permanent link">&para;</a></h2>
-<p>This work was supported by the <a href="https://imageomics.org">Imageomics Institute</a>, which is funded by the US National Science Foundation's Harnessing the Data Revolution (HDR) program under <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2118240">Award #2118240</a> (Imageomics: A New Frontier of Biological Information Powered by Knowledge-Guided Machine Learning). Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.</p>
-<h2 id="glossary">Glossary<a class="headerlink" href="#glossary" title="Permanent link">&para;</a></h2>
-<!-- [optional] If relevant, include terms and calculations in this section that can help readers understand the model or model card. -->
-
-<h2 id="more-information">More Information<a class="headerlink" href="#more-information" title="Permanent link">&para;</a></h2>
-<!-- [optional] Any other relevant information that doesn't fit elsewhere. -->
-
-<h2 id="model-card-authors">Model Card Authors<a class="headerlink" href="#model-card-authors" title="Permanent link">&para;</a></h2>
-<p>[More Information Needed]</p>
-<h2 id="model-card-contact">Model Card Contact<a class="headerlink" href="#model-card-contact" title="Permanent link">&para;</a></h2>
-<p>[More Information Needed--optional]</p>
-<!-- Could include who to contact with questions, but this is also what the "Discussions" tab is for. -->
 
 
 
 
 
 
-
-  
-  
 
 
 
@@ -1679,6 +1184,44 @@ If you use our model in your work, please cite the model and associated paper.
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Helpful-Tools-for-your-Workflow/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Helpful Tools">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Helpful Tools
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Virtual-Environments/" class="md-footer__link md-footer__link--next" aria-label="Next: Virtual Environments">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Virtual Environments
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
