@@ -71,12 +71,12 @@ nav:
       - "Projects Guide": wiki-guide/Guide-to-GitHub-Projects.md
       - "Branch Protections": wiki-guide/When-to-think-about-branch-protections.md
       - "Two Repo Problem": wiki-guide/Two-Repo-Problem.md
-      - "Why Use the Institute GitHub": docs/wiki-guide/Why-use-the-Institute-GitHub?.md
+      - "Why Use the Institute GitHub": docs/wiki-guide/Why-use-the-Institute-GitHub.md
   - Hugging Face Guide:
       - "Repo Guide": wiki-guide/Hugging-Face-Repo-Guide.md
       - "Workflow": wiki-guide/The-Hugging-Face-Workflow.md
       - "Dataset Upload Guide": wiki-guide/The-Hugging-Face-Dataset-Upload-Guide.md
-      - "Why Use the Institute Hugging Face": docs/wiki-guide/Why-use-the-Institute-Hugging-Face?.md
+      - "Why Use the Institute Hugging Face": docs/wiki-guide/Why-use-the-Institute-Hugging-Face.md
   - Metadata Guide: wiki-guide/Metadata-Guide.md
   - Templates:
       - "Dataset Card Template": wiki-guide/HF_DatasetCard_Template_mkdocs.md
