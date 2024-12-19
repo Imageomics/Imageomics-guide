@@ -21,7 +21,7 @@ This is the simplest method for generating a DOI for a model or dataset since [H
     Though it is a very simple process, it is not one to be taken lightly, as there is no removing data once this has been done--any changes require generation of a ***new*** DOI for the updated version: the old version will be maintained in perpetuity!
 
 !!! warning "Warning"
-    As stated in the [Imageomics Data Policy](../Data-Policy.md), DOIs are not to be generated for Imageomics Organization Repositories until approval has been granted by the Senior Data Scientist or Institute Leadership.
+    As stated in the [Imageomics Digital Products Release and Licensing Policy](Digital-products-release-licensing-policy.md), DOIs are not to be generated for Imageomics Organization Repositories until approval has been granted by the Senior Data Scientist or Institute Leadership.
 
 Hugging Face allows for the generation of a DOI through the settings tab on the Model or Dataset. For details on _how_ to generate a DOI with Hugging Face, please see the [Hugging Face DOI Documentation](https://huggingface.co/docs/hub/doi).
 
