@@ -111,6 +111,8 @@ nav:
       - "Model Card Template": wiki-guide/HF_ModelCard_Template_mkdocs.md
   - Command Line Cheat Sheet: wiki-guide/Command-Line-Cheat-Sheet.md
   - Code of Conduct: CODE_OF_CONDUCT.md
+  - Digital Product Policy: 
+      - "Release and Licensing Policy": wiki-guide/Digital-products-release-licensing-policy.md
   - Other Resources:
       - "Technical Infrastructure": wiki-guide/Technical-Infrastructure.md
       - "Virtual Environments": wiki-guide/Virtual-Environments.md
