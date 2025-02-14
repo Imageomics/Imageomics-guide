@@ -1,6 +1,6 @@
 # Model Card Checklist
 
-Below is a checklist encompassing all sections of a model card. Review notes and guidance provided in the full [model card template](https://imageomics.github.io/Imageomics-guide/wiki-guide/HF_ModelCard_Template_mkdocs/) for more details.
+Below is a checklist encompassing all sections of a model card. Review notes and guidance provided in the full [model card template](HF_ModelCard_Template_mkdocs.md/) for more details.
 
 ## General Information
 
@@ -94,7 +94,7 @@ This section describes the evaluation protocols and provides the results.
 ---
 
 ## Licensing and Citation
-See discussion and references in [template](https://imageomics.github.io/Imageomics-guide/wiki-guide/About-Templates/), also remember the [digital product release and licensing policy](https://imageomics.github.io/Imageomics-guide/wiki-guide/Digital-products-release-licensing-policy/).
+See discussion and references in [template](About-Templates.md/), also remember the [digital product release and licensing policy](Digital-products-release-licensing-policy.md/).
 
 - [ ] **License**: Confirm licensing details.
 - [ ] **Citation**: Provide a BibTeX citation for the model and associated paper.
