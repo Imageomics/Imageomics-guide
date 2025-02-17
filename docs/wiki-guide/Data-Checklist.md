@@ -26,16 +26,16 @@ Below is a checklist encompassing all sections of a dataset card. Review notes a
 
 ## Dataset Structure
 
-- [ ] **Data Format**: Describe the structure of the dataset. See guidance on formatting in the [full dataset card template](HF_DatasetCard_Template_mkdocs.md/).
+- [ ] **Data Format**: Describe the structure of the dataset. See guidance on formatting in the [full dataset card template](HF_DatasetCard_Template_mkdocs.md/#__codelineno-0-71).
 - [ ] **Data Instances**: Describe data files.
 Ex: All images are named `<img_id>.png`, each within a folder named for the species. They are 1024 x 1024, and the color has been standardized using `<link to color standardization package>`.
-- [ ] **Data Fields**: Describe the types of the data files or the columns in a CSV with metadata.
+- [ ] **Data Fields**: Describe the types of the data files or the columns in a CSV with metadata ([example](HF_DatasetCard_Template_mkdocs.md/#__codelineno-0-114)).
 - [ ] **Data Splits**: Describe any splits (e.g., train, test, validation).
 
 ---
 
 ## Dataset Creation
-Refer to examples and explanations provided in the full [dataset card template](HF_DatasetCard_Template_mkdocs.md/). Much of this should have been filled out before leaving Hawaii.
+Refer to examples and explanations provided in the full [dataset card template](HF_DatasetCard_Template_mkdocs.md/#__codelineno-0-129). Much of this should have been filled out before leaving Hawaii.
 
 - [ ] **Curation Rationale**: Explain why this dataset was created.
 - [ ] **Source Data**: Describe the source data.
@@ -57,7 +57,7 @@ Things to consider while working with the dataset. For instance, maybe there are
 ---
 
 ## Licensing Information
-See discussion and references in [template](About-Templates.md/), also remember the [digital product release and licensing policy](Digital-products-release-licensing-policy.md/).
+See discussion and references in the [template](HF_DatasetCard_Template_mkdocs.md/#__codelineno-0-19), also remember the [digital product release and licensing policy](Digital-products-release-licensing-policy.md/).
 
 - [ ] **Licensing Details**: Confirm and list all licensing details.
 

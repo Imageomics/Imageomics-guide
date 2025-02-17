@@ -60,7 +60,7 @@ The [Repo Guide](GitHub-Repo-Guide.md/) provides general guidance on repository 
 
 ### Code Review & Maintenance
 
-- **Code Reviews**: Regular peer reviews for quality assurance. Refer to the [GitHub Repo Guide](GitHub-Repo-Guide.md/).
+- **Code Reviews**: Regular peer reviews for quality assurance. Refer to the [GitHub PR Review Guide](The-GitHub-Pull-Request-Guide.md/#2-review-a-pull-request).
 - **Issue Tracking**: Use GitHub issues for tracking bugs and feature requests. 
 - **Versioning**: Tag releases, changelogs can be auto-generated and informative when PRs are appropriately scoped.
 

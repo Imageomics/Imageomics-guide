@@ -94,7 +94,7 @@ This section describes the evaluation protocols and provides the results.
 ---
 
 ## Licensing and Citation
-See discussion and references in [template](About-Templates.md/), also remember the [digital product release and licensing policy](Digital-products-release-licensing-policy.md/).
+See discussion and references in the [template](HF_ModelCard_Template_mkdocs.md/#__codelineno-0-19), also remember the [digital product release and licensing policy](Digital-products-release-licensing-policy.md/).
 
 - [ ] **License**: Confirm licensing details.
 - [ ] **Citation**: Provide a BibTeX citation for the model and associated paper.
