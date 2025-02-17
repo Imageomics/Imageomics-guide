@@ -5,7 +5,7 @@ When collecting or compiling new data, there are generally questions one is _try
 To improve both the _**Findability**_ and _**Reusability**_ of your data (ensuring [FAIR principles](Glossary-for-Imageomics.md#fair-data-principles)) for yourself and others, be sure to note down the following information.
 
 !!! note "This is not an exhaustive list."
-    Be sure to include any other information that may be important to your particular project or field.
+    Be sure to include any other information that may be important to your particular project or field. See, for instance, the [Code](Code-Checklist.md), [Data](Data-Checklist.md), and [Model](Model-Checklist.md) Checklists included in this section.
 
 ## Checklist for Metadata to Record
 - [ ] **Description:** Summary of your data, for instance:
