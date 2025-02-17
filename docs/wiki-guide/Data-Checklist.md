@@ -1,6 +1,10 @@
 # Dataset Card Checklist
 Below is a checklist encompassing all sections of a dataset card. Review notes and guidance provided in the full [datatset card template](HF_DatasetCard_Template_mkdocs.md/) for more details.
 
+!!! tip "Pro tip" 
+
+    Use the eye icon at the top of this page to access the source and copy the markdown for the checklist above into an issue on your GitHub [Repo](GitHub-Repo-Guide.md) or [Project](Guide-to-GitHub-Projects.md) so you can check the boxes as you add each element to your [dataset card](HF_DatasetCard_Template_mkdocs.md).
+
 ## General Information
 
 - [ ] **License**: Verify and specify the license type (e.g., `cc0-1.0`).

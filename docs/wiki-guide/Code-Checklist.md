@@ -1,6 +1,10 @@
 # Code Checklist
 
-This checklist provides expectations for the code repositories created for the Experiential AI & Ecology Course (Spring Semester 2025). 
+This checklist provides an overview of essential and recommended elements to include in a GitHub repository to ensure that it conforms to FAIR principles and best practices for reproducibility.
+
+!!! tip "Pro tip" 
+
+    Use the eye icon at the top of this page to access the source and copy the markdown for the checklist above into an issue on your GitHub [Repo](GitHub-Repo-Guide.md) or [Project](Guide-to-GitHub-Projects.md) so you can check the boxes as you add each element to your GitHub repository.
 
 ## Required Files
 - [ ] **License**: Verify and include an appropriate license (e.g., `MIT`, `CC0-1.0`, etc.). See discussion in the [guide](GitHub-Repo-Guide.md/#license).
