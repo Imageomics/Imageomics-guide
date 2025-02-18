@@ -14,7 +14,7 @@ To this end, we agree as individuals and as a group to:
 
 We abide by these principles in all Imageomics spaces, including but not limited to digital and in-person meetings, formal and informal gatherings, online discussion forums and chat spaces, and field and lab work. 
 
-Discrimination, bullying or harassment–sexual or otherwise–is misconduct. Those found to engage in misconduct will be subject to dismissal from the project and further actions as directed by the guidelines of the employers and the place of incidence.
+Acts of misconduct are prohibited. Those found to engage in misconduct will be subject to dismissal from the project and further actions as directed by the guidelines of the employers and the place of incidence.
 
 If you believe you have experienced or witnessed misconduct in an Imageomics setting, please take these steps:
 
@@ -24,16 +24,12 @@ If you believe you have experienced or witnessed misconduct in an Imageomics set
 
 Privacy will be protected to the greatest extent possible.
 
-## JEDI Framework
-
-[Full text](pdfs/Imageomics_Equity_Tool.pdf)
-
-### VALUES
-#### TRANSPARENCY
+## VALUES
+### TRANSPARENCY
 We ensure our efforts are clear about assumptions, uncertainty, and limits, and provide open sources of information, processes, and discovery.
-#### ACCOUNTABILITY
+### ACCOUNTABILITY
 We are responsible, individually and collectively, for the outcomes we produce and ensure, to the best of our abilities, that the methods outcome matches intended use.
-#### INCLUSION & COLLABORATION
-We create and nurture inclusive environments and welcome, value, and affirm all members of our community. We also consider how and for whom solutions are created and promote the diversification of perspectives in the creation process. We actively engage others’ perspectives, recognize everyone’s potential to contribute new ideas, and work together to find creative solutions to complex problems.
-#### SAFETY
-We ensure our practices are ethical and unbiased to the best of our ability. We address biases when we discover it and practice good data governance.  We work to improve practices and dismantle existing structures that create harm to people or the environment. 
+### COLLABORATION
+We create and nurture collaborative environments and welcome, value, and affirm all members of our community. We also consider how and for whom solutions are created and promote the heterogeneity of perspectives in the creation process. We actively engage others’ perspectives, recognize everyone’s potential to contribute new ideas, and work together to find creative solutions to complex problems.
+### SAFETY
+We ensure our practices are ethical and impartial to the best of our ability. We address ethical issues when we discover them and practice good data governance.  We strive to enhance practices while openly addressing those that harm people or the environment.
