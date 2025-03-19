@@ -39,7 +39,7 @@ Ex: All images are named `<img_id>.png`, each within a folder named for the spec
 ---
 
 ## Dataset Creation
-Refer to examples and explanations provided in the full [dataset card template](HF_DatasetCard_Template_mkdocs.md/#__codelineno-0-129). Much of this should have been filled out before leaving Hawaii.
+Refer to examples and explanations provided in the full [dataset card template](HF_DatasetCard_Template_mkdocs.md/#__codelineno-0-129).
 
 - [ ] **Curation Rationale**: Explain why this dataset was created.
 - [ ] **Source Data**: Describe the source data.
@@ -101,3 +101,5 @@ See discussion and references in the [template](HF_DatasetCard_Template_mkdocs.m
 ## Dataset Card Contact
 
 - [ ] **Contact Information**: [OPTIONAL] We recommend people use HF discussions, but you may indicate a person to contact.
+
+!!! question "[Questions, Comments, or Concerns?](https://github.com/Imageomics/Imageomics-guide/issues)"

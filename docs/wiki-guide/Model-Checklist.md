@@ -122,3 +122,5 @@ See discussion and references in the [template](HF_ModelCard_Template_mkdocs.md/
 - [ ] **Notes**: Include any other relevant details.
 - [ ] **Model Card Authors**: List contributors to the model card.
 - [ ] **Model Card Contact**: [OPTIONAL] We recommend people use HF discussions, but you may indicate a person to contact.
+
+!!! question "[Questions, Comments, or Concerns?](https://github.com/Imageomics/Imageomics-guide/issues)"
