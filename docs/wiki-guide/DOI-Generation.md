@@ -49,7 +49,7 @@ If your repository is likely to be updated repeatedly (i.e., generating new rele
 A `.zenodo.json` can be created by applying [cffconvert](https://github.com/citation-file-format/cffconvert) to your `CITATION.cff` (without the references, as these are not supported). Then add the references and other metadata back in to the JSON (following the [Zenodo dev guide](https://developers.zenodo.org/#representation)).
 The `publication_date` and `version` will need to be updated along with the `CITATION.cff` for each release.
 !!! example "Example `.zenodo.json`"
-    An example of this is the [Andromeda Zenodo JSON](https://github.com/Imageomics/Andromeda/blob/main/.zenodo.json), which was created in [this PR](https://github.com/Imageomics/Andromeda/pull/109).
+    An example of this is the [Andromeda Zenodo JSON](https://github.com/Imageomics/Andromeda/blob/main/.zenodo.json), which was created in [this PR](https://github.com/Imageomics/Andromeda/pull/109). Include format tests following the example in this [PR](https://github.com/Imageomics/Andromeda/pull/120).
 
 _Alternatively_, this information can be updated manually on the Zenodo page for the DOI record. When logged in to Zenodo, a large orange "Edit" button will appear in the top right (as in the image below). There is the ability to save as you go (without publishing the metadata changes) and an additional option to share a link with collaborators to view the suggested record information.
 
