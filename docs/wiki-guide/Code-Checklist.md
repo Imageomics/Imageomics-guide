@@ -1,6 +1,7 @@
 # Code Checklist
 
-This checklist provides an overview of essential and recommended elements to include in a GitHub repository to ensure that it conforms to FAIR principles and best practices for reproducibility.
+This checklist provides an overview of essential and recommended elements to include in a GitHub repository to ensure that it conforms to FAIR principles and best practices for reproducibility. Along with the generation of a DOI (see [DOI Generation](DOI-Generation.md) and [Digital Products Release and Licensing Policy](Digital-products-release-licensing-policy.md)), following this checklist ensures compliance with the FAIR Principles for research software.[^1]
+[^1]: Barker, M., Chue Hong, N. P., Katz, D. S., Lamprecht, A. L., Martinez-Ortiz, C., Psomopoulos, F., Harrow, J., Castro, L. J., Gruenpeter, M., Martinez, P. A., & Honeyman, T. (2022). Introducing the FAIR Principles for research software. _Scientific data_, 9(1), 622. https://doi.org/10.1038/s41597-022-01710-x.
 
 !!! tip "Pro tip" 
 
