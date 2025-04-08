@@ -1,4 +1,4 @@
-# Metadata Guide
+# Metadata Checklist
 
 When collecting or compiling new data, there are generally questions one is _trying_ to answer. There are also often questions that will come up later&mdash;whether for yourself or others interested in using your data. 
 
