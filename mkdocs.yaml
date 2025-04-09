@@ -104,7 +104,7 @@ nav:
       - "Why Use the Institute Hugging Face": wiki-guide/Why-use-the-Institute-Hugging-Face.md
   - FAIR Guide:
       - "FAIR Guide": wiki-guide/FAIR-Guide.md
-      - "Metadata Checklist": wiki-guide/Metadata-Guide.md
+      - "Metadata Checklist": wiki-guide/Metadata-Checklist.md
       - "Code Repo Checklist": wiki-guide/Code-Checklist.md
       - "Data Card Checklist": wiki-guide/Data-Checklist.md
       - "Model Card Checklist": wiki-guide/Model-Checklist.md
