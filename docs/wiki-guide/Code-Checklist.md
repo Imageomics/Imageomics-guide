@@ -48,13 +48,13 @@ This checklist provides an overview of essential and recommended elements to inc
 
 
 !!! note
-    The best practices described below will help you meet the above requirements. The more advanced development practices noted further down are included for educational purposes and since some groups have chosen to use linters. They are not required for this course; however, we recommend having a group discussion about the topics covered in [Code Quality](#code-quality).
+    The best practices described below will help you meet the above requirements. The more advanced development practices noted further down are included for educational purposes and are highly recommended&mdash;though these may go beyond what is expected for a given project, we advise collaborators to at least have a discussion about the topics covered in [Code Quality](#code-quality) and whether other practices discussed would be appropriate for their project.
 
 ---
 
 ## Best Practices
 
-The [Repo Guide](GitHub-Repo-Guide.md/) provides general guidance on repository structure, [collaborative workflow](The-GitHub-Workflow.md/), and [how to make and review pull requests (PR)](The-GitHub-Pull-Request-Guide.md/). Below, we highlight some best practices in checklist form that are recommended for this course and beyond. 
+The [Repo Guide](GitHub-Repo-Guide.md/) provides general guidance on repository structure, [collaborative workflow](The-GitHub-Workflow.md/), and [how to make and review pull requests (PR)](The-GitHub-Pull-Request-Guide.md/). Below, we highlight some best practices in checklist form to help you meet the requirements described above for a FAIR and Reproducible project.
 
 ### Reproducibility
 
