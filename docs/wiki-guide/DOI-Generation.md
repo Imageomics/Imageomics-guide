@@ -5,7 +5,7 @@ You are likely familiar with DOIs from citing (journal/arXiv/conference) papers,
 
 ## What is a DOI?
 
-A DOI (Digital Object Identifier) is a _persistent_ (permanent) digital identifier for any object (data, model, code, etc.) that _uniquely_ distinguishes it from other objects and links to information&mdash;metadata&mdash;about the object. The International DOI Foundation (IDF) is responsible for developing and administering the DOI system. See their [What is a DOI](https://www.doi.org/the-identifier/what-is-a-doi/) article for more information.
+A DOI (Digital Object Identifier) is a _persistent_ (permanent) digital identifier for any object (data, model, code, etc.) that _uniquely_ distinguishes it from other objects and links to information&mdash;metadata&mdash;about the object. The International DOI Foundation (IDF) is responsible for developing and administering the DOI system. See their [What is a DOI?](https://www.doi.org/the-identifier/what-is-a-doi/) article for more information.
 
 ## How do you generate a DOI?
 
