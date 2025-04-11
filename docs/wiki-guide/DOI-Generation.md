@@ -7,24 +7,21 @@ You are likely familiar with DOIs from citing (journal/arXiv/conference) papers,
 
 A DOI (Digital Object Identifier) is a _persistent_ (permanent) digital identifier for any object (data, model, code, etc.) that _uniquely_ distinguishes it from other objects and links to information&mdash;metadata&mdash;about the object. The International DOI Foundation (IDF) is responsible for developing and administering the DOI system. See their [What is a DOI](https://www.doi.org/the-identifier/what-is-a-doi/) article for more information.
 
-
 ## How do you generate a DOI?
 
 When publishing code, data, or models, there are various options for DOI generation, and selecting one is generally dependent on where the object of interest is published. We will go over the two standard methods used by the Institute here, and we mention a third option for completeness. A comparison of these three options is provided in the [Data Archive Options Comparative Overview](../pdfs/Data_Archive-Publication-Options-Comparative-Overview.pdf).
 
-
 ### 1. Generate a DOI on Hugging Face
 
-This is the simplest method for generating a DOI for a model or dataset since [Hugging Face partnered with DataCite to offer this option](https://huggingface.co/blog/introducing-doi). 
+This is the simplest method for generating a DOI for a model or dataset since [Hugging Face partnered with DataCite to offer this option](https://huggingface.co/blog/introducing-doi).
 
 !!! warning "Warning"
-    Though it is a very simple process, it is not one to be taken lightly, as there is no removing data once this has been done--any changes require generation of a ***new*** DOI for the updated version: the old version will be maintained in perpetuity!
+    Though it is a very simple process, it is not one to be taken lightly, as there is no removing data once this has been done--any changes require generation of a _**new**_ DOI for the updated version: the old version will be maintained in perpetuity!
 
 !!! warning "Warning"
     As stated in the [Imageomics Digital Products Release and Licensing Policy](Digital-products-release-licensing-policy.md), DOIs are not to be generated for Imageomics Organization Repositories until approval has been granted by the Senior Data Scientist or Institute Leadership.
 
 Hugging Face allows for the generation of a DOI through the settings tab on the Model or Dataset. For details on _how_ to generate a DOI with Hugging Face, please see the [Hugging Face DOI Documentation](https://huggingface.co/docs/hub/doi).
-
 
 ### 2. Generate a DOI with Zenodo
 
@@ -38,11 +35,11 @@ When your GitHub and Zenodo accounts are linked, there will be a list of availab
 ![Zenodo instructions and enabled repos](images/doi-generation/enabled_repos+intstructions.png){ loading=lazy, width="800" }
 
 !!! info "The Sync now button"
-    There is a "Sync now" button at the top right of the instructions, with information on when the last sync occurred. Observe that a badge appears for the enabled repository that <b>_has_</b> a DOI, while the one without just shows up as enabled; this will also be true for repositories to which you have access but that you did not submit to Zenodo yourself.
+    There is a "Sync now" button at the top right of the instructions, with information on when the last sync occurred. Observe that a badge appears for the enabled repository that **_has_** a DOI, while the one without just shows up as enabled; this will also be true for repositories to which you have access but that you did not submit to Zenodo yourself.
 
 #### Metadata Tracking
 
-When automatically generating a DOI with Zenodo, it uses information provided in your `CITATION.cff` file to populate the metadata for the record. However, there is important information that is not supported through this integration despite its inclusion in the `CITATION.cff` format in some cases. 
+When automatically generating a DOI with Zenodo, it uses information provided in your `CITATION.cff` file to populate the metadata for the record. However, there is important information that is not supported through this integration despite its inclusion in the `CITATION.cff` format in some cases.
 
 If your repository is likely to be updated repeatedly (i.e., generating new releases), then you may consider adding a `.zenodo.json` to preserve the remaining metadata on release sync with Zenodo for DOI. This metadata includes grant (funding) information, references (which may be included in your `CITATION.cff`), and a description of your repository/code.
 
@@ -69,7 +66,6 @@ Building on the alternate edit options, there is also the option to simply gener
 #### Access Management
 
 When creating a new record on Zenodo, please ensure that other members of your project have access, as appropriate. In particular, there should be at least one member of Institute leadership or the Senior Data Scientist added to the record with management permissions. This ensures the ability to maintain the metadata and address matters related to the record (which may extend beyond your tenure with the Institute) in a timely manner.
-
 
 ### 3. Generate a DOI with Dryad
 
