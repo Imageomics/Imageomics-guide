@@ -103,7 +103,7 @@ nav:
       - "Dataset Upload Guide": wiki-guide/The-Hugging-Face-Dataset-Upload-Guide.md
       - "Why Use the Institute Hugging Face": wiki-guide/Why-use-the-Institute-Hugging-Face.md
   - FAIR Guide:
-      - "FAIR Guide": wiki-guide/FAIR-Guide.md
+      - "About FAIR Principles": wiki-guide/FAIR-Guide.md
       - "Metadata Checklist": wiki-guide/Metadata-Checklist.md
       - "Code Repo Checklist": wiki-guide/Code-Checklist.md
       - "Data Card Checklist": wiki-guide/Data-Checklist.md
