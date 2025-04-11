@@ -15,7 +15,7 @@ Check out our guides to get your project off on the right foot!
 
 - [The Hugging Face Repo Guide](wiki-guide/Hugging-Face-Repo-Guide.md): Analogous expected and suggested repository contents for Hugging Face repositories; there are notable differences from GitHub in both content and structure.
 
-- [Metadata Guide](wiki-guide/Metadata-Guide.md): Guide to metadata collection and documentation. This closely follows our [HF Dataset Card Template](wiki-guide/HF_DatasetCard_Template_mkdocs.md) sections.
+- [FAIR Guide](wiki-guide/FAIR-Guide.md): Guide to producing FAIR digital products, from metadata collection through product documentation and publication. This builds on the content in both the GitHub and Hugging Face Repository Guides, providing checklists to ensure [code](wiki-guide/Code-Checklist.md), [data](wiki-guide/Data-Checklist.md), and [model](wiki-guide/Model-Checklist.md) repositories are FAIR. The latter two closely follow our [HF Templates](wiki-guide/About-Templates.md).
 
 ### Project repo up, what's next?
 Check out our workflow guides for how to interact with your new repo:

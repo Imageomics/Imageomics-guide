@@ -110,8 +110,12 @@ nav:
       - "Workflow": wiki-guide/The-Hugging-Face-Workflow.md
       - "Dataset Upload Guide": wiki-guide/The-Hugging-Face-Dataset-Upload-Guide.md
       - "Why Use the Institute Hugging Face": wiki-guide/Why-use-the-Institute-Hugging-Face.md
-  - Metadata Guide: 
-      - "Metadata Guide": wiki-guide/Metadata-Guide.md
+  - FAIR Guide:
+      - "About FAIR Principles": wiki-guide/FAIR-Guide.md
+      - "Metadata Checklist": wiki-guide/Metadata-Checklist.md
+      - "Code Repo Checklist": wiki-guide/Code-Checklist.md
+      - "Data Card Checklist": wiki-guide/Data-Checklist.md
+      - "Model Card Checklist": wiki-guide/Model-Checklist.md
       - "DOI Generation": wiki-guide/DOI-Generation.md
   - Templates:
       - "About Templates": wiki-guide/About-Templates.md

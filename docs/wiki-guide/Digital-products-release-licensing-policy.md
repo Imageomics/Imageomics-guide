@@ -24,7 +24,7 @@ This means the following policy applies for digital products of the Imageomics I
 
     - For ML-ready datasets, for storage, version control, and sharing we recommend using [Hugging Face Dataset Hub](https://huggingface.co/docs/hub/datasets-overview), which provides for rich metadata description in the form of a [Dataset Card](HF_DatasetCard_Template_mkdocs.md). (See [Imageomics datasets](https://huggingface.co/imageomics) published there as examples.)
 
-    - Refer to the Imageomics [Hugging Face](Hugging-Face-Repo-Guide.md) and [Metadata](Metadata-Guide.md) guides for best-practices and further guidance.
+    - Refer to the Imageomics [Hugging Face](Hugging-Face-Repo-Guide.md) and [FAIR](FAIR-Guide.md) guides for best-practices and further guidance.
 
 4. ML models are to be released under an [OSI-approved open source license](https://opensource.org/licenses/) or to the public domain (for example, by applying a [CC-Zero](https://creativecommons.org/publicdomain/zero/1.0/) waiver). In the case of potentially sensitive models or data (e.g., endangered species information), an Open [Responsible AI License](https://www.licenses.ai/ai-licenses) ([Open RAIL-M](https://www.licenses.ai/blog/2022/8/18/naming-convention-of-responsible-ai-licenses)) may be considered.
 
