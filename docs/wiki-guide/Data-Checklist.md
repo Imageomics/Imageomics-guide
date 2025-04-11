@@ -1,7 +1,8 @@
 # Dataset Card Checklist
+
 Below is a checklist encompassing all sections of a dataset card. Review notes and guidance provided in the full [datatset card template](HF_DatasetCard_Template_mkdocs.md/) for more details.
 
-!!! tip "Pro tip" 
+!!! tip "Pro tip"
 
     Use the eye icon at the top of this page to access the source and copy the markdown for the checklist above into an issue on your GitHub [Repo](GitHub-Repo-Guide.md) or [Project](Guide-to-GitHub-Projects.md) so you can check the boxes as you add each element to your [dataset card](HF_DatasetCard_Template_mkdocs.md).
 
@@ -39,6 +40,7 @@ Ex: All images are named `<img_id>.png`, each within a folder named for the spec
 ---
 
 ## Dataset Creation
+
 Refer to examples and explanations provided in the full [dataset card template](HF_DatasetCard_Template_mkdocs.md/#__codelineno-0-129).
 
 - [ ] **Curation Rationale**: Explain why this dataset was created.
@@ -53,14 +55,16 @@ Refer to examples and explanations provided in the full [dataset card template](
 ---
 
 ## Considerations for Using the Data
+
 Things to consider while working with the dataset. For instance, maybe there are hybrids and they are labeled in the `hybrid_stat` column, so to get a subset without hybrids, subset to all instances in the metadata file such that `hybrid_stat` is _not_ "hybrid".
 
-- [ ] **Bias, Risks, and Limitations**: Describe any known issues with the dataset. For instance, if your data exhibits a long-tailed distribution (and why). 
+- [ ] **Bias, Risks, and Limitations**: Describe any known issues with the dataset. For instance, if your data exhibits a long-tailed distribution (and why).
 - [ ] **Recommendations**: Provide recommendations for using the dataset responsibly.
 
 ---
 
 ## Licensing Information
+
 See discussion and references in the [template](HF_DatasetCard_Template_mkdocs.md/#__codelineno-0-19), also remember the [digital product release and licensing policy](Digital-products-release-licensing-policy.md/).
 
 - [ ] **Licensing Details**: Confirm and list all licensing details.
