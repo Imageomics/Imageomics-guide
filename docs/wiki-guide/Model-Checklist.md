@@ -2,7 +2,7 @@
 
 Below is a checklist encompassing all sections of a model card. Review notes and guidance provided in the full [model card template](HF_ModelCard_Template_mkdocs.md/) for more details.
 
-!!! tip "Pro tip" 
+!!! tip "Pro tip"
 
     Use the eye icon at the top of this page to access the source and copy the markdown for the checklist above into an issue on your GitHub [Repo](GitHub-Repo-Guide.md) or [Project](Guide-to-GitHub-Projects.md) so you can check the boxes as you add each element to your [model card](HF_ModelCard_Template_mkdocs.md).
 
@@ -42,7 +42,7 @@ Below is a checklist encompassing all sections of a model card. Review notes and
 ## Bias, Risks, and Limitations
 
 - [ ] **Bias, Risks, and Limitations**: Discuss potential biases and in the model, along with possible mitigations.
-- [ ] **Recommendations**: Provide responsible usage recommendations with respect to the bias, risk, and technical limitations. 
+- [ ] **Recommendations**: Provide responsible usage recommendations with respect to the bias, risk, and technical limitations.
 
 ---
 
@@ -64,6 +64,7 @@ Below is a checklist encompassing all sections of a model card. Review notes and
 ---
 
 ## Evaluation
+
 This section describes the evaluation protocols and provides the results.
 
 - [ ] **Testing Data**: Describe the dataset used for testing. This should link to a Dataset Card if possible, otherwise link to the original source with more info.
@@ -98,6 +99,7 @@ This section describes the evaluation protocols and provides the results.
 ---
 
 ## Licensing and Citation
+
 See discussion and references in the [template](HF_ModelCard_Template_mkdocs.md/#__codelineno-0-19), also remember the [digital product release and licensing policy](Digital-products-release-licensing-policy.md/).
 
 - [ ] **License**: Confirm licensing details.
