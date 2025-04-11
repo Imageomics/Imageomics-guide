@@ -11,13 +11,13 @@ This checklist provides an overview of essential and recommended elements to inc
 
 - [ ] **License**: Verify and include an appropriate license (e.g., `MIT`, `CC0-1.0`, etc.). See discussion in the [guide](GitHub-Repo-Guide.md/#license).
 - [ ] **README File**: Following the [guide](GitHub-Repo-Guide.md/#readme), provide a detailed `README.md` with:
-  - [ ] Overview of the project.
-  - [ ] Installation instructions.
-  - [ ] Basic usage examples.
-  - [ ] Links to related/created dataset(s).
-  - [ ] Links to related/created model(s).
-  - [ ] Acknowledge source code dependencies and contributors.
-  - [ ] Reference related datasets used in training or evaluation.
+    - [ ] Overview of the project.
+    - [ ] Installation instructions.
+    - [ ] Basic usage examples.
+    - [ ] Links to related/created dataset(s).
+    - [ ] Links to related/created model(s).
+    - [ ] Acknowledge source code dependencies and contributors.
+    - [ ] Reference related datasets used in training or evaluation.
 - [ ] **Requirements File**: Provide a [file detailing software requirements](GitHub-Repo-Guide.md/#software-requirements-file), such as a `requirements.txt` or `pyproject.toml` for Python dependencies.
 - [ ] **Gitignore File**: GitHub has premade `.gitignore` files ([here](https://github.com/github/gitignore)) tailored to particular languages (eg., [R](https://github.com/github/gitignore/blob/main/R.gitignore) or [Python](https://github.com/github/gitignore/blob/main/Python.gitignore)), operating systems, etc.
 - [ ] **CITATION CFF**: This facilitates citation of your work, follow guidance provided in the [guide](GitHub-Repo-Guide.md/#citation).
