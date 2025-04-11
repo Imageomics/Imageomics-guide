@@ -1,6 +1,6 @@
 # Dataset Card Checklist
 
-Below is a checklist encompassing all sections of a dataset card. Review notes and guidance provided in the full [datatset card template](HF_DatasetCard_Template_mkdocs.md/) for more details.
+Below is a checklist encompassing all sections of a dataset card. Review notes and guidance provided in the full [dataset card template](HF_DatasetCard_Template_mkdocs.md/) for more details.
 
 !!! tip "Pro tip"
 
@@ -8,12 +8,12 @@ Below is a checklist encompassing all sections of a dataset card. Review notes a
 
 ## General Information
 
-- [ ] **License**: Verify and specify the license type (e.g., `cc0-1.0`).
+- [ ] **License**: Verify and specify the license type (e.g., `CC0-1.0`).
 - [ ] **Language**: Indicate the language(s) (e.g., `en`).
 - [ ] **Pretty Name**: Provide a descriptive name for the dataset.
-- [ ] **Task Categories**: List relevant task categories (e.g., image-classification). Refer to [task categories](https://github.com/huggingface/huggingface.js/blob/main/packages/tasks/src/pipelines.ts).
+- [ ] **Task Categories**: List relevant task categories (e.g., image-classification). Refer to [the coarse-grained taxonomy of task categories as well as subtasks in this file](https://github.com/huggingface/huggingface.js/blob/main/packages/tasks/src/pipelines.ts).
 - [ ] **Tags**: Include relevant tags (e.g., `biology`, `image`, `animals`, `CV`).
-- [ ] **Size Categories**: Specify dataset size (e.g., `n<1K`, `1K<n<10K`, etc.).
+- [ ] **Size Categories**: Specify dataset size (e.g., `n<1k`, `1k<n<10k`, etc.).
 
 ---
 
@@ -33,7 +33,7 @@ Below is a checklist encompassing all sections of a dataset card. Review notes a
 
 - [ ] **Data Format**: Describe the structure of the dataset. See guidance on formatting in the [full dataset card template](HF_DatasetCard_Template_mkdocs.md/#__codelineno-0-71).
 - [ ] **Data Instances**: Describe data files.
-Ex: All images are named `<img_id>.png`, each within a folder named for the species. They are 1024 x 1024, and the color has been standardized using `<link to color standardization package>`.
+E.g.: All images are named `<img_id>.png`, each within a folder named for the species. They are 1024 x 1024, and the color has been standardized using `<link to color standardization package>`.
 - [ ] **Data Fields**: Describe the types of the data files or the columns in a CSV with metadata ([example](HF_DatasetCard_Template_mkdocs.md/#__codelineno-0-114)).
 - [ ] **Data Splits**: Describe any splits (e.g., train, test, validation).
 
@@ -56,10 +56,11 @@ Refer to examples and explanations provided in the full [dataset card template](
 
 ## Considerations for Using the Data
 
-Things to consider while working with the dataset. For instance, maybe there are hybrids and they are labeled in the `hybrid_stat` column, so to get a subset without hybrids, subset to all instances in the metadata file such that `hybrid_stat` is _not_ "hybrid".
+There are several things to consider while working with the dataset that should be reported to users. For instance, maybe there are hybrids and they are labeled in the `hybrid_stat` column, so to get a subset without hybrids, subset to all instances in the metadata file such that `hybrid_stat` is _not_ "hybrid".
 
 - [ ] **Bias, Risks, and Limitations**: Describe any known issues with the dataset. For instance, if your data exhibits a long-tailed distribution (and why).
 - [ ] **Recommendations**: Provide recommendations for using the dataset responsibly.
+- [ ] **Reporting issues**: Provide a link to the issue tracker or other mechanism for reporting problems (e.g. mislabeling, corrupted images, etc.).
 
 ---
 
