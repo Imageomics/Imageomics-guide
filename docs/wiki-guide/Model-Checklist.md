@@ -10,10 +10,10 @@ Below is a checklist encompassing all sections of a model card. Review notes and
 
 - [ ] **Model Name**: Provide the name of the model.
 - [ ] **Model Summary**: Provide a quick summary of what the model is/does
-- [ ] **License**: Choose an appropriate license (e.g., `cc0-1.0`).
+- [ ] **License**: Choose an appropriate license (e.g., `CC0-1.0`).
 - [ ] **Language(s)**: Specify the language(s) used (e.g., `en`).
 - [ ] **Tags**: Include relevant tags (e.g., `biology`, `CV`, `images`, `animals`).
-- [ ] **Datasets**: List datasets used for training, linking if hosted on Hugging Face. Ex: imageomics/TreeOfLife-10M
+- [ ] **Datasets**: List datasets used for training, linking if hosted on Hugging Face. E.g.: imageomics/TreeOfLife-10M
 - [ ] **Metrics**: Specify key evaluation metrics (refer to [Hugging Face metrics list](https://hf.co/metrics)).
 
 ---
@@ -93,7 +93,9 @@ This section describes the evaluation protocols and provides the results.
 
 ## Technical Specifications
 
-- [ ] **Model Architecture**: Provide a detailed architecture description and the objective behind.
+- [ ] **Model Architecture**: Provide a detailed architecture description and the choices behind its selection.
+- [ ] **Performance Metrics**: List performance metrics and their significance.
+- [ ] **Model Size**: Specify the model size in MB.
 - [ ] **Compute Requirements**: List hardware and software requirements.
 
 ---
