@@ -9,8 +9,8 @@ This checklist provides an overview of essential and recommended elements to inc
 
 ## Required Files
 
-- [ ] **License**: Verify and include an appropriate license (e.g., `MIT`, `CC0-1.0`, etc.). See discussion in the [guide](GitHub-Repo-Guide.md/#license).
-- [ ] **README File**: Following the [guide](GitHub-Repo-Guide.md/#readme), provide a detailed `README.md` with:
+- [ ] **License**: Verify and include an appropriate license (e.g., `MIT`, `CC0-1.0`, etc.). See discussion in the [Repo Guide](GitHub-Repo-Guide.md/#license).
+- [ ] **README File**: Following the [Repo Guide](GitHub-Repo-Guide.md/#readme), provide a detailed `README.md` with:
     - [ ] Overview of the project.
     - [ ] Installation instructions.
     - [ ] Basic usage examples.
@@ -20,7 +20,7 @@ This checklist provides an overview of essential and recommended elements to inc
     - [ ] Reference related datasets used in training or evaluation.
 - [ ] **Requirements File**: Provide a [file detailing software requirements](GitHub-Repo-Guide.md/#software-requirements-file), such as a `requirements.txt` or `pyproject.toml` for Python dependencies.
 - [ ] **Gitignore File**: GitHub has premade `.gitignore` files ([here](https://github.com/github/gitignore)) tailored to particular languages (eg., [R](https://github.com/github/gitignore/blob/main/R.gitignore) or [Python](https://github.com/github/gitignore/blob/main/Python.gitignore)), operating systems, etc.
-- [ ] **CITATION CFF**: This facilitates citation of your work, follow guidance provided in the [guide](GitHub-Repo-Guide.md/#citation).
+- [ ] **CITATION CFF**: This facilitates citation of your work, follow guidance provided in the [Repo Guide](GitHub-Repo-Guide.md/#citation).
 
 ### Data-Related
 
@@ -40,7 +40,7 @@ This checklist provides an overview of essential and recommended elements to inc
 
 ## General Information
 
-- [ ] **Repository Structure**: Ensure the code repository follows a clear and logical directory structure. (See [guide](GitHub-Repo-Guide.md/#general-repository-structure).)
+- [ ] **Repository Structure**: Ensure the code repository follows a clear and logical directory structure. (See [Repo Guide](GitHub-Repo-Guide.md/#general-repository-structure).)
 - [ ] **Code Comments**: Include meaningful inline comments and function descriptions for clarity.
 - [ ] **Random Seed Control**: Save random seeds to ensure reproducible results.
 
@@ -72,7 +72,7 @@ The [Repo Guide](GitHub-Repo-Guide.md/) provides general guidance on repository 
 ### Installation and Dependencies
 
 - [ ] **Environment Setup**: Include setup instructions (e.g., `conda` environment file, `Dockerfile`).
-- [ ] **Dependency Management**: Use virtual environments (e.g., `venv`, `conda`, `uv` for Python) to isolate dependencies.
+- [ ] **Dependency Management**: Use virtual environments and the frameworks that manage them (e.g., `venv`, `conda`, `uv` for Python) to isolate dependencies.
 
 ---
 
