@@ -4,7 +4,7 @@ This section provides information and resources to help ensure that digital prod
 
 Each checklist was developed following the FAIR principles (as defined by the [Go-FAIR Initiative](https://www.go-fair.org/fair-principles/)). They provide a detailed outline of tasks and files to include to ensure alignment with the FAIR principles, and are complementary to the descriptions provided within the [GitHub](GitHub-Repo-Guide.md) and [Hugging Face](Hugging-Face-Repo-Guide.md) Guides presented on this site. As with the contents of these Guides, these checklists are based on a combination of existing guides (e.g., [The Turing Way](https://book.the-turing-way.org/), the [Model Card Guidebook](https://huggingface.co/docs/hub/en/model-card-annotated), and the [Dataset Card Creation Guide](https://github.com/huggingface/datasets/blob/main/templates/README_guide.md)) and the experiences of our team. Following these checklists ensures digital products are aligned with FAIR principles and a best-effort toward reproducibility.[^1]
 
-!!! tip "Pro tip" 
+!!! tip "Pro tip"
 
     Use the eye icon at the top of any checklist page to access the source and copy the markdown for the checklist into an issue on your GitHub [Repo](GitHub-Repo-Guide.md) or [Project](Guide-to-GitHub-Projects.md) so you can check the boxes as you add each. When added to the main description of the issue, the issue summary will show _x_ out of total components completed for that issue.
 
@@ -23,9 +23,6 @@ The last topic in this section discusses different methods of [DOI Generation](D
     - Balk, M. A., Bradley, J., Maruf, M., Altintaş, B., Bakiş, Y., Bart, H. L. Jr, Breen, D., Florian, C. R., Greenberg, J., Karpatne, A., Karnani, K., Mabee, P., Pepper, J., Jebbia, D., Tabarin, T., Wang, X., & Lapp, H. (2024). A FAIR and modular image-based workflow for knowledge discovery in the emerging field of imageomics. _Methods in Ecology and Evolution_, 15, 1129–1145. [10.1111/2041-210X.14327](https://doi.org/10.1111/2041-210X.14327)
     - The [FARR Research Coordination Network](https://www.farr-rcn.org/) has a number of interesting resources and events.
     - The [Research Data Aliance for Interdisciplinary Research](https://www.rd-alliance.org/disciplines/rda-for-interdisciplinary-research/) also provides links to resources and events particularly focused on considerations in interdisciplinary research.
-
-
-
 
 !!! question "[Questions, Comments, or Concerns?](https://github.com/Imageomics/Imageomics-guide/issues)"
 
