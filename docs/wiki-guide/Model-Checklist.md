@@ -10,7 +10,7 @@ Below is a checklist encompassing all sections of a model card. Review notes and
 
 - [ ] **Model Name**: Provide the name of the model.
 - [ ] **Model Summary**: Provide a quick summary of what the model is/does
-- [ ] **License**: Choose an appropriate license (e.g., `CC0-1.0`).
+- [ ] **License**: Choose an appropriate license (e.g., `cc0-1.0`).
 - [ ] **Language(s)**: Specify the language(s) used (e.g., `en`).
 - [ ] **Tags**: Include relevant tags (e.g., `biology`, `CV`, `images`, `animals`).
 - [ ] **Datasets**: List datasets used for training, linking if hosted on Hugging Face. E.g.: imageomics/TreeOfLife-10M

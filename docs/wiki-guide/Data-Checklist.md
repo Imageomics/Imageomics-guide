@@ -8,7 +8,7 @@ Below is a checklist encompassing all sections of a dataset card. Review notes a
 
 ## General Information
 
-- [ ] **License**: Verify and specify the license type (e.g., `CC0-1.0`).
+- [ ] **License**: Verify and specify the license type (e.g., `cc0-1.0`).
 - [ ] **Language**: Indicate the language(s) (e.g., `en`).
 - [ ] **Pretty Name**: Provide a descriptive name for the dataset.
 - [ ] **Task Categories**: List relevant task categories (e.g., image-classification). Refer to [the coarse-grained taxonomy of task categories as well as subtasks in this file](https://github.com/huggingface/huggingface.js/blob/main/packages/tasks/src/pipelines.ts).
