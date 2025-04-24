@@ -60,7 +60,7 @@ There are several things to consider while working with the dataset that should 
 
 - [ ] **Bias, Risks, and Limitations**: Describe any known issues with the dataset. For instance, if your data exhibits a long-tailed distribution (and why).
 - [ ] **Recommendations**: Provide recommendations for using the dataset responsibly.
-- [ ] **Reporting issues**: Provide a link to the issue tracker or other mechanism for reporting problems (e.g. mislabeling, corrupted images, etc.).
+- [ ] **Reporting issues**: Provide a link to the issue tracker or other mechanism for reporting problems (e.g. mislabeling, corrupted images, etc.). This can simply be the Community tab for the repository or Issues on the associated GitHub repository.
 
 ---
 
