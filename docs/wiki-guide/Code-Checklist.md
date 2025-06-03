@@ -5,7 +5,7 @@ This checklist provides an overview of essential and recommended elements to inc
 
 !!! tip "Pro tip"
 
-    Use the eye icon at the top of this page to access the source and copy the markdown for the checklist above into an issue on your GitHub [Repo](GitHub-Repo-Guide.md) or [Project](Guide-to-GitHub-Projects.md) so you can check the boxes as you add each element to your GitHub repository.
+    Use the eye icon at the top of this page to access the source and copy the markdown for the checklist below into an issue on your GitHub [Repo](GitHub-Repo-Guide.md) or [Project](Guide-to-GitHub-Projects.md) so you can check the boxes as you add each element to your GitHub repository.
 
 ## Required Files
 
@@ -42,7 +42,7 @@ This checklist provides an overview of essential and recommended elements to inc
 
 - [ ] **Repository Structure**: Ensure the code repository follows a clear and logical directory structure. (See [Repo Guide](GitHub-Repo-Guide.md/#general-repository-structure).)
 - [ ] **Code Comments**: Include meaningful inline comments and function descriptions for clarity.
-- [ ] **Random Seed Control**: Save random seeds to ensure reproducible results.
+- [ ] **Random Seed Control**: Save seed(s) for random number generator(s) to ensure reproducible results.
 
 ## Security Considerations
 
@@ -80,8 +80,8 @@ The [Repo Guide](GitHub-Repo-Guide.md/) provides general guidance on repository 
 
 ### Documentation
 
-- [ ] **API Documentation**: Generate API documentation (e.g., `MkDocs` for Python or wiki pages in the repo).
-- [ ] **Docstrings**: Add comprehensive docstrings for all functions, classes, and modules. These can be incorporated to help generate documentation.
+- [ ] **API Documentation**: Generate API documentation (e.g., [`MkDocs`](https://www.mkdocs.org) for Python or wiki pages in the repo).
+- [ ] **Docstrings**: Add comprehensive docstrings for all functions, classes, and modules. These can be incorporated to help generate documentation. Note that generative AI tools with access to your code, such as GitHub Copilot, can be quite accurate in generating these, especially if you are using type annotations. 
 - [ ] **Example Scripts**: Include example scripts for common use cases.
 - [ ] **Configuration Files**: Use `yaml`, `json`, or `ini` for configuration settings.
 
@@ -90,14 +90,14 @@ The [Repo Guide](GitHub-Repo-Guide.md/) provides general guidance on repository 
 - [ ] **Consistent Style**: Follow coding style guidelines (e.g., `PEP 8` for Python).
 - [ ] **Linting**: Ensure the code passes a linter (e.g., `Ruff` for Python).
 - [ ] **Logging**: Use logging instead of print statements for better debugging (e.g., `logging` in Python).
-- [ ] **Error Handling**: Implement robust exception handling to avoid crashes.
+- [ ] **Error Handling**: Implement robust exception handling to avoid crashes or bogus results from input outside of code expectations.
 
 ### Testing
 
 - [ ] **Unit Tests**: Write unit tests to validate core functionality.
 - [ ] **Integration Tests**: Ensure components work together correctly.
-- [ ] **Test Coverage**: Check test coverage
-- [ ] **Continuous Integration (CI)**: Set up CI/CD pipelines (e.g., GitHub Actions) for automated testing.
+- [ ] **Test Coverage**: Check test coverage, e.g., using [Coverage](https://coverage.readthedocs.io/).
+- [ ] **Continuous Integration (CI)**: Set up CI/CD pipelines (e.g., [GitHub Actions](https://docs.github.com/en/actions)) for automated testing.
 
 ### Code Distribution & Deployment
 

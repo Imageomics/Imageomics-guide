@@ -4,7 +4,7 @@ Below is a checklist encompassing all sections of a model card. Review notes and
 
 !!! tip "Pro tip"
 
-    Use the eye icon at the top of this page to access the source and copy the markdown for the checklist above into an issue on your GitHub [Repo](GitHub-Repo-Guide.md) or [Project](Guide-to-GitHub-Projects.md) so you can check the boxes as you add each element to your [model card](HF_ModelCard_Template_mkdocs.md).
+    Use the eye icon at the top of this page to access the source and copy the markdown for the checklist below into an issue on your GitHub [Repo](GitHub-Repo-Guide.md) or [Project](Guide-to-GitHub-Projects.md) so you can check the boxes as you add each element to your [model card](HF_ModelCard_Template_mkdocs.md).
 
 ## General Information
 
