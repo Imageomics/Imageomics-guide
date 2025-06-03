@@ -12,25 +12,25 @@
         <meta name="author" content="Imageomics Institute">
       
       
-        <link rel="canonical" href="https://Imageomics.github.io/Imageomics-guide/wiki-guide/Metadata-Guide/">
+        <link rel="canonical" href="https://Imageomics.github.io/Imageomics-guide/wiki-guide/Model-Checklist/">
       
       
-        <link rel="prev" href="../Why-use-the-Institute-Hugging-Face/">
+        <link rel="prev" href="../Data-Checklist/">
       
       
         <link rel="next" href="../DOI-Generation/">
       
       
       <link rel="icon" href="../../logos/Imageomics_logo_butterfly.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Metadata Guide - Imageomics Guide</title>
+        <title>Model Card Checklist - Imageomics Guide</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#metadata-guide" class="md-skip">
+        <a href="#model-card-checklist" class="md-skip">
           Skip to content
         </a>
       
@@ -124,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Metadata Guide
+              Model Card Checklist
             
           </span>
         </div>
@@ -302,11 +302,11 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../FAIR-Guide/" class="md-tabs__link">
           
   
   
-  Metadata Guide
+  FAIR Guide
 
         </a>
       </li>
@@ -864,7 +864,7 @@
   
   
   <span class="md-ellipsis">
-    Metadata Guide
+    FAIR Guide
     
   </span>
   
@@ -875,9 +875,101 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Metadata Guide
+            FAIR Guide
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAIR-Guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About FAIR Principles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Metadata-Checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Metadata Checklist
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Code-Checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code Repo Checklist
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Data-Checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Card Checklist
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -900,7 +992,7 @@
   
   
   <span class="md-ellipsis">
-    Metadata Guide
+    Model Card Checklist
     
   </span>
   
@@ -913,7 +1005,7 @@
   
   
   <span class="md-ellipsis">
-    Metadata Guide
+    Model Card Checklist
     
   </span>
   
@@ -938,9 +1030,126 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#checklist-for-metadata-to-record" class="md-nav__link">
+  <a href="#general-information" class="md-nav__link">
     <span class="md-ellipsis">
-      Checklist for Metadata to Record
+      General Information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Details
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uses
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bias-risks-and-limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bias, Risks, and Limitations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Training Details
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evaluation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-examination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Examination
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environmental-impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environmental Impact
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Specifications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#licensing-and-citation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Licensing and Citation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acknowledgements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glossary-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Glossary (Optional)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Information
     </span>
   </a>
   
@@ -1409,9 +1618,126 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#checklist-for-metadata-to-record" class="md-nav__link">
+  <a href="#general-information" class="md-nav__link">
     <span class="md-ellipsis">
-      Checklist for Metadata to Record
+      General Information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Details
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uses
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bias-risks-and-limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bias, Risks, and Limitations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Training Details
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evaluation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-examination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Examination
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environmental-impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environmental Impact
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Specifications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#licensing-and-citation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Licensing and Citation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acknowledgements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glossary-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Glossary (Optional)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Information
     </span>
   </a>
   
@@ -1437,64 +1763,125 @@
     
       
     
-    <a href="https://github.com/Imageomics/Imageomics-guide/raw/main/docs/wiki-guide/Metadata-Guide.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/Imageomics/Imageomics-guide/raw/main/docs/wiki-guide/Model-Checklist.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
     </a>
   
 
 
-<h1 id="metadata-guide">Metadata Guide<a class="headerlink" href="#metadata-guide" title="Permanent link">&para;</a></h1>
-<p>When collecting or compiling new data, there are generally questions one is <em>trying</em> to answer. There are also often questions that will come up later&mdash;whether for yourself or others interested in using your data. </p>
-<p>To improve both the <em><strong>Findability</strong></em> and <em><strong>Reusability</strong></em> of your data (ensuring <a href="../Glossary-for-Imageomics/#fair-data-principles">FAIR principles</a>) for yourself and others, be sure to note down the following information.</p>
-<div class="admonition note">
-<p class="admonition-title">This is not an exhaustive list.</p>
-<p>Be sure to include any other information that may be important to your particular project or field.</p>
-</div>
-<h2 id="checklist-for-metadata-to-record">Checklist for Metadata to Record<a class="headerlink" href="#checklist-for-metadata-to-record" title="Permanent link">&para;</a></h2>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" disabled/> <strong>Description:</strong> Summary of your data, for instance:<ul>
-<li>What are the contents of the data (images, text, type of animal)? </li>
-<li>Is it machine-ready? </li>
-<li>Where did it come from (Source)? </li>
-</ul>
-</li>
-<li class="task-list-item"><input type="checkbox" disabled/> <strong>Data Sources:</strong> Machine-readable sources of the data (links or other files).</li>
-<li class="task-list-item"><input type="checkbox" disabled/> <strong>License Information:</strong> This is part of retaining records of a data source (eg., museum images, previous dataset). A record of licenses on the images must be retained to ensure they are respected. If dealing with CC licenses, please see this <a href="https://library.osu.edu/sites/default/files/2022-10/attributing_cc_license_flyer_2022_ac.pdf">OSU Library CC best practices guide</a>.</li>
-<li class="task-list-item"><input type="checkbox" disabled/> <strong>Dataset Structure:</strong><ul>
-<li>Organization of the full dataset (eg., file structure).</li>
-<li>Feature information: Information available for each image, such as species and subspecies designations, location information, etc.</li>
-<li>Instance information: Image type (jpg, tiff, png), number of pixels per image, coloring (RGB, UV), presence of scale or color indicators (ruler or ColorChecker), etc.</li>
-</ul>
-</li>
-<li class="task-list-item"><input type="checkbox" disabled/> <strong>Processing Steps:</strong> List modifications performed (as they're done) and include links to the code used (this <em>should</em> be organized somewhere, like a GitHub repository).<ul>
-<li>Similarly, include any annotation process information.</li>
-</ul>
-</li>
-<li class="task-list-item"><input type="checkbox" disabled/> <strong>Tasks:</strong> What could this dataset be used for (eg., image classification, feature extraction, image segmentation, etc.).</li>
-<li class="task-list-item"><input type="checkbox" disabled/> <strong>Curation Rationale:</strong> Why are you collecting and/or modifying this data?</li>
-<li>This ties into the question of tasks it could be applied to, both to help maintain the group focus, and increase the likelihood others interested in answering similar questions will be able to find and use your data.</li>
-<li class="task-list-item"><input type="checkbox" disabled/> <strong>Author:</strong> The curator(s)/editor(s) of the data. Assumes sufficient modification of the data by you (and your team) or that you have collected it. <ul>
-<li>If thinking about publishing the data, add ORCID to all Authors; these can be looked up on <a href="https://orcid.org/">orcid.org</a>. </li>
-</ul>
-</li>
-<li class="task-list-item"><input type="checkbox" disabled/> <strong>Related Publication:</strong> Any papers that are based on this dataset. </li>
-<li class="task-list-item"><input type="checkbox" disabled/> <strong>Related Datasets:</strong> Provide links to any related datasets (may include previous/background research).</li>
-<li class="task-list-item"><input type="checkbox" disabled/> <strong>Other References:</strong> Links to any related/background articles.</li>
-<li class="task-list-item"><input type="checkbox" disabled/> <strong>Keywords/Tags:</strong> Terms one might search to find this dataset, eg., type(s) of animals, type(s) of images, imbalanced (if not even distribution of species/subspecies/etc).<ul>
-<li>It helps to keep a running list.</li>
-</ul>
-</li>
-<li class="task-list-item"><input type="checkbox" disabled/> <strong>Notes:</strong> Any other image/data information.</li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Remember</p>
-<p>Datasets <strong><em>cannot</em></strong> be redistributed without this information. </p>
-</div>
+<h1 id="model-card-checklist">Model Card Checklist<a class="headerlink" href="#model-card-checklist" title="Permanent link">&para;</a></h1>
+<p>Below is a checklist encompassing all sections of a model card. Review notes and guidance provided in the full <a href="../HF_ModelCard_Template_mkdocs/">model card template</a> for more details.</p>
 <div class="admonition tip">
 <p class="admonition-title">Pro tip</p>
-<p>Use the eye icon at the top of this page to access the source and copy the markdown for the checklist above into an issue on your GitHub <a href="../GitHub-Repo-Guide/">Repo</a> or <a href="../Guide-to-GitHub-Projects/">Project</a> so you can check the boxes as you add each.</p>
+<p>Use the eye icon at the top of this page to access the source and copy the markdown for the checklist below into an issue on your GitHub <a href="../GitHub-Repo-Guide/">Repo</a> or <a href="../Guide-to-GitHub-Projects/">Project</a> so you can check the boxes as you add each element to your <a href="../HF_ModelCard_Template_mkdocs/">model card</a>.</p>
 </div>
+<h2 id="general-information">General Information<a class="headerlink" href="#general-information" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Model Name</strong>: Provide the name of the model.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Model Summary</strong>: Provide a quick summary of what the model is/does</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>License</strong>: Choose an appropriate license (e.g., <code>cc0-1.0</code>).</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Language(s)</strong>: Specify the language(s) used (e.g., <code>en</code>).</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Tags</strong>: Include relevant tags (e.g., <code>biology</code>, <code>CV</code>, <code>images</code>, <code>animals</code>).</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Datasets</strong>: List datasets used for training, linking if hosted on Hugging Face. E.g.: imageomics/TreeOfLife-10M</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Metrics</strong>: Specify key evaluation metrics (refer to <a href="https://hf.co/metrics">Hugging Face metrics list</a>).</li>
+</ul>
+<hr />
+<h2 id="model-details">Model Details<a class="headerlink" href="#model-details" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Detailed Summary</strong>: Provide a longer summary of what this model is.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Developed by</strong>: List the developers.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Model Type</strong>: Describe the model type.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Fine-tuned from</strong>: Specify the base model if fine-tuned.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Version</strong>: Indicate the model version.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Repository</strong>: Provide the link to the project repository (GitHub).</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Paper</strong>: Link to any associated research papers (not expected at this point).</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Demo</strong>: Link to an interactive demo (if available).</li>
+</ul>
+<hr />
+<h2 id="uses">Uses<a class="headerlink" href="#uses" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Direct Use</strong>: Describe how the model can be used without fine-tuning or plugging into a larger ecosystem/app.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Downstream Use</strong>: List potential fine-tuned applications for a task, or plugging into a larger ecosystem/app.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Out-of-Scope Use</strong>: Indicate any misuse, malicious use, and uses that the model will not work well for.</li>
+</ul>
+<hr />
+<h2 id="bias-risks-and-limitations">Bias, Risks, and Limitations<a class="headerlink" href="#bias-risks-and-limitations" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Bias, Risks, and Limitations</strong>: Discuss potential biases and in the model, along with possible mitigations.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Recommendations</strong>: Provide responsible usage recommendations with respect to the bias, risk, and technical limitations.</li>
+</ul>
+<hr />
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Usage Instructions</strong>: Provide example code for using the model.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Installation Guide</strong>: List dependencies and installation steps.</li>
+</ul>
+<hr />
+<h2 id="training-details">Training Details<a class="headerlink" href="#training-details" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Training Data</strong>: Describe the dataset used for training. This should link to a Dataset Card where possible, otherwise link to the original source with more info.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Preprocessing</strong>: Detail data preprocessing techniques.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Training Procedure</strong>: Describe the training approach.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Training Hyperparameters</strong>: List key hyperparameters used.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Speeds, Sizes, Times</strong>: Provide information about throughput, start/end time, checkpoint size if relevant, etc.</li>
+</ul>
+<hr />
+<h2 id="evaluation">Evaluation<a class="headerlink" href="#evaluation" title="Permanent link">&para;</a></h2>
+<p>This section describes the evaluation protocols and provides the results.</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Testing Data</strong>: Describe the dataset used for testing. This should link to a Dataset Card if possible, otherwise link to the original source with more info.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Factors</strong>: Describe evaluation criteria (e.g., subpopulations, domains).</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Metrics</strong>: Specify evaluation metrics and reasoning.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Results</strong>: Summarize model performance on testing data</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Benchmark Comparisons</strong>: Compare with existing baselines.</li>
+</ul>
+<hr />
+<h2 id="model-examination">Model Examination<a class="headerlink" href="#model-examination" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Interpretability</strong>: Provide information on model explainability.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Visualization</strong>: Include any relevant visualizations.</li>
+</ul>
+<hr />
+<h2 id="environmental-impact">Environmental Impact<a class="headerlink" href="#environmental-impact" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Compute Region</strong>: Specify cloud provider and region.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Hardware Type</strong>: List GPUs and CPUs used.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Training Hours</strong>: Estimate the total training time.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Carbon Emissions</strong>: Calculate emissions using the <a href="https://mlco2.github.io/impact#compute">ML Impact calculator</a>.</li>
+</ul>
+<hr />
+<h2 id="technical-specifications">Technical Specifications<a class="headerlink" href="#technical-specifications" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Model Architecture</strong>: Provide a detailed architecture description and the choices behind its selection.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Performance Metrics</strong>: List performance metrics and their significance.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Model Size</strong>: Specify the model size in MB.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Compute Requirements</strong>: List hardware and software requirements.</li>
+</ul>
+<hr />
+<h2 id="licensing-and-citation">Licensing and Citation<a class="headerlink" href="#licensing-and-citation" title="Permanent link">&para;</a></h2>
+<p>See discussion and references in the <a href="../HF_ModelCard_Template_mkdocs/#__codelineno-0-19">template</a>, also remember the <a href="../Digital-products-release-licensing-policy/">digital product release and licensing policy</a>.</p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>License</strong>: Confirm licensing details.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Citation</strong>: Provide a BibTeX citation for the model and associated paper.</li>
+</ul>
+<hr />
+<h2 id="acknowledgements">Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Funding and Support</strong>: List sources of funding and institutional support.</li>
+</ul>
+<hr />
+<h2 id="glossary-optional">Glossary (Optional)<a class="headerlink" href="#glossary-optional" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Definitions</strong>: Provide explanations for technical terms.</li>
+</ul>
+<hr />
+<h2 id="additional-information">Additional Information<a class="headerlink" href="#additional-information" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Notes</strong>: Include any other relevant details.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Model Card Authors</strong>: List contributors to the model card.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <strong>Model Card Contact</strong>: [OPTIONAL] We recommend people use HF discussions, but you may indicate a person to contact.</li>
+</ul>
 <div class="admonition question">
 <p class="admonition-title"><a href="https://github.com/Imageomics/Imageomics-guide/issues">Questions, Comments, or Concerns?</a></p>
 </div>
@@ -1646,10 +2033,10 @@ Any opinions, findings, conclusions, or recommendations expressed in this materi
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.copy", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.copy", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

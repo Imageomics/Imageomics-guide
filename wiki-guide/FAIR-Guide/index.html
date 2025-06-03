@@ -12,9 +12,13 @@
         <meta name="author" content="Imageomics Institute">
       
       
-        <link rel="canonical" href="https://Imageomics.github.io/Imageomics-guide/wiki-guide/HF_DatasetCard_Template_ABC/">
+        <link rel="canonical" href="https://Imageomics.github.io/Imageomics-guide/wiki-guide/FAIR-Guide/">
       
       
+        <link rel="prev" href="../Why-use-the-Institute-Hugging-Face/">
+      
+      
+        <link rel="next" href="../Metadata-Checklist/">
       
       
       <link rel="icon" href="../../logos/Imageomics_logo_butterfly.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>HF DatasetCard Template ABC - Imageomics Guide</title>
+        <title>About FAIR Principles - Imageomics Guide</title>
       
     
     
@@ -85,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dataset-card-for-dataset-pretty_name" class="md-skip">
+        <a href="#fair-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              HF DatasetCard Template ABC
+              About FAIR Principles
             
           </span>
         </div>
@@ -292,11 +296,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../FAIR-Guide/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -831,24 +837,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -861,7 +872,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             FAIR Guide
@@ -872,10 +883,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../FAIR-Guide/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -886,6 +906,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1430,284 +1451,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      📖 On This Page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#dataset-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dataset Details
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Dataset Details">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#dataset-description" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dataset Description
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#supported-tasks-and-leaderboards" class="md-nav__link">
-    <span class="md-ellipsis">
-      Supported Tasks and Leaderboards
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dataset-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dataset Structure
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Dataset Structure">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#data-instances" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data Instances
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-fields" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data Fields
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-splits" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data Splits
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dataset-creation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dataset Creation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Dataset Creation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#curation-rationale" class="md-nav__link">
-    <span class="md-ellipsis">
-      Curation Rationale
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#source-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      Source Data
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Source Data">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#data-collection-and-processing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data Collection and Processing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#who-are-the-source-data-producers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Who are the source data producers?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#annotations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Annotations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Annotations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#annotation-process" class="md-nav__link">
-    <span class="md-ellipsis">
-      Annotation process
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#who-are-the-annotators" class="md-nav__link">
-    <span class="md-ellipsis">
-      Who are the annotators?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#personal-and-sensitive-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Personal and Sensitive Information
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#considerations-for-using-the-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      Considerations for Using the Data
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Considerations for Using the Data">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#bias-risks-and-limitations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Bias, Risks, and Limitations
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#recommendations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Recommendations
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#licensing-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Licensing Information
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#citation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Citation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#acknowledgements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Acknowledgements
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#glossary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Glossary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#more-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      More Information
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dataset-card-authors" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dataset Card Authors
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dataset-card-contact" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dataset Card Contact
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1726,254 +1469,68 @@
     
       
     
-    <a href="https://github.com/Imageomics/Imageomics-guide/raw/main/docs/wiki-guide/HF_DatasetCard_Template_ABC.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/Imageomics/Imageomics-guide/raw/main/docs/wiki-guide/FAIR-Guide.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
     </a>
   
 
 
-<!--
-
-NOTE: Add more tags (your particular animal, type of model and use-case, etc.).
-
-As with your GitHub Project repo, it is important to choose an appropriate license for your dataset. The default license is [CC0](https://creativecommons.org/publicdomain/zero/1.0/) (public domain dedication, see [Dryad's explanation of why to use CC0](https://blog.datadryad.org/2023/05/30/good-data-practices-removing-barriers-to-data-reuse-with-cc0-licensing/)). Alongside the appropriate stakeholders (eg., your PI, co-authors), select a license that is [Open Source Initiative](https://opensource.org/licenses) (OSI) compliant.
-For more information on how to choose a license and why it matters, see [Choose A License](https://choosealicense.com) and [A Quick Guide to Software Licensing for the Scientist-Programmer](https://doi.org/10.1371/journal.pcbi.1002598) by A. Morin, et al.
-See the [ABC Global Center policy for licensing](https://docs.google.com/document/d/1SlITG-r7kdJB6C8f4FCJ9Z7o7ccwldZoSRJKjhRAWVA/edit#heading=h.c1sxg0wsiqru) for more information.
-
-See more options for the above information by clicking "edit dataset card" on your repo.
-
-Fill in as much information as you can at each location that says "More information needed".
--->
-
-<!--
-Image with caption (jpg or png):
-|![Figure #](https://huggingface.co/datasets/ABC-Center/<data-repo>/resolve/main/<filepath>)|
-|:--|
-|**Figure #.** [Image of <describe image>](https://huggingface.co/datasets/ABC-Center/<data-repo>/raw/main/<filepath>) <caption description>.|
--->
-
-<!--
-Notes on styling:
-
-To render LaTex in your README, wrap the code in `\\(` and `\\)`. Example: \\(\frac{1}{2}\\)
-
-Escape underscores ("_") with a "\". Example: image\_RGB
--->
-
-<h1 id="dataset-card-for-dataset-pretty_name">Dataset Card for [dataset pretty_name]<a class="headerlink" href="#dataset-card-for-dataset-pretty_name" title="Permanent link">&para;</a></h1>
-<!-- Provide a quick summary of what the dataset is or can be used for. -->
-
-<h2 id="dataset-details">Dataset Details<a class="headerlink" href="#dataset-details" title="Permanent link">&para;</a></h2>
-<h3 id="dataset-description">Dataset Description<a class="headerlink" href="#dataset-description" title="Permanent link">&para;</a></h3>
+<h1 id="fair-guide">FAIR Guide<a class="headerlink" href="#fair-guide" title="Permanent link">&para;</a></h1>
+<p>This section provides information and resources to help ensure that digital products are <strong><em>F</em></strong>indable, <strong><em>A</em></strong>ccessible, <strong><em>I</em></strong>nteroperable, <strong><em>R</em></strong>eusable, and Reproducible<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. A general <a href="../Metadata-Checklist/">Metadata Checklist</a> is provided to stimulate thinking about the type of information to be collected. Additionally, we include checklists for <a href="../Code-Checklist/">code</a>, <a href="../Data-Checklist/">data</a>, and <a href="../Model-Checklist/">model</a> repositories. The code checklist focuses on the contents of a well-documented GitHub repository, while the data and model checklists cover the content of the <a href="../HF_DatasetCard_Template_mkdocs/">data</a> and <a href="../HF_ModelCard_Template_mkdocs/">model</a> card templates, respectively.</p>
+<p>Each checklist was developed following the FAIR principles (as defined by the <a href="https://www.go-fair.org/fair-principles/">Go-FAIR Initiative</a>). They provide a detailed outline of tasks and files to include to ensure alignment with the FAIR principles, and are complementary to the descriptions provided within the <a href="../GitHub-Repo-Guide/">GitHub</a> and <a href="../Hugging-Face-Repo-Guide/">Hugging Face</a> Guides presented on this site. As with the contents of these Guides, these checklists are based on a combination of existing guides (e.g., <a href="https://book.the-turing-way.org/">The Turing Way</a>, the <a href="https://huggingface.co/docs/hub/en/model-card-annotated">Model Card Guidebook</a>, and the <a href="https://github.com/huggingface/datasets/blob/main/templates/README_guide.md">Dataset Card Creation Guide</a>) and the experiences of our team. Following these checklists ensures digital products are aligned with FAIR principles and a best-effort toward reproducibility.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
+<div class="admonition tip">
+<p class="admonition-title">Pro tip</p>
+<p>Use the eye icon at the top of any checklist page to access the source and copy the markdown for the checklist into an issue on your GitHub <a href="../GitHub-Repo-Guide/">Repo</a> or <a href="../Guide-to-GitHub-Projects/">Project</a> so you can check the boxes as you add each. When added to the main description of the issue, the issue summary will show <em>x</em> out of total components completed for that issue.</p>
+</div>
+<p>The last topic in this section discusses different methods of <a href="../DOI-Generation/">DOI Generation</a> for digital products (code, data, and models). It focuses on our selected method for dataset publication: <a href="https://huggingface.co/">Hugging Face</a>, with some guidance on using <a href="https://zenodo.org/">Zenodo</a> to archive code (specifically, a GitHub repository). For more information about other common data publication venues&mdash;and to see the thought process behind our selection&mdash;see the <a href="../../pdfs/Data_Archive-Publication-Options-Comparative-Overview.pdf">Data Archive Options Comparative Overview</a> for more information.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> Generating a DOI for a digital product is part of ensuring a globally unique and persistent identifier that can be used to reference and refer back to a digital product&mdash;an important component of FAIR and Reproducible principles.</p>
+<div class="admonition info">
+<p class="admonition-title">References and Background</p>
+<p>If you want to learn more about FAIR and Reproducible principles, explore these resources that we used when developing this guide:</p>
 <ul>
-<li><strong>Curated by:</strong> list curators (authors for <em>data</em> citation, moved up)</li>
-<li><strong>Language(s) (NLP):</strong> [More Information Needed]</li>
+<li>
+<p><a href="https://book.the-turing-way.org/">The Turing Way</a>: an open-source, community data science handbook. It provides a strong foundation on the guiding principles for <em>this</em> Guide, providing accessible explanations and overviews of topics from <a href="https://book.the-turing-way.org/reproducible-research/reproducible-research">reproducibility</a>, to <a href="https://book.the-turing-way.org/collaboration/collaboration">collaboration</a> and <a href="https://book.the-turing-way.org/communication/communication">communication</a>, to <a href="https://book.the-turing-way.org/project-design/project-design">project design</a>, to <a href="https://book.the-turing-way.org/ethical-research/ethical-research">ethical research</a>. </p>
+<p><em>This is a particularly good resource for those <a href="https://book.the-turing-way.org/reproducible-research/vcs/vcs-git">just starting to use <code>git</code> and GitHub</a>. It builds motivation for use of version control through the lens of reproducibility.</em></p>
+</li>
+<li>
+<p>Go-FAIR Initiative: <a href="https://www.go-fair.org/fair-principles/">The FAIR Principles</a></p>
+</li>
+<li>
+<p>Ozoani, Ezi and Gerchick, Marissa and Mitchell, Margaret. Model Card Guidebook. Hugging Face, 2022. <a href="https://huggingface.co/docs/hub/en/model-card-guidebook">https://huggingface.co/docs/hub/en/model-card-guidebook</a>. </p>
+<p><em>The authors also provide a nice <a href="https://huggingface.co/docs/hub/en/model-card-landscape-analysis">summary of related work</a>, including <a href="https://www.fatml.org/media/documents/datasheets_for_datasets.pdf">Datasheets for Datasets (Gebru, et al., 2018)</a> and The Dataset Nutrition Label (<a href="https://datanutrition.org/labels/">label</a>, <a href="https://arxiv.org/abs/1805.03677">paper</a>).</em></p>
+</li>
+<li>
+<p>Wilkinson, M., Dumontier, M., Aalbersberg, I. <em>et al.</em> The FAIR Guiding Principles for scientific data management and stewardship. <em>Sci Data</em> <strong>3</strong>, 160018 (2016). <a href="https://doi.org/10.1038/sdata.2016.18">10.1038/sdata.2016.18</a></p>
+</li>
+<li>Barker, M., Chue Hong, N.P., Katz, D.S. <em>et al.</em> Introducing the FAIR Principles for research software. <em>Sci Data</em> <strong>9</strong>, 622 (2022). <a href="https://doi.org/10.1038/s41597-022-01710-x">10.1038/s41597-022-01710-x</a></li>
+<li>Balk, M. A., Bradley, J., Maruf, M., Altintaş, B., Bakiş, Y., Bart, H. L. Jr, Breen, D., Florian, C. R., Greenberg, J., Karpatne, A., Karnani, K., Mabee, P., Pepper, J., Jebbia, D., Tabarin, T., Wang, X., &amp; Lapp, H. (2024). A FAIR and modular image-based workflow for knowledge discovery in the emerging field of imageomics. <em>Methods in Ecology and Evolution</em>, 15, 1129–1145. <a href="https://doi.org/10.1111/2041-210X.14327">10.1111/2041-210X.14327</a></li>
+<li>The <a href="https://www.farr-rcn.org/">FARR Research Coordination Network</a> has a number of interesting resources and events.</li>
+<li>The <a href="https://www.rd-alliance.org/disciplines/rda-for-interdisciplinary-research/">Research Data Aliance for Interdisciplinary Research</a> also provides links to resources and events particularly focused on considerations in interdisciplinary research.</li>
 </ul>
-<!-- Provide the basic links for the dataset. These will show up on the sidebar to the right of your dataset card ("Curated by" too). -->
-<ul>
-<li><strong>Homepage:</strong> </li>
-<li><strong>Repository:</strong> [related project repo]</li>
-<li><strong>Paper:</strong> </li>
-</ul>
-<!-- Provide a longer summary of what this dataset is. -->
-<p>[More Information Needed]</p>
-<!--This dataset card aims to be a base template for new datasets. It has been generated using [this raw template](https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/datasetcard_template.md?plain=1), and further altered to suit ABC  Global Center needs.-->
-
-<h3 id="supported-tasks-and-leaderboards">Supported Tasks and Leaderboards<a class="headerlink" href="#supported-tasks-and-leaderboards" title="Permanent link">&para;</a></h3>
-<p>[More Information Needed]</p>
-<!-- Provide benchmarking results -->
-
-<h2 id="dataset-structure">Dataset Structure<a class="headerlink" href="#dataset-structure" title="Permanent link">&para;</a></h2>
-<!-- This section provides a description of the dataset fields, and additional information about the dataset structure such as criteria used to create the splits, relationships between data points, etc. -->
-
-<!-- Provide format of the dataset, ex:
-
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>/dataset/
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    &lt;species_1&gt;/
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        &lt;img_id 1&gt;.png
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        &lt;img_id 2&gt;.png
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        ...
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        &lt;img_id n&gt;.png
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    &lt;species_2&gt;/
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        &lt;img_id 1&gt;.png
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        &lt;img_id 2&gt;.png
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        ...
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        &lt;img_id n&gt;.png
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    ...
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    &lt;species_N&gt;/
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        &lt;img_id 1&gt;.png
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        &lt;img_id 2&gt;.png
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>        ...
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        &lt;img_id n&gt;.png
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    metadata.csv
-</span></code></pre></div>
-
--->
-
-<h3 id="data-instances">Data Instances<a class="headerlink" href="#data-instances" title="Permanent link">&para;</a></h3>
-<p>[More Information Needed]</p>
-<!--
-Describe data files
-
-Ex: All images are named <img_id>.png, each within a folder named for the species. They are 1024 x 1024, and the color has been standardized using <link to color standardization package>.
--->
-
-<h3 id="data-fields">Data Fields<a class="headerlink" href="#data-fields" title="Permanent link">&para;</a></h3>
-<p>[More Information Needed]</p>
-<!--
-Describe the types of the data files or the columns in a CSV with metadata.
-
-Ex: 
-**metadata.csv**:
-  - `img_id`: Unique identifier for the dataset. 
-  - `specimen_id`: ID of specimen in the image, provided by museum data source. There are multiple images of a single specimen.
-  - `species`: Species of the specimen in the image. There are N different species of <genus> of <animal>.
-  - `view`: View of the specimen in the image (e.g., `ventral` or `dorsal` OR `top` or `bottom`, etc.; specify options where reasonable).
-  - `file_name`: Relative path to image from the root of the directory (`<species>/<img_id>.png`); allows for image to be displayed in the dataset viewer alongside its associated metadata.
--->
-
-<h3 id="data-splits">Data Splits<a class="headerlink" href="#data-splits" title="Permanent link">&para;</a></h3>
-<p>[More Information Needed]</p>
-<!--
-Give your train-test splits for benchmarking; could be as simple as "split is indicated by the `split` column in the metadata file: `train`, `val`, or `test`." Or perhaps this is just the training dataset and other datasets were used for testing (you may indicate which were used).
--->
-
-<h2 id="dataset-creation">Dataset Creation<a class="headerlink" href="#dataset-creation" title="Permanent link">&para;</a></h2>
-<h3 id="curation-rationale">Curation Rationale<a class="headerlink" href="#curation-rationale" title="Permanent link">&para;</a></h3>
-<p>[More Information Needed]</p>
-<!-- Motivation for the creation of this dataset. For instance, what you intended to study and why that required curation of a new dataset (or if it's newly collected data and why the data was collected (intended use)), etc. -->
-
-<h3 id="source-data">Source Data<a class="headerlink" href="#source-data" title="Permanent link">&para;</a></h3>
-<!-- This section describes the source data (e.g., news text and headlines, social media posts, translated sentences, ...). As well as an original source it was created from (e.g., sampling from Zenodo records, compiling images from different aggregators, etc.) -->
-
-<h4 id="data-collection-and-processing">Data Collection and Processing<a class="headerlink" href="#data-collection-and-processing" title="Permanent link">&para;</a></h4>
-<p>[More Information Needed]</p>
-<!-- This section describes the data collection and processing process such as data selection criteria, filtering and normalization methods, re-sizing of images, tools and libraries used, etc. 
-This is what _you_ did to it following collection from the original source; it will be overall processing if you collected the data initially.
--->
-
-<h4 id="who-are-the-source-data-producers">Who are the source data producers?<a class="headerlink" href="#who-are-the-source-data-producers" title="Permanent link">&para;</a></h4>
-<p>[More Information Needed]</p>
-<!-- This section describes the people or systems who originally created the data.
-
-Ex: This dataset is a collection of images taken of the butterfly collection housed at the Ohio State University Museum of Biological Diversity. The associated labels and metadata are the information provided with the collection from biologists that study butterflies and supplied the specimens to the museum.
- -->
-
-<h3 id="annotations">Annotations<a class="headerlink" href="#annotations" title="Permanent link">&para;</a></h3>
-<!-- 
-If the dataset contains annotations which are not part of the initial data collection, use this section to describe them. 
-
-Ex: We standardized the taxonomic labels provided by the various data sources to conform to a uniform 7-rank Linnean structure. (Then, under annotation process, describe how this was done: Our sources used different names for the same kingdom (both _Animalia_ and _Metazoa_), so we chose one for all (_Animalia_). -->
-
-<h4 id="annotation-process">Annotation process<a class="headerlink" href="#annotation-process" title="Permanent link">&para;</a></h4>
-<p>[More Information Needed]</p>
-<!-- This section describes the annotation process such as annotation tools used, the amount of data annotated, annotation guidelines provided to the annotators, interannotator statistics, annotation validation, etc. -->
-
-<h4 id="who-are-the-annotators">Who are the annotators?<a class="headerlink" href="#who-are-the-annotators" title="Permanent link">&para;</a></h4>
-<p>[More Information Needed]</p>
-<!-- This section describes the people or systems who created the annotations. -->
-
-<h3 id="personal-and-sensitive-information">Personal and Sensitive Information<a class="headerlink" href="#personal-and-sensitive-information" title="Permanent link">&para;</a></h3>
-<p>[More Information Needed]</p>
-<!-- 
-For instance, if your data includes people or endangered species. -->
-
-<h2 id="considerations-for-using-the-data">Considerations for Using the Data<a class="headerlink" href="#considerations-for-using-the-data" title="Permanent link">&para;</a></h2>
-<p>[More Information Needed]</p>
-<!--
-Things to consider while working with the dataset. For instance, maybe there are hybrids and they are labeled in the `hybrid_stat` column, so to get a subset without hybrids, subset to all instances in the metadata file such that `hybrid_stat` is _not_ "hybrid".
--->
-
-<h3 id="bias-risks-and-limitations">Bias, Risks, and Limitations<a class="headerlink" href="#bias-risks-and-limitations" title="Permanent link">&para;</a></h3>
-<p>[More Information Needed]</p>
-<!-- This section is meant to convey both technical and sociotechnical limitations. Could also address misuse, malicious use, and uses that the dataset will not work well for.-->
-
-<!-- For instance, if your data exhibits a long-tailed distribution (and why). -->
-
-<h3 id="recommendations">Recommendations<a class="headerlink" href="#recommendations" title="Permanent link">&para;</a></h3>
-<p>[More Information Needed]</p>
-<!-- This section is meant to convey recommendations with respect to the bias, risk, and technical limitations. -->
-
-<h2 id="licensing-information">Licensing Information<a class="headerlink" href="#licensing-information" title="Permanent link">&para;</a></h2>
-<p>[More Information Needed]</p>
-<!-- See notes at top of file about selecting a license. 
-If you choose CC0: This dataset is dedicated to the public domain for the benefit of scientific pursuits. We ask that you cite the dataset and journal paper using the below citations if you make use of it in your research.
-
-Be sure to note different licensing of images if they have a different license from the compilation.
-ex: 
-"""
-The data (images and text) contain a variety of licensing restrictions mostly within the CC family. Each image and text in this dataset is provided under the least restrictive terms allowed by its licensing requirements as provided to us (i.e, we impose no additional restrictions past those specified by licenses in the license file).
-
-EOL images contain a variety of licenses ranging from [CC0](https://creativecommons.org/publicdomain/zero/1.0/) to [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-For license and citation information by image, see our [license file](https://huggingface.co/datasets/imageomics/treeoflife-10m/blob/main/metadata/licenses.csv).
-
-This dataset (the compilation) has been marked as dedicated to the public domain by applying the [CC0 Public Domain Waiver](https://creativecommons.org/publicdomain/zero/1.0/). However, images may be licensed under different terms (as noted above).
-"""
--->
-
-<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
-<p>[More Information Needed]</p>
-<p><strong>BibTeX:</strong></p>
-<!--
-If you want to include BibTex, replace "<>"s with your info 
-
-**Data**
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>@misc{&lt;ref_code&gt;,
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  author = {&lt;author1 and author2&gt;},
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  title = {&lt;title&gt;},
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  year = {&lt;year&gt;},
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  url = {https://huggingface.co/datasets/ABC-Center/&lt;dataset_name&gt;},
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  doi = {&lt;doi once generated&gt;},
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  publisher = {Hugging Face}
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>}
-</span></code></pre></div>
-
--for an associated paper:
-**Paper**
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>@article{&lt;ref_code&gt;,
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  title    = {&lt;title&gt;},
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  author   = {&lt;author1 and author2&gt;},
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  journal  = {&lt;journal_name&gt;},
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>  year     =  &lt;year&gt;,
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>  url      = {&lt;DOI_URL&gt;},
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>  doi      = {&lt;DOI&gt;}
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>}
-</span></code></pre></div>
--->
-
-<!---
-If the data is modified from another source, add the following. 
-
-Please be sure to also cite the original data source(s):
-<citation>
--->
-
-<h2 id="acknowledgements">Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permanent link">&para;</a></h2>
-<p>This work was supported by the <a href="http://abcresearchcenter.org/">AI and Biodiversity Change (ABC) Global Center</a>, which is funded by the US National Science Foundation under <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2330423&amp;HistoricalAwards=false">Award No. 2330423</a> and Natural Sciences and Engineering Research Council of Canada under <a href="https://www.nserc-crsng.gc.ca/ase-oro/Details-Detailles_eng.asp?id=782440">Award No. 585136</a>. This dataset draws on research supported by the Social Sciences and Humanities Research Council. Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation, Natural Sciences and Engineering Research Council of Canada, or Social Sciences and Humanities Research Council.</p>
-<p>Ce travail a été soutenu par le centre de recherche <a href="http://abcresearchcenter.org/">AI and Biodiversity Change (ABC)</a>, financé conjointement par la National Science Foundation des États-Unis (<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2330423&amp;HistoricalAwards=false">Financement #2330423</a>) et par le Conseil de recherches en sciences naturelles et en génie du Canada (<a href="https://www.nserc-crsng.gc.ca/ase-oro/Details-Detailles_eng.asp?id=782440">Financement #85136</a>). Ce jeu de données repose également en partie sur des travaux de recherche financés par le Conseil de recherches en sciences humaines du Canada. Les opinions, conclusions ou recommandations exprimées dans ce document sont celles de(s) auteur(s) et ne reflètent pas nécessairement celles de la National Science Foundation, du Conseil de recherches en sciences naturelles et en génie du Canada, ou du Conseil de recherches en sciences humaines du Canada.</p>
-<!-- You may also want to credit the source of your data, i.e., if you went to a museum or nature preserve to collect it. -->
-
-<h2 id="glossary">Glossary<a class="headerlink" href="#glossary" title="Permanent link">&para;</a></h2>
-<!-- [optional] If relevant, include terms and calculations in this section that can help readers understand the dataset or dataset card. -->
-
-<h2 id="more-information">More Information<a class="headerlink" href="#more-information" title="Permanent link">&para;</a></h2>
-<!-- [optional] Any other relevant information that doesn't fit elsewhere. -->
-
-<h2 id="dataset-card-authors">Dataset Card Authors<a class="headerlink" href="#dataset-card-authors" title="Permanent link">&para;</a></h2>
-<p>[More Information Needed]</p>
-<h2 id="dataset-card-contact">Dataset Card Contact<a class="headerlink" href="#dataset-card-contact" title="Permanent link">&para;</a></h2>
-<p>[More Information Needed--optional]</p>
-<!-- Could include who to contact with questions, but this is also what the "Discussions" tab is for. -->
+</div>
+<div class="admonition question">
+<p class="admonition-title"><a href="https://github.com/Imageomics/Imageomics-guide/issues">Questions, Comments, or Concerns?</a></p>
+</div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>While "Reproducible" is not part of the original FAIR principles as defined by the <a href="https://www.go-fair.org/fair-principles/">Go-FAIR Initiative</a>, we include it here to emphasize the importance of computational reproducibility alongside data stewardship. This extension reflects emerging practice in data-intensive science, where code, models, and workflows must be reusable and verifiable to support robust scientific claims. It is not part of the formal FAIR acronym, but aligns with broader community goals for open and transparent research.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Full reproducibility is difficult to achieve; this <a href="https://drive.google.com/file/d/1BFqZ00zMuyVHaD9A8PvzRDEg7aV0kp3W/view?usp=drive_link">presentation</a> by Odd Erik Gundersen provides a discussion of the varying degrees of reproducibilityand useful references when considering the level of reproducibility achieved by a given project.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>The <a href="../../pdfs/Data_Archive-Publication-Options-Comparative-Overview.pdf">Data Archive Options Comparative Overview</a> was created in May 2023 as part of developing archive recommendations for the Institute, so it does not include information about newer features such as <a href="https://huggingface.co/docs/hub/en/datasets-viewer">Hugging Face's dataset viewer</a>, which greatly simplifies previewing datasets for downstream users.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
 
 
 
-
-  
-  
 
 
 
