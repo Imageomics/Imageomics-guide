@@ -128,5 +128,5 @@ git pull
 
 And for a slightly abbreviated visual summary, the same workflow looks like this:
 
-![GitHub workflow diagram](https://www.getdbt.com/ui/img/guides/analytics-engineering/git-workflow-1.png){ loading=lazy }
-(image credit: [dbt Labs](https://www.getdbt.com/analytics-engineering/transformation/git-workflow/))
+![GitHub workflow diagram explaining origin vs local with interactions of clone, pull, and push between](https://jiayiwu.me/images/git_icon-781e4cc0.png){ loading=lazy }
+(image credit: [Jiayi Wu Cox Blog](https://jiayiwu.me/blog/2021/07/30/version-control-with-git.html), noted source: Learning note from “Version Control with Git” by Atlassian offered by Steve Byrnes on [Coursera](https://www.coursera.org/learn/version-control-with-git).)
