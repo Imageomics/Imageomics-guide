@@ -26,7 +26,7 @@ The last topic in this section discusses different methods of [DOI Generation](D
     - The [FARR Research Coordination Network](https://www.farr-rcn.org/) has a number of interesting resources and events.
     - The [Research Data Aliance for Interdisciplinary Research](https://www.rd-alliance.org/disciplines/rda-for-interdisciplinary-research/) also provides links to resources and events particularly focused on considerations in interdisciplinary research.
 
-!!! question "[Questions, Comments, or Concerns?](https://github.com/Imageomics/Imageomics-guide/issues)"
+!!! question "[Questions, Comments, or Concerns?](https://github.com/Imageomics/Collaborative-distributed-science-guide/issues)"
 
 [^1]: While "Reproducible" is not part of the original FAIR principles as defined by the [Go-FAIR Initiative](https://www.go-fair.org/fair-principles/), we include it here to emphasize the importance of computational reproducibility alongside data stewardship. This extension reflects emerging practice in data-intensive science, where code, models, and workflows must be reusable and verifiable to support robust scientific claims. It is not part of the formal FAIR acronym, but aligns with broader community goals for open and transparent research.
 [^2]: Full reproducibility is difficult to achieve; this [presentation](https://drive.google.com/file/d/1BFqZ00zMuyVHaD9A8PvzRDEg7aV0kp3W/view?usp=drive_link) by Odd Erik Gundersen provides a discussion of the varying degrees of reproducibilityand useful references when considering the level of reproducibility achieved by a given project.  

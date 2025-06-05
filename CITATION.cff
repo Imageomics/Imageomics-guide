@@ -20,10 +20,10 @@ date-released: "2024-11-DD"
 identifiers:
   - description: "The GitHub release URL of tag v1.0.0."
     type: url
-    value: "https://github.com/Imageomics/Imageomics-guide/releases/tag/v1.0.0"
+    value: "https://github.com/Imageomics/Collaborative-distributed-science-guide/releases/tag/v1.0.0"
   - description: "The GitHub URL of the commit tagged with <tag-name>." # update post release
     type: url
-    value: "https://github.com/Imageomics/Imageomics-guide/tree/<commit-hash>" # update post release
+    value: "https://github.com/Imageomics/Collaborative-distributed-science-guide/tree/<commit-hash>" # update post release
 keywords:
   - imageomics
   - metadata
@@ -37,6 +37,6 @@ keywords:
   - standards
 license: CC0-1.0
 message: "If you find these docs helpful in your research, please cite them as below."
-repository-code: "https://github.com/Imageomics/Imageomics-guide"
+repository-code: "https://github.com/Imageomics/Collaborative-distributed-science-guide"
 title: "Imageomics Guide"
 version: "1.0.0"
