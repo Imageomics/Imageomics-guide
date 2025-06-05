@@ -1,10 +1,10 @@
-site_name: "Imageomics Guide"
-site_description: "A guide to collaborative work for Imageomics, including GitHub and Hugging Face workflows."
+site_name: "Collaborative Distributed Science Guide"
+site_description: "A guide to collaborative work (originally for Imageomics), including GitHub and Hugging Face workflows."
 site_author: "Imageomics Institute"
-site_url: "https://Imageomics.github.io/Imageomics-guide/"
+site_url: "https://Imageomics.github.io/Collaborative-distributed-science-guide/"
 edit_uri: view/main/docs
 
-repo_url: https://github.com/Imageomics/Imageomics-guide
+repo_url: https://github.com/Imageomics/Collaborative-distributed-science-guide
 edit_uri: blob/main/docs/
 
 theme:

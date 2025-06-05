@@ -107,4 +107,4 @@ See discussion and references in the [template](HF_DatasetCard_Template_mkdocs.m
 
 - [ ] **Contact Information**: [OPTIONAL] We recommend people use HF discussions, but you may indicate a person to contact.
 
-!!! question "[Questions, Comments, or Concerns?](https://github.com/Imageomics/Imageomics-guide/issues)"
+!!! question "[Questions, Comments, or Concerns?](https://github.com/Imageomics/Collaborative-distributed-science-guide/issues)"

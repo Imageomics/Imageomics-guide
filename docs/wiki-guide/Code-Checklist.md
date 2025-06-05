@@ -104,4 +104,4 @@ The [Repo Guide](GitHub-Repo-Guide.md/) provides general guidance on repository 
 - [ ] **Packaging**: Provide installation instructions (e.g., `setup.py`, `hatch`, `poetry`, `uv` for Python).
 - [ ] **Deployment Guide**: Document deployment procedures
 
-!!! question "[Questions, Comments, or Concerns?](https://github.com/Imageomics/Imageomics-guide/issues)"
+!!! question "[Questions, Comments, or Concerns?](https://github.com/Imageomics/Collaborative-distributed-science-guide/issues)"
