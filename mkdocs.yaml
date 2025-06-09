@@ -11,8 +11,8 @@ theme:
   name: material
   icon:
     view: material/eye
-  logo: logos/Imageomics_logo_butterfly.png
-  favicon: logos/Imageomics_logo_butterfly.png
+  logo: logos/Imageomics_ABC.png
+  favicon: logos/Imageomics_ABC.png
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
