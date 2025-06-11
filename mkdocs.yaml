@@ -1,6 +1,6 @@
-site_name: "Collaborative Distributed Science Guide"
+site_name: "Collaborative Distributed Science Guide"  # Update guide name here, description below
 site_description: "A guide to collaborative work (originally for Imageomics), including GitHub and Hugging Face workflows."
-site_author: "Imageomics Institute"
+site_author: "Imageomics Institute"    # Update name, site_url, and repo_url
 site_url: "https://Imageomics.github.io/Collaborative-distributed-science-guide/"
 edit_uri: view/main/docs
 
@@ -11,8 +11,8 @@ theme:
   name: material
   icon:
     view: material/eye
-  logo: logos/Imageomics_ABC.png
-  favicon: logos/Imageomics_ABC.png
+  logo: logos/Imageomics_ABC.png    # Set your logo
+  favicon: logos/Imageomics_ABC.png    # Set your logo or favicon of choice
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -42,6 +42,8 @@ extra_css:
 
 extra:
   social:
+  # Switch to your socials, more info from MkDocs: 
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#social-links
     - icon: fontawesome/brands/github
       link: https://github.com/Imageomics
     - icon: simple/huggingface
@@ -59,6 +61,8 @@ extra:
     - icon: octicons/link-16
       link: https://imageomics.org
 
+# Add your own copyright notice, but please include the note 
+# "This guide was generated from the <a href="https://github.com/Imageomics/Collaborative-distributed-science-guide" target="_blank"><u>Collaborative Distributed Science Guide</u></a>, developed by the <a href="https://imageomics.org" target="_blank"><u>Imageomics Institute</u></a> and the <a href="http://abcresearchcenter.org/" target="_blank"><u>AI and Biodiversity Change (ABC) Global Center</u></a>."
 copyright: >
   This work was supported by both the <a href="https://imageomics.org" target="_blank"><u>Imageomics Institute</u></a> and the <a href="http://abcresearchcenter.org/" target="_blank"><u>AI and Biodiversity Change (ABC) Global Center</u></a>. 
 
@@ -96,6 +100,7 @@ markdown_extensions:
       title: 📖 On This Page
 
 nav:
+# These are all relative links within the repo, only update if adding or deleting pages
   - Home: index.md
   - GitHub Guide:
       - "Repo Guide": wiki-guide/GitHub-Repo-Guide.md
