@@ -9,3 +9,17 @@
 .md-footer-generator {
   order: 3;
 }
+
+/*
+Make logo larger to be legible,
+based on this suggestion: https://github.com/squidfunk/mkdocs-material/discussions/2933#discussioncomment-1168075
+*/
+ .md-header__button.md-logo {
+  margin: 0;
+  padding: 1;
+}
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+  height: 2.8rem;
+  width: 2.8rem;
+}

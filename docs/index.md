@@ -1,4 +1,4 @@
-# Welcome to the Imageomics Institute Guide!
+# Welcome to the Collaborative Distributed Science Guide!
 
 This website hosts guides to Imageomics workflows, documentation, and general best-practices for collaborative science. We aim to provide a helpful resource for a broad base of scientists working in the field of [_imageomics_](wiki-guide/Glossary-for-Imageomics.md/#imageomics) and beyond.
 
@@ -68,4 +68,4 @@ We have two versions of the logo, a [fish](logos/Imageomics_logo_fish.png) and a
 <br>
 <br>
 
-!!! question "[Questions, Comments, or Concerns?](https://github.com/Imageomics/Imageomics-guide/issues)"
+!!! question "[Questions, Comments, or Concerns?](https://github.com/Imageomics/Collaborative-distributed-science-guide/issues)"
