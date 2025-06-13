@@ -1,6 +1,6 @@
-# Imageomics Institute Principles of Engagement
+# Imageomics and ABC Principles of Engagement
 
-As members of the Imageomics community, we agree to maintain an environment where every participant feels welcome to be their true self and speak from the heart.
+As members of the Imageomics and ABC communities, we agree to maintain an environment where every participant feels welcome to be their true self and speak from the heart.
 
 To this end, we agree as individuals and as a group to:
 
@@ -12,11 +12,11 @@ To this end, we agree as individuals and as a group to:
 - **Respect time.** When a session is over, we need to move on. There is designated time for in-depth follow up and continuing conversations. 
 - **Care** for each other. We bring our full selves to the community, and we look out for each other wholeheartedly. 
 
-We abide by these principles in all Imageomics spaces, including but not limited to digital and in-person meetings, formal and informal gatherings, online discussion forums and chat spaces, and field and lab work. 
+We abide by these principles in all Imageomics and ABC spaces, including but not limited to digital and in-person meetings, formal and informal gatherings, online discussion forums and chat spaces, and field and lab work. 
 
 Acts of misconduct are prohibited. Those found to engage in misconduct will be subject to dismissal from the project and further actions as directed by the guidelines of the employers and the place of incidence.
 
-If you believe you have experienced or witnessed misconduct in an Imageomics setting, please take these steps:
+If you believe you have experienced or witnessed misconduct in an Imageomics or ABC setting, please take these steps:
 
 1. Document the incident;
 2. Tell someone you trust;
