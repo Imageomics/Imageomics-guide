@@ -29,6 +29,7 @@ Primary pages to personalize are:
 - [`Digital-products-release-licensing-policy.md`](docs/wiki-guide/Digital-products-release-licensing-policy.md): at a minimum, links should be redirected to your GitHub and Hugging Face organization pages.
     - Other locations in pages such as the [`GitHub-Repo-Guide`](docs/wiki-guide/GitHub-Repo-Guide.md) and [`Hugging-Face-Repo-Guide.md`](docs/wiki-guide/Hugging-Face-Repo-Guide.md) also have links to our organization pages. A search and replace for "Imageomics" can be done to update these.
 - [`Technical-Infrastructure.md`](docs/wiki-guide/Technical-Infrastructure.md): this page is Imageomics-specific and includes internal-only links.
+- [Glossary for Imageomics](docs/wiki-guide/Glossary-for-Imageomics.md): this page should be updated to a topic relevant to your field or focus.
 - Templates should be updated for your organization (mainly the `Acknowledgements` sections, pre-filled URL suggestions, domain-specific suggestions and guidance).
 
 ### Testing
