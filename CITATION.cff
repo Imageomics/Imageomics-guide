@@ -1,4 +1,4 @@
-abstract: "Imageomics-focused guide to collaborative work, including GitHub and Hugging Face workflows."
+abstract: "Template guide site for collaborative work, including GitHub and Hugging Face workflows."
 authors:
 - family-names: "Campolongo"
   given-names: "Elizabeth G."
@@ -6,17 +6,26 @@ authors:
 - family-names: "Thompson"
   given-names: "Matthew J."
   orcid: "https://orcid.org/0000-0003-0583-8585"
-- family-names: "Zoe"
-  given-names: "Duan"
+- family-names: Zhang
+  given-names: Net
+  orcid: "https://orcid.org/0000-0003-2664-451X"
+- family-names: "Duan"
+  given-names: "Zoe"
   orcid: "https://orcid.org/0000-0002-8547-5907"
 - family-names: "Bradley"
   given-names: "John"
   orcid: "https://orcid.org/0000-0003-3858-848X"
+- family-names: Eyriay
+  given-names: Iuliia
+  orcid: "https://orcid.org/0009-0007-1597-8684"
+- family-names: Taylor
+  given-names: Graham
+  orcid: "https://orcid.org/0000-0001-5867-3652"
 - family-names: "Lapp"
   given-names: "Hilmar"
   orcid: "https://orcid.org/0000-0001-9107-0714"
 cff-version: 1.2.0
-date-released: "2024-11-DD"
+date-released: "2025-06-DD" # to update on release
 identifiers:
   - description: "The GitHub release URL of tag v1.0.0."
     type: url
@@ -38,5 +47,5 @@ keywords:
 license: CC0-1.0
 message: "If you find these docs helpful in your research, please cite them as below."
 repository-code: "https://github.com/Imageomics/Collaborative-distributed-science-guide"
-title: "Imageomics Guide"
+title: "Collaborative Distributed Science Guide"
 version: "1.0.0"
