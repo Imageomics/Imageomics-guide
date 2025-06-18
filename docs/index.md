@@ -1,8 +1,6 @@
 # Welcome to the Collaborative Distributed Science Guide!
 
-This website hosts guides to Imageomics workflows, documentation, and general best-practices for collaborative science. We aim to provide a helpful resource for a broad base of scientists working in the field of [_imageomics_](wiki-guide/Glossary-for-Imageomics.md/#imageomics) and beyond.
-
-It houses the information needed to get started with and use institute resources readily available to all members. However, most of this guide is applicable to anyone working more broadly in the field of imageomics or adjacent fields of computer and data science, and it is tailored to help domain scientists bridging that gap.
+This website hosts guides to FAIR (findable, accessible, interoperable, reusable) and reproducible workflows, documentation, and general best-practices for collaborative science. We aim to provide a helpful resource for a broad base of scientists working in the field of [_imageomics_](wiki-guide/Glossary-for-Imageomics.md/#imageomics) and beyond. For more information on development and how to interact with this guide template, see [About the Guide](https://github.com/Imageomics/Collaborative-distributed-science-guide?tab=readme-ov-file#about-the-guide).
 
 ## Highlights
 
@@ -34,30 +32,29 @@ Discover new tools to help:
 - [Virtual Environments](wiki-guide/Virtual-Environments.md): Summary of `conda` and `pip` environments: how to make, use, and share them.
 
 
-## Collaborative Infrastructure We Use
+## Collaborative Infrastructure used by Imageomics and ABC
 
 - GitHub
-    - [Institute Code Repositories](https://github.com/Imageomics) where we store our code (software + tools).
+    - [Imageomics](https://github.com/Imageomics) and [ABC](https://github.com/ABC-Center) Code Repositories, where we store our code (software + tools).
     - GitHub's [Docs](https://docs.github.com/en)
         - [Repositories](https://docs.github.com/en/repositories)
         - [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects)
 - Hugging Face
-    - [Imageomics Organization page](https://huggingface.co/imageomics) where we store our datasets and models (and their metadata).
+    - [Imageomics](https://huggingface.co/imageomics) and [ABC](https://hf.co/ABC-Center) Organization Pages, where we store our datasets and models (and their metadata).
     - Additionally, use [Hugging Face Spaces](https://huggingface.co/docs/hub/spaces) to run demos of models and other projects.
     - Hugging Face's [Docs](https://huggingface.co/docs)
         - [Model Hub](https://huggingface.co/docs/hub/models-the-hub)
         - [Datasets](https://huggingface.co/docs/hub/datasets-overview)
 
 ### Collaborative Infrastructure Diagram
-![tech_infrastructure_diagram](wiki-guide/images/index/382108831-1173cd79-db94-4326-8b6e-dcbdeb8939cd.png)
+![tech_infrastructure_diagram](wiki-guide/images/index/collaborative-infrastructure-diagram.png)
 
 
-## Imageomics Branding (Logos)
+## `<Ogranization>` Branding (Logos)
 
-We have two versions of the logo, a [fish](logos/Imageomics_logo_fish.png) and a [butterfly](logos/Imageomics_logo_butterfly.png), which should be used for scientific posters, conference, workshop, and meeting marketing materials, etc. Choice of logo is based on user preference.
+Since this is a joint Imageomics and ABC project, we have a special combined logo:
 
-![butterfly logo](logos/Imageomics_logo_butterfly.png){: style="width:45%"}
-![fish logo](logos/Imageomics_logo_fish.png){: style="width:45%"}
+![combined Imageomics and ABC logo](logos/Imageomics_ABC.png){: style="width:75%"}
 
 
 ## Other pages of note
