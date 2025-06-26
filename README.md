@@ -25,7 +25,7 @@ Primary pages to personalize are:
 
 - [`mkdocs.yaml`](mkdocs.yaml) has comments indicating locations to personalize (e.g., updating name, logos, socials). All pages use relative links within the repository, so those connections only need to be updated if adding or removing pages.
 - [`index.md`](docs/index.md): this is the homepage for the site and should reflect your organization or group's priorities.
-- [`CITATION.cff`](CITATION.cff): please set the Collaborative Distributed Science Guide citation as a reference in your citation file after making your own modifications (see [template](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/GitHub-Repo-Guide/#citation) for guidance on formating).
+- [`CITATION.cff`](CITATION.cff): please set the Collaborative Distributed Science Guide citation as a reference in your citation file after making your own modifications (see [template](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/GitHub-Repo-Guide/#citation) for guidance on formatting).
 - [`Digital-products-release-licensing-policy.md`](docs/wiki-guide/Digital-products-release-licensing-policy.md): at a minimum, links should be redirected to your GitHub and Hugging Face organization pages.
     - Other locations in pages such as the [`GitHub-Repo-Guide`](docs/wiki-guide/GitHub-Repo-Guide.md) and [`Hugging-Face-Repo-Guide.md`](docs/wiki-guide/Hugging-Face-Repo-Guide.md) also have links to our organization pages. A search and replace for "Imageomics" can be done to update these.
 - [`Technical-Infrastructure.md`](docs/wiki-guide/Technical-Infrastructure.md): this page is Imageomics-specific and includes internal-only links.
