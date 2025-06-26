@@ -13,7 +13,7 @@ Please feel free to open an [issue](https://github.com/Imageomics/Collaborative-
 
 ### How to Use the Guide
 
-This Guide is set up as a template repository so that there are two primary means of interacting with it:
+This Guide is set up as a template repository such that there are two primary means of interacting with it:
 1. Building a personalized version of the Guide: select "Use this Template" at the top of the repo to generate your own version. This will create a new repository (generated from the template repo) that does _not_ share the commit history of the template. Updates could still be added from the template upstream through [`git cherry-pick`](https://git-scm.com/docs/git-cherry-pick). More details are provided below, in [Personalizing the Guide](#personalizing-the-guide).
 2. Contributing to the Guide: fork this repo, make changes, and submit a pull request (PR) for review. Some guidance is provided in the [Pull Request Guide](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/The-GitHub-Pull-Request-Guide/); please provide a detailed description of your changes and review the contributing guidelines (coming soon).
 
