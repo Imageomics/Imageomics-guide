@@ -1,11 +1,10 @@
-site_name: "Collaborative Distributed Science Guide"  # Update guide name here, description below
-site_description: "A guide to collaborative work (originally for Imageomics), including GitHub and Hugging Face workflows."
-site_author: "Imageomics Institute"    # Update name, site_url, and repo_url
-site_url: "https://Imageomics.github.io/Collaborative-distributed-science-guide/"
-edit_uri: view/main/docs
+site_name: "Collaborative Distributed Science Guide"  # Update guide name here
+site_description: "A guide to collaborative work (originally for Imageomics), including GitHub and Hugging Face workflows."  # Update description
+site_author: "Imageomics Institute"    # Update organization/author name
+site_url: "https://Imageomics.github.io/Collaborative-distributed-science-guide/"  # Update your site URL
 
-repo_url: https://github.com/Imageomics/Collaborative-distributed-science-guide
-edit_uri: blob/main/docs/
+repo_url: https://github.com/Imageomics/Collaborative-distributed-science-guide  # Update your repository URL
+edit_uri: edit/main/docs/
 
 theme:
   name: material
