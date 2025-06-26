@@ -23,7 +23,7 @@ Welcome to your new guide repo! The first step in updating your new guide is to 
 
 Primary pages to personalize are:
 
-- [`mkdocs.yaml`](mkdocs.yaml) has comments indicating locations to personalize (e.g., updating name, logos, socials). All pages are linked relatively from the repository, so those connections only need to be updated if adding or removing pages.
+- [`mkdocs.yaml`](mkdocs.yaml) has comments indicating locations to personalize (e.g., updating name, logos, socials). All pages use relative links within the repository, so those connections only need to be updated if adding or removing pages.
 - [`index.md`](docs/index.md): this is the homepage for the site and should reflect your organization or group's priorities.
 - [`CITATION.cff`](CITATION.cff): please set the Collaborative Distributed Science Guide citation as a reference in your citation file after making your own modifications (see [template](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/GitHub-Repo-Guide/#citation) for guidance on formating).
 - [`Digital-products-release-licensing-policy.md`](docs/wiki-guide/Digital-products-release-licensing-policy.md): at a minimum, links should be redirected to your GitHub and Hugging Face organization pages.
