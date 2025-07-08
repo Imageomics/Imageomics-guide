@@ -1,5 +1,9 @@
-# _"Why should I put my work into the Imageomics GitHub org,"_ you ask?
+# _"Why should I put my work into the GitHub org,"_ you ask?
 
+<!-- 
+Replace Imageomics GitHub Org links with links to your organization/group GitHub
+Replace all instances of "institute" or "Imageomics" with appropriate term or name for your organization or group.
+-->
 The [Imageomics GitHub organization](https://github.com/Imageomics) exists to facilitate collaboration and version control among team members working on projects within the institute and make them available to the research community. You are encouraged to take advantage of the benefits of using this GitHub organization for your institute projects!
 
 ## Centralization 
@@ -10,8 +14,8 @@ This is the main aspect that leads to other benefits. Whether you are running yo
 
 - You know where your team's work is, and your team knows where your work is. 
 - Code is simpler to find, share, access, review, and manage.
-- Access privileges can be granted and managed through [teams](https://github.com/orgs/Imageomics/teams), which Institute staff can administer for you, rather than access having to be managed on a per-individual basis. 
-- Progress can be communicated readily, and help can be solicited when needed, including through  [teams](https://github.com/orgs/Imageomics/teams).
+- Access privileges can be granted and managed through [teams](https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams), rather than access having to be managed on a per-individual basis.
+- Progress can be communicated readily, and help can be solicited when needed, including through [teams](https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams).
 
 ### Knowledge Sharing
 
@@ -42,4 +46,4 @@ While we encourage you to host your institute-related work on the Imageomics Git
 - Personal projects or work not directly tied to the institute.
 - Projects developed prior to joining the institute where transferring ownership might be complex or undesirable.
 
-We strongly encourage you to keep your institute-related work centrally organized in the Imageomics GitHub organization to maximize the benefits for you and your fellow researchers!
+We strongly encourage you to keep your institute-related work centrally organized in the [Imageomics GitHub organization](https://github.com/Imageomics) to maximize the benefits for you and your fellow researchers!
