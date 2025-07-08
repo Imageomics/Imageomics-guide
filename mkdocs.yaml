@@ -108,12 +108,14 @@ nav:
       - "Projects Guide": wiki-guide/Guide-to-GitHub-Projects.md
       - "Branch Protections": wiki-guide/When-to-think-about-branch-protections.md
       - "Two Repo Problem": wiki-guide/Two-Repo-Problem.md
-      - "Why Use the Institute GitHub": wiki-guide/Why-use-the-Institute-GitHub.md
+      # May want to personalize (on page as well): Why use the <organization/group> GitHub
+      - "Why Use the GitHub Organization": wiki-guide/Why-use-the-GitHub-organization.md
   - Hugging Face Guide:
       - "Repo Guide": wiki-guide/Hugging-Face-Repo-Guide.md
       - "Workflow": wiki-guide/The-Hugging-Face-Workflow.md
       - "Dataset Upload Guide": wiki-guide/The-Hugging-Face-Dataset-Upload-Guide.md
-      - "Why Use the Institute Hugging Face": wiki-guide/Why-use-the-Institute-Hugging-Face.md
+      # May want to personalize (on page as well): Why use the <organization/group> Hugging Face
+      - "Why Use the Hugging Face Organization": wiki-guide/Why-use-the-Hugging-Face-organization.md
   - FAIR Guide:
       - "About FAIR Principles": wiki-guide/FAIR-Guide.md
       - "Metadata Checklist": wiki-guide/Metadata-Checklist.md
