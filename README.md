@@ -11,6 +11,10 @@ This guide started as an Institute-internal wiki, focused on providing guidance 
 
 Please feel free to open an [issue](https://github.com/Imageomics/Imageomics-guide/issues) with any questions regarding the content fo this guide or if you would like to contribute to the [Glossary](https://imageomics.github.io/Imageomics-guide/wiki-guide/Glossary-for-Imageomics/) or [Helpful Tools page](https://imageomics.github.io/Imageomics-guide/wiki-guide/Helpful-Tools-for-your-Workflow/).
 
+## Contributing
+
+If you'd like to contribute to this guide, please read our [Contributing Guidelines](CONTRIBUTING.md) for information about our standards, development workflow, and submission process.
+
 ### Testing
 To test this site locally, first clone this repository, then create an environment with `requirements.txt`
 ```
