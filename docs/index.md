@@ -1,10 +1,12 @@
 # Welcome to the Collaborative Distributed Science Guide
 
-This website hosts guides to FAIR (findable, accessible, interoperable, reusable) and reproducible workflows, documentation, and general best-practices for collaborative science. We aim to provide a helpful resource for a broad base of scientists working in the field of [_imageomics_](wiki-guide/Glossary-for-Imageomics.md/#imageomics) and beyond. For more information on development and how to interact with this guide template, see [About the Guide](https://github.com/Imageomics/Collaborative-distributed-science-guide?tab=readme-ov-file#about-the-guide).
+This website hosts guides to FAIR (findable, accessible, interoperable, reusable) and reproducible workflows, documentation, and general best-practices for collaborative science. We aim to provide a helpful resource for scientists working in [_imageomics_](wiki-guide/Glossary-for-Imageomics.md/#imageomics) and related interdisciplinary fields.
+
+For information about customizing this guide template, see [About the Guide](https://github.com/Imageomics/Collaborative-distributed-science-guide?tab=readme-ov-file#about-the-guide).
 
 ## Highlights
 
-There are many pages of useful information contained in this guide covering a range of topics from project management and workflows, to repositories and archives, to a glossary of _imageomics-related_ terms for improved interdisciplinary communication.
+There are many pages of useful information contained in this guide covering a range of topics from project management and workflows, to repositories and archives, to a glossary of scientific terms for improved interdisciplinary communication.
 
 ### Just starting a project?
 
