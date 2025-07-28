@@ -112,11 +112,20 @@ The project includes custom MkDocs macros defined in `main.py`:
 
 ### Commit Message Guidelines
 
-We follow the [Conventional Commits](https://www.conventionalcommits.org/) standard for commit messages:
+The most important aspects of good commit messages are that they should be **descriptive** and **atomic** (each commit should represent a single logical change). Additionally:
+
+- **Keep the first line short**: Limit the subject line to 50 characters or less
+- **Use the imperative mood**: "Add feature" not "Added feature" or "Adds feature"
+- **Separate subject from body**: Use a blank line between the subject line and detailed description
+
+#### Conventional Commits Recommendation
+
+We recommend following the [Conventional Commits](https://www.conventionalcommits.org/) format for commit messages:
 
 **Format:** `type(scope): description`
 
 **Common types:**
+
 - `feat`: New feature or content addition
 - `fix`: Bug fix or correction
 - `docs`: Documentation updates
@@ -125,7 +134,8 @@ We follow the [Conventional Commits](https://www.conventionalcommits.org/) stand
 - `chore`: Maintenance tasks, tooling updates
 
 **Examples:**
-```
+
+```bash
 feat(fair-guide): add data repository checklist
 fix(templates): correct license format in HF dataset card
 docs(contributing): add conventional commit guidelines
@@ -135,15 +145,19 @@ chore: update mkdocs dependencies
 
 **Scope** is optional but helpful for larger changes. Use the guide section or file type being modified.
 
+**Note:** Since we use squash merges, strict adherence to this format isn't required, but descriptive and atomic commits help maintain a clear project history.
+
 ## Quality Assurance
 
 ### Linting
+
 The project uses [markdownlint](https://github.com/DavidAnson/markdownlint) with configuration in `.markdownlint.json`. Key settings:
 - 4-space indentation for lists (`MD007`)
 - No hard tab restrictions disabled
 - Line length restrictions disabled (`MD013`)
 
 ### Content Review
+
 When reviewing content:
 - Verify accuracy of technical information
 - Check for consistency with existing guides
@@ -153,11 +167,13 @@ When reviewing content:
 ## Platform-Specific Considerations
 
 ### Hugging Face Integration
+
 - Dataset and model card templates must follow HF specifications
 - YAML frontmatter formatting is critical for platform compatibility
 - License identifiers must match HF's expected format
 
 ### MkDocs/Python-Markdown
+
 - Nested list rendering requires specific indentation
 - Some Markdown extensions may behave differently than GitHub Flavored Markdown
 - Always test complex formatting locally
