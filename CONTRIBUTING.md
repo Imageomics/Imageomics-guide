@@ -14,24 +14,32 @@ This is a template repository designed to be forked and customized by different 
 
 1. Clone the repository
 2. Set up a virtual environment (recommended):
+
    ```bash
    python -m venv .venv
    source .venv/bin/activate  # On Windows: .venv\Scripts\activate
    ```
+
    For more detailed environment setup options (including conda), see our [Virtual Environments guide](docs/wiki-guide/Virtual-Environments.md).
+
 3. Install dependencies:
+
    ```bash
    pip install -r requirements.txt
    ```
+
 4. Serve the site locally:
+
    ```bash
    mkdocs serve
    ```
-5. View the site at http://127.0.0.1:8000/Collaborative-distributed-science-guide/
+
+5. View the site at <http://127.0.0.1:8000/Collaborative-distributed-science-guide/>
 
 ### Testing Changes
 
 Always test your changes locally with `mkdocs serve` before submitting a PR to ensure:
+
 - Content renders correctly
 - Links work properly
 - Formatting appears as intended
@@ -42,11 +50,13 @@ Always test your changes locally with `mkdocs serve` before submitting a PR to e
 ### Markdown Formatting
 
 #### Indentation for Nested Lists
+
 - **Use 4 spaces for nested list items** (not 2 spaces)
 - This requirement exists due to Python-Markdown compatibility issues with MkDocs
 - 2-space indentation causes nested lists to not render properly in the final HTML
 
 **Correct:**
+
 ```markdown
 - [ ] Main item
     - [ ] Nested item
@@ -54,12 +64,14 @@ Always test your changes locally with `mkdocs serve` before submitting a PR to e
 ```
 
 **Incorrect:**
+
 ```markdown
 - [ ] Main item
   - [ ] Nested item (will not render as nested)
 ```
 
 #### General Formatting
+
 - Remove trailing whitespace
 - Use consistent line breaks
 - Follow the project's `.markdownlint.json` configuration
@@ -68,14 +80,17 @@ Always test your changes locally with `mkdocs serve` before submitting a PR to e
 ### License Format Requirements
 
 #### Hugging Face YAML Frontmatter
+
 When specifying licenses in Hugging Face dataset/model card YAML sections, **always use lowercase**:
 
 **Correct:**
+
 ```yaml
 license: cc0-1.0
 ```
 
 **Incorrect:**
+
 ```yaml
 license: CC0-1.0  # Will cause issues with Hugging Face platform
 ```
@@ -83,6 +98,7 @@ license: CC0-1.0  # Will cause issues with Hugging Face platform
 This is a platform-specific requirement for Hugging Face compatibility.
 
 #### License References in Text
+
 In prose text, you may use standard capitalization (e.g., "CC0", "MIT"), but YAML frontmatter must be lowercase.
 
 ### File Organization
@@ -95,6 +111,7 @@ In prose text, you may use standard capitalization (e.g., "CC0", "MIT"), but YAM
 ### Custom Macros
 
 The project includes custom MkDocs macros defined in `main.py`:
+
 - `include_file_as_code()` - Embeds file content as code blocks
 - When using macros, ensure proper syntax and test rendering locally
 
@@ -160,6 +177,7 @@ chore: update mkdocs dependencies
 ### Linting
 
 The project uses [markdownlint](https://github.com/DavidAnson/markdownlint) with configuration in `.markdownlint.json`. Key settings:
+
 - 4-space indentation for lists (`MD007`)
 - No hard tab restrictions disabled
 - Line length restrictions disabled (`MD013`)
@@ -167,6 +185,7 @@ The project uses [markdownlint](https://github.com/DavidAnson/markdownlint) with
 ### Content Review
 
 When reviewing content:
+
 - Verify accuracy of technical information
 - Check for consistency with existing guides
 - Ensure proper cross-referencing between related pages
