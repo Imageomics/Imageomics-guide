@@ -13,15 +13,21 @@ This is a template repository designed to be forked and customized by different 
 ### Local Development Setup
 
 1. Clone the repository
-2. Install dependencies:
+2. Set up a virtual environment (recommended):
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   ```
+   For more detailed environment setup options (including conda), see our [Virtual Environments guide](docs/wiki-guide/Virtual-Environments.md).
+3. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-3. Serve the site locally:
+4. Serve the site locally:
    ```bash
    mkdocs serve
    ```
-4. View the site at http://127.0.0.1:8000/Collaborative-distributed-science-guide/
+5. View the site at http://127.0.0.1:8000/Collaborative-distributed-science-guide/
 
 ### Testing Changes
 
