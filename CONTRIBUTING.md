@@ -1,4 +1,4 @@
-# Contributing to Collaborative Distributed Science Guide
+# Contributing to the Collaborative Distributed Science Guide
 
 Thank you for your interest in contributing to the Collaborative Distributed Science Guide! This document outlines the standards and guidelines for contributing to this template repository.
 
