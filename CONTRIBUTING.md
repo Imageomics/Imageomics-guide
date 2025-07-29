@@ -1,10 +1,12 @@
-# Contributing to Imageomics Guide
+# Contributing to Collaborative Distributed Science Guide
 
-Thank you for your interest in contributing to the Imageomics Guide! This document outlines the standards and guidelines for contributing to this project.
+Thank you for your interest in contributing to the Collaborative Distributed Science Guide! This document outlines the standards and guidelines for contributing to this template repository.
 
 ## Overview
 
-The Imageomics Guide is built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and deployed via GitHub Pages. All documentation is written in Markdown and follows specific formatting standards to ensure consistent rendering and maintainability.
+The Collaborative Distributed Science Guide is built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and deployed via GitHub Pages. All documentation is written in Markdown and follows specific formatting standards to ensure consistent rendering and maintainability.
+
+This is a template repository designed to be forked and customized by different organizations for their collaborative science documentation needs.
 
 ## Getting Started
 
@@ -19,7 +21,7 @@ The Imageomics Guide is built with [MkDocs Material](https://squidfunk.github.io
    ```bash
    mkdocs serve
    ```
-4. View the site at http://127.0.0.1:8000/Imageomics-guide/
+4. View the site at http://127.0.0.1:8000/Collaborative-distributed-science-guide/
 
 ### Testing Changes
 
@@ -93,7 +95,7 @@ The project includes custom MkDocs macros defined in `main.py`:
 ## Contribution Process
 
 1. **Create an issue** describing the change (for significant additions)
-2. **Create a feature branch** from `main`
+2. **Create a feature branch** from `dev`
 3. **Make your changes** following the standards above
 4. **Test locally** with `mkdocs serve`
 5. **Run linting** to ensure formatting consistency
@@ -180,14 +182,14 @@ When reviewing content:
 
 ## Getting Help
 
-- Open an [issue](https://github.com/Imageomics/Imageomics-guide/issues) for questions or problems
+- Open an [issue](https://github.com/Imageomics/Collaborative-distributed-science-guide/issues) for questions or problems
 - Reference existing guides and templates for examples
 - Check the [MkDocs Material documentation](https://squidfunk.github.io/mkdocs-material/) for advanced features
 
 ## Code of Conduct
 
-All contributors must adhere to our [Code of Conduct](docs/CODE_OF_CONDUCT.md) and Imageomics Institute Principles of Engagement.
+All contributors must adhere to our [Code of Conduct](docs/CODE_OF_CONDUCT.md) and organizational principles of engagement.
 
 ---
 
-Thank you for helping improve the Imageomics Guide! Your contributions help make collaborative scientific computing more accessible and effective.
+Thank you for helping improve the Collaborative Distributed Science Guide! Your contributions help make collaborative scientific computing more accessible and effective.
