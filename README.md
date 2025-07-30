@@ -32,6 +32,10 @@ Primary pages to personalize are:
 - [Glossary for Imageomics](docs/wiki-guide/Glossary-for-Imageomics.md): this page should be updated to a topic relevant to your field or focus.
 - Templates should be updated for your organization (mainly the `Acknowledgements` sections, pre-filled URL suggestions, domain-specific suggestions and guidance).
 
+## Contributing
+
+If you'd like to contribute to this guide, please read our [Contributing Guidelines](CONTRIBUTING.md) for information about our standards, development workflow, and submission process.
+
 ### Testing
 To test this site locally, first clone this repository, then create an environment with `requirements.txt`
 ```
