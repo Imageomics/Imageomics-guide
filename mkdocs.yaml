@@ -130,7 +130,9 @@ nav:
   - Command Line Cheat Sheet: wiki-guide/Command-Line-Cheat-Sheet.md
   - Code of Conduct: CODE_OF_CONDUCT.md
   - Digital Product Policy: 
+      - "About Digital Policies": wiki-guide/About-Digital-Policies.md
       - "Release and Licensing Policy": wiki-guide/Digital-products-release-licensing-policy.md
+      - "Data Code of Conduct": wiki-guide/Data-Code-of-Conduct.md
   - Other Resources:
       - "Technical Infrastructure": wiki-guide/Technical-Infrastructure.md
       - "Virtual Environments": wiki-guide/Virtual-Environments.md
