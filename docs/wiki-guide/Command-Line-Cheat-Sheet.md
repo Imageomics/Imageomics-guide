@@ -1,4 +1,5 @@
 # Command Line Cheat Sheet
+<!-- Disable rule for in-line HTML; it is needed for better table formatting and brackets aren't recognized as being in a code block by the linter on this page. -->
 <!-- markdownlint-disable MD033 -->
 See also [GitHub's Markdown Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
