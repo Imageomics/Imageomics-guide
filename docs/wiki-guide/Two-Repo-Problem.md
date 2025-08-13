@@ -8,14 +8,14 @@ In conflict with this is the need to have a public repo for following purposes:
 - Act as a placeholder for when the paper is published
 - Share code from an earlier paper
 
-The typical approach is to have one __public git repo__ and one __private git repo__.
+The typical approach is to have one **public git repo** and one **private git repo**.
 
 ## Merging Challenges
 
-Once code changes are complete in the __private git repo__ moving them to the __public git repo__ can be a problem.
-For instance, if the __public git repo__ and the __private git repo__ were created separately they will have unrelated histories.
+Once code changes are complete in the **private git repo** moving them to the **public git repo** can be a problem.
+For instance, if the **public git repo** and the **private git repo** were created separately they will have unrelated histories.
 
-__Common challenges when merging:__
+**Common challenges when merging:**
 
 - Determining the correct git commands and steps to perform the merge
 - Cleaning up many small commits into one or a few larger commits
@@ -69,14 +69,14 @@ There are two issues at play here:
 
 #### 4. Create Private Repo
 
-First create a private repo __without__ commits.
+First create a private repo **without** commits.
 
 Visit <https://github.com/organizations/Imageomics/repositories/new>
 
 - Enter the private repo name (ex: `<public-repo>-dev`)
-- __DO NOT__ check `Add a README file`
-- __DO NOT__ Choose a license
-- __DO NOT__ select a .gitignore template
+- **DO NOT** check `Add a README file`
+- **DO NOT** Choose a license
+- **DO NOT** select a .gitignore template
 - Click `Create repository`
 
 After this step you should see a repo without any commits with a box similar to the following:

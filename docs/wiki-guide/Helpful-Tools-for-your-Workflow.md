@@ -18,7 +18,7 @@ jupytext --set-formats ipynb,py:percent <notebook-name>.ipynb  # Pair a notebook
 jupytext --sync <notebook-name>.ipynb             # Sync the two representations
 ```
 
-#### But wait! ...There's another way to automate it
+#### But wait! ...There's another way to automate it!
 
 There is a [jupytext pre-commit hook](https://jupytext.readthedocs.io/en/latest/using-pre-commit.html) that can be used to sync your paired files automatically when updating your GitHub repo. To learn more about pre-commit hooks in general, see the [git docs on pre-commit hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks).
 

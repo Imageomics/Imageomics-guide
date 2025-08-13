@@ -79,19 +79,19 @@ For more information, see [FAIR principles](https://www.go-fair.org/fair-princip
 
 In machine learning and data science, a feature is a single measurable property or characteristic of the phenomenon under observation. With tabular data, a feature is a column in the dataset used by a model to make predictions. In genomics, a feature could be, for example, gene expression levels, the presence (or absence) of certain genetic variants (such as [SNPs](#single-nucleotide-polymorphism-snp), insertions and deletions (indels), and others), or epigenetic markers.
 
-### Feature Extraction
+#### Feature Extraction
 
 A set of [dimensionality reduction](#dimensionality-reduction) techniques used to map raw data to a smaller set of features. Example techniques include [PCA](#principal-component-analysis-pca), [MDS](#multidimensional-scaling-mds), [t-SNE](#t-distributed-stochastic-neighbor-embedding-t-sne), [autoencoders](#autoencoder), and Fourier or wavelet transforms.
 
 The key difference from feature selection is that feature extraction generates a new set of features from the original dataset by projecting or mapping the data into a new feature space rather than selecting from existing features.
 
-### Feature Selection
+#### Feature Selection
 
 A method to select a subset of relevant features for use in model construction.
 
 The key difference from feature extraction is that feature selection does not generate new features but rather identifies the most meaningful existing features in a dataset by excluding redundant or irrelevant features. For example, in genomics, feature selection would involve selecting the most important gene(s) relevant to a certain phenotype among thousands of genes.
 
-### Feature Space
+#### Feature Space
 
 ## G
 
