@@ -1,4 +1,4 @@
-# Welcome to the Collaborative Distributed Science Guide!
+# Welcome to the Collaborative Distributed Science Guide
 
 This website hosts guides to FAIR (findable, accessible, interoperable, reusable) and reproducible workflows, documentation, and general best-practices for collaborative science. We aim to provide a helpful resource for scientists working in [_imageomics_](wiki-guide/Glossary-for-Imageomics.md/#imageomics) and related interdisciplinary fields.
 

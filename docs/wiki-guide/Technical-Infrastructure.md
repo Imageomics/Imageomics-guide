@@ -1,6 +1,7 @@
 # Compute Infrastructure We Use
 
 ## Overview
+
 Overall [Infrastructure Chart](https://docs.google.com/spreadsheets/d/1JSOi5pp2Y8Utj_npzKcYmvAxGncgmvP2gait5H0oYKk/edit?usp=sharing) with system specifications and notes.
 
 - [The Ohio Supercomputing Center (OSC)](https://www.osc.edu/): Large compute resource accessible through `ssh` or OnDemand (web) platform.
@@ -15,7 +16,7 @@ Overall [Infrastructure Chart](https://docs.google.com/spreadsheets/d/1JSOi5pp2Y
     - Used sparingly for urgent deadlines when other compute is not available (generally hasn't been available at those times either, though) or to host projects that cannot be hosted effectively through a Hugging Face Space.
     - [AWS usage guidelines (_internal_)](https://github.com/Imageomics/internal-guidelines/wiki/AWS-@-Imagomics)
 
-# Other Compute Resources We've Used or Considered
+## Other Compute Resources We've Used or Considered
 
 - OpenAI Researcher Access Program ([_internal_ info](https://github.com/Imageomics/internal-guidelines/wiki/OpenAI-Researcher-Access-Program))
 - NAIRR Pilot Program

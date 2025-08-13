@@ -10,7 +10,7 @@ This means the following policy applies for digital products of the Imageomics I
 
 2. Code is to be released under an [OSI-approved open source license](https://opensource.org/licenses/), or to the public domain (for example, by applying a [CC-Zero](https://creativecommons.org/publicdomain/zero/1.0/) waiver).
 
-    - This should be in a well-documented GitHub repository that follows the format specified in the [Institute GitHub Repo Guide](GitHub-Repo-Guide.md). 
+    - This should be in a well-documented GitHub repository that follows the format specified in the [Institute GitHub Repo Guide](GitHub-Repo-Guide.md).
 
     - If associated with a publication, code should be versioned with a release linked to a DOI that can be referenced in the publication.
 

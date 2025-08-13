@@ -58,5 +58,4 @@ While we encourage you to host your institute-related work on the Imageomics Hug
 - Personal projects or work not directly tied to the institute.
 - Projects developed prior to joining the institute where transferring ownership might be complex or undesirable.
 
-
 We strongly encourage you to leverage the [Imageomics Hugging Face organization](https://huggingface.co/imageomics) for your institute-related projects. This will help you and your fellow researchers maximize collaboration, knowledge sharing, and the overall impact of our collective work.

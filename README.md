@@ -2,7 +2,7 @@
 
 Welcome to the Collaborative Distributed Science Guide!
 
-Just joining or starting a new project? 
+Just joining or starting a new project?
 Check out the [Collaborative Distributed Science Guide](https://imageomics.github.io/Collaborative-distributed-science-guide/) for guidance on conventions and best practices.
 
 ## About the Guide
@@ -14,6 +14,7 @@ Please feel free to open an [issue](https://github.com/Imageomics/Collaborative-
 ### How to Use the Guide
 
 This Guide is set up as a template repository such that there are two primary means of interacting with it:
+
 1. Building a personalized version of the Guide: select "Use this Template" at the top of the repo to generate your own version. This will create a new repository (generated from the template repo) that does _not_ share the commit history of the template. Updates could still be added from the template upstream through [`git cherry-pick`](https://git-scm.com/docs/git-cherry-pick). More details are provided below, in [Personalizing the Guide](#personalizing-the-guide).
 2. Contributing to the Guide: fork this repo, make changes, and submit a pull request (PR) for review. Some guidance is provided in the [Pull Request Guide](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/The-GitHub-Pull-Request-Guide/); please provide a detailed description of your changes and review the contributing guidelines (coming soon).
 
@@ -37,17 +38,23 @@ Primary pages to personalize are:
 If you'd like to contribute to this guide, please read our [Contributing Guidelines](CONTRIBUTING.md) for information about our standards, development workflow, and submission process.
 
 ### Testing
+
 To test this site locally, first clone this repository, then create an environment with `requirements.txt`
+
 ```
 pip install -r requirements.txt
 ```
+
 and run `mkdocs serve`:
+
 ```
 mkdocs serve
 ```
-Then the site will run at http://127.0.0.1:8000/Collaborative-distributed-science-guide/.
+
+Then the site will run at <http://127.0.0.1:8000/Collaborative-distributed-science-guide/>.
 
 ### History
+
 This guide was developed alongside the [Imageomics Guide](https://imageomics.github.io/Imageomics-guide/), which houses the information needed to get started with and use institute resources readily available to all members. However, most of its content is applicable to anyone working more broadly in the field of [_imageomics_](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/Glossary-for-Imageomics.md/#imageomics) or adjacent fields of computer and data science, and it is tailored to help domain scientists bridging that gap. _This guide_ is intended to serve as a template for others wishing to develop a similar organization-specific guide, and this solution was born out of the desire to do so for the [AI and Biodiversity Change (ABC) Global Center](http://abcresearchcenter.org) while limiting duplicative updates between guides (Imageomics and ABC share some team members on this project). The general structure of the website should be broadly applicable, but see [Personalizing the Guide](#personalizing-the-guide) for suggestions on tailoring it for the particular organization or group's needs.
 
 ## Acknowledgments
