@@ -2,5 +2,7 @@
   "MD007": { "indent": 4 },
   "no-hard-tabs": false,
   "MD013": false,
-  "MD026": { "punctuation": ".,;:!" }
+  "MD026": { "punctuation": ".,;:!" },
+  "MD040": false,
+  "MD046": false
 }
