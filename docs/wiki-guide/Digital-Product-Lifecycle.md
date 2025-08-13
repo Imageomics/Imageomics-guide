@@ -11,26 +11,26 @@ Although most of the engagement from the side of research teams is expected to (
 
 The following adds additional context and direction to supplement the diagram, organized by project lifecycle stage.
 
-### Setup Phase:
+### Setup Phase
 
 * NextGens and/or project[^1] PIs schedule a project consultation with the Senior Data Scientist. This will include scope and intended data usage for improved research convergence and to ensure projects start with all available resources in mind.
 * In GitHub project repo, create an issue for each of the repositories for the digital products with the appropriate checklist:
-  * **Code and workflows:** GitHub Repository ([Code checklist](Code-Checklist.md)).
-  * **Datasets:** Hugging Face Dataset Repository ([Data checklist](Data-Checklist.md)).
-    * For already published data usage, see the [Metadata Checklist](Metadata-Checklist.md).
-  * **ML Models:** Hugging Face Model Repository ([Model checklist](Model-Checklist.md)).
+    * **Code and workflows:** GitHub Repository ([Code checklist](Code-Checklist.md)).
+    * **Datasets:** Hugging Face Dataset Repository ([Data checklist](Data-Checklist.md)).
+        * For already published data usage, see the [Metadata Checklist](Metadata-Checklist.md).
+    * **ML Models:** Hugging Face Model Repository ([Model checklist](Model-Checklist.md)).
 
-### Exploration Phase:
+### Exploration Phase
 
 * Maintain record of any and all data utilized (source, license, citation, etc.).
-  * See [Data Sources Template](https://docs.google.com/spreadsheets/d/1r4-_Ytg2bwGMxLpYrk4GVhx61JSOYXANsSFjryNmsDE/edit?usp=drive_link).
+    * See [Data Sources Template](https://docs.google.com/spreadsheets/d/1r4-_Ytg2bwGMxLpYrk4GVhx61JSOYXANsSFjryNmsDE/edit?usp=drive_link).
 * Document exploration of data.
-  * This establishes an understanding of what the data is and how it can be used. For an example and guidance, consider the exploration and documentation done in the [Data Workshop](https://github.com/Imageomics/data-workshop-AH-2024).
+    * This establishes an understanding of what the data is and how it can be used. For an example and guidance, consider the exploration and documentation done in the [Data Workshop](https://github.com/Imageomics/data-workshop-AH-2024).
 * Record processing steps applied—maintained in a well-documented code repository (following [GitHub Guidance](GitHub-Repo-Guide.md))—and update Dataset Card(s) with information and links back to GitHub repository.
 * Establish and update contributor list—follow the [Imageomics Author Guide](https://docs.google.com/spreadsheets/d/1GwlCukfoQPL8JI2yyWRD3g4uiMTO3tlGNE_qeb_xBCs/edit?usp=sharing).[^2]
-  * Authors and author order for the paper and codebase (and/or dataset) may differ, all should be discussed.
+    * Authors and author order for the paper and codebase (and/or dataset) may differ, all should be discussed.
 
-### Model Development Phase:
+### Model Development Phase
 
 * Maintain a record of any and all base models utilized (source, license, citation, etc.).
 * Record model experiments—scripts or Jupyter Notebooks, _documented_[^3] and maintained in GitHub for version control as different approaches are tried.
@@ -38,17 +38,17 @@ The following adds additional context and direction to supplement the diagram, o
 * Add all code used to generate figures to the project GitHub repository; including documentation for reproduction (e.g., package requirements, data info, instructions).
 * Review (and revise as necessary) the Author/Contributor list(s).
 
-### Preparing for Publication:
+### Preparing for Publication Phase
 
 * Project components should align with FAIR and Reproducibility principles:
-  * Completed and fully documented GitHub Repository for code (recall [Code checklist](Code-Checklist.md)).
-  * Completed and fully documented Hugging Face Dataset Repository for data products (recall [Data checklist](Data-Checklist.md)).
-    * If using an already published dataset, all requisite metadata and provenance information included (recall [Metadata checklist](Metadata-Checklist.md)). Specifically, ensure that all attribution requirements and/or expectations have been appropriately met.
-  * Completed and fully documented Hugging Face Model Repository for ML models (recall [Model checklist](Model-Checklist.md)).
+    * Completed and fully documented GitHub Repository for code (recall [Code checklist](Code-Checklist.md)).
+    * Completed and fully documented Hugging Face Dataset Repository for data products (recall [Data checklist](Data-Checklist.md)).
+        * If using an already published dataset, all requisite metadata and provenance information included (recall [Metadata checklist](Metadata-Checklist.md)). Specifically, ensure that all attribution requirements and/or expectations have been appropriately met.
+    * Completed and fully documented Hugging Face Model Repository for ML models (recall [Model checklist](Model-Checklist.md)).
 * Schedule Review by Senior Data Scientist of data, model, and code repositories 3 weeks prior to camera-ready deadline (approval required for DOI generation).
 * Review (and revise as necessary) the Author/Contributor list(s).
 
-[^1]:  Here we use the term project at a smaller scale to mean any endeavor resulting in a digital product (dataset, ML model, code) and/or paper (e.g., for the purposes of this policy [SST](https://github.com/Imageomics/SST) is a *project*, while Butterflies is not).
+[^1]:  Here we use the term project at a smaller scale to mean any endeavor resulting in a digital product (dataset, ML model, code) and/or paper (e.g., for the purposes of this policy [SST](https://github.com/Imageomics/SST) is a _project_, while Butterflies is not).
 
 [^2]:  Contributor lists should be started as early as possible and are subject to change as a project progresses; this is expected and the reason to review during each phase of development.
 
