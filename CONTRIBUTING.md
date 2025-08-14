@@ -121,7 +121,8 @@ The project includes custom MkDocs macros defined in `main.py`:
 2. **Create a feature branch** from `dev`
 3. **Make your changes** following the standards above
 4. **Test locally** with `mkdocs serve`
-5. **Run linting** to ensure formatting consistency
+5. **Run linting (OPTIONAL)** to ensure formatting consistency
+   - See instructions in [Linting](#linting)
 6. **Submit a pull request** with:
    - Clear description of changes
    - Reference to related issue
@@ -178,9 +179,20 @@ chore: update mkdocs dependencies
 
 The project uses [markdownlint](https://github.com/DavidAnson/markdownlint) with configuration in `.markdownlint.json`. Key settings:
 
-- 4-space indentation for lists (`MD007`)
-- No hard tab restrictions disabled
-- Line length restrictions disabled (`MD013`)
+- 4-space indentation for lists (`MD007`).
+- No hard tab restrictions disabled.
+- Line length restrictions disabled (`MD013`).
+- Restrict punctuation in headers (`MD026`); allow `!` and `?`.
+- Allowed code blocks without language specification (`MD040`).
+- Allow fenced code blocks, as this commonly errors when indented (see [discussion](https://github.com/DavidAnson/markdownlint/issues/327)).
+
+For faster PR review, you may want to run linting locally; we do have a PR Action in place as well. First install markdownlint, then run
+
+```console
+markdownlint -c .markdownlint.json -f docs/wiki-guide/
+```
+
+The `-f` resolves simple formatting issues, and alerts will be raised for more complicated linter style rules (e.g., referencing a link as `[here](URL)` will produce the line: `<filename>.md:191:2 MD059/descriptive-link-text Link text should be descriptive [Context: "[here]"]`).
 
 ### Content Review
 
