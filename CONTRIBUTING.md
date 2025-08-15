@@ -1,10 +1,10 @@
-# Contributing to the Collaborative Distributed Science Guide
+# Contributing to the Imageomics Guide
 
-Thank you for your interest in contributing to the Collaborative Distributed Science Guide! This document outlines the standards and guidelines for contributing to this template repository.
+Thank you for your interest in contributing to the Imageomics Guide! This document outlines the standards and guidelines for contributing to this template repository.
 
 ## Overview
 
-The Collaborative Distributed Science Guide is built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and deployed via GitHub Pages. All documentation is written in Markdown and follows specific formatting standards to ensure consistent rendering and maintainability.
+The Imageomics Guide is built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and deployed via GitHub Pages. All documentation is written in Markdown and follows specific formatting standards to ensure consistent rendering and maintainability.
 
 This is a template repository designed to be forked and customized by different organizations for their collaborative science documentation needs.
 
@@ -34,7 +34,7 @@ This is a template repository designed to be forked and customized by different 
    mkdocs serve
    ```
 
-5. View the site at <http://127.0.0.1:8000/Collaborative-distributed-science-guide/>
+5. View the site at <http://127.0.0.1:8000/Imageomics-guide/>
 
 ### Testing Changes
 
@@ -219,7 +219,7 @@ When reviewing content:
 
 ## Getting Help
 
-- Open an [issue](https://github.com/Imageomics/Collaborative-distributed-science-guide/issues) for questions or problems
+- Open an [issue](https://github.com/Imageomics/Imageomics-guide/issues) for questions or problems
 - Reference existing guides and templates for examples
 - Check the [MkDocs Material documentation](https://squidfunk.github.io/mkdocs-material/) for advanced features
 
@@ -229,4 +229,4 @@ All contributors must adhere to our [Code of Conduct](docs/CODE_OF_CONDUCT.md) a
 
 ---
 
-Thank you for helping improve the Collaborative Distributed Science Guide! Your contributions help make collaborative scientific computing more accessible and effective.
+Thank you for helping improve the Imageomics Guide! Your contributions help make collaborative scientific computing more accessible and effective.

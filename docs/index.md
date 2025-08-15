@@ -1,8 +1,8 @@
-# Welcome to the Collaborative Distributed Science Guide!
+# Welcome to the Imageomics Guide!
 
 This website hosts guides to FAIR (findable, accessible, interoperable, reusable) and reproducible workflows, documentation, and general best-practices for collaborative science. We aim to provide a helpful resource for scientists working in [_imageomics_](wiki-guide/Glossary-for-Imageomics.md/#imageomics) and related interdisciplinary fields.
 
-For information about customizing this guide template, see [About the Guide](https://github.com/Imageomics/Collaborative-distributed-science-guide?tab=readme-ov-file#about-the-guide).
+For information about customizing this guide template, see [About the Guide](https://github.com/Imageomics/Imageomics-guide?tab=readme-ov-file#about-the-guide).
 
 ## Highlights
 
@@ -65,4 +65,4 @@ Since this is a joint Imageomics and ABC project, we have a special combined log
 - [Glossary for Imageomics](wiki-guide/Glossary-for-Imageomics.md): Collection of terms used in imageomics. The goal is to ensure all participating domains are represented, thus facilitating interdisciplinary communication. This is a group effort, please check it out and add terms you think should be there!
 - [Command Line Cheat Sheet](wiki-guide/Command-Line-Cheat-Sheet.md): Collection of useful bash and git commands with some git tips.
 
-!!! question "[Questions, Comments, or Concerns?](https://github.com/Imageomics/Collaborative-distributed-science-guide/issues)"
+!!! question "[Questions, Comments, or Concerns?](https://github.com/Imageomics/Imageomics-guide/issues)"
