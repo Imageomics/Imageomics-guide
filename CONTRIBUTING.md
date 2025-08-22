@@ -1,12 +1,14 @@
 # Contributing to the Imageomics Guide
 
-Thank you for your interest in contributing to the Imageomics Guide! This document outlines the standards and guidelines for contributing to this template repository.
+Thank you for your interest in contributing to the Imageomics Guide!
+
+This document outlines the standards and guidelines for contributing to the Imageomics Guide. Before you begin, please review the information provided here.
+
+First, is your contribution specific to Imageomics, or would it be more broadly applicable? If more general, please consider instead directing the update or suggestion to the [Collaborative Distributed Science Guide](https://github.com/Imageomics/Collaborative-distributed-science-guide); updates to the template repository will be incorporated both here and in other other guides developed from it. If it _is_ Imageomics-specific, please continue to review this document&mdash;we look forward to your input!
 
 ## Overview
 
 The Imageomics Guide is built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and deployed via GitHub Pages. All documentation is written in Markdown and follows specific formatting standards to ensure consistent rendering and maintainability.
-
-This is a template repository designed to be forked and customized by different organizations for their collaborative science documentation needs.
 
 ## Getting Started
 
