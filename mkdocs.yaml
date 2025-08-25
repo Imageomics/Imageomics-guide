@@ -65,7 +65,7 @@ copyright: >
 
   The Imageomics Institute is funded by the US National Science Foundation's Harnessing the Data Revolution (HDR) program under <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2118240" target="_blank"><u>Award #2118240</u></a> (Imageomics: A New Frontier of Biological Information Powered by Knowledge-Guided Machine Learning).
 
-  Any opinions, findings, conclusions, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation or the Natural Sciences and Engineering Research Council of Canada.
+  Any opinions, findings, conclusions, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
 
 plugins:
   - glightbox
