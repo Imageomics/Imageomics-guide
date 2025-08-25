@@ -1,9 +1,5 @@
-# _"Why should I put my work into the Hugging Face org,"_ you ask?
+# _"Why should I put my work into the Imageomics Hugging Face org,"_ you ask?
 
-<!-- 
-Replace Imageomics Hugging Face Org links with links to your organization/group Hugging Face
-Replace all instances of "institute" or "Imageomics" with appropriate term or name for your organization or group.
--->
 The [Imageomics Hugging Face organization](https://huggingface.co/imageomics) is a crucial resource for facilitating collaboration, sharing models, and enhancing the accessibility of our AI and machine learning projects. By utilizing the Imageomics Hugging Face organization, you can take full advantage of the following benefits:
 
 ## Centralization
