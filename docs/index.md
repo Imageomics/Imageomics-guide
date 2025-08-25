@@ -1,12 +1,12 @@
 # Welcome to the Imageomics Guide!
 
-This website hosts guides to FAIR (findable, accessible, interoperable, reusable) and reproducible workflows, documentation, and general best-practices for collaborative science. We aim to provide a helpful resource for scientists working in [_imageomics_](wiki-guide/Glossary-for-Imageomics.md/#imageomics) and related interdisciplinary fields.
+This website hosts Imageomics-focused guides to FAIR (findable, accessible, interoperable, reusable) and reproducible workflows, documentation, and general best-practices for collaborative science. We aim to provide a helpful resource for scientists working in [_imageomics_](wiki-guide/Glossary-for-Imageomics.md/#imageomics) and related interdisciplinary fields.
 
-For information about customizing this guide template, see [About the Guide](https://github.com/Imageomics/Imageomics-guide?tab=readme-ov-file#about-the-guide).
+This guide houses the information needed to get started with and use Imageomics Institute resources readily available to all members. However, most of this guide is applicable to anyone working more broadly in the field of imageomics or adjacent fields of computer and data science, and it is tailored to help domain scientists bridging that gap.
 
 ## Highlights
 
-There are many pages of useful information contained in this guide covering a range of topics from project management and workflows, to repositories and archives, to a glossary of scientific terms for improved interdisciplinary communication.
+There are many pages of useful information contained in this guide covering a range of topics from project management and workflows, to repositories and archives, to a glossary of _imageomics-related_ terms for improved interdisciplinary communication.
 
 ### Just starting a project?
 
@@ -36,15 +36,15 @@ Discover new tools to help:
 
 - [Virtual Environments](wiki-guide/Virtual-Environments.md): Summary of `conda` and `pip` environments: how to make, use, and share them.
 
-## Collaborative Infrastructure used by Imageomics and ABC
+## Collaborative Infrastructure We Use
 
 - GitHub
-    - [Imageomics](https://github.com/Imageomics) and [ABC](https://github.com/ABC-Center) Code Repositories, where we store our code (software + tools).
+    - [Imageomics Code Repositories](https://github.com/Imageomics), where we store our code (software + tools).
     - GitHub's [Docs](https://docs.github.com/en)
         - [Repositories](https://docs.github.com/en/repositories)
         - [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects)
 - Hugging Face
-    - [Imageomics](https://huggingface.co/imageomics) and [ABC](https://hf.co/ABC-Center) Organization Pages, where we store our datasets and models (and their metadata).
+    - [Imageomics Organization Page](https://huggingface.co/imageomics), where we store our datasets and models (and their metadata).
     - Additionally, use [Hugging Face Spaces](https://huggingface.co/docs/hub/spaces) to run demos of models and other projects.
     - Hugging Face's [Docs](https://huggingface.co/docs)
         - [Model Hub](https://huggingface.co/docs/hub/models-the-hub)
@@ -54,11 +54,12 @@ Discover new tools to help:
 
 ![tech_infrastructure_diagram](wiki-guide/images/index/collaborative-infrastructure-diagram.png)
 
-## `<Organization>` Branding (Logos)
+## Imageomics Branding (Logos)
 
-Since this is a joint Imageomics and ABC project, we have a special combined logo:
+We have two versions of the logo, a [fish](https://github.com/Imageomics/Imageomics-guide/blob/main/docs/logos/Imageomics_logo_fish.png) and a [butterfly](https://github.com/Imageomics/Imageomics-guide/blob/main/docs/logos/Imageomics_logo_butterfly.png), which should be used for scientific posters, conference, workshop, and meeting marketing materials, etc. Choice of logo is based on user preference.
 
-![combined Imageomics and ABC logo](logos/Imageomics_ABC.png){: style="width:75%"}
+![butterfly logo](logos/Imageomics_logo_butterfly.png){: style="width:45%"}
+![fish logo](logos/Imageomics_logo_fish.png){: style="width:45%"}
 
 ## Other pages of note
 
