@@ -22,4 +22,6 @@ based on this suggestion: https://github.com/squidfunk/mkdocs-material/discussio
 .md-header__button.md-logo img, .md-header__button.md-logo svg {
   height: 2.8rem;
   width: 2.8rem;
+  padding-top: .175rem;
+  padding-bottom: .175rem;
 }
