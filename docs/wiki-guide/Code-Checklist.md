@@ -19,7 +19,7 @@ This checklist provides an overview of essential and recommended elements to inc
     - [ ] Acknowledge source code dependencies and contributors.
     - [ ] Reference related datasets used in training or evaluation.
 - [ ] **Requirements File**: Provide a [file detailing software requirements](GitHub-Repo-Guide.md/#software-requirements-file), such as a `requirements.txt` or `pyproject.toml` for Python dependencies.
-- [ ] **Gitignore File**: GitHub has premade `.gitignore` files ([here](https://github.com/github/gitignore)) tailored to particular languages (eg., [R](https://github.com/github/gitignore/blob/main/R.gitignore) or [Python](https://github.com/github/gitignore/blob/main/Python.gitignore)), operating systems, etc.
+- [ ] **Gitignore File**: GitHub has premade `.gitignore` files (see [github/gitignore](https://github.com/github/gitignore)) tailored to particular languages (eg., [R](https://github.com/github/gitignore/blob/main/R.gitignore) or [Python](https://github.com/github/gitignore/blob/main/Python.gitignore)), operating systems, etc.
 - [ ] **CITATION CFF**: This facilitates citation of your work, follow guidance provided in the [Repo Guide](GitHub-Repo-Guide.md/#citation).
 
 ### Data-Related
@@ -81,7 +81,7 @@ The [Repo Guide](GitHub-Repo-Guide.md/) provides general guidance on repository 
 ### Documentation
 
 - [ ] **API Documentation**: Generate API documentation (e.g., [`MkDocs`](https://www.mkdocs.org) for Python or wiki pages in the repo).
-- [ ] **Docstrings**: Add comprehensive docstrings for all functions, classes, and modules. These can be incorporated to help generate documentation. Note that generative AI tools with access to your code, such as GitHub Copilot, can be quite accurate in generating these, especially if you are using type annotations. 
+- [ ] **Docstrings**: Add comprehensive docstrings for all functions, classes, and modules. These can be incorporated to help generate documentation. Note that generative AI tools with access to your code, such as GitHub Copilot, can be quite accurate in generating these, especially if you are using type annotations.
 - [ ] **Example Scripts**: Include example scripts for common use cases.
 - [ ] **Configuration Files**: Use `yaml`, `json`, or `ini` for configuration settings.
 

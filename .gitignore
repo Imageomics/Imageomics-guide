@@ -4,3 +4,6 @@
 # Additional
 __pycache__
 
+# MkDocs build output
+site/
+

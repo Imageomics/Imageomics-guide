@@ -1,11 +1,10 @@
 site_name: "Imageomics Guide"
-site_description: "A guide to collaborative work for Imageomics, including GitHub and Hugging Face workflows."
+site_description: "An Imageomics-focused guide to collaborative work, including GitHub and Hugging Face workflows."
 site_author: "Imageomics Institute"
 site_url: "https://Imageomics.github.io/Imageomics-guide/"
-edit_uri: view/main/docs
 
 repo_url: https://github.com/Imageomics/Imageomics-guide
-edit_uri: blob/main/docs/
+edit_uri: edit/main/docs/
 
 theme:
   name: material
@@ -60,13 +59,13 @@ extra:
       link: https://imageomics.org
 
 copyright: >
-  This work was supported by both the <a href="https://imageomics.org" target="_blank"><u>Imageomics Institute</u></a> and the <a href="http://abcresearchcenter.org/" target="_blank"><u>AI and Biodiversity Change (ABC) Global Center</u></a>. 
+  This guide was developed alongside the <a href="https://github.com/Imageomics/Collaborative-distributed-science-guide" target="_blank"><u>Collaborative Distributed Science Guide</u></a>, developed by the <a href="https://imageomics.org" target="_blank"><u>Imageomics Institute</u></a> and the <a href="http://abcresearchcenter.org/" target="_blank"><u>AI and Biodiversity Change (ABC) Global Center</u></a>.
+  
+  This work was supported by the <a href="https://imageomics.org" target="_blank"><u>Imageomics Institute</u></a>. 
 
   The Imageomics Institute is funded by the US National Science Foundation's Harnessing the Data Revolution (HDR) program under <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2118240" target="_blank"><u>Award #2118240</u></a> (Imageomics: A New Frontier of Biological Information Powered by Knowledge-Guided Machine Learning).
 
-  The ABC Global Center is funded by the US National Science Foundation under <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2330423&HistoricalAwards=false" target="_blank"><u>Award No. 2330423</u></a> and the Natural Sciences and Engineering Research Council of Canada under <a href="https://www.nserc-crsng.gc.ca/ase-oro/Details-Detailles_eng.asp?id=782440" target="_blank"><u>Award No. 585136</u></a>.
-
-  Any opinions, findings, conclusions, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation or the Natural Sciences and Engineering Research Council of Canada.
+  Any opinions, findings, conclusions, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
 
 plugins:
   - glightbox
@@ -96,6 +95,7 @@ markdown_extensions:
       title: 📖 On This Page
 
 nav:
+# These are all relative links within the repo, only update if adding or deleting pages
   - Home: index.md
   - GitHub Guide:
       - "Repo Guide": wiki-guide/GitHub-Repo-Guide.md
@@ -124,7 +124,9 @@ nav:
   - Command Line Cheat Sheet: wiki-guide/Command-Line-Cheat-Sheet.md
   - Code of Conduct: CODE_OF_CONDUCT.md
   - Digital Product Policy: 
+      - "About Digital Product Policies": wiki-guide/About-Digital-Product-Policies.md
       - "Release and Licensing Policy": wiki-guide/Digital-products-release-licensing-policy.md
+      - "Digital Product Life Cycle": wiki-guide/Digital-Product-Lifecycle.md
   - Other Resources:
       - "Technical Infrastructure": wiki-guide/Technical-Infrastructure.md
       - "Virtual Environments": wiki-guide/Virtual-Environments.md
