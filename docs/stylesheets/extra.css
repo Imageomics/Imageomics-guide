@@ -25,3 +25,72 @@ based on this suggestion: https://github.com/squidfunk/mkdocs-material/discussio
   padding-top: .175rem;
   padding-bottom: .175rem;
 }
+
+/* 
+Define Imageomics colors for theme (light and dark)
+Primary Colors:
+- Imageomics Green: #92991c
+- Imageomics Blue: #5d8095
+- Dark Teal: #0097b2
+- White: #FFFFFF
+Accent Colors:
+- Light Green: #9bcb5e
+- Red: #bb0000
+- NSF Gold: #caae54
+- NSF Blue: #61a5d6
+Adjust admonitions and links to match (where otherwise clashed)
+*/
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #0097b2;
+  --md-accent-fg-color:         #92991c;
+  --md-footer-bg-color:         #92991c;
+}
+
+/* Set admonition (Note) colors to match the primary blue */
+/* border color */
+.md-typeset .admonition.note, .md-typeset details.note {
+    border-color: var(--md-primary-fg-color);
+    box-shadow: #0097b21a;
+}
+
+/* icon color */
+.md-typeset .admonition.note > .admonition-title::before {
+    background-color: #0097b2;
+}
+
+/* shaded part (title/heading) */
+.md-typeset .note>.admonition-title,.md-typeset .note>summary {
+    background-color: #0097b21a;
+}
+
+/* Set admonition (question) colors to match the accent green */
+/* border color */
+.md-typeset .admonition.question, .md-typeset details.question {
+    border-color: var(--md-accent-fg-color);
+    box-shadow: #9bcb5e1a;
+}
+
+/* icon color */
+.md-typeset .admonition.question > .admonition-title::before {
+    background-color: var(--md-accent-fg-color);
+}
+
+/* shaded part (title/heading) */
+.md-typeset .question>.admonition-title,.md-typeset .question>summary {
+    background-color: #9bcb5e1a;
+}
+
+.md-typeset a {
+  color: #0097b2;
+}
+
+.md-nav .md-nav__link--active {
+  color: #0097b2;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #5d8095;
+  --md-accent-fg-color:         #92991c;
+  --md-footer-bg-color--dark:   #93991ca4;
+}
