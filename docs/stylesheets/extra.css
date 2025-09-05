@@ -26,7 +26,7 @@ based on this suggestion: https://github.com/squidfunk/mkdocs-material/discussio
   padding-bottom: .175rem;
 }
 
-/* 
+/*
 Define Imageomics colors for theme (light and dark)
 Primary Colors:
 - Imageomics Green: #92991c
@@ -41,16 +41,16 @@ Accent Colors:
 Adjust admonitions and links to match (where otherwise clashed)
 */
 
+/* Light mode colors: Imageomics Blue and Light Green */
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color:        #0097b2;
-  --md-accent-fg-color:         #92991c;
-  --md-footer-bg-color:         #92991c;
+  --md-primary-fg-color:        #5d8095;
+  --md-accent-fg-color:         #9bcb5e;
 }
 
-/* Set admonition (Note) colors to match the primary blue */
+/* Set admonition (Note) colors to match Dark Teal used for URLs */
 /* border color */
 .md-typeset .admonition.note, .md-typeset details.note {
-    border-color: var(--md-primary-fg-color);
+    border-color: #0097b2;
     box-shadow: #0097b21a;
 }
 
@@ -64,7 +64,8 @@ Adjust admonitions and links to match (where otherwise clashed)
     background-color: #0097b21a;
 }
 
-/* Set admonition (question) colors to match the accent green */
+/* Set admonition (question) colors to match the accent green
+  Light Green for light mode, Imageomics Green for dark mode */
 /* border color */
 .md-typeset .admonition.question, .md-typeset details.question {
     border-color: var(--md-accent-fg-color);
@@ -81,16 +82,19 @@ Adjust admonitions and links to match (where otherwise clashed)
     background-color: #9bcb5e1a;
 }
 
+/* Set URL colors to Dark Teal for better contrast */
+/* Content URLs */
 .md-typeset a {
   color: #0097b2;
 }
 
+/* Navigation URL (side panel contents) */
 .md-nav .md-nav__link--active {
   color: #0097b2;
 }
 
+/* Dark mode colors: Imageomics Blue and Imageomics Green */
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color:        #5d8095;
   --md-accent-fg-color:         #92991c;
-  --md-footer-bg-color--dark:   #93991ca4;
 }
