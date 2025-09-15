@@ -12,6 +12,13 @@ To this end, we agree as individuals and as a group to:
 - **Respect time.** When a session is over, we need to move on. There is designated time for in-depth follow up and continuing conversations.
 - **Care** for each other. We bring our full selves to the community, and we look out for each other wholeheartedly.
 
+AI use policy (borrowed from [CRA](https://cra.org/)):
+
+- Allowable use of AI tools requires that the tools do not share or use the data for training.
+- Requires permission if recording others. Language to use when requesting permission:
+
+  _“We would like to use `<insert tool name here>` during this discussion to assist with note-taking. `<insert tool name here>` records and transcribes audio and can produce a summary of the discussion. The audio and transcription will only be saved and used internally. Please let us know if you object to the use of `<insert tool name here>`.”_
+
 We abide by these principles in all Imageomics spaces, including but not limited to digital and in-person meetings, formal and informal gatherings, online discussion forums and chat spaces, and field and lab work.
 
 Acts of misconduct are prohibited. Those found to engage in misconduct will be subject to dismissal from the project and further actions as directed by the guidelines of the employers and the place of incidence.
