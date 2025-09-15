@@ -19,14 +19,14 @@ authors:
   given-names: "Hilmar"
   orcid: "https://orcid.org/0000-0001-9107-0714"
 cff-version: 1.2.0
-date-released: "2025-08-29"
+date-released: "2025-09-15"
 identifiers:
-  - description: "The GitHub release URL of tag v2.0.0."
+  - description: "The GitHub release URL of tag v2.0.1."
     type: url
-    value: "https://github.com/Imageomics/Imageomics-guide/releases/tag/v2.0.0"
-  - description: "The GitHub URL of the commit tagged with v2.0.0."
+    value: "https://github.com/Imageomics/Imageomics-guide/releases/tag/v2.0.1"
+  - description: "The GitHub URL of the commit tagged with v2.0.1."
     type: url
-    value: "https://github.com/Imageomics/Imageomics-guide/tree/48ee6c07a4ddfa453c85f8ad62f88e5c623f6a15"
+    value: "https://github.com/Imageomics/Imageomics-guide/tree/<commit-hash>" # update on release
 keywords:
   - imageomics
   - metadata
@@ -42,7 +42,7 @@ license: CC0-1.0
 message: "If you find these docs helpful in your research, please cite them as below."
 repository-code: "https://github.com/Imageomics/Imageomics-guide"
 title: "Imageomics Guide"
-version: "2.0.0"
+version: "2.0.1"
 references:
   - authors:
       - family-names: "Campolongo"
@@ -69,10 +69,10 @@ references:
       - family-names: "Lapp"
         given-names: "Hilmar"
         orcid: "https://orcid.org/0000-0001-9107-0714"
-    date-released: "2025-08-15"
+    date-released: "2025-09-15"
     doi:
     license: CC0-1.0
     repository-code: "https://github.com/Imageomics/Collaborative-distributed-science-guide"
     title: "Collaborative Distributed Science Guide"
-    version: 1.0.0
+    version: 1.0.1
     doi: "10.5281/zenodo.16950875"
