@@ -8,6 +8,7 @@ Overall [Infrastructure Chart](https://docs.google.com/spreadsheets/d/1JSOi5pp2Y
     - [Globus Endpoint](https://www.globus.org/) — this is the preferred transfer method for collaborations, especially for large data.
     - OnDemand page: [info](https://www.osc.edu/resources/online_portals/ondemand), [login]( https://ondemand.osc.edu)
     - myOSC client portal: [info](https://www.osc.edu/supercomputing/portals/client_portal), [login](https://my.osc.edu/acprod/odb_osc/r/osc/portal/login_desktop?clear=101)
+    - [OSC Storage Guidelines (_internal_)](https://github.com/Imageomics/internal-guidelines/wiki/OSC-Storage-Guidelines): recommended usage patterns for each file system on OSC.
 - Imageomics dedicated GPU server: _Internal_ server, hosts our CVAT instance.
     - [Usage and access guide (_internal_)](https://github.com/Imageomics/internal-guidelines/wiki/Imageomics-GPU-Server)
     - [CVAT user guide](https://github.com/Imageomics/kabr-tools/wiki/CVAT-User-Guide)
