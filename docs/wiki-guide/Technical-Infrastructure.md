@@ -11,7 +11,7 @@ Overall [Infrastructure Chart](https://docs.google.com/spreadsheets/d/1JSOi5pp2Y
     - [OSC Storage Guidelines (_internal_)](https://github.com/Imageomics/internal-guidelines/wiki/OSC-Storage-Guidelines): recommended usage patterns for each file system on OSC.
 - Imageomics dedicated GPU server: _Internal_ server, hosts our CVAT instance.
     - [Usage and access guide (_internal_)](https://github.com/Imageomics/internal-guidelines/wiki/Imageomics-GPU-Server)
-    - [CVAT user guide](https://github.com/Imageomics/kabr-tools/wiki/CVAT-User-Guide)
+    - [CVAT user guide](https://imageomics.github.io/kabr-tools/cvat/cvat-guide/)
 - NSF ACCESS Accelerate Allocation: NCSA Delta GPU credits
 - [Amazon Web Services (AWS)](https://aws.amazon.com/?nc2=h_lg): Basic to extremely powerful, abundant (though finite) resources, high cost.
     - Used sparingly for urgent deadlines when other compute is not available (generally hasn't been available at those times either, though) or to host projects that cannot be hosted effectively through a Hugging Face Space.
