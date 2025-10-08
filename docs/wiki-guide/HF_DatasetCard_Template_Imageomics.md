@@ -10,6 +10,7 @@ tags:
 - animals
 - CV
 size_categories: # ex: n<1K, 1K<n<10K, 10K<n<100K, 100K<n<1M, ...
+description: # Add a short description (summary) of your dataset, this will render as part of the CardData object through the API, which can thus be used in applications such as the Imageomics Catalog
 ---
 
 <!--
