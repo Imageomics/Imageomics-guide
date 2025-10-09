@@ -19,14 +19,14 @@ authors:
   given-names: "Hilmar"
   orcid: "https://orcid.org/0000-0001-9107-0714"
 cff-version: 1.2.0
-date-released: "2025-09-15"
+date-released: "2025-10-09"
 identifiers:
-  - description: "The GitHub release URL of tag v2.0.1."
+  - description: "The GitHub release URL of tag v2.1.0."
     type: url
-    value: "https://github.com/Imageomics/Imageomics-guide/releases/tag/v2.0.1"
-  - description: "The GitHub URL of the commit tagged with v2.0.1."
+    value: "https://github.com/Imageomics/Imageomics-guide/releases/tag/v2.1.0"
+  - description: "The GitHub URL of the commit tagged with v2.1.0."
     type: url
-    value: "https://github.com/Imageomics/Imageomics-guide/tree/9c531f58239e0fe957634221b961d8ed864bdfbd"
+    value: "https://github.com/Imageomics/Imageomics-guide/tree/<commit-hash>" # update on release
 keywords:
   - imageomics
   - metadata
@@ -42,7 +42,7 @@ license: CC0-1.0
 message: "If you find these docs helpful in your research, please cite them as below."
 repository-code: "https://github.com/Imageomics/Imageomics-guide"
 title: "Imageomics Guide"
-version: "2.0.1"
+version: "2.1.0"
 references:
   - authors:
       - family-names: "Campolongo"
@@ -60,7 +60,7 @@ references:
       - family-names: "Bradley"
         given-names: "John"
         orcid: "https://orcid.org/0000-0003-3858-848X"
-      - family-names: Eyriay
+      - family-names: Zarubiieva
         given-names: Iuliia
         orcid: "https://orcid.org/0009-0007-1597-8684"
       - family-names: Taylor
@@ -69,10 +69,9 @@ references:
       - family-names: "Lapp"
         given-names: "Hilmar"
         orcid: "https://orcid.org/0000-0001-9107-0714"
-    date-released: "2025-09-15"
-    doi:
+    date-released: "2025-10-08"
     license: CC0-1.0
     repository-code: "https://github.com/Imageomics/Collaborative-distributed-science-guide"
     title: "Collaborative Distributed Science Guide"
-    version: 1.0.1
+    version: 1.1.0
     doi: "10.5281/zenodo.16950875"
