@@ -15,6 +15,7 @@ For each repository, include the following files in the root directory as soon a
 * [LICENSE.md](#license)
 * [.gitignore](#gitignore)
 * [software requirements](#software-requirements-file)
+* [CITATION.cff](#citation)
 
 More [recommendations](#recommended-files) are discussed below.
 
@@ -72,25 +73,18 @@ It is also advisable to include a machine-readable file with minimal software re
 
 For more information on managing these environments and generating such files programmatically, see the wiki entry [Virtual Environments](Virtual-Environments.md).
 
-## Recommended Files
-
-Though the following files are not included in every repository and do not have a simple selection process integrated into GitHub, they are extremely important (if not essential) to maintaining FAIR principles and reproducibility in projects, as well as ensuring proper attribution for your work.
-
-### CONTRIBUTING
-
-If you are looking to open your project to more public contributions, it is a good idea to include contributing guidelines. This could take the form of a "CONTRIBUTING.md" file or a subsection of your README.
-
-Contributing guidelines are important to maintain consistency across the way people work on a project. It is important to establish conventions about the important things while avoiding excessive constraints and bureaucracy that would make contributing a pain. Important things include efficient and effective communication.
-
 ### CITATION
 
 Make it easier for people to cite your project by including a [CITATION.cff file](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files); you can copy-paste the template below.
 
-As with journal publications, we expect to be cited when someone uses our code. To facilitate proper attribution, GitHub will automatically read a [CITATION.cff file](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files) and display a link to "cite this repository". Providing this file is as simple as filling your information into one of their example files and uploading it to your repo. More examples and information about the Citation File Format can be found on the [citation-file-format repo](https://github.com/citation-file-format/citation-file-format), including helpful [related tools](https://github.com/citation-file-format/citation-file-format#tools-to-work-with-citationcff-files-wrench).
+As with journal publications, we expect to be cited when someone uses our code. To facilitate proper attribution, GitHub will automatically read a [CITATION.cff file](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files) and display a link to "cite this repository". This file is also used to populate metadata fields in a [Zenodo](https://zenodo.org/) record when [auto-generating a DOI](DOI-Generation.md#2-generate-a-doi-with-zenodo). As with any other component of your project, this file may change over the project's lifespan (see [Digital Product Life Cycle](docs/wiki-guide/Digital-Product-Lifecycle.md) for details), but it should be present and updated before any release.
+
+Providing this file is as simple as copying the below example and filling in your information before uploading it to your repo. More examples and information about the Citation File Format can be found on the [citation-file-format repo](https://github.com/citation-file-format/citation-file-format), including helpful [related tools](https://github.com/citation-file-format/citation-file-format#tools-to-work-with-citationcff-files-wrench).
 
 You can check your CITATION.cff file prior to upload using this [validator tool](https://www.yamllint.com/).
 
 !!! note "Note"
+    - When adding a DOI to your citation (`doi`), be sure to use the version-agnostic DOI from Zenodo. Since the DOI is not generated until _after_ the release, this ensures there will never be an "incorrect" DOI associated to the release&mdash;correct version reference is ensured through the `version` key, which should always be updated _**before**_ generating a new release.
     - Subcategories of `preferred-citation` do not get bullet points, but the first subcategory of `references` must be bulleted (as below).
     - This is generally intended as a reference for your code. Preferred citation can be used for the paper, though it is better to ask in the `README` that someone cites _both_ and provide the paper reference there (only the `preferred-citation` will show up to be copied from the citation box if it is included).
 
@@ -116,7 +110,7 @@ message: "If you find this software helpful in your research, please cite both t
 repository-code: "https://github.com/Imageomics/<repo>"
 title: "<repo title>"
 version: <release version>
-doi: <DOI from Zenodo>
+doi: <DOI from Zenodo>    # version agnostic DOI
 type: software
 preferred-citation:
   type: article
@@ -141,6 +135,16 @@ references:
     doi: 
     date-released:
 ```
+
+## Recommended Files
+
+Though the following files are not included in every repository and do not have a simple selection process integrated into GitHub, they are extremely important (if not essential) to maintaining FAIR principles and reproducibility in projects, as well as ensuring proper attribution for your work.
+
+### CONTRIBUTING
+
+If you are looking to open your project to more public contributions, it is a good idea to include contributing guidelines. This could take the form of a "CONTRIBUTING.md" file or a subsection of your README.
+
+Contributing guidelines are important to maintain consistency across the way people work on a project. It is important to establish conventions about the important things while avoiding excessive constraints and bureaucracy that would make contributing a pain. Important things include efficient and effective communication.
 
 ## Additional Considerations
 
