@@ -41,12 +41,7 @@ When your GitHub and Zenodo accounts are linked, there will be a list of availab
 
 When automatically generating a DOI with Zenodo, it uses information provided in your `CITATION.cff` file to populate the metadata for the record. However, there is important information that is not supported through this integration despite its inclusion in the `CITATION.cff` format in some cases.
 
-If your repository is likely to be updated repeatedly (i.e., generating new releases), then you may consider adding a `.zenodo.json` to preserve the remaining metadata on release sync with Zenodo for DOI. This metadata includes grant (funding) information, references (which may be included in your `CITATION.cff`), and a description of your repository/code.
-
-A `.zenodo.json` can be created by applying [cffconvert](https://github.com/citation-file-format/cffconvert) to your `CITATION.cff` (without the references, as these are not supported). Then add the references and other metadata back in to the JSON (following the [Zenodo dev guide](https://developers.zenodo.org/#representation)).
-The `publication_date` and `version` will need to be updated along with the `CITATION.cff` for each release.
-!!! example "Example `.zenodo.json`"
-    An example of this is the [Andromeda Zenodo JSON](https://github.com/Imageomics/Andromeda/blob/main/.zenodo.json). We also recommend including format tests following the example in this [PR](https://github.com/Imageomics/Andromeda/pull/120).
+If your repository is likely to be updated repeatedly (i.e., generating new releases), then you may consider adding a `.zenodo.json` to preserve the remaining metadata on release sync with Zenodo for DOI. This metadata includes grant (funding) information, references (which may be included in your `CITATION.cff`), associated paper(s), and a description of your repository/code. Details and a sample file structure are provided in the [Zenodo Metadata section](GitHub-Repo-Guide.md#zenodo-metadata) of the GitHub Repo Guide.
 
 _Alternatively_, this information can be updated manually on the Zenodo page for the DOI record. When logged in to Zenodo, a large orange "Edit" button will appear in the top right (as in the image below). There is the ability to save as you go (without publishing the metadata changes) and an additional option to share a link with collaborators to view the suggested record information.
 
@@ -61,11 +56,37 @@ _Alternatively_, this information can be updated manually on the Zenodo page for
 
 #### Manual Generation
 
-Building on the alternate edit options, there is also the option to simply generate one or all of your releases through a direct upload to Zenodo's site. Mixing the two methods is not advisable and may require reaching out to Zenodo to have them manually re-aligned to each other. Automatic generation through the GitHub integration is the recommended approach since it will generate an updated DOI on each release and create easier connections.
+Building on the alternate edit options, there is also the option to simply generate one or all of your releases through a direct upload to Zenodo's site. Automatic generation through the GitHub integration is the recommended approach since it will generate an updated DOI on each release and create easier connections.
+
+!!! warning
+    Do **not** mix the two methods. One must start with the GitHub integration, otherwise two separate records will be created. If a repo already has releases prior to turning on the GitHub integration, one can contact Zenodo to have them import the earlier releases as well. This is also another motivator for setting up the [requisite files in a GitHub repo](GitHub-Repo-Guide.md#zenodo-metadata) before the first release.
 
 #### Access Management
 
 When creating a new record on Zenodo, please ensure that other members of your project have access, as appropriate. In particular, there should be at least one member of Institute leadership or the Senior Data Scientist added to the record with management permissions. This ensures the ability to maintain the metadata and address matters related to the record (which may extend beyond your tenure with the Institute) in a timely manner.
+
+#### Add a Zenodo DOI Badge
+
+Congratulations, your repository has been archived on Zenodo! Now, how do you get the nice badge to display on your GitHub `README` so everyone knows it has been archived?
+
+1. Navigate to your account settings and select "GitHub" (see earlier screenshot at [automatic generation](#automatic-generation) for what the page looks like).
+
+2. Find the repo that has just been updated in the "Enabled Repositories" list (we'll use this guide's repo for the example), and click on the badge next to the repo's name:
+
+    ![Screenshot of GitHub Integration enabled repos with their DOI badges next to their names, the DOI badge next to the collaborative distributed science guide is circled](images/doi-generation/enabled_repos_badges.png)
+
+    The pop up will look something like this:
+
+    ![Screenshot of Zenodo DOI badge rendering options, only Markdown version fully shown: '[![DOI](https://zenodo.org/badge/1038590952.svg)](https://doi.org/10.5281/zenodo.17210328)'](images/doi-generation/badge-markdown.png)
+
+3. Copy the Markdown text and paste it next to your `README` title. Note that the DOI URL should be the _version agnostic_ DOI (this is the one you will add to your `CITATION.cff`, as noted in the [GitHub Repo Guide](GitHub-Repo-Guide.md#citation))
+
+    ![Screenshot of collaborative distributed science guide repo README file header in the GitHub UI with the badge text from above next to the title](images/doi-generation/README-badge-paste.png)
+
+This only has to be done once; using the version agnostic DOI with the general SVG means the badge will be updated to always display the DOI of the latest release and it will link to that Zenodo record.
+
+!!! warning
+    If you use the badge from the Zenodo page itself, it will be specific for _that_ version, so be sure to get the version agnostic one.
 
 ### 3. Generate a DOI with Dryad
 

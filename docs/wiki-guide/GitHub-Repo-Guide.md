@@ -146,6 +146,51 @@ If you are looking to open your project to more public contributions, it is a go
 
 Contributing guidelines are important to maintain consistency across the way people work on a project. It is important to establish conventions about the important things while avoiding excessive constraints and bureaucracy that would make contributing a pain. Important things include efficient and effective communication.
 
+### Zenodo Metadata
+
+When using the Zenodo-GitHub integration for [automatic DOI generation](docs/wiki-guide/DOI-Generation.md#automatic-generation), tracking metadata beyond the basics (authors, keywords, title, etc.) requires manual updates to the Zenodo record. The solution for this is to include a `.zenodo.json` file to keep track of this information (e.g., grant funding and references).
+
+A `.zenodo.json` can be created by applying [cffconvert](https://github.com/citation-file-format/cffconvert) to your `CITATION.cff` (without the references, as these are not supported). Then add the references and other metadata back in to the JSON (following the [Zenodo dev guide](https://developers.zenodo.org/#representation)). Alterntatively, The example below can simply be copied into a new file and updated with the appropriate information (comments should be removed prior to upload).
+
+!!! note
+    The `publication_date` and `version` will need to be updated along with the `CITATION.cff` for each release.
+
+```json
+{
+    "creators": [
+      {
+          "name": "family-names, given-names",
+          "orcid": "",
+          "affiliation": ""
+      },
+      {
+          "name": "family-names, given-names",
+          "orcid": "",
+          "affiliation": ""
+      }
+    ],
+    "description": "", // Ex: abstract from the citation, HTML can be used for formatting
+    "keywords": [  // Add the same list of keywords as in your CITATION.cff
+      "imageomics"
+    ],
+    "title": "<repo title>",
+    "version": "<release version>",
+    "license": "<license>",           // Check docs for codes: https://developers.zenodo.org/#representation
+    "publication_date": "YYYY-MM-DD",
+    "grants": [
+        {
+            "id": "021nxhr62::2118240"  // Imageomics (<NSF code>::<Imageomics Grant #>)
+        },
+        {
+            "id": "021nxhr62::2330423"  // ABC NSF grant, NSERC requires manual update
+        }
+    ] 
+}
+```
+
+!!! example "Example `.zenodo.json`"
+    The [Zenodo JSON for BioCLIP 2](https://github.com/Imageomics/bioclip-2/blob/main/.zenodo.json) provides an example that includes a grant, references, and an associated paper (`related_identifiers`), which is also listed under `notes` [for additional citation](https://zenodo.org/records/17049307). We also recommend including [this format validation workflow](https://github.com/Imageomics/Collaborative-distributed-science-guide/blob/main/.github/workflows/validate-zenodo.yaml), which will run if either the `.zenodo.json` or the workflow itself is edited.
+
 ## Additional Considerations
 
 ### Formatting and Naming Conventions
