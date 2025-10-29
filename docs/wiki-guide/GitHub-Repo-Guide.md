@@ -180,9 +180,6 @@ A `.zenodo.json` can be created by applying [cffconvert](https://github.com/cita
     "grants": [
         {
             "id": "021nxhr62::2118240"  // Imageomics (<NSF code>::<Imageomics Grant #>)
-        },
-        {
-            "id": "021nxhr62::2330423"  // ABC NSF grant, NSERC requires manual update
         }
     ] 
 }
