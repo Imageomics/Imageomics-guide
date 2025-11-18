@@ -250,10 +250,12 @@ This method is used when the same commits exist in both repos with different has
 This requires finding which commits are in the private repo but not in the public repo.
 
 !!! warning "Warning"
-    If the commits you cherry-pick have commits in common with different hashes this will result in merge conflicts and duplicated commits.
+    If the commits you cherry-pick have content in common under commits with different hashes this will result in merge conflicts or duplicated commits. Be sure to list all commits to cherry-pick in chronological order before you begin.
 
 After fetching your upstream branch you can cherry pick a range of commits to add like so:
 
 ```
 git cherry-pick <start-commit-hash>..<end-commit-hash>
 ```
+
+See the [Git Cherry-Pick Guide](Git-Cherry-Pick-Guide.md) for more details and an example of the full process.

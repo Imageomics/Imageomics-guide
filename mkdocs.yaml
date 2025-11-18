@@ -104,6 +104,7 @@ nav:
       - "Projects Guide": wiki-guide/Guide-to-GitHub-Projects.md
       - "Branch Protections": wiki-guide/When-to-think-about-branch-protections.md
       - "Two Repo Problem": wiki-guide/Two-Repo-Problem.md
+      - "Git Cherry-Pick Guide": wiki-guide/Git-Cherry-Pick-Guide.md
       - "Why Use the Institute GitHub": wiki-guide/Why-use-the-Institute-GitHub.md
   - Hugging Face Guide:
       - "Repo Guide": wiki-guide/Hugging-Face-Repo-Guide.md
