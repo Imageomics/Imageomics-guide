@@ -1,6 +1,6 @@
 # Git Cherry-pick update for Downstream Repos
 
-`git cherry-pick` is a handy tool to directly apply specific commits from one branch or repo to another even when they don't share a git history—especially when you do not want to merge large change sets. This can be helpful when forking another repo or building off an evolving template, such as the Collaborative Distributed Science Guide. Below, we provide a step-by-step guide to updating repositories based on updating this repo from the template guide:
+`git cherry-pick` is a handy tool to directly apply specific commits from one branch or repo to another even when they don't share a git history—especially when you do not want to merge large change sets. This can be helpful when forking another repo or building off an evolving template, such as the [Collaborative Distributed Science Guide](https://github.com/Imageomics/Collaborative-distributed-science-guide). Below, we provide a step-by-step guide to updating repositories based on updating this repo from the template guide:
 
 !!! tip "Be Prepared!"
     Before you start, you should know which commits are going to be pulled from the template repo. Collect their hashes in a separate text file; be sure to list them in chronological order, so they can be applied correctly.
