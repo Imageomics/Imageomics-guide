@@ -19,7 +19,7 @@
     ```
 
     !!! note
-        If you haven't updated yet, you will only see the current repo options (`origin`):
+        If you haven't added this template repo as a remote yet, you will only see the current repo options (`origin`):
 
         ```console
         origin	git@github.com:Imageomics/Imageomics-guide.git (fetch)
