@@ -27,7 +27,7 @@ If you believe you have experienced or witnessed misconduct in an Imageomics set
 
 1. Document the incident;
 2. Tell someone you trust;
-3. Report the incident to Diane Boghrat.
+3. Report the incident to [Diane Boghrat](mailto:boghrat.1@osu.edu).
 
 Privacy will be protected to the greatest extent possible.
 
