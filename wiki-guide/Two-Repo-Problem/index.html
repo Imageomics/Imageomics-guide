@@ -15,7 +15,7 @@
         <link rel="prev" href="../When-to-think-about-branch-protections/">
       
       
-        <link rel="next" href="../Why-use-the-Institute-GitHub/">
+        <link rel="next" href="../Git-Cherry-Pick-Guide/">
       
       
         
@@ -995,6 +995,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Git-Cherry-Pick-Guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git Cherry-Pick Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -2429,11 +2457,12 @@ After setting up the remote for upstream run a command similar to the following:
 This requires finding which commits are in the private repo but not in the public repo.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>If the commits you cherry-pick have commits in common with different hashes this will result in merge conflicts and duplicated commits.</p>
+<p>If the commits you cherry-pick have content in common under commits with different hashes this will result in merge conflicts or duplicated commits. Be sure to list all commits to cherry-pick in chronological order before you begin.</p>
 </div>
 <p>After fetching your upstream branch you can cherry pick a range of commits to add like so:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>git cherry-pick &lt;start-commit-hash&gt;..&lt;end-commit-hash&gt;
 </span></code></pre></div>
+<p>See the <a href="../Git-Cherry-Pick-Guide/">Git Cherry-Pick Guide</a> for more details and an example of the full process.</p>
 
 
 

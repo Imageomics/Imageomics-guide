@@ -9,13 +9,13 @@
         <meta name="author" content="Imageomics Institute">
       
       
-        <link rel="canonical" href="https://Imageomics.github.io/Imageomics-guide/wiki-guide/Hugging-Face-Repo-Guide/">
+        <link rel="canonical" href="https://Imageomics.github.io/Imageomics-guide/wiki-guide/Git-Cherry-Pick-Guide/">
       
       
-        <link rel="prev" href="../Why-use-the-Institute-GitHub/">
+        <link rel="prev" href="../Two-Repo-Problem/">
       
       
-        <link rel="next" href="../The-Hugging-Face-Workflow/">
+        <link rel="next" href="../Why-use-the-Institute-GitHub/">
       
       
         
@@ -26,7 +26,7 @@
     
     
       
-        <title>Repo Guide - Imageomics Guide</title>
+        <title>Git Cherry-Pick Guide - Imageomics Guide</title>
       
     
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hugging-face-repo-guide" class="md-skip">
+        <a href="#git-cherry-pick-update-for-downstream-repos" class="md-skip">
           Skip to content
         </a>
       
@@ -124,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Repo Guide
+              Git Cherry-Pick Guide
             
           </span>
         </div>
@@ -256,10 +256,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../GitHub-Repo-Guide/" class="md-tabs__link">
           
   
@@ -276,13 +278,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../Hugging-Face-Repo-Guide/" class="md-tabs__link">
           
   
   
@@ -493,24 +493,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -528,7 +533,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -711,10 +716,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Git-Cherry-Pick-Guide/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -730,6 +744,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -774,29 +789,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -814,7 +824,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -829,37 +839,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Repo Guide
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Hugging-Face-Repo-Guide/" class="md-nav__link">
         
   
   
@@ -875,156 +858,6 @@
   
 
       </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="📖 On This Page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      📖 On This Page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#setting-up-a-new-organization-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Setting up a New Organization Repository
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Setting up a New Organization Repository">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#standard-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Standard Files
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Standard Files">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#readme" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        README
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        LICENSE
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="LICENSE">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-select-a-license" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Select a license
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-add-licensemd-to-the-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Add LICENSE.md to the repository
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gitignore" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        gitignore
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gitattributes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        gitattributes
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hugging-face-pull-requests-with-local-edits" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hugging Face Pull Requests With Local Edits
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#templates-for-model-and-dataset-cards" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Templates for Model and Dataset Cards
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1901,142 +1734,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      📖 On This Page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#setting-up-a-new-organization-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Setting up a New Organization Repository
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Setting up a New Organization Repository">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#standard-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Standard Files
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Standard Files">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#readme" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        README
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        LICENSE
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="LICENSE">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-select-a-license" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Select a license
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-add-licensemd-to-the-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Add LICENSE.md to the repository
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gitignore" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        gitignore
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gitattributes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        gitattributes
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hugging-face-pull-requests-with-local-edits" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hugging Face Pull Requests With Local Edits
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#templates-for-model-and-dataset-cards" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Templates for Model and Dataset Cards
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -2056,66 +1753,85 @@
     
       
     
-    <a href="https://github.com/Imageomics/Imageomics-guide/raw/main/docs/wiki-guide/Hugging-Face-Repo-Guide.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/Imageomics/Imageomics-guide/raw/main/docs/wiki-guide/Git-Cherry-Pick-Guide.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"></path></svg>
     </a>
   
 
 
-<h1 id="hugging-face-repo-guide">Hugging Face Repo Guide<a class="headerlink" href="#hugging-face-repo-guide" title="Permanent link">¶</a></h1>
-<p>Need a repository to store your data or model? You've come to the right place! Below we have compiled guidance on conventions and best practices for maintaining a shared (or shareable) Hugging Face repository of your work.</p>
-<h2 id="setting-up-a-new-organization-repository">Setting up a New Organization Repository<a class="headerlink" href="#setting-up-a-new-organization-repository" title="Permanent link">¶</a></h2>
-<h3 id="standard-files">Standard Files<a class="headerlink" href="#standard-files" title="Permanent link">¶</a></h3>
-<p>For each repository, include the following files in the root directory as soon as possible; a license can (and should) be instantiated when you create a new repository, and the standard <code>.gitattributes</code> will be generated for you. On the <a href="https://huggingface.co/imageomics">Imageomics HF</a> select <code>New</code> and pick which type of repository you need.</p>
-<ul>
-<li><a href="#readme">README.md</a></li>
-<li><a href="#license">LICENSE.md</a></li>
-<li><a href="#gitignore">.gitignore</a></li>
-<li><a href="#gitattributes">.gitattributes</a></li>
-</ul>
-<h4 id="readme">README<a class="headerlink" href="#readme" title="Permanent link">¶</a></h4>
-<p>The README.md file is generally referred to as either a Dataset or Model Card and is what everyone will notice first when they open your repository on Hugging Face. Choose the appropriate Imageomics-specific HF template (<a href="../HF_ModelCard_Template_mkdocs/">model</a> or <a href="../HF_DatasetCard_Template_mkdocs/">dataset</a>) to get started. Be sure to include a brief description and as much information as possible at the beginning. You can update this file as you go, so don't remove the recommended sections prior to completion. The templates include descriptions of many fields, Imageomics grant information, citation formatting, and some notes on HF-flavored markdown to get you started.</p>
-<p>Once you've created your repo, populate your README (you can do this online by selecting "Create Dataset/Model Card" and pasting in the appropriate Imageomics HF template, then filling in your info). Editing your README in the browser allows you to preview the formatting of the file before committing changes.</p>
-<h4 id="license">LICENSE<a class="headerlink" href="#license" title="Permanent link">¶</a></h4>
-<h5 id="1-select-a-license">1. Select a license<a class="headerlink" href="#1-select-a-license" title="Permanent link">¶</a></h5>
-<p>Alongside the appropriate stakeholders, select a license that is <a href="https://opensource.org/licenses">Open Source Initiative</a> (OSI) compliant.</p>
-<div class="admonition note">
-<p class="admonition-title">Remember</p>
-<p>A public repository on Hugging Face with no license can be viewed and accessed by others, but unless the author associates a license, it is unclear what others are allowed to do with it legally. Adding an OSI license can help others feel comfortable building off your work!</p>
+<h1 id="git-cherry-pick-update-for-downstream-repos">Git Cherry-pick update for Downstream Repos<a class="headerlink" href="#git-cherry-pick-update-for-downstream-repos" title="Permanent link">¶</a></h1>
+<p><code>git cherry-pick</code> is a handy tool to directly apply specific commits from one branch or repo to another even when they don't share a git history—especially when you do not want to merge large change sets. This can be helpful when forking another repo or building off an evolving template, such as the <a href="https://github.com/Imageomics/Collaborative-distributed-science-guide">Collaborative Distributed Science Guide</a>. Below, we provide a step-by-step guide to updating repositories based on updating this repo from the template guide:</p>
+<div class="admonition tip">
+<p class="admonition-title">Be Prepared!</p>
+<p>Before you start, you should know which commits are going to be pulled from the template repo. Collect their hashes in a separate text file; be sure to list them in chronological order, so they can be applied correctly.</p>
 </div>
-<p>For more information on how to choose a license and why it matters, see <a href="https://choosealicense.com">Choose A License</a> and <a href="https://doi.org/10.1371/journal.pcbi.1002598">A Quick Guide to Software Licensing for the Scientist-Programmer</a> by A. Morin, et al.</p>
-<h5 id="2-add-licensemd-to-the-repository">2. Add LICENSE.md to the repository<a class="headerlink" href="#2-add-licensemd-to-the-repository" title="Permanent link">¶</a></h5>
-<p>Once a license has been chosen (if not initialized with one), add the appropriate license label in the <code>yaml</code> portion of the README (the web UI generates a dropdown of recommendations under "Edit dataset/model card").</p>
-<h4 id="gitignore">gitignore<a class="headerlink" href="#gitignore" title="Permanent link">¶</a></h4>
-<p>As with GitHub, the <code>.gitignore</code> file is an important tool for maintaining a clean repository by ensuring that git will not track temp files of any and all your collaborators (no pesky <code>pycache</code> or <code>.DS_Store</code> files floating around).</p>
-<p>The same <a href="https://github.com/github/gitignore">options for GitHub</a> are usable here, and if you or anyone on your team uses a Mac (or if you intend to encourage outside collaboration on this repo), add</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a># Mac system
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>.DS_Store
+<ol>
+<li><strong>Ensure the target repo is up-to-date.</strong></li>
+<li>
+<p>Create a new branch onto which to pull the changes:</p>
+<div class="language-console highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="go">git checkout -b dev</span>
 </span></code></pre></div>
-<p>at the end of the <code>.gitignore</code> file.</p>
-<h4 id="gitattributes">gitattributes<a class="headerlink" href="#gitattributes" title="Permanent link">¶</a></h4>
-<p>The <code>.gitattributes</code> file determines file patterns to be tracked by <a href="https://git-lfs.com/"><code>git LFS</code></a> (Git Large File Storage). The preset <code>gitattributes</code> file includes many binary file types, but you may need to add particular files if they get too large (eg., a large CSV, but do <strong>NOT</strong> store all CSV files with <code>git LFS</code>, just add the particular one or pattern). Pattern-matching can be done using <code>*</code>. You can either add the file (and appropriate pattern description) to the <code>.gitattributes</code> file, or add it in the command line:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git lfs track "my-big-list.csv"
+</li>
+<li>
+<p>Check the remotes available for your repo:</p>
+<div class="language-console highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="go">git remote -v</span>
 </span></code></pre></div>
-<p>Then add and commit the <code>.gitattributes</code> file as described below.</p>
-<h2 id="hugging-face-pull-requests-with-local-edits">Hugging Face Pull Requests With Local Edits<a class="headerlink" href="#hugging-face-pull-requests-with-local-edits" title="Permanent link">¶</a></h2>
-<p>Hugging Face also has a pull request (PR) feature, though the process is a bit different from GitHub.</p>
-<p>As with GitHub, you can interact through the web browser or a command line interface (eg., terminal on Mac). However, instead of the <code>create new branch</code> option, there is a <code>create new pull request</code> option. It is still preferable to avoid committing everything directly to main. To make further changes to the particular PR created on the browser, one must first clone the repo:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git clone &lt;repo-url&gt; 
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you haven't added the template repo as a remote yet, you will only see the current repo options (<code>origin</code>):</p>
+<div class="language-console highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="go">origin  git@github.com:Imageomics/Imageomics-guide.git (fetch)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="go">origin  git@github.com:Imageomics/Imageomics-guide.git (push)</span>
 </span></code></pre></div>
-<p>Then, navigate to that folder <code>cd &lt;repo-name&gt;</code>, and fetch the PR files:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git fetch origin refs/pr/&lt;PR#&gt;:pr/&lt;PR#&gt;
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>git checkout pr/&lt;PR#&gt;
+<p>In which case, run the following to add the template guide as an available remote under the title <code>upstream</code>:</p>
+<div class="language-console highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="go">git remote add upstream git@github.com:Imageomics/Collaborative-distributed-science-guide.git</span>
 </span></code></pre></div>
-<p>You can then make your updates, add and commit them, then push those back to the remote. Note that the push is the one line that differs from GitHub and must be used each time:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git add &lt;changed files&gt;
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>git commit -m "&lt;change&gt;"
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>git push origin pr/&lt;PR#&gt;:refs/pr/&lt;PR#&gt;
+<p>After running <code>git remote -v</code>, you should then see</p>
+<div class="language-console highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="go">origin  git@github.com:Imageomics/Imageomics-guide.git (fetch)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="go">origin  git@github.com:Imageomics/Imageomics-guide.git (push)</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="go">upstream    git@github.com:Imageomics/Collaborative-distributed-science-guide.git (fetch)</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="go">upstream    git@github.com:Imageomics/Collaborative-distributed-science-guide.git (push)</span>
 </span></code></pre></div>
-<p>For more information on Hugging Face Pull Requests and Discussions, see their <a href="https://huggingface.co/docs/hub/repositories-pull-requests-discussions">documentation</a>.</p>
-<h2 id="templates-for-model-and-dataset-cards">Templates for Model and Dataset Cards<a class="headerlink" href="#templates-for-model-and-dataset-cards" title="Permanent link">¶</a></h2>
-<p>See <a href="../About-Templates/">About Templates</a> for guidelines on using templates for these important pieces of documentation.</p>
+</div>
+</li>
+<li>
+<p>Run <code>git fetch upstream</code> to get the commits from the template repo (now recognized as <code>upstream</code>).</p>
+</li>
+<li>
+<p>Run <code>git cherry-pick --edit &lt;first-commit-hash&gt;</code>, this way, the URL pointing to the Collaborative Distributed Science Guide can be modified to function properly from the downstream repo. Ex:</p>
+<div class="language-console highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="go">git cherry-pick --edit a3d2f5d621aaa5b9a543fabad3f813ceb45964d4</span>
+</span></code></pre></div>
+<p>The next screen should provide the commit message for editing:</p>
+<div class="language-console highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="go">Update GitHub Repo Archiving Guidance (#29)</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="go">* Add section on automatically maintaining metadata on Zenodo</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="go">...</span>
+</span></code></pre></div>
+<p>press <span class="keys"><kbd class="key-i">I</kbd></span>, then, using arrow keys to navigate the console edit the message to the following:</p>
+<div class="language-console highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="go">Update GitHub Repo Archiving Guidance</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="go">Pull from Collab Guide [PR 29](https://github.com/Imageomics/Collaborative-distributed-science-guide/pull/29)</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="go">* Add section on automatically maintaining metadata on Zenodo</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="go">...</span>
+</span></code></pre></div>
+<p>The URL will render as "<a href="https://github.com/Imageomics/Collaborative-distributed-science-guide/pull/29">Imageomics/Collaborative-distributed-science-guide#29</a>", with the functional hyperlink. Finally, select <span class="keys"><kbd class="key-escape">Esc</kbd></span> and type <code>:wq</code> to complete the commit message edit.</p>
+<div class="admonition info">
+<p class="admonition-title">Conflicts Happen</p>
+<p>If you have a merge conflict, open the file, resolve the conflict, and then <code>git add</code> the file. From that point you should be able to run <code>git cherry-pick --continue</code> and it will provide the commit message from the upstream. Checking <code>git status</code> and <code>git log</code> at various points in this process will allow you to check on how these are progressing and see the addition of the upstream commits to your current repo's branch.</p>
+</div>
+</li>
+<li>
+<p>Once you've collected all the upstream commits, run <code>git push --set-upstream origin dev</code> to add them to the current repo.</p>
+</li>
+<li>
+<p>Open a pull request from the <code>dev</code> branch to add these upstream commits to <code>main</code>. Be sure to include a description of the commits, where they came from, and include links to PRs <em>from the upstream repo</em>. Auto-links generated by GitHub (based on <code>#&lt;issue/PR-number&gt;</code>) will link to that number issue or PR in the current repo, not the upstream one.</p>
+</li>
+<li>
+<p>Rebase commit the PR. This allows for the changes pulled from upstream to be seamlessly integrated into the downstream repo. The commit hashes are not preserved across repositories, so there is no information to lose.</p>
+</li>
+</ol>
+<p>See also <a href="https://git-scm.com/docs/git-cherry-pick"><code>git cherry-pick</code></a> for more info on available options.</p>
 
 
 
