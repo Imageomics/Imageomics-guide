@@ -1,0 +1,62 @@
+{
+    "creators": [
+      {
+          "name": "Campolongo, Elizabeth",
+          "orcid": "0000-0003-0846-2413",
+          "affiliation": "The Ohio State University"
+      },
+      {
+          "name": "Thompson, Matthew",
+          "orcid": "0000-0003-0583-8585",
+          "affiliation": "The Ohio State University"
+      },
+      {
+          "name": "Zhang, Net",
+          "orcid": "0000-0003-2664-451X",
+          "affiliation": "The Ohio State University"
+      },
+      {
+            "name": "Duan, Yuehua",
+            "orcid": "0000-0002-8547-5907",
+            "affiliation": "The Ohio State University"
+      },
+      {
+            "name": "Bradley, John",
+            "orcid": "0000-0003-3858-848X",
+            "affiliation": "Duke University"
+      },
+      {
+            "name": "Lapp, Hilmar",
+            "orcid": "0000-0001-9107-0714",
+            "affiliation": "Duke University"
+      }
+    ],
+    "description": "<p>Imageomics-focused guide to collaborative work, including GitHub and Hugging Face workflows.&nbsp;</p>\n<p>The website hosts Imageomics-focused guides to FAIR (findable, accessible, interoperable, reusable) and reproducible workflows, documentation, and general best-practices for collaborative science. We aim to provide a helpful resource for scientists working in <a href=\"https://imageomics.github.io/Imageomics-guide/wiki-guide/Glossary-for-Imageomics/#imageomics\"><em>imageomics</em></a> and related interdisciplinary fields.</p>\n<p>Website: <a href=\"https://imageomics.github.io/Imageomics-guide/\">imageomics.github.io/Imageomics-guide/</a></p> <p>This guide houses the information needed to get started with and use Imageomics Institute resources readily available to all members. However, most of this guide is applicable to anyone working more broadly in the field of imageomics or adjacent fields of computer and data science, and it is tailored to help domain scientists bridging that gap.</p>",
+    "keywords": [
+      "imageomics",
+      "metadata",
+      "guide",
+      "best practices",
+      "cheat-sheet",
+      "command line cheat-sheet",
+      "collaborative science",
+      "projects",
+      "collaborative workflows",
+      "standards"
+    ],
+    "title": "Imageomics Guide",
+    "version": "2.3.0",
+    "license": "CC0-1.0",
+    "publication_date": "2025-12-03",
+    "grants": [
+        {
+            "id": "021nxhr62::2118240"
+        },
+        {
+            "id": "021nxhr62::2330423"
+        }
+    ],
+    "references": [
+        "Campolongo, E. G., Thompson, M. J., Zhang, N., Duan, Y., Bradley, J., Zarubiieva, I., Taylor, G., & Lapp, H. (2025). Collaborative Distributed Science Guide (Version 1.3.0) [Computer software]. https://doi.org/10.5281/zenodo.17210328"
+    ]
+}
