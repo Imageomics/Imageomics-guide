@@ -1,4 +1,4 @@
-# Imageomics Guide
+# Imageomics Guide [![DOI](https://zenodo.org/badge/881587126.svg)](https://doi.org/10.5281/zenodo.17817610)
 
 Welcome to the Imageomics Guide!
 
