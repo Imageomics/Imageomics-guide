@@ -107,3 +107,8 @@ Adjust admonitions and links to match (where otherwise clashed)
   --md-primary-fg-color:        #5d8095;
   --md-accent-fg-color:         #92991c;
 }
+
+/* Dark mode active link color set separately for menu links on mobile/narrow screens */
+[data-md-color-scheme="slate"] .md-nav .md-nav__link--active {
+  color: #0097b2;
+}
