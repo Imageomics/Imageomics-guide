@@ -47,6 +47,15 @@ Adjust admonitions and links to match (where otherwise clashed)
   --md-accent-fg-color:         #9bcb5e;
 }
 
+/* GitHub panel color (mobile and small screen, issue 87) */
+.md-nav__source {
+  background-color: var(--md-primary-fg-color);
+}
+
+.md-source {
+  background-color: var(--md-primary-fg-color);
+}
+
 /* Set admonition (Note) colors to match Dark Teal used for URLs */
 /* border color */
 .md-typeset .admonition.note, .md-typeset details.note {
