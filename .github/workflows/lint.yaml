@@ -1,0 +1,31 @@
+name: Linting
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      # This identifies which files changed in the specific commit or PR
+      - uses: tj-actions/changed-files@v47
+        id: changed-files
+        with:
+          files: '**/*.md'
+          separator: ","
+
+      # This runs the linter ONLY on the files identified above
+      - uses: DavidAnson/markdownlint-cli2-action@v22
+        if: steps.changed-files.outputs.any_changed == 'true'
+        with:
+          globs: ${{ steps.changed-files.outputs.all_changed_files }}
+          separator: ","
