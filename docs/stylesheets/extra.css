@@ -105,7 +105,15 @@ body {
   --md-accent-fg-color:         var(--color-imageomics-green);
 }
 
-/* Dark mode active link color set separately for menu links on mobile/narrow screens */
-[data-md-color-scheme="slate"] .md-nav .md-nav__link--active {
-  color: var(--color-dark-teal);
+/* Small screen adjustments (from ABC-Guide) */
+@media screen and (max-width: 76.2344em) {
+  /* Dark mode custom active parent color (side panel) */
+  [data-md-color-scheme="slate"] .md-nav .md-nav__item--active > .md-nav__link {
+    color: var(--color-dark-teal);
+  }
+  
+  /* Dark mode custom active parent hover color (side panel) */
+  [data-md-color-scheme="slate"] .md-nav .md-nav__item--active:hover > .md-nav__link {
+    color: var(--color-imageomics-green);
+  }
 }
