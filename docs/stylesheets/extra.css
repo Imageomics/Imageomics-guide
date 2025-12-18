@@ -27,24 +27,21 @@ based on this suggestion: https://github.com/squidfunk/mkdocs-material/discussio
 }
 
 /*
-Define Imageomics colors for theme (light and dark)
-Primary Colors:
-- Imageomics Green: #92991c
-- Imageomics Blue: #5d8095
-- Dark Teal: #0097b2
-- White: #FFFFFF
-Accent Colors:
-- Light Green: #9bcb5e
-- Red: #bb0000
-- NSF Gold: #caae54
-- NSF Blue: #61a5d6
-Adjust admonitions and links to match (where otherwise clashed)
-*/
+Define Imageomics colors for theme (light and dark) */
+body {
+  --color-imageomics-green: #92991c;
+  --color-imageomics-blue: #5d8095;
+  --color-dark-teal: #0097b2;
+  --color-dark-teal-10: #0097b21a; /* 10% alpha */
+  --color-white: #FFFFFF;
+  --color-light-green: #9bcb5e;
+  --color-light-green-10: #9bcb5e1a; /* 10% alpha */
+}
 
-/* Light mode colors: Imageomics Blue and Light Green */
+/* Light mode colors */
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color:        #5d8095;
-  --md-accent-fg-color:         #9bcb5e;
+  --md-primary-fg-color:        var(--color-imageomics-blue);
+  --md-accent-fg-color:         var(--color-light-green);
 }
 
 /* GitHub panel color (mobile and small screen, issue 87) */
@@ -59,18 +56,18 @@ Adjust admonitions and links to match (where otherwise clashed)
 /* Set admonition (Note) colors to match Dark Teal used for URLs */
 /* border color */
 .md-typeset .admonition.note, .md-typeset details.note {
-    border-color: #0097b2;
-    box-shadow: #0097b21a;
+    border-color: var(--color-dark-teal);
+    box-shadow: var(--color-dark-teal-10);
 }
 
 /* icon color */
 .md-typeset .admonition.note > .admonition-title::before {
-    background-color: #0097b2;
+    background-color: var(--color-dark-teal);
 }
 
 /* shaded part (title/heading) */
 .md-typeset .note>.admonition-title,.md-typeset .note>summary {
-    background-color: #0097b21a;
+    background-color: var(--color-dark-teal-10);
 }
 
 /* Set admonition (question) colors to match the accent green
@@ -78,7 +75,7 @@ Adjust admonitions and links to match (where otherwise clashed)
 /* border color */
 .md-typeset .admonition.question, .md-typeset details.question {
     border-color: var(--md-accent-fg-color);
-    box-shadow: #9bcb5e1a;
+    box-shadow: var(--color-light-green-10);
 }
 
 /* icon color */
@@ -88,27 +85,27 @@ Adjust admonitions and links to match (where otherwise clashed)
 
 /* shaded part (title/heading) */
 .md-typeset .question>.admonition-title,.md-typeset .question>summary {
-    background-color: #9bcb5e1a;
+    background-color: var(--color-light-green-10);
 }
 
 /* Set URL colors to Dark Teal for better contrast */
 /* Content URLs */
 .md-typeset a {
-  color: #0097b2;
+  color: var(--color-dark-teal);
 }
 
 /* Navigation URL (side panel contents) */
 .md-nav .md-nav__link--active {
-  color: #0097b2;
+  color: var(--color-dark-teal);
 }
 
 /* Dark mode colors: Imageomics Blue and Imageomics Green */
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color:        #5d8095;
-  --md-accent-fg-color:         #92991c;
+  --md-primary-fg-color:        var(--color-imageomics-blue);
+  --md-accent-fg-color:         var(--color-imageomics-green);
 }
 
 /* Dark mode active link color set separately for menu links on mobile/narrow screens */
 [data-md-color-scheme="slate"] .md-nav .md-nav__link--active {
-  color: #0097b2;
+  color: var(--color-dark-teal);
 }
