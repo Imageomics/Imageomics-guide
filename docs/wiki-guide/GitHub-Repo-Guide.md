@@ -11,31 +11,57 @@ Just joining or starting a new project and need a repository to store your work?
 
 For each repository, include the following files in the root directory as soon as possible; they can (and should) be instantiated when you create a new repository.
 
-* [README.md](#readme)
-* [LICENSE.md](#license)
-* [.gitignore](#gitignore)
-* [software requirements](#software-requirements-file)
-* [CITATION.cff](#citation)
+- [README.md](#readme)
+- [LICENSE.md](#license)
+- [.gitignore](#gitignore)
+- [software requirements](#software-requirements-file)
+- [CITATION.cff](#citation)
 
 More [recommendations](#recommended-files) are discussed below.
 
+!!! tip "Pro tip"
+    All these files, plus more essential and recommended elements for a comprehensive GitHub repo, are included in our [Code Checklist](Code-Checklist.md). Following the checklist ensures compliance with the FAIR Principles for research software.[^1]
+    [^1]: Barker, M., Chue Hong, N. P., Katz, D. S., Lamprecht, A. L., Martinez-Ortiz, C., Psomopoulos, F., Harrow, J., Castro, L. J., Gruenpeter, M., Martinez, P. A., & Honeyman, T. (2022). Introducing the FAIR Principles for research software. _Scientific data_, 9(1), 622. [URL](https://doi.org/10.1038/s41597-022-01710-x).
+
 ### README
 
-The README.md file is what everyone will notice first when they open your repository on GitHub. When creating your repo be sure to include a brief description, as this will populate the `About` field in the top right of your repo, as well as start your README with some text.
+The `README.md` file is what everyone will notice first when they open your repository on GitHub. When creating your repo be sure to include a brief description, as this will populate the `About` field in the top right of your repo, as well as start your README with some text.
 
-Once you've created your repo, populate your README (you can do this by clicking on the file "README.md", then clicking the pencil at the top left to edit). Editing your README in the browser allows you to preview the formatting of the file before committing changes. The content of your README may vary based on the purpose or goal of your repo, but there are key elements that should always be included.
+Once you've created your repo, populate your README (you can do this by clicking on the file `README.md`, then clicking the pencil at the top left to edit). Editing your README in the browser allows you to preview the formatting of the file before committing changes. The content of your README may vary based on the purpose or goal of your repo, but there are key elements that should always be included.
 
-* Summary of the repo:
-    * This could be a simple explanation of what the package or tool developed in your repo is intended to do,
-    * Or an abstract describing your research.
-* Detailed documentation on how to access and use the project software (User Guide).  
-    * Including installation of [dependencies](Virtual-Environments.md).
-    * If your tool requires input be in a particular format, this would be included in the README. It would also help to include an example file demonstrating the format.
-* Information about the sources you've used (links and what they were used for), such as:
-    * Tools from other repos
-    * Data for analysis
+#### Guiding Principles
 
-For more inspiration on making an awesome README, check out [this list](https://github.com/matiassingers/awesome-readme).
+While crafting your repo, keep the following guiding principles in mind:
+
+- It is iterative; it does not need to be perfect from the beginning. Be honest about the scope and maturity of the project.
+- It should be _useful_ for the intended audience and optimized for scanning.
+- Give the audience "quick wins" to being productive with minimal examples or typical workflows rather than comprehensively covering every edge case.
+
+#### Key Elements
+
+Following the above principles, be sure to include
+
+- Summary of the repo:
+    - This could be a simple explanation of what the package or tool developed in your repo is intended to do,
+    - Or an abstract describing your research.
+- Detailed documentation on how to access and use the project software (User Guide).  
+    - Including installation of [dependencies](Virtual-Environments.md).
+    - If your tool requires input be in a particular format, this would be included in the README. It would also help to include an example file demonstrating the format.
+- Information about the sources you've used (links and what they were used for), such as:
+    - Tools from other repos.
+    - Data used for analysis.
+
+#### Examples
+
+Some Imageomics repositories with nicely formulated READMEs are...
+
+- [BioCLIP 2](https://github.com/Imageomics/bioclip-2): a large project which includes data, model, the code, and a demo.
+    - It also builds on previous work; the repo models how to request citations (including references), and addresses the case of a multi-user/group license; this complexity is handled well through clarification of type and the inclusion of a `HISTORY.md` file.
+    - It also is re-used a lot within Imageomics as a base style.
+- [cautious-robot](https://github.com/Imageomics/cautious-robot) and [pybioclip](https://github.com/Imageomics/pybioclip/tree/1.1.0) (before the addition of a MkDocs site for documentation) are good examples of code or software-based projects.
+    - We want to emphasize that a project can start with a well-documented README and later grow to incorporate a documentation site as it becomes more complex (e.g., [pybioclip](https://github.com/Imageomics/pybioclip)).
+
+For more inspiration on making an awesome README, check out [this crowd-sourced list of awesome READMEs](https://github.com/matiassingers/awesome-readme).
 
 ### LICENSE
 
@@ -50,7 +76,7 @@ For more information on how to choose a license and why it matters, see [Choose 
 
 #### 2. Add LICENSE.md to the repository
 
-Once a license has been chosen, add a LICENSE.md file to the root of the repository. An easy way to do this is using a GitHub-provided [license template](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). Do not forget to update necessary fields in the template.
+Once a license has been chosen, add a `LICENSE.md` file to the root of the repository. An easy way to do this is using a GitHub-provided [license template](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). Do not forget to update necessary fields in the template.
 
 ### GITIGNORE
 
@@ -81,7 +107,7 @@ As with journal publications, we expect to be cited when someone uses our code. 
 
 Providing this file is as simple as copying the below example and filling in your information before uploading it to your repo. More examples and information about the Citation File Format can be found on the [citation-file-format repo](https://github.com/citation-file-format/citation-file-format), including helpful [related tools](https://github.com/citation-file-format/citation-file-format#tools-to-work-with-citationcff-files-wrench).
 
-You can check your CITATION.cff file prior to upload using this [validator tool](https://www.yamllint.com/).
+You can check your `CITATION.cff` file prior to upload using this [validator tool](https://www.yamllint.com/).
 
 !!! note "Note"
     - When adding a DOI to your citation (`doi`), be sure to use the version-agnostic DOI from Zenodo. Since the DOI is not generated until _after_ the release, this ensures there will never be an "incorrect" DOI associated to the release&mdash;correct version reference is ensured through the `version` key, which should always be updated _**before**_ generating a new release.
@@ -142,7 +168,7 @@ Though the following files are not included in every repository and do not have 
 
 ### CONTRIBUTING
 
-If you are looking to open your project to more public contributions, it is a good idea to include contributing guidelines. This could take the form of a "CONTRIBUTING.md" file or a subsection of your README.
+If you are looking to open your project to more public contributions, it is a good idea to include contributing guidelines. This could take the form of a `CONTRIBUTING.md` file or a subsection of your README.
 
 Contributing guidelines are important to maintain consistency across the way people work on a project. It is important to establish conventions about the important things while avoiding excessive constraints and bureaucracy that would make contributing a pain. Important things include efficient and effective communication.
 
@@ -150,7 +176,7 @@ Contributing guidelines are important to maintain consistency across the way peo
 
 When using the Zenodo-GitHub integration for [automatic DOI generation](DOI-Generation.md#automatic-generation), tracking metadata beyond the basics (authors, keywords, title, etc.) requires manual updates to the Zenodo record. The solution for this is to include a `.zenodo.json` file to keep track of this information (e.g., grant funding and references).
 
-A `.zenodo.json` can be created by applying [cffconvert](https://github.com/citation-file-format/cffconvert) to your `CITATION.cff` (without the references, as these are not supported). Then add the references and other metadata back in to the JSON (following the [Zenodo dev guide](https://developers.zenodo.org/#representation)). Alterntatively, The example below can simply be copied into a new file and updated with the appropriate information (comments should be removed prior to upload).
+A `.zenodo.json` can be created by applying [cffconvert](https://github.com/citation-file-format/cffconvert) to your `CITATION.cff` (without the references, as these are not supported). Then add the references and other metadata back in to the JSON (following the [Zenodo dev guide](https://developers.zenodo.org/#representation)). Alternatively, The example below can simply be copied into a new file and updated with the appropriate information (comments should be removed prior to upload).
 
 !!! note
     The `publication_date` and `version` will need to be updated along with the `CITATION.cff` for each release.
@@ -196,21 +222,21 @@ A `.zenodo.json` can be created by applying [cffconvert](https://github.com/cita
 
 For interoperability and to avoid ambiguity, [dates and times should be reported](https://dataoneorg.github.io/Education/bestpractices/describe-formats-for) in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601).
 
-* For dates, this means `YYYY-MM-DD` (for ISO 8601 compliance, the dashes are required).
-* For times, use `THHMMSS` in 24-hour format.
-* For example, the moment when there were 60 seconds left before New Year 2000 would be `1999-12-31T235900`.
+- For dates, this means `YYYY-MM-DD` (for ISO 8601 compliance, the dashes are required).
+- For times, use `THHMMSS` in 24-hour format.
+- For example, the moment when there were 60 seconds left before New Year 2000 would be `1999-12-31T235900`.
 
 #### Branches
 
-* Primary branch: `main`
-* Other branches follow the pattern `category/reference/description`:
-    * **category**: `feature`, `bugfix`, `experiment`
-        * `feature` is for new functionality
-        * `bugfix` is for fixing errors
-        * `experiment` is for more open-ended work
-    * the associated issue (if no issue, put `no-ref`), formatted as `issue-NN`
-    * description: brief description, e.g., `solve-world-hunger`
-* Example: `git branch feature/issue-1/general-ai`
+- Primary branch: `main`
+- Other branches follow the pattern `category/reference/description`:
+    - **category**: `feature`, `bugfix`, `experiment`
+        - `feature` is for new functionality
+        - `bugfix` is for fixing errors
+        - `experiment` is for more open-ended work
+    - the associated issue (if no issue, put `no-ref`), formatted as `issue-NN`
+    - description: brief description, e.g., `solve-world-hunger`
+- Example: `git branch feature/issue-1/general-ai`
   
 #### Commits
 
