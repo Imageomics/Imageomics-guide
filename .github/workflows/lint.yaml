@@ -21,6 +21,8 @@ jobs:
         id: changed-files
         with:
           files: '**/*.md'
+          files_ignore: |
+            docs/wiki-guide/HF_*_Template*.md
           separator: ","
 
       # This runs the linter ONLY on the files identified above
