@@ -19,6 +19,7 @@ The following adds additional context and direction to supplement the diagram, o
     * **Datasets:** Hugging Face Dataset Repository ([Data checklist](Data-Checklist.md)).
         * For already published data usage, see the [Metadata Checklist](Metadata-Checklist.md).
     * **ML Models:** Hugging Face Model Repository ([Model checklist](Model-Checklist.md)).
+* Though alternative storage options may be discussed, **Google Drive is not an acceptable storage location for research data, models, or code**. Folder activity does not include actual file additions or deletions, so content can be changed or removed without a record of when or by whom. All research, data, models, and code must be stored in **a version controlled repository, preferably in more than one location** to ensure preservation and full provenance tracking.
 
 ### Exploration Phase
 
