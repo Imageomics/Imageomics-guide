@@ -2,6 +2,9 @@
 
 Below is the Dataset Card template for Imageomics. You can download or copy the dataset card content and paste it into a new Markdown file to create a README for your dataset.
 
+!!! tip "Pro tip"
+    Use the [Data Card Checklist](Data-Checklist.md) to help keep track of your progress.
+
 <details open>
 <summary>Imageomics</summary>
 </br>
