@@ -4,7 +4,7 @@
 
 Hugging Face also has a pull request (PR) feature, though the process is a bit different from GitHub.
 
-As with GitHub, you can interact through the web browser or a command line interface (eg., terminal on Mac). However, instead of the `create new branch` option, there is a `create new pull request` option. It is still preferable to avoid committing everything directly to main. To make further changes to the particular PR created on the browser, one must first clone the repo:
+As with GitHub, you can interact through the web browser or a command line interface (e.g., terminal on Mac). However, instead of the `create new branch` option, there is a `create new pull request` option. It is still preferable to avoid committing everything directly to main. To make further changes to the particular PR created on the browser, one must first clone the repo:
 
 ```
 git clone <repo-url> 

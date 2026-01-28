@@ -19,7 +19,7 @@ This checklist provides an overview of essential and recommended elements to inc
     - [ ] Acknowledge source code dependencies and contributors.
     - [ ] Reference related datasets used in training or evaluation.
 - [ ] **Requirements File**: Provide a [file detailing software requirements](GitHub-Repo-Guide.md/#software-requirements-file), such as a `requirements.txt` or `pyproject.toml` for Python dependencies.
-- [ ] **Gitignore File**: GitHub has premade `.gitignore` files (see [github/gitignore](https://github.com/github/gitignore)) tailored to particular languages (eg., [R](https://github.com/github/gitignore/blob/main/R.gitignore) or [Python](https://github.com/github/gitignore/blob/main/Python.gitignore)), operating systems, etc.
+- [ ] **Gitignore File**: GitHub has premade `.gitignore` files (see [github/gitignore](https://github.com/github/gitignore)) tailored to particular languages (e.g., [R](https://github.com/github/gitignore/blob/main/R.gitignore) or [Python](https://github.com/github/gitignore/blob/main/Python.gitignore)), operating systems, etc.
 - [ ] **CITATION CFF**: This facilitates citation of your work, follow guidance provided in the [Repo Guide](GitHub-Repo-Guide.md/#citation).
 
 ### Data-Related

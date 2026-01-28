@@ -17,7 +17,7 @@ model_description: # Add a short description (summary) of your model, this will 
 
 NOTE: Add more tags (your particular animal, type of model and use-case, etc.).
 
-As with your GitHub Project repo, it is important to choose an appropriate license for your model. Alongside the appropriate stakeholders (eg., your PI, co-authors), select a license that is [Open Source Initiative](https://opensource.org/licenses) (OSI) compliant. You may also wish to consider adding a [RAIL license](https://www.licenses.ai/ai-licenses), which addresses responsible use.
+As with your GitHub Project repo, it is important to choose an appropriate license for your model. Alongside the appropriate stakeholders (e.g., your PI, co-authors), select a license that is [Open Source Initiative](https://opensource.org/licenses) (OSI) compliant. You may also wish to consider adding a [RAIL license](https://www.licenses.ai/ai-licenses), which addresses responsible use.
 For more information on how to choose a license and why it matters, see [Choose A License](https://choosealicense.com) and [A Quick Guide to Software Licensing for the Scientist-Programmer](https://doi.org/10.1371/journal.pcbi.1002598) by A. Morin, et al.
 See the [Imageomics policy for licensing](https://imageomics.github.io/Imageomics-guide/wiki-guide/Digital-products-release-licensing-policy/) for more information.
 
