@@ -57,7 +57,7 @@ at the end of the `.gitignore` file.
 
 #### gitattributes
 
-The `.gitattributes` file determines file patterns to be tracked by [`git LFS`](https://git-lfs.com/) (Git Large File Storage). The preset `gitattributes` file includes many binary file types, but you may need to add particular files if they get too large (eg., a large CSV, but do **NOT** store all CSV files with `git LFS`, just add the particular one or pattern). Pattern-matching can be done using `*`. You can either add the file (and appropriate pattern description) to the `.gitattributes` file, or add it in the command line:
+The `.gitattributes` file determines file patterns to be tracked by [`git LFS`](https://git-lfs.com/) (Git Large File Storage). The preset `gitattributes` file includes many binary file types, but you may need to add particular files if they get too large (e.g., a large CSV, but do **NOT** store all CSV files with `git LFS`, just add the particular one or pattern). Pattern-matching can be done using `*`. You can either add the file (and appropriate pattern description) to the `.gitattributes` file, or add it in the command line:
 
 ```
 git lfs track "my-big-list.csv"
@@ -69,7 +69,7 @@ Then add and commit the `.gitattributes` file as described below.
 
 Hugging Face also has a pull request (PR) feature, though the process is a bit different from GitHub.
 
-As with GitHub, you can interact through the web browser or a command line interface (eg., terminal on Mac). However, instead of the `create new branch` option, there is a `create new pull request` option. It is still preferable to avoid committing everything directly to main. To make further changes to the particular PR created on the browser, one must first clone the repo:
+As with GitHub, you can interact through the web browser or a command line interface (e.g., terminal on Mac). However, instead of the `create new branch` option, there is a `create new pull request` option. It is still preferable to avoid committing everything directly to main. To make further changes to the particular PR created on the browser, one must first clone the repo:
 
 ```
 git clone <repo-url> 

@@ -10,7 +10,7 @@ Generally speaking, once the set of potential users exceeds that of repository d
 
 ## How to Implement Branch Protections
 
-From your repository, navigate to "Settings" and select "Branches" from the left toolbar. Provide the name of the branch you would like to protect, for instance `main`, and select the rules that you want applied to the branch. It is also possible to set the rules for branches matching a particular pattern (eg., type `*release*` to apply the rules to any branch containing the word `release`). You can also edit branch protection rules from this page.
+From your repository, navigate to "Settings" and select "Branches" from the left toolbar. Provide the name of the branch you would like to protect, for instance `main`, and select the rules that you want applied to the branch. It is also possible to set the rules for branches matching a particular pattern (e.g., type `*release*` to apply the rules to any branch containing the word `release`). You can also edit branch protection rules from this page.
 
 The example below shows the addition of branch protection rules for `main` that require a pull request and that it be approved prior to merging. It also will remove approval if other changes are added that require approval.
 
@@ -40,7 +40,7 @@ We choose to apply these to the default branch (`main` or `master`).
 /// caption
 ///
 
-As with branch protections, it is also possible to set the rules for branches matching a particular pattern (eg., type `*release*` to apply the rules to any branch containing the word `release`). We will do this for `gh-pages`.
+As with branch protections, it is also possible to set the rules for branches matching a particular pattern (e.g., type `*release*` to apply the rules to any branch containing the word `release`). We will do this for `gh-pages`.
 
 ![Add target pattern for gh-pages under target branches for branch ruleset](images/GH-branch-protections/382111988-20d6499e-fb12-4335-8b8d-76ac6b989528.png){ loading=lazy }
 /// caption

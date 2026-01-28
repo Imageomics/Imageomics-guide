@@ -32,7 +32,7 @@ conda env export --no-builds --from-history | grep -v "prefix" > environment.yml
 For virtual environments using `pip` to install packages (Python environments), use `python -m pip freeze` to print a list of packages (and their versions) installed in the environment.
 
 !!! info "Command extension"
-    - `python -m pip freeze > requirements.txt` will populate a `requirements.txt` file with all these packages and versions listed (eg., `pandas==2.0.1`).
+    - `python -m pip freeze > requirements.txt` will populate a `requirements.txt` file with all these packages and versions listed (e.g., `pandas==2.0.1`).
         - **Note:** This will _not_ give only minimum software requirements, but will also print _all_ dependencies.
     - Install this machine-readable file with `pip install -r requirements.txt` when in the appropriate folder.
     - For more information, see the [pip documentation](https://pip.pypa.io/en/stable/cli/pip_freeze/).

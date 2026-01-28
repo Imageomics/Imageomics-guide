@@ -82,7 +82,7 @@ Once a license has been chosen, add a `LICENSE.md` file to the root of the repos
 
 The `.gitignore` file is an important tool for maintaining a clean repository by ensuring that git will not track temp files of any and all your collaborators (no pesky `pycache` or `.DS_Store` files floating around).
 
-GitHub has premade `.gitignore` files which can be selected from a dropdown when creating a repo. They are available for review at [github/gitignore](https://github.com/github/gitignore) and are generally tailored to particular languages (eg., [R](https://github.com/github/gitignore/blob/main/R.gitignore) or [Python](https://github.com/github/gitignore/blob/main/Python.gitignore)), operating systems, etc. The initial choice can be updated as needed. In particular, we recommend selecting a template based on the primary language used for your work.
+GitHub has premade `.gitignore` files which can be selected from a dropdown when creating a repo. They are available for review at [github/gitignore](https://github.com/github/gitignore) and are generally tailored to particular languages (e.g., [R](https://github.com/github/gitignore/blob/main/R.gitignore) or [Python](https://github.com/github/gitignore/blob/main/Python.gitignore)), operating systems, etc. The initial choice can be updated as needed. In particular, we recommend selecting a template based on the primary language used for your work.
 
 If you or anyone on your team uses a Mac (or if you intend to encourage outside collaboration on this repo), add
 
@@ -95,7 +95,7 @@ at the end of the `.gitignore` file.
 
 ### Software Requirements File
 
-It is also advisable to include a machine-readable file with minimal software requirements for your project. For Python projects, this often takes the form of a `requirements.txt` file containing the packages and their versions that were used (eg., `pandas==2.0.1`). If you use `conda`, you may instead opt for an `environment.yml`. These are essential to ensuring the reproducibility and interoperability of your work (by yourself and others). Note that they should _**not**_ be listed in the README.
+It is also advisable to include a machine-readable file with minimal software requirements for your project. For Python projects, this often takes the form of a `requirements.txt` file containing the packages and their versions that were used (e.g., `pandas==2.0.1`). If you use `conda`, you may instead opt for an `environment.yml`. These are essential to ensuring the reproducibility and interoperability of your work (by yourself and others). Note that they should _**not**_ be listed in the README.
 
 For more information on managing these environments and generating such files programmatically, see the wiki entry [Virtual Environments](Virtual-Environments.md).
 
@@ -292,6 +292,6 @@ If you would like a specific branch, use `git clone -b <branch_name> <repo_url>`
 
 ### Workflow Summary
 
-Generally, repositories are organized around an Imageomics Project/Topic/Team, eg., butterflies. These broader topics may contain various projects organized under a GitHub [Team](https://github.com/orgs/Imageomics/teams) focused on that topic. Both [projects](https://github.com/orgs/Imageomics/projects?query=is%3Aopen) and [repositories](https://github.com/orgs/Imageomics/repositories) may be linked to teams, providing an organizational structure upon which to plan and manage tasks while maintaining a clear link/connection to the work being done on those tasks. Note that a project may encapsulate multiple repositories just as a repository may be referenced by multiple projects.
+Generally, repositories are organized around an Imageomics Project/Topic/Team, e.g., butterflies. These broader topics may contain various projects organized under a GitHub [Team](https://github.com/orgs/Imageomics/teams) focused on that topic. Both [projects](https://github.com/orgs/Imageomics/projects?query=is%3Aopen) and [repositories](https://github.com/orgs/Imageomics/repositories) may be linked to teams, providing an organizational structure upon which to plan and manage tasks while maintaining a clear link/connection to the work being done on those tasks. Note that a project may encapsulate multiple repositories just as a repository may be referenced by multiple projects.
 
 Ideally, each task will be linked to an issue in the relevant repository. Team members may then be assigned tasks, and asynchronous discussions about the task can be recorded on its issue page in the repository. To accomplish the task, a new branch should be created following the [branch naming conventions](#formatting-and-naming-conventions); do not work directly on the `main` branch. Once the task is completed, a pull request can be opened to merge the changes into the main branch (see the [GitHub Workflow Guide](The-GitHub-Workflow.md) and the [PR Guide](The-GitHub-Pull-Request-Guide.md) for more details on this process). Reviewers may be assigned to each pull request to ensure compatibility and that the proposed solution functions as expected/needed; this is an opportunity for more dialogue.

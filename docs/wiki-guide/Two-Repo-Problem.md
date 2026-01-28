@@ -196,7 +196,7 @@ git push --set-upstream origin v1
 At this point the main branch of the public repo should match the main branch of the private repo.
 Additional changes should be made only to the private repo, preferably using a branch.
 See [Github-Workflow](The-GitHub-Workflow.md) for more details.
-When you are ready to release a new version of the code in the private repo follow the [Merge Private to Public instructions](#merge-private-to-public) again using a new version branch name (eg. `v2`).
+When you are ready to release a new version of the code in the private repo follow the [Merge Private to Public instructions](#merge-private-to-public) again using a new version branch name (e.g., `v2`).
 
 ***
 
