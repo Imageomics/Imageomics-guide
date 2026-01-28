@@ -644,6 +644,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="README">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guiding-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guiding Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Elements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -2089,6 +2128,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="README">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guiding-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guiding Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Elements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -2380,9 +2458,22 @@
 <li><a href="#citation">CITATION.cff</a></li>
 </ul>
 <p>More <a href="#recommended-files">recommendations</a> are discussed below.</p>
+<div class="admonition tip">
+<p class="admonition-title">Pro tip</p>
+<p>All these files, plus more essential and recommended elements for a comprehensive GitHub repo, are included in our <a href="../Code-Checklist/">Code Checklist</a>. Following the checklist ensures compliance with the FAIR Principles for research software.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+</div>
 <h3 id="readme">README<a class="headerlink" href="#readme" title="Permanent link">¶</a></h3>
-<p>The README.md file is what everyone will notice first when they open your repository on GitHub. When creating your repo be sure to include a brief description, as this will populate the <code>About</code> field in the top right of your repo, as well as start your README with some text.</p>
-<p>Once you've created your repo, populate your README (you can do this by clicking on the file "README.md", then clicking the pencil at the top left to edit). Editing your README in the browser allows you to preview the formatting of the file before committing changes. The content of your README may vary based on the purpose or goal of your repo, but there are key elements that should always be included.</p>
+<p>The <code>README.md</code> file is what everyone will notice first when they open your repository on GitHub. When creating your repo be sure to include a brief description, as this will populate the <code>About</code> field in the top right of your repo, as well as start your README with some text.</p>
+<p>Once you've created your repo, populate your README (you can do this by clicking on the file <code>README.md</code>, then clicking the pencil at the top left to edit). Editing your README in the browser allows you to preview the formatting of the file before committing changes. The content of your README may vary based on the purpose or goal of your repo, but there are key elements that should always be included.</p>
+<h4 id="guiding-principles">Guiding Principles<a class="headerlink" href="#guiding-principles" title="Permanent link">¶</a></h4>
+<p>While crafting your repo, keep the following guiding principles in mind:</p>
+<ul>
+<li>It is iterative; it does not need to be perfect from the beginning. Be honest about the scope and maturity of the project.</li>
+<li>It should be <em>useful</em> for the intended audience and optimized for scanning.</li>
+<li>Give the audience "quick wins" to being productive with minimal examples or typical workflows rather than comprehensively covering every edge case.</li>
+</ul>
+<h4 id="key-elements">Key Elements<a class="headerlink" href="#key-elements" title="Permanent link">¶</a></h4>
+<p>Following the above principles, be sure to include</p>
 <ul>
 <li>Summary of the repo:<ul>
 <li>This could be a simple explanation of what the package or tool developed in your repo is intended to do,</li>
@@ -2395,12 +2486,25 @@
 </ul>
 </li>
 <li>Information about the sources you've used (links and what they were used for), such as:<ul>
-<li>Tools from other repos</li>
-<li>Data for analysis</li>
+<li>Tools from other repos.</li>
+<li>Data used for analysis.</li>
 </ul>
 </li>
 </ul>
-<p>For more inspiration on making an awesome README, check out <a href="https://github.com/matiassingers/awesome-readme">this list</a>.</p>
+<h4 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">¶</a></h4>
+<p>Some Imageomics repositories with nicely formulated READMEs are...</p>
+<ul>
+<li><a href="https://github.com/Imageomics/bioclip-2">BioCLIP 2</a>: a large project which includes data, model, the code, and a demo.<ul>
+<li>It also builds on previous work; the repo models how to request citations (including references), and addresses the case of a multi-user/group license; this complexity is handled well through clarification of type and the inclusion of a <code>HISTORY.md</code> file.</li>
+<li>It also is re-used a lot within Imageomics as a base style.</li>
+</ul>
+</li>
+<li><a href="https://github.com/Imageomics/cautious-robot">cautious-robot</a> and <a href="https://github.com/Imageomics/pybioclip/tree/1.1.0">pybioclip</a> (before the addition of a MkDocs site for documentation) are good examples of code or software-based projects.<ul>
+<li>We want to emphasize that a project can start with a well-documented README and later grow to incorporate a documentation site as it becomes more complex (e.g., <a href="https://github.com/Imageomics/pybioclip">pybioclip</a>).</li>
+</ul>
+</li>
+</ul>
+<p>For more inspiration on making an awesome README, check out <a href="https://github.com/matiassingers/awesome-readme">this crowd-sourced list of awesome READMEs</a>.</p>
 <h3 id="license">LICENSE<a class="headerlink" href="#license" title="Permanent link">¶</a></h3>
 <h4 id="1-select-a-license">1. Select a license<a class="headerlink" href="#1-select-a-license" title="Permanent link">¶</a></h4>
 <p>Alongside the appropriate stakeholders, select a license that is <a href="https://opensource.org/licenses">Open Source Initiative</a> (OSI) compliant.</p>
@@ -2410,7 +2514,7 @@
 </div>
 <p>For more information on how to choose a license and why it matters, see <a href="https://choosealicense.com">Choose A License</a> and <a href="https://doi.org/10.1371/journal.pcbi.1002598">A Quick Guide to Software Licensing for the Scientist-Programmer</a> by A. Morin, et al.</p>
 <h4 id="2-add-licensemd-to-the-repository">2. Add LICENSE.md to the repository<a class="headerlink" href="#2-add-licensemd-to-the-repository" title="Permanent link">¶</a></h4>
-<p>Once a license has been chosen, add a LICENSE.md file to the root of the repository. An easy way to do this is using a GitHub-provided <a href="https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository">license template</a>. Do not forget to update necessary fields in the template.</p>
+<p>Once a license has been chosen, add a <code>LICENSE.md</code> file to the root of the repository. An easy way to do this is using a GitHub-provided <a href="https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository">license template</a>. Do not forget to update necessary fields in the template.</p>
 <h3 id="gitignore">GITIGNORE<a class="headerlink" href="#gitignore" title="Permanent link">¶</a></h3>
 <p>The <code>.gitignore</code> file is an important tool for maintaining a clean repository by ensuring that git will not track temp files of any and all your collaborators (no pesky <code>pycache</code> or <code>.DS_Store</code> files floating around).</p>
 <p>GitHub has premade <code>.gitignore</code> files which can be selected from a dropdown when creating a repo. They are available for review at <a href="https://github.com/github/gitignore">github/gitignore</a> and are generally tailored to particular languages (eg., <a href="https://github.com/github/gitignore/blob/main/R.gitignore">R</a> or <a href="https://github.com/github/gitignore/blob/main/Python.gitignore">Python</a>), operating systems, etc. The initial choice can be updated as needed. In particular, we recommend selecting a template based on the primary language used for your work.</p>
@@ -2426,7 +2530,7 @@
 <p>Make it easier for people to cite your project by including a <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files">CITATION.cff file</a>; you can copy-paste the template below.</p>
 <p>As with journal publications, we expect to be cited when someone uses our code. To facilitate proper attribution, GitHub will automatically read a <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files">CITATION.cff file</a> and display a link to "cite this repository". This file is also used to populate metadata fields in a <a href="https://zenodo.org/">Zenodo</a> record when <a href="../DOI-Generation/#2-generate-a-doi-with-zenodo">auto-generating a DOI</a>. As with any other component of your project, this file may change over the project's lifespan (see <a href="../Digital-Product-Lifecycle/">Digital Product Life Cycle</a> for details), but it should be present and updated before any release.</p>
 <p>Providing this file is as simple as copying the below example and filling in your information before uploading it to your repo. More examples and information about the Citation File Format can be found on the <a href="https://github.com/citation-file-format/citation-file-format">citation-file-format repo</a>, including helpful <a href="https://github.com/citation-file-format/citation-file-format#tools-to-work-with-citationcff-files-wrench">related tools</a>.</p>
-<p>You can check your CITATION.cff file prior to upload using this <a href="https://www.yamllint.com/">validator tool</a>.</p>
+<p>You can check your <code>CITATION.cff</code> file prior to upload using this <a href="https://www.yamllint.com/">validator tool</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul>
@@ -2528,11 +2632,11 @@
 <h2 id="recommended-files">Recommended Files<a class="headerlink" href="#recommended-files" title="Permanent link">¶</a></h2>
 <p>Though the following files are not included in every repository and do not have a simple selection process integrated into GitHub, they are extremely important (if not essential) to maintaining FAIR principles and reproducibility in projects, as well as ensuring proper attribution for your work.</p>
 <h3 id="contributing">CONTRIBUTING<a class="headerlink" href="#contributing" title="Permanent link">¶</a></h3>
-<p>If you are looking to open your project to more public contributions, it is a good idea to include contributing guidelines. This could take the form of a "CONTRIBUTING.md" file or a subsection of your README.</p>
+<p>If you are looking to open your project to more public contributions, it is a good idea to include contributing guidelines. This could take the form of a <code>CONTRIBUTING.md</code> file or a subsection of your README.</p>
 <p>Contributing guidelines are important to maintain consistency across the way people work on a project. It is important to establish conventions about the important things while avoiding excessive constraints and bureaucracy that would make contributing a pain. Important things include efficient and effective communication.</p>
 <h3 id="zenodo-metadata">Zenodo Metadata<a class="headerlink" href="#zenodo-metadata" title="Permanent link">¶</a></h3>
 <p>When using the Zenodo-GitHub integration for <a href="../DOI-Generation/#automatic-generation">automatic DOI generation</a>, tracking metadata beyond the basics (authors, keywords, title, etc.) requires manual updates to the Zenodo record. The solution for this is to include a <code>.zenodo.json</code> file to keep track of this information (e.g., grant funding and references).</p>
-<p>A <code>.zenodo.json</code> can be created by applying <a href="https://github.com/citation-file-format/cffconvert">cffconvert</a> to your <code>CITATION.cff</code> (without the references, as these are not supported). Then add the references and other metadata back in to the JSON (following the <a href="https://developers.zenodo.org/#representation">Zenodo dev guide</a>). Alterntatively, The example below can simply be copied into a new file and updated with the appropriate information (comments should be removed prior to upload).</p>
+<p>A <code>.zenodo.json</code> can be created by applying <a href="https://github.com/citation-file-format/cffconvert">cffconvert</a> to your <code>CITATION.cff</code> (without the references, as these are not supported). Then add the references and other metadata back in to the JSON (following the <a href="https://developers.zenodo.org/#representation">Zenodo dev guide</a>). Alternatively, The example below can simply be copied into a new file and updated with the appropriate information (comments should be removed prior to upload).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The <code>publication_date</code> and <code>version</code> will need to be updated along with the <code>CITATION.cff</code> for each release.</p>
@@ -2638,6 +2742,14 @@
 <h3 id="workflow-summary">Workflow Summary<a class="headerlink" href="#workflow-summary" title="Permanent link">¶</a></h3>
 <p>Generally, repositories are organized around an Imageomics Project/Topic/Team, eg., butterflies. These broader topics may contain various projects organized under a GitHub <a href="https://github.com/orgs/Imageomics/teams">Team</a> focused on that topic. Both <a href="https://github.com/orgs/Imageomics/projects?query=is%3Aopen">projects</a> and <a href="https://github.com/orgs/Imageomics/repositories">repositories</a> may be linked to teams, providing an organizational structure upon which to plan and manage tasks while maintaining a clear link/connection to the work being done on those tasks. Note that a project may encapsulate multiple repositories just as a repository may be referenced by multiple projects.</p>
 <p>Ideally, each task will be linked to an issue in the relevant repository. Team members may then be assigned tasks, and asynchronous discussions about the task can be recorded on its issue page in the repository. To accomplish the task, a new branch should be created following the <a href="#formatting-and-naming-conventions">branch naming conventions</a>; do not work directly on the <code>main</code> branch. Once the task is completed, a pull request can be opened to merge the changes into the main branch (see the <a href="../The-GitHub-Workflow/">GitHub Workflow Guide</a> and the <a href="../The-GitHub-Pull-Request-Guide/">PR Guide</a> for more details on this process). Reviewers may be assigned to each pull request to ensure compatibility and that the proposed solution functions as expected/needed; this is an opportunity for more dialogue.</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Barker, M., Chue Hong, N. P., Katz, D. S., Lamprecht, A. L., Martinez-Ortiz, C., Psomopoulos, F., Harrow, J., Castro, L. J., Gruenpeter, M., Martinez, P. A., &amp; Honeyman, T. (2022). Introducing the FAIR Principles for research software. <em>Scientific data</em>, 9(1), 622. <a href="https://doi.org/10.1038/s41597-022-01710-x">URL</a>.&nbsp;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div>
 
 
 
