@@ -1797,6 +1797,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#vale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vale
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2093,6 +2104,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#vale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vale
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2229,6 +2251,16 @@ This makes it easier to see the differences between versions as you work through
 <p>Ruff can also be set up as part of a pre-commit hook or GitHub Workflow. See their <a href="https://github.com/astral-sh/ruff?tab=readme-ov-file#usage">Usage section</a> for more information.</p>
 <h3 id="markdownlint">Markdownlint<a class="headerlink" href="#markdownlint" title="Permanent link">¶</a></h3>
 <p>Fast <em>Markdown</em> formatter and linter. We use the <a href="https://github.com/DavidAnson/markdownlint">DavidAnson/markdownlint</a> package for this site; see instructions and example in the <a href="https://github.com/Imageomics/Collaborative-distributed-science-guide/blob/main/CONTRIBUTING.md#linting">linting section</a> of our contributing guidelines. It is flexible in configuration and allows for simple checking or even fixing straight-forward formatting issues.</p>
+<h3 id="vale">Vale<a class="headerlink" href="#vale" title="Permanent link">¶</a></h3>
+<p>Syntax-aware prose linter for documentation, technical writing, and Markdown files. Unlike basic spell checkers, <a href="https://github.com/errata-ai/vale">errata-ai/vale</a> enforces customizable style guides and writing rules, making it ideal for maintaining consistency across project documentation. You can install it with <code>brew install vale</code> on macOS, or see the <a href="https://vale.sh/docs/vale-cli/installation/">installation guide</a> for other platforms.</p>
+<p>Vale comes with support for popular style guides like <a href="https://github.com/errata-ai/Google">Google</a>, <a href="https://github.com/errata-ai/Microsoft">Microsoft</a>, and <a href="https://github.com/errata-ai/write-good">write-good</a>, and you can create custom rules for your project's specific needs. It integrates well with version control workflows and can check documentation in various formats including Markdown, reStructuredText, HTML, and AsciiDoc.</p>
+<p>To lint documentation files, run:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>vale<span class="w"> </span>&lt;path/to/file.md&gt;
+</span></code></pre></div>
+<p>To check an entire directory:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>vale<span class="w"> </span>docs/
+</span></code></pre></div>
+<p>Vale uses a <code>.vale.ini</code> configuration file in your project root to specify style guides, vocabulary, and which files to check. You can also set up Vale as part of a <a href="https://pre-commit.com/">pre-commit</a> hook or GitHub Workflow to automatically check documentation on commits or pull requests. See the <a href="https://vale.sh/docs/">Vale documentation</a> for configuration examples and style guide options.</p>
 <h2 id="fair-data-access-and-validation">FAIR Data Access and Validation<a class="headerlink" href="#fair-data-access-and-validation" title="Permanent link">¶</a></h2>
 <p>Don't add to the reproducibility crisis! Are you using existing data accessed through URLs and need to ensure consistency for re-use? Do you have a folder of images with all their metadata documented through their filenames? <a href="#cautious-robot">Cautious Robot</a> and <a href="#sum-buddy">Sum Buddy</a> are here to help.</p>
 <h3 id="cautious-robot">Cautious Robot<a class="headerlink" href="#cautious-robot" title="Permanent link">¶</a></h3>
@@ -2251,7 +2283,7 @@ This makes it easier to see the differences between versions as you work through
 </ul>
 <h4 id="sample-command">Sample Command<a class="headerlink" href="#sample-command" title="Permanent link">¶</a></h4>
 <p>Given a CSV (<code>example.csv</code>) with a list of image URLs in a <code>file_url</code> column with <code>filename</code> providing unique IDs for each image, the following snippet will download these into an <code>example_images/</code> directory and validate the contents with provided MD5 hashes from the <code>md5</code> column of the CSV.</p>
-<div class="language-console highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="go">cautious-robot --input-file example.csv --output-dir example_images -v "md5"</span>
+<div class="language-console highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="go">cautious-robot --input-file example.csv --output-dir example_images -v "md5"</span>
 </span></code></pre></div>
 <p>To download larger (10-100M image scale), more distributed datasets, to HPC systems please see <a href="https://github.com/Imageomics/distributed-downloader">Imageomics/distributed-downloader</a>.</p>
 <h3 id="sum-buddy">Sum Buddy<a class="headerlink" href="#sum-buddy" title="Permanent link">¶</a></h3>
@@ -2269,7 +2301,7 @@ This makes it easier to see the differences between versions as you work through
 </ul>
 <h4 id="sample-use-case">Sample Use Case<a class="headerlink" href="#sample-use-case" title="Permanent link">¶</a></h4>
 <p>Given a collection of images, e.g., in an <code>images/</code> directory, with no accompanying metadata, quickly generate a metadata file listing the filepaths, filenames, and checksums of all images contained in the folder. Note the option to include an "ignore file". This operates similarly to a <code>.gitignore</code>, allowing one to avoid inclusion of particular files or file types. In this case, let's assume there may be some <code>.doc</code> or similar included with the images. Hidden files and directories (e.g., <code>.DS_Store</code>) are ignored by default.</p>
-<div class="language-console highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="go">sum-buddy --output-file metadata.csv --ignore-file .sbignore images/</span>
+<div class="language-console highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="go">sum-buddy --output-file metadata.csv --ignore-file .sbignore images/</span>
 </span></code></pre></div>
 <p>The added benefit to this method of metadata CSV generation is the ability to quickly and easily check for duplicate images within a collection. See our <a href="https://github.com/Imageomics/data-workshop-AH-2024">data training repo</a> to learn more about this subject.</p>
 

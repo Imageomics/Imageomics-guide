@@ -932,12 +932,12 @@
   <a href="#license" class="md-nav__link">
     <span class="md-ellipsis">
       
-        LICENSE
+        License
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="LICENSE">
+    <nav class="md-nav" aria-label="License">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -952,10 +952,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-add-licensemd-to-the-repository" class="md-nav__link">
+  <a href="#2-add-a-license-to-the-repository" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Add LICENSE.md to the repository
+        2. Add a license to the repository
       
     </span>
   </a>
@@ -1946,12 +1946,12 @@
   <a href="#license" class="md-nav__link">
     <span class="md-ellipsis">
       
-        LICENSE
+        License
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="LICENSE">
+    <nav class="md-nav" aria-label="License">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1966,10 +1966,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-add-licensemd-to-the-repository" class="md-nav__link">
+  <a href="#2-add-a-license-to-the-repository" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Add LICENSE.md to the repository
+        2. Add a license to the repository
       
     </span>
   </a>
@@ -2067,26 +2067,34 @@
 <p>Need a repository to store your data or model? You've come to the right place! Below we have compiled guidance on conventions and best practices for maintaining a shared (or shareable) Hugging Face repository of your work.</p>
 <h2 id="setting-up-a-new-organization-repository">Setting up a New Organization Repository<a class="headerlink" href="#setting-up-a-new-organization-repository" title="Permanent link">¶</a></h2>
 <h3 id="standard-files">Standard Files<a class="headerlink" href="#standard-files" title="Permanent link">¶</a></h3>
-<p>For each repository, include the following files in the root directory as soon as possible; a license can (and should) be instantiated when you create a new repository, and the standard <code>.gitattributes</code> will be generated for you. On the <a href="https://huggingface.co/imageomics">Imageomics HF</a> select <code>New</code> and pick which type of repository you need.</p>
+<p>For each repository, include the following files and metadata in the root directory as soon as possible; a license can (and should) be instantiated with the Dataset or Model card (<code>README.md</code>), and the standard <code>.gitattributes</code> will be generated for you. On the <a href="https://huggingface.co/imageomics">Imageomics HF</a> select <code>New</code> and pick which type of repository you need.</p>
 <ul>
 <li><a href="#readme">README.md</a></li>
-<li><a href="#license">LICENSE.md</a></li>
+<li><a href="#license">License</a></li>
 <li><a href="#gitignore">.gitignore</a></li>
 <li><a href="#gitattributes">.gitattributes</a></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Hugging Face does not support the use of a <code>CITATION.cff</code>. Instead, citation guidance is provided in the Citation Section of the <a href="../HF_DatasetCard_Template_mkdocs/">Dataset</a> or <a href="../HF_ModelCard_Template_mkdocs/">Model</a> card. When <a href="../DOI-Generation/##1-generate-a-doi-on-hugging-face">generating a DOI on Hugging Face</a>, author names must be added manually in the intended order for them to be displayed in the DOI "Cite this dataset" link.</p>
+</div>
 <h4 id="readme">README<a class="headerlink" href="#readme" title="Permanent link">¶</a></h4>
 <p>The README.md file is generally referred to as either a Dataset or Model Card and is what everyone will notice first when they open your repository on Hugging Face. Choose the appropriate Imageomics-specific HF template (<a href="../HF_ModelCard_Template_mkdocs/">model</a> or <a href="../HF_DatasetCard_Template_mkdocs/">dataset</a>) to get started. Be sure to include a brief description and as much information as possible at the beginning. You can update this file as you go, so don't remove the recommended sections prior to completion. The templates include descriptions of many fields, Imageomics grant information, citation formatting, and some notes on HF-flavored markdown to get you started.</p>
 <p>Once you've created your repo, populate your README (you can do this online by selecting "Create Dataset/Model Card" and pasting in the appropriate Imageomics HF template, then filling in your info). Editing your README in the browser allows you to preview the formatting of the file before committing changes.</p>
-<h4 id="license">LICENSE<a class="headerlink" href="#license" title="Permanent link">¶</a></h4>
+<h4 id="license">License<a class="headerlink" href="#license" title="Permanent link">¶</a></h4>
 <h5 id="1-select-a-license">1. Select a license<a class="headerlink" href="#1-select-a-license" title="Permanent link">¶</a></h5>
-<p>Alongside the appropriate stakeholders, select a license that is <a href="https://opensource.org/licenses">Open Source Initiative</a> (OSI) compliant.</p>
+<p>Alongside the appropriate stakeholders, select a license following the guidelines set forth in the <a href="../Digital-products-release-licensing-policy/">Digital Products Release and Licensing Policy</a>. For Datasets, this would be public domain or terms no more restrictive than requiring attribution (e.g., <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>); Models and Spaces should be released under a license that is <a href="https://opensource.org/licenses">Open Source Initiative</a> (OSI) compliant.</p>
 <div class="admonition note">
 <p class="admonition-title">Remember</p>
 <p>A public repository on Hugging Face with no license can be viewed and accessed by others, but unless the author associates a license, it is unclear what others are allowed to do with it legally. Adding an OSI license can help others feel comfortable building off your work!</p>
 </div>
-<p>For more information on how to choose a license and why it matters, see <a href="https://choosealicense.com">Choose A License</a> and <a href="https://doi.org/10.1371/journal.pcbi.1002598">A Quick Guide to Software Licensing for the Scientist-Programmer</a> by A. Morin, et al.</p>
-<h5 id="2-add-licensemd-to-the-repository">2. Add LICENSE.md to the repository<a class="headerlink" href="#2-add-licensemd-to-the-repository" title="Permanent link">¶</a></h5>
-<p>Once a license has been chosen (if not initialized with one), add the appropriate license label in the <code>yaml</code> portion of the README (the web UI generates a dropdown of recommendations under "Edit dataset/model card").</p>
+<p>For more information on how to choose a license and why it matters, see <a href="https://choosealicense.com">Choose A License</a>. Keep in mind that your available license options may also be limited by your data sources or base model. Data should not be republished where not explicitly warranted or required.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<h5 id="2-add-a-license-to-the-repository">2. Add a license to the repository<a class="headerlink" href="#2-add-a-license-to-the-repository" title="Permanent link">¶</a></h5>
+<p>Once a license has been chosen (if not initialized with one), add the appropriate license identifier in the <code>yaml</code> portion of the README (the web UI generates a dropdown of recommendations under "Edit dataset/model card", <a href="https://huggingface.co/docs/hub/en/repositories-licenses">license identifiers</a>).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Unlike in GitHub, a <code>LICENSE.md</code> file is not supported. Instead, the license for the digital object is added through the <code>yaml</code> (for ease of API access) and further clarifications can be included in the License Section of the <a href="../HF_DatasetCard_Template_mkdocs/">Dataset</a> or <a href="../HF_ModelCard_Template_mkdocs/">Model</a> card.</p>
+</div>
 <h4 id="gitignore">gitignore<a class="headerlink" href="#gitignore" title="Permanent link">¶</a></h4>
 <p>As with GitHub, the <code>.gitignore</code> file is an important tool for maintaining a clean repository by ensuring that git will not track temp files of any and all your collaborators (no pesky <code>pycache</code> or <code>.DS_Store</code> files floating around).</p>
 <p>The same <a href="https://github.com/github/gitignore">options for GitHub</a> are usable here, and if you or anyone on your team uses a Mac (or if you intend to encourage outside collaboration on this repo), add</p>
@@ -2095,13 +2103,13 @@
 </span></code></pre></div>
 <p>at the end of the <code>.gitignore</code> file.</p>
 <h4 id="gitattributes">gitattributes<a class="headerlink" href="#gitattributes" title="Permanent link">¶</a></h4>
-<p>The <code>.gitattributes</code> file determines file patterns to be tracked by <a href="https://git-lfs.com/"><code>git LFS</code></a> (Git Large File Storage). The preset <code>gitattributes</code> file includes many binary file types, but you may need to add particular files if they get too large (eg., a large CSV, but do <strong>NOT</strong> store all CSV files with <code>git LFS</code>, just add the particular one or pattern). Pattern-matching can be done using <code>*</code>. You can either add the file (and appropriate pattern description) to the <code>.gitattributes</code> file, or add it in the command line:</p>
+<p>The <code>.gitattributes</code> file determines file patterns to be tracked by <a href="https://git-lfs.com/"><code>git LFS</code></a> (Git Large File Storage). The preset <code>gitattributes</code> file includes many binary file types, but you may need to add particular files if they get too large (e.g., a large CSV, but do <strong>NOT</strong> store all CSV files with <code>git LFS</code>, just add the particular one or pattern). Pattern-matching can be done using <code>*</code>. You can either add the file (and appropriate pattern description) to the <code>.gitattributes</code> file, or add it in the command line:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git lfs track "my-big-list.csv"
 </span></code></pre></div>
 <p>Then add and commit the <code>.gitattributes</code> file as described below.</p>
 <h2 id="hugging-face-pull-requests-with-local-edits">Hugging Face Pull Requests With Local Edits<a class="headerlink" href="#hugging-face-pull-requests-with-local-edits" title="Permanent link">¶</a></h2>
 <p>Hugging Face also has a pull request (PR) feature, though the process is a bit different from GitHub.</p>
-<p>As with GitHub, you can interact through the web browser or a command line interface (eg., terminal on Mac). However, instead of the <code>create new branch</code> option, there is a <code>create new pull request</code> option. It is still preferable to avoid committing everything directly to main. To make further changes to the particular PR created on the browser, one must first clone the repo:</p>
+<p>As with GitHub, you can interact through the web browser or a command line interface (e.g., terminal on Mac). However, instead of the <code>create new branch</code> option, there is a <code>create new pull request</code> option. It is still preferable to avoid committing everything directly to main. To make further changes to the particular PR created on the browser, one must first clone the repo:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git clone &lt;repo-url&gt; 
 </span></code></pre></div>
 <p>Then, navigate to that folder <code>cd &lt;repo-name&gt;</code>, and fetch the PR files:</p>
@@ -2116,6 +2124,14 @@
 <p>For more information on Hugging Face Pull Requests and Discussions, see their <a href="https://huggingface.co/docs/hub/repositories-pull-requests-discussions">documentation</a>.</p>
 <h2 id="templates-for-model-and-dataset-cards">Templates for Model and Dataset Cards<a class="headerlink" href="#templates-for-model-and-dataset-cards" title="Permanent link">¶</a></h2>
 <p>See <a href="../About-Templates/">About Templates</a> for guidelines on using templates for these important pieces of documentation.</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>For instance, when working with images aggregated from multiple sources, a catalog of all images used with URLs to access the images and download instructions (<a href="../Helpful-Tools-for-your-Workflow/#cautious-robot">cautious-robot</a> can help with this) respects the original source data producers interests. However, if you have processed the images in a resource-intensive pipeline and the image licenses allow, the <em>processed</em> images should be published for ease of re-use. In this case, it is important to provide the citation for the source data as well.&nbsp;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div>
 
 
 
