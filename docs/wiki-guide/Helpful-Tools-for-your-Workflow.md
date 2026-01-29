@@ -56,6 +56,26 @@ Ruff can also be set up as part of a pre-commit hook or GitHub Workflow. See the
 
 Fast _Markdown_ formatter and linter. We use the [DavidAnson/markdownlint](https://github.com/DavidAnson/markdownlint) package for this site; see instructions and example in the [linting section](https://github.com/Imageomics/Collaborative-distributed-science-guide/blob/main/CONTRIBUTING.md#linting) of our contributing guidelines. It is flexible in configuration and allows for simple checking or even fixing straight-forward formatting issues.
 
+### Vale
+
+Syntax-aware prose linter for documentation, technical writing, and Markdown files. Unlike basic spell checkers, [errata-ai/vale](https://github.com/errata-ai/vale) enforces customizable style guides and writing rules, making it ideal for maintaining consistency across project documentation. You can install it with `brew install vale` on macOS, or see the [installation guide](https://vale.sh/docs/vale-cli/installation/) for other platforms.
+
+Vale comes with support for popular style guides like [Google](https://github.com/errata-ai/Google), [Microsoft](https://github.com/errata-ai/Microsoft), and [write-good](https://github.com/errata-ai/write-good), and you can create custom rules for your project's specific needs. It integrates well with version control workflows and can check documentation in various formats including Markdown, reStructuredText, HTML, and AsciiDoc.
+
+To lint documentation files, run:
+
+```bash
+vale <path/to/file.md>
+```
+
+To check an entire directory:
+
+```bash
+vale docs/
+```
+
+Vale uses a `.vale.ini` configuration file in your project root to specify style guides, vocabulary, and which files to check. You can also set up Vale as part of a [pre-commit](https://pre-commit.com/) hook or GitHub Workflow to automatically check documentation on commits or pull requests. See the [Vale documentation](https://vale.sh/docs/) for configuration examples and style guide options.
+
 ## FAIR Data Access and Validation
 
 Don't add to the reproducibility crisis! Are you using existing data accessed through URLs and need to ensure consistency for re-use? Do you have a folder of images with all their metadata documented through their filenames? [Cautious Robot](#cautious-robot) and [Sum Buddy](#sum-buddy) are here to help.
