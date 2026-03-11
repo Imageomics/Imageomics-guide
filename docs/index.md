@@ -58,8 +58,8 @@ Discover new tools to help:
 
 We have two versions of the logo, a [fish](https://github.com/Imageomics/Imageomics-guide/blob/main/docs/logos/Imageomics_logo_fish.png) and a [butterfly](https://github.com/Imageomics/Imageomics-guide/blob/main/docs/logos/Imageomics_logo_butterfly.png), which should be used for scientific posters, conference, workshop, and meeting marketing materials, etc. Choice of logo is based on user preference.
 
-![butterfly logo](logos/Imageomics_logo_butterfly.png){: style="width:45%"}
 ![fish logo](logos/Imageomics_logo_fish.png){: style="width:45%"}
+![butterfly logo](logos/Imageomics_logo_butterfly.png){: style="width:45%"}
 
 ## Other pages of note
 
