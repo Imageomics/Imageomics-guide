@@ -110,7 +110,7 @@ repo_id = "<org-name>/<repo-name>"
 repo_type = "dataset"
 
 file_list = api.list_repo_files(repo_id=repo_id, repo_type=repo_type)
-file_df = pd.Dataframe(columns = {"filepath": file_list})
+file_df = pd.DataFrame(data = {"filepath": file_list})
 metadata = pd.read_csv("path/to/metadata/file")
 
 # assuming you use the same filepath in your system as in the repo
