@@ -101,66 +101,119 @@ For more information on managing these environments and generating such files pr
 
 ### CITATION
 
-Make it easier for people to cite your project by including a [CITATION.cff file](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files); you can copy-paste the template below.
+Make it easier for people to cite your project by including a [CITATION.cff file](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files); you can copy-paste the [template below](#citation-templates).
 
 As with journal publications, we expect to be cited when someone uses our code. To facilitate proper attribution, GitHub will automatically read a [CITATION.cff file](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files) and display a link to "cite this repository". This file is also used to populate metadata fields in a [Zenodo](https://zenodo.org/) record when [auto-generating a DOI](DOI-Generation.md#2-generate-a-doi-with-zenodo). As with any other component of your project, this file may change over the project's lifespan (see [Digital Product Life Cycle](Digital-Product-Lifecycle.md) for details), but it should be present and updated before any release.
 
 Providing this file is as simple as copying the below example and filling in your information before uploading it to your repo. More examples and information about the Citation File Format can be found on the [citation-file-format repo](https://github.com/citation-file-format/citation-file-format), including helpful [related tools](https://github.com/citation-file-format/citation-file-format#tools-to-work-with-citationcff-files-wrench).
 
-You can check your `CITATION.cff` file prior to upload using this [validator tool](https://www.yamllint.com/).
+#### Citation Templates
 
-!!! note "Note"
-    - When adding a DOI to your citation (`doi`), be sure to use the version-agnostic DOI from Zenodo. Since the DOI is not generated until _after_ the release, this ensures there will never be an "incorrect" DOI associated to the release&mdash;correct version reference is ensured through the `version` key, which should always be updated _**before**_ generating a new release.
-    - Subcategories of `preferred-citation` do not get bullet points, but the first subcategory of `references` must be bulleted (as below).
-    - This is generally intended as a reference for your code. Preferred citation can be used for the paper, though it is better to ask in the `README` that someone cites _both_ and provide the paper reference there (only the `preferred-citation` will show up to be copied from the citation box if it is included).
+- When adding a DOI to your citation (`doi`), be sure to use the version-agnostic DOI from Zenodo. Since the DOI is not generated until _after_ the release, this ensures there will never be an "incorrect" DOI associated to the release&mdash;correct version reference is ensured through the `version` key, which should always be updated _**before**_ generating a new release.
+- A `CITATION.cff` is intended as a reference for your code; ask in the `README` that someone cites _both_ the repo and your paper, then provide the paper BibTeX there.
+- Formatted display can be checked on a branch before merging to `main`.
 
-```yaml { py linenums="1" }
-abstract: "<describe your code/package>"
-authors:
-- family-names:
-  given-names: "<First M.I.>"
-  orcid: "https://orcid.org/<ORCID #>"
-cff-version: 1.2.0
-date-released: "YYYY-MM-DD"
-identifiers:
-  - description: "The GitHub release URL of tag <version>."
-    type: url
-    value: "https://github.com/Imageomics/<repo>/releases/tag/<tag-name>"
-  - description: "The GitHub URL of the commit tagged with <tag-name>."
-    type: url
-    value: "https://github.com/Imageomics/<repo>/tree/<commit-hash>"
-keywords:
-  - imageomics
-license:
-message: "If you find this software helpful in your research, please cite both the software and our paper."
-repository-code: "https://github.com/Imageomics/<repo>"
-title: "<repo title>"
-version: <release version>
-doi: <DOI from Zenodo>    # version agnostic DOI
-type: software
-preferred-citation:
-  type: article
-  authors:
+=== "Standard Citation File (Recommended)"
+
+    !!! tip
+        Pair this citation file with a [`.zenodo.json`](#zenodo-metadata) for easier DOI metadata tracking (grants, references, associated papers).
+
+    ```yaml { py linenums="1" }
+    abstract: "<describe your code/package>"
+    authors:
     - family-names:
-      given-names:
+      given-names: "<First M.I.>"
+      orcid: "https://orcid.org/<ORCID #>"
+    cff-version: 1.2.0
+    date-released: "YYYY-MM-DD"
+    identifiers:
+      - description: "The GitHub release URL of tag <version>."
+        type: url
+        value: "https://github.com/Imageomics/<repo>/releases/tag/<tag-name>"
+      - description: "The GitHub URL of the commit tagged with <tag-name>."
+        type: url
+        value: "https://github.com/Imageomics/<repo>/tree/<commit-hash>" # Update on release
+    keywords:
+      - imageomics
+    license:
+    message: "If you find this software helpful in your research, please cite both the software and our paper."
+    repository-code: "https://github.com/Imageomics/<repo>"
+    title: "<repo title>"
+    version: <release version>
+    #doi: <version-agnostic DOI from Zenodo>
+    type: software
+    ```
+
+=== "Extended `CFF` (References and Citation redirect)"
+
+    !!! warning
+        This is generally intended as a **reference for your code**. Preferred citation can be used for the paper, though it is better to ask in the `README` that someone cites _both_ and provide the paper reference there (only the `preferred-citation` will show up to be copied from the citation box if it is included).
+        
+        !!! success "Simplify version tracking for you code"
+            Pair the [standard citation file](#__tabbed_1_1) with a [.zenodo.json file](#zenodo-metadata), which can track references, associated papers, and grant information.
+
+    !!! info
+        - Subcategories of `preferred-citation` do not get bullet points, but the first subcategory of `references` must be bulleted (as below).
+        - If including `references` or setting a `preferred-citation`, see this [bibtex to cff crosswalk](https://docs.ropensci.org/cffr/articles/bibtex-cff.html#fieldskey-crosswalk) for help in translating a BibTeX citation to the proper `CFF` format.
+
+    ```yaml { py linenums="1" }
+    abstract: "<describe your code/package>"
+    authors:
     - family-names:
-      given-names:
-  title: 
-  year:
-  journal:
-  doi: 
-references:
-  - authors:
-      - family-names:
-        given-names:
-      - family-names:
-        given-names:
-    title: 
-    version:
-    type:
-    doi: 
-    date-released:
-```
+      given-names: "<First M.I.>"
+      orcid: "https://orcid.org/<ORCID #>"
+    cff-version: 1.2.0
+    date-released: "YYYY-MM-DD"
+    identifiers:
+      - description: "The GitHub release URL of tag <version>."
+        type: url
+        value: "https://github.com/Imageomics/<repo>/releases/tag/<tag-name>"
+      - description: "The GitHub URL of the commit tagged with <tag-name>."
+        type: url
+        value: "https://github.com/Imageomics/<repo>/tree/<commit-hash>" # Update on release
+    keywords:
+      - imageomics
+    license:
+    message: "If you find this software helpful in your research, please cite both the software and our paper."
+    repository-code: "https://github.com/Imageomics/<repo>"
+    title: "<repo title>"
+    version: <release version>
+    #doi: <version-agnostic DOI from Zenodo>
+    type: software
+    # Only include the following if you want to present the paper citation instead of code on sidebar,
+    # Better to include paper citation in README
+    preferred-citation:
+      type: conference-paper
+      authors:
+        - family-names:
+          given-names:
+        - family-names:
+          given-names:
+      collection-title: # "Proceedings of the ..."
+      collection-type: proceedings
+      conference:
+        name: # Name of conference, e.g., "ICLR 2025"
+      pages: #"<start>-<end>"
+      start: # First page, int
+      end: # Last page, int
+      title: # Paper title
+      year:
+      doi:
+      # url: use only if DOI not available
+    # References can be added here, but will only be read from the .zenodo.json file
+    # Below example set to reference code repo, `preferred-citation` types apply
+    references:
+      - authors:
+          - family-names:
+            given-names:
+          - family-names:
+            given-names:
+        title: 
+        version:
+        type:
+        doi: 
+        date-released:
+    ```
 
 ## Recommended Files
 
@@ -186,7 +239,7 @@ A `.zenodo.json` can be created by applying [cffconvert](https://github.com/cita
     "creators": [
       {
           "name": "family-names, given-names",
-          "orcid": "",
+          "orcid": "", // Just the ORCID number, not the URL
           "affiliation": ""
       },
       {
@@ -207,7 +260,10 @@ A `.zenodo.json` can be created by applying [cffconvert](https://github.com/cita
         {
             "id": "021nxhr62::2118240"  // Imageomics (<NSF code>::<Imageomics Grant #>)
         }
-    ] 
+    ],
+    "references": [
+        // list of references as strings in APA or similar format
+    ]
 }
 ```
 
