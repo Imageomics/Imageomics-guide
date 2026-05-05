@@ -8,6 +8,11 @@ If you are using a web service with API keys, there are a few things to keep in 
 - Convenient to change if needed
 - Unique for different environments
 
+!!! danger "Protect your API Keys and Access Tokens!"
+    The most important lesson in key-management is to ***never make them public*** and ***always scope access***. If you think a key has been exposed, ***disable*** and ***regenerate*** it immediately. By keeping access keys and tokens scoped to a single task or repository with the least permissions necessary to complete the needed function, you further reduce the potential impact of a leaked key.
+
+Both GitHub and Hugging Face recommend using *fine-grained* tokens, and provide guidance on creating and managing them within the platforms. Learn more about platform-specific access tokens on [GitHub](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) and [Hugging Face](https://huggingface.co/docs/hub/en/security-tokens). Keep reading below for more general API Key management guidance.
+
 ## Key Storage
 
 Our recommended way of storing and using API is within `.env` (dotenv) files.
