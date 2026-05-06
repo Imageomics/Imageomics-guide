@@ -82,23 +82,23 @@ There are a few updates required after generating a release, though the last lis
     ### Set version in... 
     - [ ] `__about__.py` file (the only repeated PyPI update).
       - Version should be set *dynamically* in the `pyproject.toml` from this file.*
-    - [ ] [`CITATION.cff`](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/GitHub-Repo-Guide/#citation-templates).
-    - [ ] [`.zenodo.json`](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/GitHub-Repo-Guide/#zenodo-metadata).
+    - [ ] [`CITATION.cff`](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#citation-templates).
+    - [ ] [`.zenodo.json`](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#zenodo-metadata).
     
-    ### Add/Update the [citation](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/GitHub-Repo-Guide/#citation) and [Zenodo metadata](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/GitHub-Repo-Guide/#zenodo-metadata) files.
+    ### Add/Update the [citation](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#citation) and [Zenodo metadata](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#zenodo-metadata) files.
     
     Ensure that...
     - [ ] All authors are included and appropriately ordered.
-      - This list may or may not change, and may differ from an associated paper author list, as discussed in the [Digital Product Lifecycle](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/Digital-Product-Lifecycle/#exploration-phase) and the [Imageomics Author Guide](https://docs.google.com/spreadsheets/d/1GwlCukfoQPL8JI2yyWRD3g4uiMTO3tlGNE_qeb_xBCs/edit?usp=sharing).
+      - This list may or may not change, and may differ from an associated paper author list, as discussed in the [Digital Product Lifecycle](https://imageomics.github.io/Imageomics-guide/wiki-guide/Digital-Product-Lifecycle/#exploration-phase) and the [Imageomics Author Guide](https://docs.google.com/spreadsheets/d/1GwlCukfoQPL8JI2yyWRD3g4uiMTO3tlGNE_qeb_xBCs/edit?usp=sharing).
     - [ ] All project keywords are listed, using quotes for multi-word tags.
     - [ ] The release date in both files is correct.
     > [!IMPORTANT]
     > This should be added in a PR as the last commit before a release, but check that the date matches, since these PRs may not necessarily be merged on the same day they are created.
-    - Set [citation file identifiers](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/GitHub-Repo-Guide/#__codelineno-1-8):
+    - Set [citation file identifiers](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#__codelineno-1-8):
       - [ ] Version tag link should match the updated version. The commit hash of the version will be filled in *after* release.
     > [!NOTE]
     > You have not generated a release yet, so leave the `doi` key commented out; it will be added **after** release.
-    - [ ] Add [test to validate Zenodo file](https://github.com/Imageomics/Collaborative-distributed-science-guide/blob/main/.github/workflows/validate-zenodo.yaml).*
+    - [ ] Add [test to validate Zenodo file](https://github.com/Imageomics/Imageomics-guide/blob/main/.github/workflows/validate-zenodo.yaml).*
 
     ### Automate publish to PyPI on release:
     - [ ] Set up a [`pyproject.toml`](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/) with your project repo information and dependencies.
@@ -111,7 +111,7 @@ There are a few updates required after generating a release, though the last lis
     - [ ] `pip install <package-name>` instead of `pip install git+<GitHub URL>`.
     
     ### Zenodo Sync
-    - [ ] Turn on repository sync in your Zenodo account; this must be set specifically for the target repo. See [Automatic DOI Generation with Zenodo](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/DOI-Generation/#automatic-generation) for more information.
+    - [ ] Turn on repository sync in your Zenodo account; this must be set specifically for the target repo. See [Automatic DOI Generation with Zenodo](https://imageomics.github.io/Imageomics-guide/wiki-guide/DOI-Generation/#automatic-generation) for more information.
     ```
 
 === "New Release"
@@ -120,10 +120,10 @@ There are a few updates required after generating a release, though the last lis
     ### Set version in... 
     - [ ] `__about__.py` file (the only repeated PyPI update).
       - Version should be set *dynamically* in the `pyproject.toml` from this file.*
-    - [ ] [`CITATION.cff`](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/GitHub-Repo-Guide/#citation-templates).
-    - [ ] [`.zenodo.json`](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/GitHub-Repo-Guide/#zenodo-metadata).
+    - [ ] [`CITATION.cff`](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#citation-templates).
+    - [ ] [`.zenodo.json`](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#zenodo-metadata).
     
-    ### Update the [citation](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/GitHub-Repo-Guide/#citation) and [Zenodo metadata](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/GitHub-Repo-Guide/#zenodo-metadata) files. 
+    ### Update the [citation](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#citation) and [Zenodo metadata](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#zenodo-metadata) files. 
     
     Ensure that...
     - [ ] All authors are included and appropriately ordered.
@@ -133,22 +133,22 @@ There are a few updates required after generating a release, though the last lis
     > [!IMPORTANT]
     > This should be added in a PR as the last commit before a release, but check that the date matches, since these PRs sometimes are not merged on the day they are created.
 
-    - [ ] Set version tag in [citation file identifiers](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/GitHub-Repo-Guide/#__codelineno-1-8) to match the updated version. The commit hash of the version will be filled in *after* release.
+    - [ ] Set version tag in [citation file identifiers](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#__codelineno-1-8) to match the updated version. The commit hash of the version will be filled in *after* release.
     ```
 
 === "After First Release"
     ```Markdown
     - [ ] Add *version-agnostic* DOI badge to `README`*.
-        - See [Add a Zenodo DOI Badge](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/DOI-Generation/#add-a-zenodo-doi-badge) for instructions.
+        - See [Add a Zenodo DOI Badge](https://imageomics.github.io/Imageomics-guide/wiki-guide/DOI-Generation/#add-a-zenodo-doi-badge) for instructions.
     - [ ] Add PyPI badges to `README`*.
     - [ ] Add *version-agnostic* DOI to `CITATION.cff`*.
-    - [ ] Add release commit hash to `CITATION.cff` [identifiers](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/GitHub-Repo-Guide/#__codelineno-1-8).
+    - [ ] Add release commit hash to `CITATION.cff` [identifiers](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#__codelineno-1-8).
     ```
 
 === "After Release"
 
     ```Markdown
-    - [ ] Add release commit hash to `CITATION.cff` [identifiers](https://imageomics.github.io/Collaborative-distributed-science-guide/wiki-guide/GitHub-Repo-Guide/#__codelineno-1-8).
+    - [ ] Add release commit hash to `CITATION.cff` [identifiers](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#__codelineno-1-8).
     ```
 
 [^1]: Note that this follows the [PyPI Trusted Publishers docs](https://docs.pypi.org/trusted-publishers/using-a-publisher/) to remove the need for a token, though you must first configure GitHub as a ["pending" Trusted Publisher](https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/) for the project on PyPI.
