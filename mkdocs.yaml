@@ -124,7 +124,9 @@ nav:
       - "About Templates": wiki-guide/About-Templates.md
       - "Dataset Card Template": wiki-guide/HF_DatasetCard_Template_mkdocs.md
       - "Model Card Template": wiki-guide/HF_ModelCard_Template_mkdocs.md
-  - Command Line Cheat Sheet: wiki-guide/Command-Line-Cheat-Sheet.md
+  - Quick References:
+      - "Command Line Cheat Sheet": wiki-guide/Command-Line-Cheat-Sheet.md
+      - "PyPI & Zenodo Release Automation": wiki-guide/GitHub-PyPI-Zenodo-Integration.md
   - Code of Conduct: CODE_OF_CONDUCT.md
   - Digital Product Policy: 
       - "About Digital Product Policies": wiki-guide/About-Digital-Product-Policies.md
