@@ -9,13 +9,13 @@
         <meta name="author" content="Imageomics Institute">
       
       
-        <link rel="canonical" href="https://Imageomics.github.io/Imageomics-guide/wiki-guide/About-Digital-Product-Policies/">
+        <link rel="canonical" href="https://Imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-PyPI-Zenodo-Integration/">
       
       
-        <link rel="prev" href="../../CODE_OF_CONDUCT/">
+        <link rel="prev" href="../Command-Line-Cheat-Sheet/">
       
       
-        <link rel="next" href="../Digital-products-release-licensing-policy/">
+        <link rel="next" href="../../CODE_OF_CONDUCT/">
       
       
         
@@ -26,7 +26,7 @@
     
     
       
-        <title>About Digital Product Policies - Imageomics Guide</title>
+        <title>PyPI &amp; Zenodo Release Automation - Imageomics Guide</title>
       
     
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#imageomics-digital-product-policies" class="md-skip">
+        <a href="#pypi-zenodo-release-automation" class="md-skip">
           Skip to content
         </a>
       
@@ -124,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              About Digital Product Policies
+              PyPI &amp; Zenodo Release Automation
             
           </span>
         </div>
@@ -336,10 +336,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../Command-Line-Cheat-Sheet/" class="md-tabs__link">
           
   
@@ -375,13 +377,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../About-Digital-Product-Policies/" class="md-tabs__link">
           
   
   
@@ -1310,24 +1310,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked="">
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
@@ -1345,7 +1350,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1388,10 +1393,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../GitHub-PyPI-Zenodo-Integration/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PyPI &amp; Zenodo Release Automation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1407,6 +1439,122 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="📖 On This Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      📖 On This Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#before-generating-a-release" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before Generating a Release
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Before Generating a Release">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-version-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set version in...
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addupdate-citation-and-zenodo-metadata-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add/Update Citation and Zenodo Metadata Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automate-publish-to-pypi-on-release" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automate publish to PyPI on release*
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-readme-installation-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update README Installation Instructions*
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#turn-repository-sync-on-in-your-zenodo-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Turn Repository Sync on in your Zenodo Account*
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#after-a-release-is-generated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        After a Release is Generated
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#release-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Release Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1450,29 +1598,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked="">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8">
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   
@@ -1490,7 +1633,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1505,19 +1648,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../About-Digital-Product-Policies/" class="md-nav__link">
         
   
   
@@ -1533,7 +1667,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1821,6 +1954,108 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      📖 On This Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#before-generating-a-release" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before Generating a Release
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Before Generating a Release">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-version-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set version in...
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addupdate-citation-and-zenodo-metadata-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add/Update Citation and Zenodo Metadata Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automate-publish-to-pypi-on-release" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automate publish to PyPI on release*
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-readme-installation-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update README Installation Instructions*
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#turn-repository-sync-on-in-your-zenodo-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Turn Repository Sync on in your Zenodo Account*
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#after-a-release-is-generated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        After a Release is Generated
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#release-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Release Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1840,15 +2075,181 @@
     
       
     
-    <a href="https://github.com/Imageomics/Imageomics-guide/raw/main/docs/wiki-guide/About-Digital-Product-Policies.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/Imageomics/Imageomics-guide/raw/main/docs/wiki-guide/GitHub-PyPI-Zenodo-Integration.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"></path></svg>
     </a>
   
 
 
-<h1 id="imageomics-digital-product-policies">Imageomics Digital Product Policies<a class="headerlink" href="#imageomics-digital-product-policies" title="Permanent link">¶</a></h1>
-<p>This section contains the Imageomics digital policy documents. The Digital Products Release and Licensing Policy sets expectations for the publication of all digital products (e.g., data, models, code). The Digital Product Life Cycle is a project life cycle guide intended to clarify the best practices—described throughout this guide—that will aid in compliance with the Digital Products Release and Licensing Policy. It is also generally a good reference for project planning.</p>
+<h1 id="pypi-zenodo-release-automation">PyPI &amp; Zenodo Release Automation<a class="headerlink" href="#pypi-zenodo-release-automation" title="Permanent link">¶</a></h1>
+<p>This page is a quick reference for setting up a repository to automatically release to the <a href="https://pypi.org/">Python Package Index (PyPI)</a> and <a href="https://zenodo.org/">Zenodo</a> on a GitHub release. At the bottom of the page are <a href="#release-checklist">checklists</a> for first-time releases, new releases, and post-release steps. These are set up to be copied into a relevant issue on your GitHub repository for easier tracking.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Before setting a release, please review the <a href="../About-Digital-Product-Policies/">Digital Product Policy</a> and check your repository against the <a href="../Code-Checklist/">Code Repo Checklist</a>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Steps marked with an <code>*</code> need only be completed once (the first time this is set up).</p>
+</div>
+<h2 id="before-generating-a-release">Before Generating a Release<a class="headerlink" href="#before-generating-a-release" title="Permanent link">¶</a></h2>
+<h3 id="set-version-in">Set version in... <!-- markdownlint-disable-line MD026 --><a class="headerlink" href="#set-version-in" title="Permanent link">¶</a></h3>
+<ul>
+<li><code>__about__.py</code> file<ul>
+<li>Version should be set <em>dynamically</em> in the <code>pyproject.toml</code> from this file.*</li>
+</ul>
+</li>
+<li><a href="../GitHub-Repo-Guide/#citation-templates"><code>CITATION.cff</code></a></li>
+<li><a href="../GitHub-Repo-Guide/#zenodo-metadata"><code>.zenodo.json</code></a></li>
+</ul>
+<h3 id="addupdate-citation-and-zenodo-metadata-files">Add/Update Citation and Zenodo Metadata Files<a class="headerlink" href="#addupdate-citation-and-zenodo-metadata-files" title="Permanent link">¶</a></h3>
+<p>Review or create both a <a href="../GitHub-Repo-Guide/#citation"><code>CITATION.cff</code></a> and <a href="../GitHub-Repo-Guide/#zenodo-metadata"><code>.zenodo.json</code></a> file following guide instructions. Be sure to include</p>
+<div class="admonition tip">
+<p class="admonition-title">Pro tip</p>
+<p>Add this <a href="https://github.com/Imageomics/Collaborative-distributed-science-guide/blob/main/.github/workflows/validate-zenodo.yaml">test to validate the Zenodo metatdata file</a>. It will run whenever the <code>.zenodo.json</code> or workflow file are edited, ensuring that your Zenodo integration will run smoothly.</p>
+</div>
+<p>Before release, ensure that...</p>
+<ul>
+<li>All authors are included and appropriately ordered.<ul>
+<li>This list may or may not change, and may differ from an associated paper author list, as discussed in the <a href="../Digital-Product-Lifecycle/#exploration-phase">Digital Product Lifecycle</a> and the <a href="https://docs.google.com/spreadsheets/d/1GwlCukfoQPL8JI2yyWRD3g4uiMTO3tlGNE_qeb_xBCs/edit?usp=sharing">Imageomics Author Guide</a>.</li>
+</ul>
+</li>
+<li>All project keywords are listed, using quotes for multi-word tags.</li>
+<li>
+<p>The release date in both files is correct.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This should be added in a PR as the last commit before a release, but check that the date matches, since these PRs may not necessarily be merged on the same day they are created.</p>
+</div>
+</li>
+<li>
+<p>Set <a href="../GitHub-Repo-Guide/#__codelineno-1-8">citation file identifiers</a>:</p>
+<ul>
+<li>Version tag link should match the updated version. The commit hash of the version will be filled in <em>after</em> release.</li>
+<li>
+<p>DOI should be the <em>general software</em> DOI from Zenodo to avoid mis-matched version confusion (since it must be added <strong><em>after</em></strong> release).*</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you have not generated a release yet, then leave the <code>doi</code> key commented out; it will be added <strong>after</strong> release.</p>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="automate-publish-to-pypi-on-release">Automate publish to PyPI on release*<a class="headerlink" href="#automate-publish-to-pypi-on-release" title="Permanent link">¶</a></h3>
+<p>Complete all steps below to automatically publish releases to PyPI. These steps need only be completed once before the first release; only dependencies and other keys in the <code>pyproject.toml</code> may need updating over time.</p>
+<ul>
+<li>Set up a <a href="https://packaging.python.org/en/latest/guides/writing-pyproject-toml/"><code>pyproject.toml</code></a> with your project repo information and dependencies.<ul>
+<li>Include your project keywords in <code>pyproject.toml</code> (no spaces, even within quotes).</li>
+<li>Version in <code>pyproject.toml</code> set <em>dynamically</em>.</li>
+</ul>
+</li>
+<li>Add PyPI publication workflow*. See <a href="https://github.com/Imageomics/pybioclip/blob/main/.github/workflows/publish-to-pypi.yml">pybioclip workflow</a> as an example.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup><ul>
+<li>For this to work on upload, you must configure GitHub as a "pending" publisher on PyPI. See PyPI's <a href="https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/">"pending" publisher docs</a> for instructions.</li>
+</ul>
+</li>
+</ul>
+<h3 id="update-readme-installation-instructions">Update <code>README</code> Installation Instructions*<a class="headerlink" href="#update-readme-installation-instructions" title="Permanent link">¶</a></h3>
+<p>Update the installation instructions in the <code>README</code> to <code>pip install &lt;package-name&gt;</code> instead of <code>pip install git+&lt;GitHub URL&gt;</code> right before the release and concurrent PyPI publication.</p>
+<h3 id="turn-repository-sync-on-in-your-zenodo-account">Turn Repository Sync on in your Zenodo Account*<a class="headerlink" href="#turn-repository-sync-on-in-your-zenodo-account" title="Permanent link">¶</a></h3>
+<p>This must be set specifically for the target repo. See <a href="../DOI-Generation/#automatic-generation">Automatic DOI Generation with Zenodo</a> for more information.</p>
+<h2 id="after-a-release-is-generated">After a Release is Generated<a class="headerlink" href="#after-a-release-is-generated" title="Permanent link">¶</a></h2>
+<p>There are a few updates required after generating a release, though the last listed here is the only one that is required for each release.</p>
+<ul>
+<li>Add DOI badge to <code>README</code>*.<ul>
+<li>Make sure to use the <em>version-agnostic</em> DOI, used to reference all releases. The badge display will then auto-update with each release to match the DOI of <em>that</em> release.</li>
+<li>See <a href="../DOI-Generation/#add-a-zenodo-doi-badge">Add a Zenodo DOI Badge</a> for instructions.</li>
+</ul>
+</li>
+<li>Add PyPI badges to <code>README</code>*.</li>
+<li>Add <em>version-agnostic</em> DOI to <code>CITATION.cff</code>*.</li>
+<li>Add release commit hash to <code>CITATION.cff</code> <a href="../GitHub-Repo-Guide/#__codelineno-1-8">identifiers</a>.</li>
+</ul>
+<h2 id="release-checklist">Release Checklist<a class="headerlink" href="#release-checklist" title="Permanent link">¶</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Pro tip</p>
+<p>Copy the markdown for the relevant checklist below into an issue on your GitHub <a href="../GitHub-Repo-Guide/">Repo</a> or <a href="../Guide-to-GitHub-Projects/">Project</a> so you can check the boxes as you complete each step to genearate a release for your GitHub repository.</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><input id="__tabbed_1_4" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">First Release</label><label for="__tabbed_1_2">New Release</label><label for="__tabbed_1_3">After First Release</label><label for="__tabbed_1_4">After Release</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-Markdown highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gu">### Set version in... </span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">- [ ]</span> <span class="sb">`__about__.py`</span> file (the only repeated PyPI update).
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span>Version should be set <span class="ge">*dynamically*</span> in the <span class="sb">`pyproject.toml`</span> from this file.*
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">- [ ]</span> [<span class="sb">`CITATION.cff`</span>](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#citation-templates).
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">- [ ]</span> [<span class="sb">`.zenodo.json`</span>](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#zenodo-metadata).
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="gu">### Add/Update the [citation](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#citation) and [Zenodo metadata](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#zenodo-metadata) files.</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>Ensure that...
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="k">- [ ]</span> All authors are included and appropriately ordered.
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span>This list may or may not change, and may differ from an associated paper author list, as discussed in the [<span class="nt">Digital Product Lifecycle</span>](<span class="na">https://imageomics.github.io/Imageomics-guide/wiki-guide/Digital-Product-Lifecycle/#exploration-phase</span>) and the [<span class="nt">Imageomics Author Guide</span>](<span class="na">https://docs.google.com/spreadsheets/d/1GwlCukfoQPL8JI2yyWRD3g4uiMTO3tlGNE_qeb_xBCs/edit?usp=sharing</span>).
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="k">- [ ]</span> All project keywords are listed, using quotes for multi-word tags.
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="k">- [ ]</span> The release date in both files is correct.
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="k">&gt; </span><span class="ge">[!IMPORTANT]</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="k">&gt; </span><span class="ge">This should be added in a PR as the last commit before a release, but check that the date matches, since these PRs may not necessarily be merged on the same day they are created.</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="k">-</span><span class="w"> </span>Set [<span class="nt">citation file identifiers</span>](<span class="na">https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#__codelineno-1-8</span>):
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">  </span><span class="k">- [ ]</span> Version tag link should match the updated version. The commit hash of the version will be filled in <span class="ge">*after*</span> release.
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="k">&gt; </span><span class="ge">[!NOTE]</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="k">&gt; </span><span class="ge">You have not generated a release yet, so leave the `doi` key commented out; it will be added **after** release.</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="k">- [ ]</span> Add [<span class="nt">test to validate Zenodo file</span>](<span class="na">https://github.com/Imageomics/Imageomics-guide/blob/main/.github/workflows/validate-zenodo.yaml</span>).*
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="gu">### Automate publish to PyPI on release:</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="k">- [ ]</span> Set up a [<span class="sb">`pyproject.toml`</span>](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/) with your project repo information and dependencies.
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">  </span><span class="k">- [ ]</span> Include your project keywords in <span class="sb">`pyproject.toml`</span> (no spaces, even within quotes).
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">  </span><span class="k">- [ ]</span> Version in <span class="sb">`pyproject.toml`</span> set <span class="ge">*dynamically*</span>.
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="k">- [ ]</span> Add PyPI publication workflow*. See [<span class="nt">pybioclip workflow</span>](<span class="na">https://github.com/Imageomics/pybioclip/blob/main/.github/workflows/publish-to-pypi.yml</span>) as an example.[^1]
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">  </span><span class="k">- [ ]</span> Configure GitHub as a "pending" publisher on PyPI. See PyPI's [<span class="nt">"pending" publisher docs</span>](<span class="na">https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/</span>) for instructions.*
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="gu">### Update installation instructions to reflect imminent release and PyPI publication:*</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="k">- [ ]</span> <span class="sb">`pip install &lt;package-name&gt;`</span> instead of <span class="sb">`pip install git+&lt;GitHub URL&gt;`</span>.
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="gu">### Zenodo Sync</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="k">- [ ]</span> Turn on repository sync in your Zenodo account; this must be set specifically for the target repo. See [<span class="nt">Automatic DOI Generation with Zenodo</span>](<span class="na">https://imageomics.github.io/Imageomics-guide/wiki-guide/DOI-Generation/#automatic-generation</span>) for more information.
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-Markdown highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="gu">### Set version in... </span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">- [ ]</span> <span class="sb">`__about__.py`</span> file (the only repeated PyPI update).
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span>Version should be set <span class="ge">*dynamically*</span> in the <span class="sb">`pyproject.toml`</span> from this file.*
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">- [ ]</span> [<span class="sb">`CITATION.cff`</span>](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#citation-templates).
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">- [ ]</span> [<span class="sb">`.zenodo.json`</span>](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#zenodo-metadata).
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="gu">### Update the [citation](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#citation) and [Zenodo metadata](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#zenodo-metadata) files. </span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>Ensure that...
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="k">- [ ]</span> All authors are included and appropriately ordered.
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="k">- [ ]</span> All project keywords are listed, using quotes for multi-word tags.
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="k">- [ ]</span> The release date in both files is correct.
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="k">&gt; </span><span class="ge">[!IMPORTANT]</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="k">&gt; </span><span class="ge">This should be added in a PR as the last commit before a release, but check that the date matches, since these PRs sometimes are not merged on the day they are created.</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="k">- [ ]</span> Set version tag in [<span class="nt">citation file identifiers</span>](<span class="na">https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#__codelineno-1-8</span>) to match the updated version. The commit hash of the version will be filled in <span class="ge">*after*</span> release.
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-Markdown highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">- [ ]</span> Add <span class="ge">*version-agnostic*</span> DOI badge to <span class="sb">`README`</span>*.
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>See [<span class="nt">Add a Zenodo DOI Badge</span>](<span class="na">https://imageomics.github.io/Imageomics-guide/wiki-guide/DOI-Generation/#add-a-zenodo-doi-badge</span>) for instructions.
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">- [ ]</span> Add PyPI badges to <span class="sb">`README`</span>*.
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">- [ ]</span> Add <span class="ge">*version-agnostic*</span> DOI to <span class="sb">`CITATION.cff`</span>*.
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">- [ ]</span> Add release commit hash to <span class="sb">`CITATION.cff`</span> [<span class="nt">identifiers</span>](<span class="na">https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#__codelineno-1-8</span>).
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-Markdown highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">- [ ]</span> Add release commit hash to <span class="sb">`CITATION.cff`</span> [<span class="nt">identifiers</span>](<span class="na">https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#__codelineno-1-8</span>).
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Note that this follows the <a href="https://docs.pypi.org/trusted-publishers/using-a-publisher/">PyPI Trusted Publishers docs</a> to remove the need for a token, though you must first configure GitHub as a <a href="https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/">"pending" Trusted Publisher</a> for the project on PyPI.&nbsp;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div>
 
 
 

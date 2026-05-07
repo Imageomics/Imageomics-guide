@@ -337,17 +337,18 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../Command-Line-Cheat-Sheet/" class="md-tabs__link">
-        
-  
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="../Command-Line-Cheat-Sheet/" class="md-tabs__link">
+          
   
-  Command Line Cheat Sheet
+  
+  Quick References
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -1311,6 +1312,56 @@
   
   
   
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick References
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Quick References
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../Command-Line-Cheat-Sheet/" class="md-nav__link">
         
@@ -1328,6 +1379,42 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GitHub-PyPI-Zenodo-Integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PyPI &amp; Zenodo Release Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1882,6 +1969,11 @@
 <li>Convenient to change if needed</li>
 <li>Unique for different environments</li>
 </ul>
+<div class="admonition danger">
+<p class="admonition-title">Protect your API Keys and Access Tokens!</p>
+<p>The most important lesson in key-management is to <strong><em>never make them public</em></strong> and <strong><em>always scope access</em></strong>. If you think a key has been exposed, <strong><em>disable</em></strong> and <strong><em>regenerate</em></strong> it immediately. By keeping access keys and tokens scoped to a single task or repository with the least permissions necessary to complete the needed function, you further reduce the potential impact of a leaked key.</p>
+</div>
+<p>Both GitHub and Hugging Face recommend using <em>fine-grained</em> tokens, and provide guidance on creating and managing them within the platforms. Learn more about platform-specific access tokens on <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">GitHub</a> and <a href="https://huggingface.co/docs/hub/en/security-tokens">Hugging Face</a>. Keep reading below for more general API Key management guidance.</p>
 <h2 id="key-storage">Key Storage<a class="headerlink" href="#key-storage" title="Permanent link">¶</a></h2>
 <p>Our recommended way of storing and using API is within <code>.env</code> (dotenv) files.</p>
 <p>A <code>.env</code> file is a simple text file that stores key-value pairs that set local environment variables. Its contents would look something like the following:</p>
