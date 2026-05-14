@@ -115,7 +115,7 @@ Providing this file is as simple as copying the below example and filling in you
 
 === "Standard Citation File (Recommended)"
 
-    !!! tip
+    !!! tip "Pro tip"
         Pair this citation file with a [`.zenodo.json`](#zenodo-metadata) for easier DOI metadata tracking (grants, references, associated papers).
 
     ```yaml { py linenums="1" }
@@ -214,6 +214,10 @@ Providing this file is as simple as copying the below example and filling in you
         doi: 
         date-released:
     ```
+
+!!! tip "Pro tip"
+    Check whether your citation renders correctly on a branch. When you push the `CITATION.cff` to a branch and browse the repository at that branch, you can select "Cite this repository" in the righthand sidebar to see if it is rendering as expected:
+    ![Screenshot of "Cite this repository" pop-up on the Collaborative Distributed Science Guide repository. It shows APA and BibTeX 'content tabs' with the beginnings of a scrollable and copiable citation](images/GH-repo-guide/citation-cff-check.png)
 
 ## Recommended Files
 
