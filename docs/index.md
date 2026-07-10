@@ -52,7 +52,7 @@ Discover new tools to help:
 
 ### Collaborative Infrastructure Diagram
 
-![tech_infrastructure_diagram](wiki-guide/images/index/collaborative-infrastructure-diagram.png)
+![Diagram representing our collaborative infrastructure process, where the repository infrastructure box contains data, model, and code repos with bidirectional arrows. There is a loop formed from research to this box via the best practices and back, and a bidirectional arrow between the infrastructure and the broader community](wiki-guide/images/index/collaborative-infrastructure-diagram.png)
 
 ## Imageomics Branding (Logos)
 
