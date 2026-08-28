@@ -19,14 +19,14 @@ authors:
   given-names: "Hilmar"
   orcid: "https://orcid.org/0000-0001-9107-0714"
 cff-version: 1.2.0
-date-released: "2025-12-04"
+date-released: "2026-08-28"
 identifiers:
-  - description: "The GitHub release URL of tag v2.3.0."
+  - description: "The GitHub release URL of tag v2.3.1."
     type: url
-    value: "https://github.com/Imageomics/Imageomics-guide/releases/tag/v2.3.0"
-  - description: "The GitHub URL of the commit tagged with v2.3.0."
+    value: "https://github.com/Imageomics/Imageomics-guide/releases/tag/v2.3.1"
+  - description: "The GitHub URL of the commit tagged with v2.3.1."
     type: url
-    value: "https://github.com/Imageomics/Imageomics-guide/tree/a9fa5723114f75b440c98d40dfe215da7972def6"
+    value: "https://github.com/Imageomics/Imageomics-guide/tree/<commit-hash>" # update on release
 keywords:
   - imageomics
   - metadata
@@ -42,5 +42,5 @@ license: CC0-1.0
 message: "If you find these docs helpful in your research, please cite them as below."
 repository-code: "https://github.com/Imageomics/Imageomics-guide"
 title: "Imageomics Guide"
-version: "2.3.0"
+version: "2.3.1"
 doi: "10.5281/zenodo.17817610"
