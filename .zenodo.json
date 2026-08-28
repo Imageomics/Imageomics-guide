@@ -45,9 +45,9 @@
       "standards"
     ],
     "title": "Imageomics Guide",
-    "version": "2.3.0",
+    "version": "2.3.1",
     "license": "CC0-1.0",
-    "publication_date": "2025-12-04",
+    "publication_date": "2026-08-28",
     "grants": [
         {
             "id": "021nxhr62::2118240"
@@ -57,6 +57,6 @@
         }
     ],
     "references": [
-        "Campolongo, E. G., Thompson, M. J., Zhang, N., Duan, Y., Bradley, J., Zarubiieva, I., Taylor, G., & Lapp, H. (2025). Collaborative Distributed Science Guide (Version 1.3.0) [Computer software]. https://doi.org/10.5281/zenodo.17210328"
+        "Campolongo, E. G., Thompson, M. J., Zhang, N., Duan, Y., Bradley, J., Zarubiieva, I., Taylor, G., & Lapp, H. (2026). Collaborative Distributed Science Guide (Version 2.0.0) [Computer software]. https://doi.org/10.5281/zenodo.17210328"
     ]
 }
