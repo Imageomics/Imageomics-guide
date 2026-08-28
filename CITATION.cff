@@ -26,7 +26,7 @@ identifiers:
     value: "https://github.com/Imageomics/Imageomics-guide/releases/tag/v2.3.1"
   - description: "The GitHub URL of the commit tagged with v2.3.1."
     type: url
-    value: "https://github.com/Imageomics/Imageomics-guide/tree/<commit-hash>" # update on release
+    value: "https://github.com/Imageomics/Imageomics-guide/tree/a6c2797ed08b2edc17c32d9b67c0d6073599fb76" # update on release
 keywords:
   - imageomics
   - metadata
