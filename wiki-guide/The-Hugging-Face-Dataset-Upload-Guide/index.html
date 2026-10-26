@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../logos/Imageomics_logo_butterfly.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -30,10 +30,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -2143,7 +2143,7 @@
 <p>Hugging Face provides details on <a href="https://huggingface.co/docs/huggingface_hub/en/concepts/git_vs_http">git vs http</a>, really using Git vs HfApi</p>
 <p>Hugging Face has moved away from Git LFS, instead utilizing <a href="https://huggingface.co/docs/hub/en/xet/index">Xet</a> for data storage and version control; this is <a href="https://huggingface.co/docs/hub/en/xet/legacy-git-lfs">backwards compatible with LFS</a>.</p>
 <h2 id="other-repo-considerations">Other Repo Considerations<a class="headerlink" href="#other-repo-considerations" title="Permanent link">¶</a></h2>
-<p>One time where <code>git</code> may be needed, is if one encounters a <a href="https://discuss.huggingface.co/t/how-to-fix-merge-conflicts-in-prs/160090">merge conflict</a>. Unlike GitHub, Hugging Face <strong><em>does not</em></strong> have conflict resolution UI tools, nor does it provide merge conflict resolution capabilities in the CLI or HfApi. The only means for resolving merge conflicts is to manually update the pull request in a <a href="../The-Hugging-Face-Workflow/#hugging-face-pull-requests-with-local-edits">local clone</a>, pulling <code>main</code> into your PR branch and resolving the conflicts.</p>
+<p>One time where <code>git</code> may be needed, is if one encounters a <a href="https://discuss.huggingface.co/t/how-to-fix-merge-conflicts-in-prs/160090">merge conflict</a>. Unlike GitHub, Hugging Face <em><strong>does not</strong></em> have conflict resolution UI tools, nor does it provide merge conflict resolution capabilities in the CLI or HfApi. The only means for resolving merge conflicts is to manually update the pull request in a <a href="../The-Hugging-Face-Workflow/#hugging-face-pull-requests-with-local-edits">local clone</a>, pulling <code>main</code> into your PR branch and resolving the conflicts.</p>
 <h2 id="integrity-check">Integrity Check<a class="headerlink" href="#integrity-check" title="Permanent link">¶</a></h2>
 <p>Sometimes uploads fail partway through, leaving one or more files un-uploaded. Unfortunately, it seems that there is not an easy solution to be alerted to these issues when not uploading through the UI. Additionally, using a glob pattern to set upload without a dry-run<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> (in <code>git</code> terms, this would be running <code>git status</code> after adding files) can also lead to accidental exclusion. To catch these issues, we recommend the following integrity check after uploading a dataset<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -2323,10 +2323,10 @@ Any opinions, findings, conclusions, or recommendations expressed in this materi
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.action.view", "content.code.copy", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.action.view", "content.code.copy", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   
