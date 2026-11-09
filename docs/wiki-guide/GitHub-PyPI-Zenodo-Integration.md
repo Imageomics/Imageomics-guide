@@ -19,7 +19,9 @@ This page is a quick reference for setting up a repository to automatically rele
 
 ### Add/Update Citation and Zenodo Metadata Files
 
-Review or create both a [`CITATION.cff`](GitHub-Repo-Guide.md#citation) and [`.zenodo.json`](GitHub-Repo-Guide.md#zenodo-metadata) file following guide instructions. Be sure to include
+Review or create both a [`CITATION.cff`](GitHub-Repo-Guide.md#citation) and [`.zenodo.json`](GitHub-Repo-Guide.md#zenodo-metadata) file following guide instructions. [OpenCite](https://imageomics.github.io/OpenCite/)[^1] can help generate and check both these files.
+
+[^1]: [OpenCite](https://imageomics.github.io/OpenCite/) creates standardized citation metadata through a guided form for project details, authors, identifiers, references, and funding, which can be imported from a GitHub repository. It previews the generated `CITATION.cff` and `.zenodo.json` files, helping to avoid missing or inconsistent metadata when preparing for release and/or archive to Zenodo. Always review the generated or imported information for accuracy before adding the files to a repository or publishing a DOI.
 
 !!! tip "Pro tip"
     Add this [test to validate the Zenodo metatdata file](https://github.com/Imageomics/Collaborative-distributed-science-guide/blob/main/.github/workflows/validate-zenodo.yaml). It will run whenever the `.zenodo.json` or workflow file are edited, ensuring that your Zenodo integration will run smoothly.
@@ -48,7 +50,7 @@ Complete all steps below to automatically publish releases to PyPI. These steps 
 - Set up a [`pyproject.toml`](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/) with your project repo information and dependencies.
     - Include your project keywords in `pyproject.toml` (no spaces, even within quotes).
     - Version in `pyproject.toml` set *dynamically*.
-- Add PyPI publication workflow*. See [pybioclip workflow](https://github.com/Imageomics/pybioclip/blob/main/.github/workflows/publish-to-pypi.yml) as an example.[^1]
+- Add PyPI publication workflow*. See [pybioclip workflow](https://github.com/Imageomics/pybioclip/blob/main/.github/workflows/publish-to-pypi.yml) as an example.[^2]
     - For this to work on upload, you must configure GitHub as a "pending" publisher on PyPI. See PyPI's ["pending" publisher docs](https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/) for instructions.
 
 ### Update `README` Installation Instructions*
@@ -104,7 +106,7 @@ There are a few updates required after generating a release, though the last lis
     - [ ] Set up a [`pyproject.toml`](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/) with your project repo information and dependencies.
       - [ ] Include your project keywords in `pyproject.toml` (no spaces, even within quotes).
       - [ ] Version in `pyproject.toml` set *dynamically*.
-    - [ ] Add PyPI publication workflow*. See [pybioclip workflow](https://github.com/Imageomics/pybioclip/blob/main/.github/workflows/publish-to-pypi.yml) as an example.[^1]
+    - [ ] Add PyPI publication workflow*. See [pybioclip workflow](https://github.com/Imageomics/pybioclip/blob/main/.github/workflows/publish-to-pypi.yml) as an example.
       - [ ] Configure GitHub as a "pending" publisher on PyPI. See PyPI's ["pending" publisher docs](https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/) for instructions.*
     
     ### Update installation instructions to reflect imminent release and PyPI publication:*
@@ -151,4 +153,4 @@ There are a few updates required after generating a release, though the last lis
     - [ ] Add release commit hash to `CITATION.cff` [identifiers](https://imageomics.github.io/Imageomics-guide/wiki-guide/GitHub-Repo-Guide/#__codelineno-1-8).
     ```
 
-[^1]: Note that this follows the [PyPI Trusted Publishers docs](https://docs.pypi.org/trusted-publishers/using-a-publisher/) to remove the need for a token, though you must first configure GitHub as a ["pending" Trusted Publisher](https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/) for the project on PyPI.
+[^2]: Note that this follows the [PyPI Trusted Publishers docs](https://docs.pypi.org/trusted-publishers/using-a-publisher/) to remove the need for a token, though you must first configure GitHub as a ["pending" Trusted Publisher](https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/) for the project on PyPI.
