@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../logos/Imageomics_logo_butterfly.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -2103,7 +2103,7 @@
 <li><a href="../GitHub-Repo-Guide/#zenodo-metadata"><code>.zenodo.json</code></a></li>
 </ul>
 <h3 id="addupdate-citation-and-zenodo-metadata-files">Add/Update Citation and Zenodo Metadata Files<a class="headerlink" href="#addupdate-citation-and-zenodo-metadata-files" title="Permanent link">¶</a></h3>
-<p>Review or create both a <a href="../GitHub-Repo-Guide/#citation"><code>CITATION.cff</code></a> and <a href="../GitHub-Repo-Guide/#zenodo-metadata"><code>.zenodo.json</code></a> file following guide instructions. Be sure to include</p>
+<p>Review or create both a <a href="../GitHub-Repo-Guide/#citation"><code>CITATION.cff</code></a> and <a href="../GitHub-Repo-Guide/#zenodo-metadata"><code>.zenodo.json</code></a> file following guide instructions. <a href="https://imageomics.github.io/OpenCite/">OpenCite</a><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> can help generate and check both these files.</p>
 <div class="admonition tip">
 <p class="admonition-title">Pro tip</p>
 <p>Add this <a href="https://github.com/Imageomics/Collaborative-distributed-science-guide/blob/main/.github/workflows/validate-zenodo.yaml">test to validate the Zenodo metatdata file</a>. It will run whenever the <code>.zenodo.json</code> or workflow file are edited, ensuring that your Zenodo integration will run smoothly.</p>
@@ -2144,7 +2144,7 @@
 <li>Version in <code>pyproject.toml</code> set <em>dynamically</em>.</li>
 </ul>
 </li>
-<li>Add PyPI publication workflow*. See <a href="https://github.com/Imageomics/pybioclip/blob/main/.github/workflows/publish-to-pypi.yml">pybioclip workflow</a> as an example.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup><ul>
+<li>Add PyPI publication workflow*. See <a href="https://github.com/Imageomics/pybioclip/blob/main/.github/workflows/publish-to-pypi.yml">pybioclip workflow</a> as an example.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup><ul>
 <li>For this to work on upload, you must configure GitHub as a "pending" publisher on PyPI. See PyPI's <a href="https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/">"pending" publisher docs</a> for instructions.</li>
 </ul>
 </li>
@@ -2198,7 +2198,7 @@
 </span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="k">- [ ]</span> Set up a [<span class="sb">`pyproject.toml`</span>](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/) with your project repo information and dependencies.
 </span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">  </span><span class="k">- [ ]</span> Include your project keywords in <span class="sb">`pyproject.toml`</span> (no spaces, even within quotes).
 </span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">  </span><span class="k">- [ ]</span> Version in <span class="sb">`pyproject.toml`</span> set <span class="ge">*dynamically*</span>.
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="k">- [ ]</span> Add PyPI publication workflow*. See [<span class="nt">pybioclip workflow</span>](<span class="na">https://github.com/Imageomics/pybioclip/blob/main/.github/workflows/publish-to-pypi.yml</span>) as an example.[^1]
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="k">- [ ]</span> Add PyPI publication workflow*. See [<span class="nt">pybioclip workflow</span>](<span class="na">https://github.com/Imageomics/pybioclip/blob/main/.github/workflows/publish-to-pypi.yml</span>) as an example.
 </span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">  </span><span class="k">- [ ]</span> Configure GitHub as a "pending" publisher on PyPI. See PyPI's [<span class="nt">"pending" publisher docs</span>](<span class="na">https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/</span>) for instructions.*
 </span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>
 </span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="gu">### Update installation instructions to reflect imminent release and PyPI publication:*</span>
@@ -2246,7 +2246,10 @@
 <hr>
 <ol>
 <li id="fn:1">
-<p>Note that this follows the <a href="https://docs.pypi.org/trusted-publishers/using-a-publisher/">PyPI Trusted Publishers docs</a> to remove the need for a token, though you must first configure GitHub as a <a href="https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/">"pending" Trusted Publisher</a> for the project on PyPI.&nbsp;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+<p><a href="https://imageomics.github.io/OpenCite/">OpenCite</a> creates standardized citation metadata through a guided form for project details, authors, identifiers, references, and funding, which can be imported from a GitHub repository. It previews the generated <code>CITATION.cff</code> and <code>.zenodo.json</code> files, helping to avoid missing or inconsistent metadata when preparing for release and/or archive to Zenodo. Always review the generated or imported information for accuracy before adding the files to a repository or publishing a DOI.&nbsp;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>Note that this follows the <a href="https://docs.pypi.org/trusted-publishers/using-a-publisher/">PyPI Trusted Publishers docs</a> to remove the need for a token, though you must first configure GitHub as a <a href="https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/">"pending" Trusted Publisher</a> for the project on PyPI.&nbsp;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
 </li>
 </ol>
 </div>
@@ -2403,7 +2406,7 @@ Any opinions, findings, conclusions, or recommendations expressed in this materi
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.action.view", "content.code.copy", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   
